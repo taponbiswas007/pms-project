@@ -1,2 +1,55 @@
 @import '../utils/mixins';
 @import '../utils/variables';
+
+.calenderOrtable-selector {
+    padding: 14px 0;
+
+    .calenderOrtable-button-area {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 15px;
+
+        button {
+            width: 40px;
+            height: 35px;
+            border-radius: 5px;
+            font-size: 23px;
+
+            &:first-child {
+                background: $blue;
+                color: $white;
+            }
+
+            &:last-child {
+                background: $white;
+                color: $blue;
+                border: 2px solid $gray;
+                transition: .3s ease;
+
+                &:hover {
+                    background: $blue;
+                    color: $white;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+.resevation-search-area{
+    .reservation-search-main-area{
+        .calender-header{
+            h1{
+
+            }
+        }
+        .reservation-search-property{
+            .search-date-selector-box{}
+            .paidOrunpaid-selector{}
+            .resevationtype-selector{}
+            .dailyOrmonthly-selector{}
+            .reservation-search-btn{}
+            .new-reservation-btn{}
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import '../utils/variables';
+body{
+    background: $simpleGray;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    border: none;
+    background: none;
+}

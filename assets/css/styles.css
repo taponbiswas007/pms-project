@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.calenderOrtable-selector {
+  padding: 14px 0;
+}
+.calenderOrtable-selector .calenderOrtable-button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.calenderOrtable-selector .calenderOrtable-button-area button {
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 23px;
+}
+.calenderOrtable-selector .calenderOrtable-button-area button:first-child {
+  background: #01286D;
+  color: #ffffff;
+}
+.calenderOrtable-selector .calenderOrtable-button-area button:last-child {
+  background: #ffffff;
+  color: #01286D;
+  border: 2px solid #EBECEE;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.calenderOrtable-selector .calenderOrtable-button-area button:last-child:hover {
+  background: #01286D;
+  color: #ffffff;
+  border: none;
+}
+
+header .top-header {
+  background: #003087;
+  height: 64px;
+  padding-top: 14px;
+}
+header .top-header .top-header-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .top-header .top-header-main-area .logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 39.3px;
+     -moz-column-gap: 39.3px;
+          column-gap: 39.3px;
+}
+header .top-header .top-header-main-area .logo-area a {
+  width: 32px;
+}
+header .top-header .top-header-main-area .logo-area h1 {
+  color: #F7F8FA;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+header .top-header .top-header-main-area button {
+  color: #ffffff;
+  font-size: 22px;
+  display: none;
+}
+header .top-header .top-header-main-area button .close {
+  display: none;
+}
+header .bottom-header {
+  background: #01286D;
+  height: 64px;
+  padding-top: 14px;
+  padding-left: 49px;
+}
+header .bottom-header .bottom-header-main-area .navbar ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+header .bottom-header .bottom-header-main-area .navbar ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .bottom-header .bottom-header-main-area .navbar ul li a:hover {
+  color: #00B3FF;
+}
+header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  header .bottom-header .bottom-header-main-area .navbar ul li {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .bottom-header .bottom-header-main-area .navbar ul li {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  header .bottom-header .bottom-header-main-area .navbar ul li {
+    margin-right: 29px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .top-header .top-header-main-area button {
+    display: block;
+  }
+  header .bottom-header {
+    display: none;
+    height: auto;
+    position: relative;
+    z-index: 999999999999999;
+  }
+  header .bottom-header .bottom-header-main-area .navbar ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 30px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .bottom-header .bottom-header-main-area .navbar ul li:hover {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
