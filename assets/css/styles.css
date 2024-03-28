@@ -102,6 +102,9 @@ button {
   border: none;
 }
 
+.resevation-search-area {
+  margin-bottom: 40px;
+}
 .resevation-search-area .reservation-search-main-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +121,7 @@ button {
   font-size: 38px;
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
+  padding-left: 49px;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property {
   display: -webkit-box;
@@ -138,7 +142,6 @@ button {
   border-radius: 8px;
   padding: 12px 20px;
   height: 40px;
-  padding-right: 54px;
   position: relative;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .search-date-selector-box span {
@@ -179,6 +182,7 @@ button {
   background: none;
   border: none;
   margin-top: -5px;
+  line-height: 24px;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .resevationtype-selector {
   border: 2px solid #202020;
@@ -195,6 +199,7 @@ button {
   background: none;
   border: none;
   margin-top: -5px;
+  line-height: 24px;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .dailyOrmonthly-selector {
   border: 2px solid #202020;
@@ -211,6 +216,7 @@ button {
   background: none;
   border: none;
   margin-top: -5px;
+  line-height: 24px;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .reservation-search-btn {
   padding: 8px 12px;
@@ -220,7 +226,13 @@ button {
   font-weight: 600;
   color: #ffffff;
   text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   background: #01286D;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .reservation-search-btn:hover {
+  background: #003087;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .new-reservation-btn {
   padding: 8px 12px;
@@ -230,7 +242,181 @@ button {
   font-weight: 600;
   color: #ffffff;
   text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   background: #202020;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .new-reservation-btn:hover {
+  background: black;
+}
+
+@media screen and (max-width: 1300px) {
+  .resevation-search-area .reservation-search-main-area .calender-header h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .resevation-search-area .reservation-search-main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 30px;
+  }
+  .resevation-search-area .reservation-search-main-area .calender-header h1 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .resevation-search-area .reservation-search-main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 30px;
+  }
+  .resevation-search-area .reservation-search-main-area .reservation-search-property {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container {
+  overflow: auto;
+  position: relative;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table thead tr {
+  height: 56px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table thead tr th {
+  border: 1px solid #EBECEE;
+  vertical-align: middle;
+  text-align: center;
+  min-width: 100px;
+  background: #ffffff;
+  color: #202020;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table thead tr th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  min-width: 153px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table thead tr th button img {
+  width: 36px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody td button {
+  background: #EBECEE;
+  width: 100%;
+  height: 56px;
+  color: #202020;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  padding-left: 20px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody td button .down-arrow {
+  margin-left: 5px;
+  font-size: 20px;
+  margin-bottom: -4px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody td button .down-arrow2 {
+  margin-left: 5px;
+  font-size: 20px;
+  margin-bottom: -4px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody td button .down-arrow3 {
+  margin-left: 5px;
+  font-size: 20px;
+  margin-bottom: -4px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody tr {
+  height: 56px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody tr td {
+  border: 1px solid #EBECEE;
+  white-space: normal;
+  text-align: center;
+  min-width: 100px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  vertical-align: middle;
+  text-align: center;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody tr td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 153px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table .room1 td {
+  position: relative;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table .room1 td:nth-child(n+4):nth-child(-n+4)::after {
+  content: "Kumar, Pritam - 301";
+  width: 188px;
+  position: absolute;
+  background: #00B3FF;
+  border-radius: 5px;
+  z-index: 1;
+  height: 38px;
+  left: 5px;
+  top: 9px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 7px;
+  cursor: pointer;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table .room2 td {
+  position: relative;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table .room2 td:nth-child(n+3):nth-child(-n+3)::after {
+  content: "Smith, John - NA";
+  position: absolute;
+  background: #00B3FF;
+  border-radius: 5px;
+  z-index: 1;
+  height: 38px;
+  left: 5px;
+  top: 9px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 7px;
+  cursor: pointer;
+  width: 384px;
 }
 
 header .top-header {
@@ -341,4 +527,84 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
   }
+}
+.reservationPersondetails-alart-area {
+  max-width: 428px;
+  width: 100%;
+  padding: 14px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: none;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .reservation-person-details-header {
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 19px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .reservation-person-details-header button {
+  font-size: 19px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #999999;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .contact-item {
+  margin-bottom: 19px;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .contact-item h1 {
+  color: #6D6D6D;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .contact-item p {
+  color: #292929;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  text-transform: lowercase;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .contact-item span {
+  color: #2DAE00;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .contact-item .massage-item ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .contact-item .massage-item ul li:last-child {
+  margin-right: 0;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .contact-item button {
+  color: #FF4848;
+  background: #FFE1E1;
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 18px;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+.reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .reservationType span {
+  color: #292929;
 }
