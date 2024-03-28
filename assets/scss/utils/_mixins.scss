@@ -1,0 +1,28 @@
+@import 'variables';
+
+@mixin dataInputboxStyle {
+    border: 2px solid $simpleblack;
+    border-radius: 8px;
+    padding: 12px 20px;
+    height: 40px;
+}
+
+@mixin optionselectStyle {
+    font-size: 16px;
+    color: $black;
+    font-family: $dmSans;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    margin-top: -5px;
+}
+@mixin commonBtnstyle{
+    padding: 8px 12px;
+    border-radius: 8px ;
+    font-family: $dmSans;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    text-transform: capitalize;
+}

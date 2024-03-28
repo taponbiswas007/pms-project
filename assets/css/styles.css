@@ -102,6 +102,137 @@ button {
   border: none;
 }
 
+.resevation-search-area .reservation-search-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.resevation-search-area .reservation-search-main-area .calender-header h1 {
+  color: #202020;
+  font-size: 38px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .search-date-selector-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+  padding-right: 54px;
+  position: relative;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .search-date-selector-box span {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  background: #F7F8FA;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .search-date-selector-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .search-date-selector-box input:focus {
+  outline: none;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .paidOrunpaid-selector {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .paidOrunpaid-selector select {
+  font-size: 16px;
+  color: #000000;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  margin-top: -5px;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .resevationtype-selector {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .resevationtype-selector select {
+  font-size: 16px;
+  color: #000000;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  margin-top: -5px;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .dailyOrmonthly-selector {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .dailyOrmonthly-selector select {
+  font-size: 16px;
+  color: #000000;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  margin-top: -5px;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .reservation-search-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  background: #01286D;
+}
+.resevation-search-area .reservation-search-main-area .reservation-search-property .new-reservation-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  background: #202020;
+}
+
 header .top-header {
   background: #003087;
   height: 64px;

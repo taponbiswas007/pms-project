@@ -1,6 +1,7 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 
+
 .calenderOrtable-selector {
     padding: 14px 0;
 
@@ -38,18 +39,76 @@
 }
 .resevation-search-area{
     .reservation-search-main-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         .calender-header{
             h1{
-
+                color: $simpleblack;
+                font-size: 38px;
+                font-family: $dmSans;
+                font-weight: 600;
             }
         }
         .reservation-search-property{
-            .search-date-selector-box{}
-            .paidOrunpaid-selector{}
-            .resevationtype-selector{}
-            .dailyOrmonthly-selector{}
-            .reservation-search-btn{}
-            .new-reservation-btn{}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 14px;
+            .search-date-selector-box{
+                @include dataInputboxStyle;
+                padding-right: 54px;
+                position: relative;
+                span{
+                    position: absolute;
+                    top: -10px;
+                    left: 12px;
+                    color: $simpleblack;
+                    font-family: $roboto;
+                    font-weight: 400;
+                    padding: 0 8px;
+                    background: $darkwhite;
+                }
+                input{
+                    color: $black;
+                    font-family: $roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            .paidOrunpaid-selector{
+                @include dataInputboxStyle;
+                select{
+                    @include optionselectStyle;
+                }
+            }
+            .resevationtype-selector{
+                @include dataInputboxStyle;
+                select{
+                    @include optionselectStyle;
+                }
+            }
+            .dailyOrmonthly-selector{
+                @include dataInputboxStyle;
+                select{
+                    @include optionselectStyle;
+                }
+            }
+            .reservation-search-btn{
+                @include commonBtnstyle;
+                background: $blue
+            }
+            .new-reservation-btn{
+                @include commonBtnstyle;
+                background: $simpleblack;
+            }
         }
     }
 }
