@@ -569,13 +569,214 @@ button {
 }
 @media screen and (max-width: 420px) {
   .resevation-page-search-area .reservation-page-search-main-area {
-    grid-template-columns: repeat(5, 4fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto;
+  }
+  .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 6;
   }
   .resevation-page-search-area .reservation-page-search-main-area .search-button button {
     margin-left: 0;
   }
 }
+.reservation-results-header {
+  margin-bottom: 11px;
+}
+.reservation-results-header .reservation-results-header-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reservation-results-header .reservation-results-header-main-area h1 {
+  color: #202020;
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+.reservation-results-header .reservation-results-header-main-area .search-results-filter-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.reservation-results-header .reservation-results-header-main-area .search-results-filter-area .filter-item select {
+  color: #101828;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  border: 1px solid #D0D5DD;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.reservation-results-header .reservation-results-header-main-area .search-results-filter-area .filter-item button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #202020;
+}
+.reservation-results-header .reservation-results-header-main-area .search-results-filter-area .filter-item .filterBtn {
+  background: #ffffff;
+  color: #202020;
+  border: 1px solid #0C256F;
+}
+
+@media screen and (max-width: 992px) {
+  .reservation-results-header .reservation-results-header-main-area .search-results-filter-area {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reservation-results-header .reservation-results-header-main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reservation-results-header .reservation-results-header-main-area .search-results-filter-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container {
+  overflow: auto;
+  position: relative;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr {
+  height: 36px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th {
+  vertical-align: middle;
+  text-align: left;
+  min-width: 170px;
+  background: #EBECEE;
+  color: #202020;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+  text-align: left;
+  padding-left: 10px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  min-width: 151px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr {
+  height: 53px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td {
+  border: 1px solid #EBECEE;
+  white-space: normal;
+  text-align: center;
+  min-width: 170px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 10px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 151px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .pending {
+  color: #E3A52D;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: left;
+  padding-left: 10px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .pending .circle {
+  font-size: 12px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .success {
+  color: #12B76A;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: left;
+  padding-left: 10px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .success .circle {
+  font-size: 12px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .cancelled {
+  color: #E3642D;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: left;
+  padding-left: 10px;
+}
+.reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .cancelled .circle {
+  font-size: 12px;
+}
+
 header .top-header {
   background: #003087;
   height: 64px;

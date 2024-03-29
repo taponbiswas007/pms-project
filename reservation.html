@@ -12,9 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- main styles sheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -73,7 +76,7 @@
     </div>
     <div class="resevation-page-search-area">
         <div class="container-fluid">
-           <div class="reservation-page-search-main-area">
+            <div class="reservation-page-search-main-area">
                 <div class="search-data-input-item">
                     <h1>Guest Name</h1>
                     <input type="text" placeholder="Search name">
@@ -94,261 +97,242 @@
                             <i class="fa-regular fa-calendar"></i>
                         </button>
                     </div>
-                   
+
                 </div>
                 <div class="search-button">
                     <button>search</button>
                 </div>
-           </div>
+            </div>
         </div>
     </div>
 
     <!-- reservation search results table area start -->
+    <div class="reservation-results-header">
+        <div class="container-fluid">
+            <div class="reservation-results-header-main-area">
+                <h1>8 Reservations found</h1>
+                <div class="search-results-filter-area">
+                    <div class="filter-item">
+                        <select name="" id="">
+                            <option value="">All Resevations</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <button>+ New Reservations</button>
+                    </div>
+                    <div class="filter-item">
+                        <button class="filterBtn">
+                            <i class="fa-solid fa-bars"></i>
+                            Customize
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="reservation-search-results-table-area">
-   
+        <div class="container-fluid">
             <div class="reservation-search-results-table-main-area">
-                <div class="table-container">
+                <div class="resevation-table-container">
                     <table>
-                      <thead>
-                        <tr>
-                          <th><button><img src="assets/images/ArrowsOutSimple.svg" alt="zoom"></button></th> 
-                          <th>THU <br> 12 DEC</th>
-                          <th>FRI <br> 13 DEC</th>
-                          <th>SAT <br> 14 DEC</th>
-                          <th>SUN <br> 15 DEC</th>
-                          <th>MON <br> 16 DEC</th>
-                          <th>THU <br> 17 DEC</th>
-                          <th>TUE <br> 18 DEC</th>
-                          <th>wed <br> 19 DEC</th>
-                          <th>thu <br> 20 DEC</th>
-                          <th>fri <br> 21 DEC</th>
-                          <th>sat <br> 22 DEC</th>
-                          <th>sun <br> 23 DEC</th>
-                          <th>mon <br> 24 DEC</th>
-                       
-                      
-                        </tr>
-                      </thead>
-                      <tbody>
-                       <tr>
-                        <td><button id="show-more">DOUBLE ROOM   
-                            <i class="fa-solid fa-angle-down down-arrow"></i>
-                        </button></td>
-                        <td colspan="13" style="background: #EBECEE;"></td>
-                       </tr>
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Guest Name</th>
+                                <th>Occupants</th>
+                                <th>Date</th>
+                                <th>Rooms</th>
+                                <th>Amount</th>
+                                <th>Booking via</th>
+                                <th>Status</th>
+                               
 
-                       <!-- double  room area start -->
-                        <tr class="doubleroom-row room1">
-                          <td>ROOM 1</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="doubleroom-row room2">
-                          <td>ROOM 2</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="doubleroom-row">
-                          <td>ROOM 3</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="doubleroom-row">
-                          <td>ROOM 4</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <!-- double  room area end -->
 
-                         <!-- familly  room area start -->
-                       <tr>
-                        <td><button id="show-moreFamillyRoom">FAMILY ROOM   
-                            <i class="fa-solid fa-angle-down down-arrow2"></i>
-                        </button></td>
-                        <td colspan="13" style="background: #EBECEE;"></td>
-                       </tr>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                       <!-- double  room area start -->
-                        <tr class="famillyroom-row ">
-                          <td>ROOM 1</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="famillyroom-row room1">
-                          <td>ROOM 2</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="famillyroom-row room2">
-                          <td>ROOM 3</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="famillyroom-row">
-                          <td>ROOM 4</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <!-- familly  room area   end -->
+                          
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><i class="fa-solid fa-phone-volume"></i></li>
+                                    <li>Call</li>
+                                </ul></td>
+                                <td class="pending">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Pending
+                                </td>
+                                
+                            </tr>
+                            <tr >
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
+                                    <li>Booking.com</li>
+                                </ul></td>
+                                <td class="success">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Success
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><i class="fa-solid fa-person-walking"></i></li>
+                                    <li>Call</li>
+                                </ul></td>
+                                <td class="cancelled">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Cancelled
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><i class="fa-solid fa-person-walking"></i></li>
+                                    <li>Call</li>
+                                </ul></td>
+                                <td class="pending">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Pending
+                                </td>
+                                
+                            </tr>
+                            <tr >
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><i class="fa-solid fa-phone-volume"></i></li>
+                                    <li>Call</li>
+                                </ul></td>
+                                <td class="success">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Success
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
+                                    <li>Booking.com</li>
+                                </ul></td>
+                                <td class="success">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    success
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><i class="fa-solid fa-phone-volume"></i></li>
+                                    <li>Call</li>
+                                </ul></td>
+                                <td class="pending">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Pending
+                                </td>
+                                
+                            </tr>
+                            <tr >
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
+                                    <li>Booking.com</li>
+                                </ul></td>
+                                <td class="success">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Success
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td><ul>
+                                    <li><i class="fa-solid fa-person-walking"></i></li>
+                                    <li>Call</li>
+                                </ul></td>
+                                <td class="cancelled">
+                                    <i class="fa-solid fa-circle circle"></i>
+                                    Pending
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                               
+                                
+                            </tr>
+                            
+                          
 
-                         <!-- standard  room area start -->
-                       <tr>
-                        <td><button id="show-morestandardRoom">STANDARD ROOM  
-                            <i class="fa-solid fa-angle-down down-arrow3"></i>
-                        </button></td>
-                        <td colspan="13" style="background: #EBECEE;"></td>
-                       </tr>
 
-                       <!-- double  room area start -->
-                        <tr class="standardroom-row ">
-                          <td>ROOM 1</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="standardroom-row">
-                          <td>ROOM 2</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr class="standardroom-row room1" >
-                          <td>ROOM 3</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                      
-                        <!-- standard   room area   end -->
-                        
-                      </tbody>
+
+                        </tbody>
                     </table>
 
                     <div class="reservationPersondetails-alart-area" id="reservationPersonDetailsOpen">
                         <div class="reservation-person-details-main-area">
                             <div class="reservation-person-details-header">
                                 <h1>Reservation #AB2IT9 For Kumar, Pritam</h1>
-                               <button id="reservationPersonDetailsClose">
-                                <i class="fa-solid fa-x"></i>
-                               </button>
+                                <button id="reservationPersonDetailsClose">
+                                    <i class="fa-solid fa-x"></i>
+                                </button>
                             </div>
                             <div class="person-detalis-content">
                                 <div class="information-item">
@@ -362,13 +346,14 @@
                                     </div>
                                     <div class="contact-item">
                                         <h1>Reminder</h1>
-                                       <div class="massage-item">
-                                        <ul>
-                                            <li><a href="#"><img src="assets/images/gmail.svg" alt="gmail"></a></li>
-                                            <li><a href="#"><img src="assets/images/whatsapp.svg" alt="whatsapp"></a></li>
-                                            <li><a href="#"><img src="assets/images/sms.svg" alt="massage"></a></li>
-                                        </ul>
-                                       </div>
+                                        <div class="massage-item">
+                                            <ul>
+                                                <li><a href="#"><img src="assets/images/gmail.svg" alt="gmail"></a></li>
+                                                <li><a href="#"><img src="assets/images/whatsapp.svg"
+                                                            alt="whatsapp"></a></li>
+                                                <li><a href="#"><img src="assets/images/sms.svg" alt="massage"></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="information-item">
@@ -383,22 +368,24 @@
                                     <div class="contact-item">
                                         <button>unpaid</button>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                  
-                  
+                </div>
+
+
             </div>
-      
+        </div>
     </div>
     <!-- reservation search results table area end -->
     <!-- main area end -->
 
     <!-- font awesome js link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- jquery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- main js link -->
