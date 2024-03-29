@@ -1,0 +1,90 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.viabookingpopup-area{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background: $white;
+    border-radius: 8px;
+    max-width: 1260px;
+    margin: 0 10px;
+    width: 100%;
+    z-index: 4;
+    .viabooking-main-area{
+        .viabooking-header{
+            text-align: center;
+            margin-top: 72px;
+            ul{
+                li{
+                    display: inline-block;
+                    
+                    &:last-child{
+                        vertical-align: top;
+                        font-size: 32px;
+                    font-family: $dmSans;
+                    font-weight: 500;
+                    color: $simpleblack;
+                    margin-top: 4px;
+                    margin-left: 10px;
+                    }
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $dmSans;
+            color: #656970;
+            text-align: center;
+            margin-top: 7px;
+            margin-bottom: 28px;
+        }
+        .viabooking-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 16px;
+            .viabooking-item{
+                @include commonBtnstyle;
+                background: $white;
+                color: $simpleblack;
+                border: 1px solid $gray;
+                cursor: pointer;
+                ul{
+                    li{
+                        display: inline-block;
+                        margin-right: 7px;
+                        vertical-align: middle;
+                        span{
+                            display: block;
+                            color: $green;
+
+                        }
+                        .checkmark{
+                            display: none;
+                        }
+                    }
+                }
+                &:hover{
+                    border: 1px solid #0C256F;
+                    background:#EAF1FF ;
+                }
+            }
+            .viaselect{
+                border: 1px solid #0C256F;
+                background:#EAF1FF ;
+            }
+        }
+        h2{}
+        .viabooking-date-box{
+
+        }
+        .viabooking-area-footer{
+            button{
+
+            }
+        }
+    }
+}

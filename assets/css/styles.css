@@ -62,6 +62,16 @@ button {
   background: none;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .calenderOrtable-selector {
   padding: 14px 0;
 }
@@ -836,6 +846,10 @@ button {
   background: #F1F1F1;
   height: 59px;
 }
+.footer-area .footer-main-area {
+  padding-top: 20px;
+  padding-left: 50px;
+}
 .footer-area .footer-main-area p {
   color: #202020;
   text-align: left;
@@ -843,8 +857,6 @@ button {
   font-size: 19px;
   font-weight: 400;
   color: #1E1E1E;
-  margin-top: 20px;
-  margin-left: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1178,4 +1190,93 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
 }
 .reservationPersondetails-alart-area .reservation-person-details-main-area .person-detalis-content .information-item .reservationType span {
   color: #292929;
+}
+
+.viabookingpopup-area {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 1260px;
+  margin: 0 10px;
+  width: 100%;
+  z-index: 4;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-header {
+  text-align: center;
+  margin-top: 72px;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-header ul li {
+  display: inline-block;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-header ul li:last-child {
+  vertical-align: top;
+  font-size: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: #202020;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.viabookingpopup-area .viabooking-main-area p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  color: #656970;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 28px;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-list .viabooking-item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #ffffff;
+  color: #202020;
+  border: 1px solid #EBECEE;
+  cursor: pointer;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-list .viabooking-item ul li {
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-list .viabooking-item ul li span {
+  display: block;
+  color: #12B76A;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-list .viabooking-item ul li .checkmark {
+  display: none;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-list .viabooking-item:hover {
+  border: 1px solid #0C256F;
+  background: #EAF1FF;
+}
+.viabookingpopup-area .viabooking-main-area .viabooking-list .viaselect {
+  border: 1px solid #0C256F;
+  background: #EAF1FF;
 }

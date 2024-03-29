@@ -41,8 +41,15 @@ $(document).ready(function(){
     $('#room1 td:nth-child(n+4):nth-child(-n+4)::after').attr('id', 'roomOneperson');
 
 
-    // Now you can use $('#generatedContent') to select this content
+   
     $('#roomOneperson').click(function() {
+        $("#reservationPersonDetailsOpen").show();
+    });
+    $(".headersearchBtn").click(function(){
+        $(".popupinput").show();
+    });
+
+    $('.viabooking-item').click(function() {
         $("#reservationPersonDetailsOpen").show();
     });
     $(".headersearchBtn").click(function(){

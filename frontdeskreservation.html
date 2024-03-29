@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main styles sheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <!-- header area start -->
+    <header>
+        <div class="top-header">
+            <div class="container-fluid">
+                <div class="top-header-main-area">
+                    <div class="logo-area">
+                        <a href="#" class="logo">
+                            <img src="assets/images/Bed.svg" alt="logo">
+                        </a>
+                        <h1>PMS UX/UI</h1>
+                    </div>
+                    <div class="top-header-right">
+                        <div class="search-data-input">
+                            <input type="search" placeholder="Search for Name, Phone, Guest ID" class="popupinput">
+                        </div>
+                        <button class="headersearchBtn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="user-logo">
+                            <span>D</span>
+                        </div>
+                    </div>
+                    <button class="toggle-bar">
+                        <i class="fa-solid fa-bars bars"></i>
+                        <i class="fa-solid fa-x close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container-fluid">
+                <div class="bottom-header-main-area">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="calender_book.html">Dashboard</a></li>
+                            <li><a class="active" href="reservation.html">Reservation</a></li>
+                            <li><a href="#">Check-in</a></li>
+                            <li><a href="#">Check-out</a></li>
+                            <li><a href="#">Housekeeping</a></li>
+                       
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- main area start -->
+    <div class="reservation-header">
+        <div class="container-fluid">
+            <div class="calender-header">
+                <h1>Reservations</h1>
+              
+            </div>
+        </div>
+    </div>
+    <div class="resevation-page-search-area">
+        <div class="container-fluid">
+            <div class="reservation-page-search-main-area">
+                <div class="search-data-input-item">
+                    <h1>Guest Name</h1>
+                    <input type="text" placeholder="Search name">
+                </div>
+                <div class="search-data-input-item">
+                    <h1>Booking ID</h1>
+                    <input type="text" placeholder="#00000">
+                </div>
+                <div class="search-data-input-item">
+                    <h1>Invoice Number</h1>
+                    <input type="text" placeholder="INV.00000">
+                </div>
+                <div class="search-data-input-item">
+                    <h1>Stays Date</h1>
+                    <div class="date-input-area">
+                        <input type="text" placeholder="01 Jan 2023 - 05 Jan 2023">
+                        <button>
+                            <i class="fa-regular fa-calendar"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="search-button">
+                    <button>search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- reservation search results table area start -->
+    <div class="reservation-results-header">
+        <div class="container-fluid">
+            <div class="reservation-results-header-main-area">
+                <h1>8 Reservations found</h1>
+                <div class="search-results-filter-area">
+                    <div class="filter-item">
+                        <button class="filterBtn">
+                            Export
+                        </button>
+                    </div>
+                    <div class="filter-item">
+                        <button>+ New Reservations</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reservation-search-results-table-area">
+        <div class="container-fluid">
+            <div class="reservation-search-results-table-main-area">
+                <div class="resevation-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Guest Name</th>
+                                <th>Occupants</th>
+                                <th>Date</th>
+                                <th>Rooms</th>
+                                <th>Amount</th>
+                                <th>Amount Remaining</th>
+                                <th>Invoice Number</th>
+                               
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            <tr>
+                                <td>#AB21B8</td>
+                                <td>Mr. Kumar, Pritam</td>
+                                <td>2 Adults, 0 Kid</td>
+                                <td>01 Jan - 05 Jan 2023</td>
+                                <td>Deluxe Room, 123</td>
+                                <td>$000.00</td>
+                                <td>-$00.00</td>
+                                <td>INV.00000</td>
+                            </tr>
+                            
+                          
+
+
+
+                        </tbody>
+                    </table>
+
+                    <div class="reservationPersondetails-alart-area" id="reservationPersonDetailsOpen">
+                        <div class="reservation-person-details-main-area">
+                            <div class="reservation-person-details-header">
+                                <h1>Reservation #AB2IT9 For Kumar, Pritam</h1>
+                                <button id="reservationPersonDetailsClose">
+                                    <i class="fa-solid fa-x"></i>
+                                </button>
+                            </div>
+                            <div class="person-detalis-content">
+                                <div class="information-item">
+                                    <div class="contact-item">
+                                        <h1>Phone Number: </h1>
+                                        <p>473 2187 219</p>
+                                    </div>
+                                    <div class="contact-item">
+                                        <h1>Booking Status: </h1>
+                                        <span>Confirmed</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <h1>Reminder</h1>
+                                        <div class="massage-item">
+                                            <ul>
+                                                <li><a href="#"><img src="assets/images/gmail.svg" alt="gmail"></a></li>
+                                                <li><a href="#"><img src="assets/images/whatsapp.svg"
+                                                            alt="whatsapp"></a></li>
+                                                <li><a href="#"><img src="assets/images/sms.svg" alt="massage"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="information-item">
+                                    <div class="contact-item">
+                                        <h1>Email ID:</h1>
+                                        <p>Pritam@gmaill.com</p>
+                                    </div>
+                                    <div class="contact-item reservationType">
+                                        <h1>Reservation Type:</h1>
+                                        <span>Inperson</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <button>unpaid</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- reservation search results table area end -->
+    <!-- main area end -->
+    <footer>
+        <div class="footer-area">
+            <div class="container-fluid">
+                <div class="footer-main-area">
+                    <p> D. Talaviya - 28th Mar 24 02:25 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- via booking pop up area start -->
+    <div class="viabookingpopup-area">
+        <div class="viabooking-main-area">
+            <div class="viabooking-header">
+                <ul>
+                    <li><img src="assets/images/Notepad.svg" alt="img"></li>
+                    <li>Booking </li>
+                </ul>
+            </div>
+            <p>You can draw on which date you wanna stay before you choose the room.</p>
+            <div class="viabooking-list">
+                <div class="viabooking-item">
+                    <ul>
+                        <li><i class="fa-solid fa-phone-volume"></i></li>
+                        <li>call</li>
+                        <li><span class="checkmark">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                    </ul>
+                </div>
+                <div class="viabooking-item">
+                    <ul>
+                        <li><i class="fa-solid fa-person-walking"></i></li>
+                        <li>Walking</li>
+                        <li><span class="checkmark">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                    </ul>
+                </div>
+                <div class="viabooking-item viaselect">
+                    <ul>
+                        <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
+                        <li>Group booking</li>
+                        <li><span class="checkmark">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                    </ul>
+                </div>
+            </div>
+            <h2></h2>
+            <div class="viabooking-date-box">
+                <div class="search-data-input-item">
+                    <h1>Stays Date</h1>
+                    <div class="date-input-area">
+                        <input type="text" placeholder="01 Jan 2023 - 05 Jan 2023">
+                        <button>
+                            <i class="fa-regular fa-calendar"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="viabooking-area-footer">
+                <button>Next Step</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- via booking pop up area end -->
+    <!-- font awesome js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- main js link -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
