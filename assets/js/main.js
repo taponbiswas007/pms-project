@@ -48,13 +48,29 @@ $(document).ready(function(){
     $(".headersearchBtn").click(function(){
         $(".popupinput").show();
     });
+    $("#newReservation").click(function(){
+        $(".overlay").fadeIn();
+        $(".viabookingpopup-area").fadeIn();
+    });
 
     $('.viabooking-item').click(function() {
-        $("#reservationPersonDetailsOpen").show();
+        // Remove the class from all elements
+        $('.viabooking-item').removeClass('viaselect');
+    
+        // Toggle the class for the clicked item
+        $(this).addClass('viaselect');
+    
+        // Hide the checkmark from all elements
+        $('.viabooking-item .checkmark').hide();
+    
+        // Show the checkmark for the clicked item
+        $(this).find(".checkmark").show();
     });
-    $(".headersearchBtn").click(function(){
-        $(".popupinput").show();
-    });
+    
+    
+    
+    
+    
     
       
 });

@@ -2,20 +2,22 @@
 @import '../utils/variables';
 
 .viabookingpopup-area{
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
-    background: $white;
-    border-radius: 8px;
-    max-width: 1260px;
-    margin: 0 10px;
+    max-width: 1240px;
     width: 100%;
     z-index: 4;
+    display: none;
     .viabooking-main-area{
+        background: $white;
+        border-radius: 8px;
+        margin: 20px;
+        padding-top: 72px;
         .viabooking-header{
             text-align: center;
-            margin-top: 72px;
+          
             ul{
                 li{
                     display: inline-block;
@@ -46,6 +48,7 @@
             justify-content: center;
             align-items: center;
             column-gap: 16px;
+            margin-bottom: 39px;
             .viabooking-item{
                 @include commonBtnstyle;
                 background: $white;
@@ -77,14 +80,97 @@
                 background:#EAF1FF ;
             }
         }
-        h2{}
+       
         .viabooking-date-box{
+            max-width: 310px;
+            width: 100%;
+            margin: 0 auto;
+            .search-data-input-item {
 
+                h1 {
+                  color: $searchlabelcolor;
+                  font-family: $inter;
+                  font-size: 14px;
+                  font-weight: 500;
+                  margin-bottom: 6px
+                }
+          
+                input {
+                  @include dataInputboxStyle;
+                  border: 1px solid #D0D5DD;
+                  color: #667085;
+                  font-family: $inter;
+                  font-size: 16px;
+                  width: 100%;
+                }
+          
+                .date-input-area {
+                  position: relative;
+          
+                  input {
+                    @include dataInputboxStyle;
+                    border: 1px solid #D0D5DD;
+                    color: #667085;
+                    font-family: $inter;
+                    font-size: 16px;
+                    width: 100%;
+                  }
+          
+                  button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 8px;
+                    color: $simpleblack;
+                    font-size: 20px;
+                  }
+                }
+          
+              }
         }
         .viabooking-area-footer{
+            border-top: 1px solid $gray;
+            padding: 18px 40px;
+            text-align: right;
+            margin-top: 35px;
             button{
-
+                @include commonBtnstyle;
+                background: $blue;
+                color: $white;
             }
         }
     }
+}
+@media  screen and (max-width: 540px) {
+    .viabookingpopup-area{
+        .viabooking-main-area{
+            .viabooking-list{
+                flex-wrap: wrap;
+                row-gap: 20px;
+            }
+        }
+    }
+}
+@media  screen and (max-width: 376px) {
+    .viabookingpopup-area{
+        .viabooking-main-area{
+         .viabooking-date-box{
+            max-width: 257px;
+         }
+        }
+    }
+}
+@media  screen and (max-width: 346px) {
+    .viabookingpopup-area{
+        .viabooking-main-area{
+           p{
+            font-size: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
+           } 
+        }
+    }
+    //body{
+    //    overflow-x: hidden;
+    //}
 }

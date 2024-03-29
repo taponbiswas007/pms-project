@@ -288,3 +288,32 @@ header {
 
     }
 }
+@media screen and (max-width: 346px) {
+    header {
+        .top-header {
+            .top-header-main-area {
+                .logo-area {
+                    min-width: 174px;
+                    h1{
+                        font-size: 18px;
+                    }
+                }
+                .top-header-right {
+                    .search-data-input {
+                        input {
+                           
+                            width: 200px;
+                            display: none;
+                        }
+
+
+
+                    }
+
+                
+                }
+            }
+        }
+
+    }
+}
