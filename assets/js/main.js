@@ -45,6 +45,9 @@ $(document).ready(function(){
     $('#roomOneperson').click(function() {
         $("#reservationPersonDetailsOpen").show();
     });
+    $(".headersearchBtn").click(function(){
+        $(".popupinput").show();
+    });
     
       
 });
