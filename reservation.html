@@ -44,8 +44,8 @@
                 <div class="bottom-header-main-area">
                     <nav class="navbar">
                         <ul>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="reservation.html">Reservation</a></li>
+                            <li><a href="calender_book.html">Dashboard</a></li>
+                            <li><a class="active" href="reservation.html">Reservation</a></li>
                             <li><a href="#">Check-in</a></li>
                             <li><a href="#">Check-out</a></li>
                             <li><a href="#">Housekeeping</a></li>
@@ -61,60 +61,45 @@
     <!-- header area end -->
 
     <!-- main area start -->
-    <div class="calenderOrtable-selector">
+    <div class="reservation-header">
         <div class="container-fluid">
-            <div class="calenderOrtable-button-area">
+            <div class="calender-header">
+                <h1>Calendar Book </h1>
                 <button>
-                    <i class="fa-regular fa-calendar"></i>
-                </button>
-                <button>
-                    <i class="fa-solid fa-table"></i>
+                    <img src="assets/images/relax.svg" alt="relax">
                 </button>
             </div>
         </div>
     </div>
-    <div class="resevation-search-area">
+    <div class="resevation-page-search-area">
         <div class="container-fluid">
-            <div class="reservation-search-main-area">
-                <div class="calender-header">
-                    <h1>Calendar Book </h1>
+           <div class="reservation-page-search-main-area">
+                <div class="search-data-input-item">
+                    <h1>Guest Name</h1>
+                    <input type="text" placeholder="Search name">
                 </div>
-                <div class="reservation-search-property">
-                    <div class="search-date-selector-box">
-                        <span>Stay Dates</span>
-                       <input type="text" placeholder="11/12/2023-15/12/2023">
-                       
-                    </div>
-                    <div class="paidOrunpaid-selector">
-                        <select name="" id="">
-                            <option value="">paid</option>
-                            <option value="">unpaid</option>
-                        </select>
-                    </div>
-                    <div class="resevationtype-selector">
-                        <select name="" id="">
-                            <option value="">Reservation Type</option>
-                            <option value="">Reservation Type</option>
-                            <option value="">Reservation Type</option>
-                            
-                        </select>
-                    </div>
-                    <div class="dailyOrmonthly-selector">
-                        <select name="" id="">
-                            <option value="">daily</option>
-                            <option value="">weekly</option>
-                            <option value="">monthly</option>
-                            
-                        </select>
-                    </div>
-                    <button class="reservation-search-btn">
-                        search
-                    </button>
-                    <button class="new-reservation-btn">
-                        + Reservations
-                    </button>
+                <div class="search-data-input-item">
+                    <h1>Booking ID</h1>
+                    <input type="text" placeholder="#00000">
                 </div>
-            </div>
+                <div class="search-data-input-item">
+                    <h1>Invoice Number</h1>
+                    <input type="text" placeholder="INV.00000">
+                </div>
+                <div class="search-data-input-item">
+                    <h1>Stays Date</h1>
+                    <div class="date-input-area">
+                        <input type="text" placeholder="01 Jan 2023 - 05 Jan 2023">
+                        <button>
+                            <i class="fa-regular fa-calendar"></i>
+                        </button>
+                    </div>
+                   
+                </div>
+                <div class="search-button">
+                    <button>search</button>
+                </div>
+           </div>
         </div>
     </div>
 

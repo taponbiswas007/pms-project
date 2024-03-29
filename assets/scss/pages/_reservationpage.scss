@@ -1,0 +1,150 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+.reservation-header{
+    margin-top: 68px;
+    margin-bottom: 23px;
+    .calender-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            color: $simpleblack;
+            font-size: 38px;
+            font-family: $dmSans;
+            font-weight: 600;
+
+        }
+        button{
+            @include commonBtnstyle;
+            background: $blue;
+        }
+    }
+}
+.resevation-page-search-area{
+    margin-bottom: 36px;
+    .reservation-page-search-main-area{
+        padding: 36px;
+        background: $white;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: .875fr .875fr .875fr .875fr .5fr ;
+        column-gap: 24px;
+        row-gap: 24px;
+        .search-data-input-item{
+            
+            h1{
+                color: $searchlabelcolor;
+                font-family: $inter;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 6px
+            }
+            input{
+                @include dataInputboxStyle;
+                border: 1px solid #D0D5DD;
+                color: #667085;
+                font-family: $inter;
+                font-size: 16px;
+                width: 100%;
+            }
+            .date-input-area{
+                position: relative;
+                input{
+                    @include dataInputboxStyle;
+                    border: 1px solid #D0D5DD;
+                    color: #667085;
+                    font-family: $inter;
+                    font-size: 16px;
+                    width: 100%;
+                }
+                button{
+                    position: absolute;
+                   top: 50%;
+                   transform: translateY(-50%);
+                  right: 8px;
+                    color: $simpleblack;
+                    font-size: 20px;
+                }
+            }
+          
+        }
+        .search-button{
+            button{
+              @include  commonBtnstyle;
+              background: $blue;
+              margin-top: 20px;
+              margin-left: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+  .resevation-page-search-area{
+    .reservation-page-search-main-area{
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        padding: 36px 15px;
+        .search-button{
+            button{
+              margin-left: 0;
+            }
+        }
+    }
+  }  
+}
+@media screen and (max-width: 768px){
+  .resevation-page-search-area{
+    .reservation-page-search-main-area{
+        grid-template-columns: repeat(3, 1.33fr);
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        padding: 36px 15px;
+        .search-data-input-item{
+            &:nth-child(4){
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+               
+        }
+        .search-button{
+            button{
+              margin-left: 0;
+            }
+        }
+    }
+  }  
+}
+@media screen and (max-width: 540px){
+  .resevation-page-search-area{
+    .reservation-page-search-main-area{
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: auto auto;
+        .search-data-input-item{
+            &:nth-child(4){
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+               
+        }
+        .search-button{
+            button{
+              margin-left: 0;
+            }
+        }
+    }
+  }  
+}
+@media screen and (max-width: 420px){
+  .resevation-page-search-area{
+    .reservation-page-search-main-area{
+        grid-template-columns: repeat(5, 4fr);
+        grid-template-rows: auto auto;
+      
+        .search-button{
+            button{
+              margin-left: 0;
+            }
+        }
+    }
+  }  
+}

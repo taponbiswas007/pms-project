@@ -61,6 +61,12 @@ header {
                             &:hover {
                                 color: $skyblue;
                             }
+                            &:focus {
+                                color: $skyblue;
+                            }
+                        }
+                        .active{
+                            color: $skyblue;
                         }
 
                         &:last-child {
