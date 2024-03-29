@@ -62,6 +62,10 @@ button {
   background: none;
 }
 
+img {
+  width: 100%;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -71,6 +75,10 @@ button {
   z-index: 3;
   background: rgba(0, 0, 0, 0.5);
   display: none;
+}
+
+.m-r {
+  margin-right: 10px;
 }
 
 .calenderOrtable-selector {
@@ -912,6 +920,7 @@ button {
   background: #ffffff;
   display: grid;
   grid-template-columns: 2fr 2fr;
+  padding-left: 40px;
 }
 .person-information-main-area .personal-info {
   padding: 10px;
@@ -942,7 +951,7 @@ button {
 .person-information-main-area .personal-info .personal-info-input-area {
   display: grid;
   grid-template-columns: repeat(3, 1.33fr);
-  row-gap: 20px;
+  row-gap: 30px;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -1014,9 +1023,10 @@ button {
   grid-column-start: 1;
   grid-column-end: 4;
   display: grid;
-  grid-template-columns: repeat(2, 2fr); /* Two columns with equal width */
+  grid-template-columns: repeat(2, 2fr);
+  /* Two columns with equal width */
   grid-template-rows: auto auto;
-  row-gap: 20px;
+  row-gap: 30px;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -1079,22 +1089,417 @@ button {
           align-items: center;
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(1) {
-  grid-row: 1; /* First row */
-  grid-column: 1; /* First column */
+  grid-row: 1;
+  /* First row */
+  grid-column: 1;
+  /* First column */
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(2) {
-  grid-row: 1; /* First row */
-  grid-column: 2; /* Second column */
+  grid-row: 1;
+  /* First row */
+  grid-column: 2;
+  /* Second column */
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(3) {
-  grid-row: 2; /* Second row */
-  grid-column: 1; /* First column */
+  grid-row: 2;
+  /* Second row */
+  grid-column: 1;
+  /* First column */
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(4) {
-  grid-row: 2; /* Second row */
-  grid-column: 2; /* Second column */
+  grid-row: 2;
+  /* Second row */
+  grid-column: 2;
+  /* Second column */
+}
+.person-information-main-area .personal-info .images-id-capture-area {
+  margin-top: 30px;
+}
+.person-information-main-area .personal-info .images-id-capture-area h1 {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  color: #344054;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.person-information-main-area .personal-info .images-id-capture-area .capture-mian-area {
+  border: 2px solid #EBECEE;
+  padding: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-left-side ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-left-side ul li span:first-child {
+  float: left;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  line-height: 23px;
+  color: #202020;
+}
+.person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-left-side ul li span:last-child {
+  float: left;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  line-height: 23px;
+  color: #202020;
+}
+.person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-left-side ul li:first-child {
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 0;
+  background: #202020;
+  color: #ffffff;
+  transition: 0.3s ease;
+  margin-right: 10px;
+}
+.person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side button:hover {
+  background: #000000;
+}
+.person-information-main-area .personal-info .import-document-area {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.person-information-main-area .personal-info .import-document-area .document-area-left .document-item-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.person-information-main-area .personal-info .import-document-area .document-area-left .document-item-area .document-item {
+  height: 61px;
+  width: 53px;
+  padding: 8px 3px;
+  border: 1px solid #EBECEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.person-information-main-area .personal-info .import-document-area .document-area-left .document-item-area .document-item::after {
+  content: "X";
+  color: red;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 1;
+}
+.person-information-main-area .personal-info .import-document-area .document-area-right button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 0;
+  background: #0C256F;
+  color: #ffffff;
+  transition: 0.3s ease;
+  margin-right: 10px;
+}
+.person-information-main-area .personal-info .import-document-area .document-area-right button:hover {
+  background: #003087;
+}
+.person-information-main-area .personal-info .import-document-area .document-area-right button:last-child {
+  background: none;
+  border: 1px solid #0C256F;
+  color: #01286D;
+  margin-right: 0;
+}
+.person-information-main-area .personal-info .import-document-area .document-area-right button .clock-icon {
+  margin-right: 10px;
+  -webkit-transform: rotateZ(160deg);
+          transform: rotateZ(160deg);
+}
+.person-information-main-area .personal-info .additional-information-header {
+  margin-top: 38px;
+}
+.person-information-main-area .personal-info .additional-information-header h1 {
+  font: 32px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  color: #202020;
+  text-transform: capitalize;
+  margin-bottom: 23px;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-catagory-item {
+  margin-bottom: 47px;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-catagory-item button {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-catagory-item button:first-child {
+  color: #0570DE;
+  border-bottom: 2px solid #0570DE;
+  margin-right: 20px;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-catagory-item button:last-child {
+  color: rgba(0, 0, 0, 0.6352941176);
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-catagory-item button:hover {
+  color: #0570DE;
+  border-bottom: 2px solid #0570DE;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .pet-select-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  margin-bottom: 37px;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .pet-select-area .pet-item {
+  height: 61px;
+  width: 74px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .pet-select-area .pet-item:first-child {
+  border: 1px solid #01286D;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .pet-select-area .pet-item:last-child {
+  border: 1px solid #EBECEE;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area {
+  margin-bottom: 55px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  /* Two columns with equal width */
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+  position: relative;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  background: #F7F8FA;
+  font-size: 11px;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box select {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .numberInputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item:nth-child(1) {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item:nth-child(2) {
+  margin-right: 15px;
+}
+.person-information-main-area .booking-info .personal-info-header h1 {
+  font-size: 33px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  color: #202020;
+  text-transform: capitalize;
 }
 
+@media screen and (max-width: 1300px) {
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-left-side {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side button:first-child {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-left-side {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side button:first-child {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .person-information-main-area .personal-info .personal-info-input-area .person-info-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .person-info-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .person-info-item:nth-child(3) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .person-info-item:nth-child(4) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .other-informaton {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(3) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(4) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .personal-info .import-document-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+}
 header .top-header {
   background: #003087;
   height: 64px;

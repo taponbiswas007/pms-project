@@ -48,3 +48,11 @@
     padding-left: 7px;
     cursor: pointer;
 }
+
+@mixin informationheader {
+    font-size: 33px;
+    font-weight: 500;
+    font-family: $dmSans;
+    color: $simpleblack;
+    text-transform: capitalize;
+}

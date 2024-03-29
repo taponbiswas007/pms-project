@@ -63,7 +63,7 @@
                             <li><a href="#">Check-in</a></li>
                             <li><a href="#">Check-out</a></li>
                             <li><a href="#">Housekeeping</a></li>
-                       
+
                         </ul>
                     </nav>
                 </div>
@@ -74,97 +74,202 @@
 
     <!-- main area start -->
     <main>
-     <div class="container-fluid">
-        <form action="">
-            <div class="person-information-main-area">
-                <div class="personal-info">
-                    <div class="personal-info-header">
-                        <h1>Personal Info</h1>
-                    <button>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </button>
+        <div class="container-fluid p-0">
+            <form action="">
+                <div class="person-information-main-area">
+                    <!-- personal information area start -->
+                    <div class="personal-info">
+                        <div class="personal-info-header">
+                            <h1>Personal Info</h1>
+                            <button>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="personal-info-input-area">
+                            <div class="person-info-item">
+                                <div class="info-input-box">
+                                    <span class="infolabel">First Name <span style="color: red;">*</span></span>
+                                    <input type="text" placeholder="Pritam">
+
+                                </div>
+                            </div>
+                            <div class="person-info-item">
+                                <div class="info-input-box">
+                                    <span class="infolabel">Middle Name <span style="color: red;">*</span></span>
+                                    <input type="text" placeholder="NA">
+
+                                </div>
+                            </div>
+                            <div class="person-info-item">
+                                <div class="info-input-box">
+                                    <span class="infolabel">last Name <span style="color: red;">*</span></span>
+                                    <input type="text" placeholder="kumar">
+
+                                </div>
+                            </div>
+                            <div class="person-info-item">
+                                <div class="info-input-box">
+                                    <span class="infolabel">Email</span>
+                                    <input type="email" placeholder="Pritam@gmail.com">
+
+                                </div>
+                            </div>
+                            <div class="other-informaton">
+                                <div class="person-info-item">
+                                    <div class="info-input-box numberInputbox">
+                                        <span class="infolabel">Phone Number</span>
+                                        <select name="" id="">
+                                            <option value="">US</option>
+                                        </select>
+                                        <input type="number" placeholder="000 000 00" class="inputnumberbox">
+
+                                    </div>
+                                </div>
+                                <div class="person-info-item">
+                                    <div class="info-input-box">
+                                        <span class="infolabel">Gender <span style="color: red;">*</span></span>
+                                        <select name="" id="" class="gender-select">
+                                            <option value="">men</option>
+                                        </select>
+
+
+                                    </div>
+                                </div>
+                                <div class="person-info-item">
+                                    <div class="info-input-box">
+                                        <span class="infolabel">Document Type <span style="color: red;">*</span></span>
+                                        <select name="" id="" class="gender-select">
+                                            <option value="">Passport</option>
+                                        </select>
+
+
+                                    </div>
+                                </div>
+                                <div class="person-info-item">
+                                    <div class="info-input-box numberInputbox">
+                                        <span class="infolabel">Document Number <span
+                                                style="color: red;">*</span></span>
+                                        <input type="number" placeholder="0000 0000 0000 0000" class="inputnumberbox">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- images capture area start -->
+                        <div class="images-id-capture-area">
+                            <h1>Image ID Captured</h1>
+                            <div class="capture-mian-area">
+                                <div class="images-id-left-side">
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/profile-img.png" alt="">
+                                        </li>
+                                        <li>
+                                            <span>Mr. Kumar ID</span> <br>
+                                            <span>Passport - 0000 0000 0000 0000</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="images-id-right-side">
+                                    <button>Attach Photo/ Ids</button>
+                                    <button>Capture Photo</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- images capture area end -->
+
+                        <!-- import document area start -->
+                        <div class="import-document-area">
+                            <div class="document-area-left">
+                                <div class="document-item-area">
+                                    <div class="document-item">
+                                        <img src="assets/images/driver-licence.png" alt="img">
+                                    </div>
+                                    <div class="document-item">
+                                        <img src="assets/images/passport.png" alt="img">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="document-area-right">
+                                <button>+ Extra Guest</button>
+                                <button><i class="fa-solid fa-clock-rotate-left clock-icon"></i>Booking History</button>
+                            </div>
+                        </div>
+                        <!-- import document area end -->
+
+                        <!-- additional information area start -->
+                        <div class="additional-information-header">
+                            <h1>Additional Info</h1>
+                        </div>
+                        <div class="additional-catagory-select-area">
+                            <div class="additional-catagory-item">
+                                <button>
+                                    <i class="fa-solid fa-paw m-r"></i> pet
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-car m-r"></i>Vehicles
+                                </button>
+                            </div>
+                            <div class="pet-select-area">
+                                <div class="pet-item">
+                                    <img src="assets/images/pet.png" alt="">
+                                </div>
+                                <div class="pet-item">
+                                    <img src="assets/images/pet-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="additional-item-data-input-area">
+                                <div class="person-info-item">
+                                    <div class="info-input-box numberInputbox">
+                                        <span class="infolabel">Document Number <span
+                                                style="color: red;">*</span></span>
+                                        <input type="number" placeholder="0000 0000 0000 0000" class="inputnumberbox">
+
+                                    </div>
+                                </div>
+                                <div class="person-info-item">
+                                    <div class="info-input-box">
+                                        <span class="infolabel">last Name <span style="color: red;">*</span></span>
+                                        <input type="text" placeholder="kumar">
+
+                                    </div>
+                                </div>
+                                <div class="person-info-item">
+                                    <div class="info-input-box numberInputbox">
+                                        <span class="infolabel">Phone Number</span>
+                                        <select name="" id="">
+                                            <option value="">US</option>
+                                        </select>
+                                        <input type="number" placeholder="000 000 00" class="inputnumberbox">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- additional information area end -->
                     </div>
-                    <div class="personal-info-input-area">
-                        <div class="person-info-item">
-                            <div class="info-input-box">
-                                <span class="infolabel">First Name <span style="color: red;">*</span></span>
-                               <input type="text" placeholder="Pritam">
-                               
+                    <!-- personal information area end-->
+
+                    <!-- booking information area start -->
+                    <div class="booking-info">
+                        <div class="personal-info-header">
+                            <h1>Booking Info</h1>
+                            <div class="booking-information-search-area">
+                                <input type="search" placeholder="Search for Name, ID documents, Phone no.">
                             </div>
                         </div>
-                        <div class="person-info-item">
-                            <div class="info-input-box">
-                                <span class="infolabel">Middle Name <span style="color: red;">*</span></span>
-                               <input type="text" placeholder="NA">
-                               
-                            </div>
-                        </div>
-                        <div class="person-info-item">
-                            <div class="info-input-box">
-                                <span class="infolabel">last Name <span style="color: red;">*</span></span>
-                               <input type="text" placeholder="kumar">
-                               
-                            </div>
-                        </div>
-                        <div class="person-info-item">
-                            <div class="info-input-box">
-                                <span class="infolabel">Email</span>
-                               <input type="email" placeholder="Pritam@gmail.com">
-                               
-                            </div>
-                        </div>
-                       <div class="other-informaton">
-                        <div class="person-info-item">
-                            <div class="info-input-box numberInputbox">
-                                <span class="infolabel">Phone Number</span>
-                                <select name="" id="">
-                                    <option value="">US</option>
-                                </select>
-                               <input type="number" placeholder="000 000 00" class="inputnumberbox">
-                               
-                            </div>
-                        </div>
-                        <div class="person-info-item">
-                            <div class="info-input-box">
-                                <span class="infolabel">Gender <span style="color: red;">*</span></span>
-                                <select name="" id="" class="gender-select">
-                                    <option value="">men</option>
-                                </select>
-                               
-                               
-                            </div>
-                        </div>
-                        <div class="person-info-item">
-                            <div class="info-input-box">
-                                <span class="infolabel">Document Type <span style="color: red;">*</span></span>
-                                <select name="" id="" class="gender-select">
-                                    <option value="">Passport</option>
-                                </select>
-                               
-                               
-                            </div>
-                        </div>
-                        <div class="person-info-item">
-                            <div class="info-input-box numberInputbox">
-                                <span class="infolabel">Document Number <span style="color: red;">*</span></span>
-                               <input type="number" placeholder="0000 0000 0000 0000" class="inputnumberbox">
-                               
-                            </div>
-                        </div>
-                       </div>
                     </div>
-                    <div class="images-id-capture-area">
-                        
-                    </div>
+                      <!-- booking information area end -->
                 </div>
-                <div class="booking-info"></div>
-            </div>
-        </form>
-     </div>
+            </form>
+        </div>
     </main>
     <!-- main area end -->
     <footer>
@@ -194,8 +299,8 @@
                         <li><i class="fa-solid fa-phone-volume"></i></li>
                         <li>call</li>
                         <li><span class="checkmark">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span></li>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span></li>
                     </ul>
                 </div>
                 <div class="viabooking-item ">
@@ -203,8 +308,8 @@
                         <li><i class="fa-solid fa-person-walking"></i></li>
                         <li>Walking</li>
                         <li><span class="checkmark">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span></li>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span></li>
                     </ul>
                 </div>
                 <div class="viabooking-item ">
@@ -212,8 +317,8 @@
                         <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
                         <li>Group booking</li>
                         <li><span class="checkmark">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span></li>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span></li>
                     </ul>
                 </div>
             </div>
