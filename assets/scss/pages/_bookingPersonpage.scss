@@ -1,0 +1,202 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.person-information-main-area {
+    background: $white;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+    .personal-info {
+        padding: 10px;
+
+        .personal-info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 33px;
+                font-weight: 500;
+                font-family: $dmSans;
+                color: $simpleblack;
+                text-transform: capitalize;
+            }
+
+            button {
+                color: $green;
+                font-size: 15px;
+
+            }
+        }
+
+        .personal-info-input-area {
+            display: grid;
+            grid-template-columns: repeat(3, 1.33fr);
+            row-gap: 20px;
+            column-gap: 15px;
+
+            .person-info-item {
+                .info-input-box {
+                    @include dataInputboxStyle;
+                    position: relative;
+
+                    .infolabel {
+                        position: absolute;
+                        top: -10px;
+                        left: 12px;
+                        color: $simpleblack;
+                        font-family: $roboto;
+                        font-weight: 400;
+                        padding: 0 8px;
+                        background: $darkwhite;
+                        font-size: 11px;
+
+                    }
+
+                    input {
+                        color: $black;
+                        font-family: $roboto;
+                        font-size: 13px;
+                        font-weight: 400;
+                        text-align: left;
+                        width: 100%;
+                        background: none;
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .inputnumberbox {
+                        -moz-appearance: textfield;
+                    }
+
+                    select {
+                        background: none;
+                        border: none;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        font-family: $roboto;
+                        color: $black;
+                        font-weight: 400;
+                    }
+
+                    .gender-select {
+                        width: 100%;
+                    }
+                }
+
+                .numberInputbox {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                &:nth-child(4) {
+                    grid-row-start: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                }
+
+               
+
+
+
+            }
+
+            .other-informaton {
+                grid-row-start: 3;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                display: grid;
+                grid-template-columns: repeat(2, 2fr); /* Two columns with equal width */
+                grid-template-rows: auto auto;
+                row-gap: 20px;
+                column-gap: 15px;
+
+                .person-info-item {
+                    .info-input-box {
+                        @include dataInputboxStyle;
+                        position: relative;
+
+                        .infolabel {
+                            position: absolute;
+                            top: -10px;
+                            left: 12px;
+                            color: $simpleblack;
+                            font-family: $roboto;
+                            font-weight: 400;
+                            padding: 0 8px;
+                            background: $darkwhite;
+                            font-size: 11px;
+
+                        }
+
+                        input {
+                            color: $black;
+                            font-family: $roboto;
+                            font-size: 13px;
+                            font-weight: 400;
+                            text-align: left;
+                            width: 100%;
+                            background: none;
+                            border: none;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .inputnumberbox {
+                            -moz-appearance: textfield;
+                        }
+
+                        select {
+                            background: none;
+                            border: none;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            font-family: $roboto;
+                            color: $black;
+                            font-weight: 400;
+                        }
+
+                        .gender-select {
+                            width: 100%;
+                        }
+                    }
+
+                    .numberInputbox {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+
+                    &:nth-child(1) {
+                        grid-row: 1; /* First row */
+                        grid-column: 1; /* First column */
+                      }
+                      
+                      &:nth-child(2) {
+                        grid-row: 1; /* First row */
+                        grid-column: 2; /* Second column */
+                      }
+                      
+                      &:nth-child(3) {
+                        grid-row: 2; /* Second row */
+                        grid-column: 1; /* First column */
+                      }
+                      
+                      &:nth-child(4) {
+                        grid-row: 2; /* Second row */
+                        grid-column: 2; /* Second column */
+                      }
+                      
+                }
+
+            }
+        }
+    }
+}

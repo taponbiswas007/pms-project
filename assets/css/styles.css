@@ -908,6 +908,193 @@ button {
     font-size: 15px;
   }
 }
+.person-information-main-area {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.person-information-main-area .personal-info {
+  padding: 10px;
+}
+.person-information-main-area .personal-info .personal-info-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.person-information-main-area .personal-info .personal-info-header h1 {
+  font-size: 33px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  color: #202020;
+  text-transform: capitalize;
+}
+.person-information-main-area .personal-info .personal-info-header button {
+  color: #12B76A;
+  font-size: 15px;
+}
+.person-information-main-area .personal-info .personal-info-input-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1.33fr);
+  row-gap: 20px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+  position: relative;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  background: #F7F8FA;
+  font-size: 11px;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box select {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .numberInputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* Two columns with equal width */
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+  position: relative;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  background: #F7F8FA;
+  font-size: 11px;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box select {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .numberInputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(1) {
+  grid-row: 1; /* First row */
+  grid-column: 1; /* First column */
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(2) {
+  grid-row: 1; /* First row */
+  grid-column: 2; /* Second column */
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(3) {
+  grid-row: 2; /* Second row */
+  grid-column: 1; /* First column */
+}
+.person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item:nth-child(4) {
+  grid-row: 2; /* Second row */
+  grid-column: 2; /* Second column */
+}
+
 header .top-header {
   background: #003087;
   height: 64px;
