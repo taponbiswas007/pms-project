@@ -874,9 +874,85 @@
 
 
         }
+        .booking-info{
+           .payment-card-details-area{
+            .card-details-item{
+                &:nth-child(1){
+                    grid-row-start: 1;
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
+                &:nth-child(2){
+                    grid-row-start: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+                &:nth-child(3){
+                    grid-row-start: 2;
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    
+                }
+                &:nth-child(4){
+                    grid-row-start: 2;
+                    grid-column-start: 4;
+                    grid-column-end: 5;
+                   
+                }
+                &:nth-child(5){
+                    grid-row-start: 3 !important;
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
+                &:nth-child(6){
+                    grid-row-start: 4 !important;
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
+            }
+           } 
+        }
+       
     }
 }
 
+@media screen and (max-width:1200px) {
+    .booking-info{
+        .payment-information-area{
+            .payment-methods-select-area{
+                row-gap: 30px;
+                .speacial-charge-box{
+                    grid-row-start: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+            }
+            .payment-card-details-area{
+                .card-details-item{
+                    &:nth-child(6){
+                        height: 120px !important;
+                        .booking-term{
+                            row-gap: 30px;
+                            grid-template-columns: repeat(3, 1fr) !important;
+                            .booking-term-item{
+
+                             
+                                &:nth-child(4){
+                                    grid-row-start: 2;
+                                    grid-column-start: 1;
+                                    grid-column-end: 5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .total-balance-area{
+                margin-top: 20px;
+            }
+        }
+    }
+}
 @media screen and (max-width:1100px) {
     .person-information-main-area {
         .personal-info {
@@ -911,6 +987,7 @@
 @media screen and (max-width:992px) {
     .person-information-main-area {
         .personal-info {
+          
             .personal-info-input-area {
                 .person-info-item {
                     &:nth-child(1) {
@@ -978,6 +1055,85 @@
 
                 .document-area-left {}
             }
+        }
+        .booking-info{
+            .personal-info-header{
+                flex-direction: column;
+                row-gap: 30px;
+            }
+            .personal-info-input-area{
+                .person-info-item{
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                   
+                }
+            }
+            .payment-methods-select-area{
+                row-gap: 30px;
+                .payment-mathods-item{
+                    &:nth-child(1){
+                        grid-row-start: 1;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
+                    &:nth-child(2){
+                        grid-row-start: 1;
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                    }
+                    &:nth-child(3){
+                        grid-row-start: 2;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
+                    &:nth-child(4){
+                        grid-row-start: 2;
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                    }
+                }
+                .speacial-charge-box{
+                    grid-row-start: 3;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+            }
+            .payment-card-details-area{
+                .card-details-item{
+                    &:nth-child(1){
+                        grid-row-start: 1;
+                        grid-column-start: 1;
+                        grid-column-end: 5;
+                    }
+                    &:nth-child(2){
+                        grid-row-start: 2;
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                    }
+                    &:nth-child(3){
+                        grid-row-start: 2;
+                        grid-column-start: 3;
+                        grid-column-end: 5;
+                        
+                    }
+                    &:nth-child(4){
+                        grid-row-start: 3;
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                       
+                    }
+                    &:nth-child(5){
+                        grid-row-start: 4 !important;
+                        grid-column-start: 1;
+                        grid-column-end: 5;
+                    }
+                    &:nth-child(6){
+                        grid-row-start: 5 !important;
+                        grid-column-start: 1;
+                        grid-column-end: 5;
+                    }
+                }
+               } 
         }
     }
 }

@@ -1750,6 +1750,61 @@ img {
     margin-bottom: 10px;
     margin-right: 0;
   }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(5) {
+    grid-row-start: 3 !important;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) {
+    grid-row-start: 4 !important;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .booking-info .payment-information-area .payment-methods-select-area {
+    row-gap: 30px;
+  }
+  .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .booking-info .payment-information-area .payment-card-details-area .card-details-item:nth-child(6) {
+    height: 120px !important;
+  }
+  .booking-info .payment-information-area .payment-card-details-area .card-details-item:nth-child(6) .booking-term {
+    row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .booking-info .payment-information-area .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .booking-info .payment-information-area .total-balance-area {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area {
@@ -1823,6 +1878,75 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 30px;
+  }
+  .person-information-main-area .booking-info .personal-info-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .person-information-main-area .booking-info .personal-info-input-area .person-info-item {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .booking-info .payment-methods-select-area {
+    row-gap: 30px;
+  }
+  .person-information-main-area .booking-info .payment-methods-select-area .payment-mathods-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .person-information-main-area .booking-info .payment-methods-select-area .payment-mathods-item:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .booking-info .payment-methods-select-area .payment-mathods-item:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .person-information-main-area .booking-info .payment-methods-select-area .payment-mathods-item:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .booking-info .payment-methods-select-area .speacial-charge-box {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(4) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(5) {
+    grid-row-start: 4 !important;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) {
+    grid-row-start: 5 !important;
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
 }
 header .top-header {
