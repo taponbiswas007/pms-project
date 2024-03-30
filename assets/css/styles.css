@@ -2859,6 +2859,10 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
 
 .confirmpopup .viabooking-main-area .viabooking-header img {
   width: 100px;
+  margin-bottom: 20px;
+}
+.confirmpopup .viabooking-main-area p {
+  margin-top: 20px;
 }
 .confirmpopup .viabooking-main-area .confirm-booking-details {
   margin: 24px 50px 32px 50px;
@@ -2916,6 +2920,9 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
      -moz-column-gap: 20px;
           column-gap: 20px;
   padding-bottom: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -2948,6 +2955,39 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   }
   .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:first-child {
     color: #656970;
+    font-size: 9px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 6px;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:last-child {
+    color: #202020;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+@media screen and (max-width: 600px) {
+  .confirmpopup .viabooking-main-area .confirm-booking-details {
+    margin: 24px 20px 32px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li {
+    display: block;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:first-child {
+    color: #656970;
     font-size: 12px;
     font-weight: 500;
     font-family: "DM Sans", sans-serif;
@@ -2958,6 +2998,9 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
     font-size: 16px;
     font-weight: 400;
     font-family: "DM Sans", sans-serif;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .border-separator {
+    display: none;
   }
 }
 @media screen and (max-width: 540px) {
