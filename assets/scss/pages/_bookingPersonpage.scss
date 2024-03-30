@@ -641,7 +641,7 @@
             
                 .payment-methods-select-area {
                     display: grid;
-                    grid-template-columns: .75fr .75fr .75fr .75fr 1fr;
+                    grid-template-columns: .56fr .56fr .56fr .56fr 1.75fr;
                     grid-template-rows: auto auto;
                     column-gap: 18px;
 
@@ -672,6 +672,42 @@
                             color: #0570DE;
                         }
                         
+                    }
+                    .active-payment-method{
+                        border: 2px solid #0570DE;
+                            color: #0570DE;
+                    }
+                    .speacial-charge-box{
+                        .info-input-box{
+                            @include dataInputboxStyle;
+                            position: relative;
+        
+                            .infolabel {
+                                position: absolute;
+                                top: -10px;
+                                left: 12px;
+                                color: $simpleblack;
+                                font-family: $roboto;
+                                font-weight: 400;
+                                padding: 0 8px;
+                                background: $darkwhite;
+                                font-size: 11px;
+        
+                            }
+                            select {
+                                background: none;
+                                border: none;
+                                text-transform: capitalize;
+                                font-size: 13px;
+                                font-family: $roboto;
+                                color: $black;
+                                font-weight: 400;
+                            }
+        
+                            .gender-select {
+                                width: 100%;
+                            }
+                        }
                     }
                 
             }

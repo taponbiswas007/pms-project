@@ -21,6 +21,9 @@
                 align-items: center;
                 flex-direction: column;
                 span{
+                    img{
+                        width: 88px;
+                    }
                   &:first-child{
                     display: block;
                     height: 200px;

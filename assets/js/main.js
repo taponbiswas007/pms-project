@@ -66,6 +66,15 @@ $(document).ready(function(){
         // Show the checkmark for the clicked item
         $(this).find(".checkmark").show();
     });
+    $('.payment-mathods-item').click(function() {
+        // Remove the class from all elements
+        $('.payment-mathods-item').removeClass('active-payment-method');
+    
+        // Toggle the class for the clicked item
+        $(this).addClass('active-payment-method');
+    
+       
+    });
     
     
     

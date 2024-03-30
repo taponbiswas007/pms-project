@@ -160,7 +160,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   position: relative;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .search-date-selector-box span {
@@ -190,7 +190,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .paidOrunpaid-selector select {
   font-size: 16px;
@@ -207,7 +207,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .resevationtype-selector select {
   font-size: 16px;
@@ -224,7 +224,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
 }
 .resevation-search-area .reservation-search-main-area .reservation-search-property .dailyOrmonthly-selector select {
   font-size: 16px;
@@ -498,7 +498,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   border: 1px solid #D0D5DD;
   color: #667085;
   font-family: "Inter", sans-serif;
@@ -512,7 +512,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   border: 1px solid #D0D5DD;
   color: #667085;
   font-family: "Inter", sans-serif;
@@ -832,6 +832,9 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.main-item-area .link-area .link-item a span img {
+  width: 88px;
+}
 .main-item-area .link-area .link-item a span:first-child {
   display: block;
   height: 200px;
@@ -964,7 +967,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   position: relative;
 }
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
@@ -1039,7 +1042,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   position: relative;
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box .infolabel {
@@ -1346,7 +1349,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   position: relative;
 }
 .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box .infolabel {
@@ -1472,7 +1475,7 @@ img {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   position: relative;
 }
 .person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
@@ -1537,7 +1540,7 @@ img {
 }
 .person-information-main-area .booking-info .payment-information-area .payment-methods-select-area {
   display: grid;
-  grid-template-columns: 0.75fr 0.75fr 0.75fr 0.75fr 1fr;
+  grid-template-columns: 0.56fr 0.56fr 0.56fr 0.56fr 1.75fr;
   grid-template-rows: auto auto;
   -webkit-column-gap: 18px;
      -moz-column-gap: 18px;
@@ -1566,6 +1569,40 @@ img {
 .person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .payment-mathods-item:hover {
   border: 2px solid #0570DE;
   color: #0570DE;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .active-payment-method {
+  border: 2px solid #0570DE;
+  color: #0570DE;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 43px;
+  position: relative;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box .infolabel {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  background: #F7F8FA;
+  font-size: 11px;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box select {
+  background: none;
+  border: none;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box .gender-select {
+  width: 100%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -2062,7 +2099,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   border: 1px solid #D0D5DD;
   color: #667085;
   font-family: "Inter", sans-serif;
@@ -2076,7 +2113,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   border: 2px solid #202020;
   border-radius: 8px;
   padding: 12px 20px;
-  height: 40px;
+  height: 43px;
   border: 1px solid #D0D5DD;
   color: #667085;
   font-family: "Inter", sans-serif;
