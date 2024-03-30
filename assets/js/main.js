@@ -46,7 +46,9 @@ $('#reservationPersonDetailsClose').on('click', function() {
    $("#reservationPersonDetailsOpen").hide();
 });
 
-
+$("#bookingPage").click(function(){
+    window.location.href = "booking-person-details.html";
+});
 
     $(".headersearchBtn").click(function(){
         $(".popupinput").show();

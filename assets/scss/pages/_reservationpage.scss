@@ -31,6 +31,7 @@
   .reservation-page-search-main-area {
     padding: 36px;
     background: $white;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.04);
     border-radius: 8px;
     display: grid;
     grid-template-columns: .875fr .875fr .875fr .875fr .5fr;
@@ -269,6 +270,7 @@
 }
 
 .reservation-search-results-table-area {
+  padding-bottom: 30px;
   .reservation-search-results-table-main-area {
     .resevation-table-container {
       overflow: auto;

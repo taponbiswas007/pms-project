@@ -479,6 +479,8 @@ img {
 .resevation-page-search-area .reservation-page-search-main-area {
   padding: 36px;
   background: #ffffff;
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
   display: grid;
   grid-template-columns: 0.875fr 0.875fr 0.875fr 0.875fr 0.5fr;
@@ -708,6 +710,9 @@ img {
             align-items: flex-start;
   }
 }
+.reservation-search-results-table-area {
+  padding-bottom: 30px;
+}
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container {
   overflow: auto;
   position: relative;
@@ -798,7 +803,6 @@ img {
 
 .main-item-area {
   background: #ffffff;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,6 +820,10 @@ img {
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: #F3F7FF;
+  padding: 18px 88px 130px 88px;
+  margin-bottom: 100px;
+  margin-top: 145px;
 }
 .main-item-area .link-area .link-item a {
   display: -webkit-box;
@@ -876,7 +884,6 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 100px;
   }
   .main-item-area .link-area .link-item a span:first-child {
     height: 150px;
@@ -888,6 +895,11 @@ img {
   }
   .main-item-area .link-area .link-item a span:last-child {
     font-size: 27px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-item-area .link-area {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 600px) {

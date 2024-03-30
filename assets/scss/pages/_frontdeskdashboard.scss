@@ -2,7 +2,7 @@
 
 .main-item-area{
     background: $white;
-    height: 100vh;
+ 
    display: flex;
    align-items: center;
     .link-area{
@@ -14,6 +14,10 @@
         width: 100%;
         margin: 0 auto;
         flex-wrap: wrap;
+        background: #F3F7FF;
+        padding: 18px 88px 130px 88px;
+        margin-bottom: 100px;
+        margin-top: 145px;
         .link-item{
             a{
                 display: flex;
@@ -68,7 +72,6 @@
 @media screen and (max-width: 992px){
    .main-item-area{
     align-items: flex-start;
-    padding-top: 100px;
     .link-area{
         .link-item{
             a{
@@ -89,6 +92,13 @@
         }
     }
    } 
+}
+@media screen and (max-width: 768px){
+    .main-item-area{
+        .link-area{
+            padding: 10px;
+        }
+    }
 }
 @media screen and (max-width: 600px){
    .main-item-area{
