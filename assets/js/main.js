@@ -52,6 +52,10 @@ $(document).ready(function(){
         $(".overlay").fadeIn();
         $(".viabookingpopup-area").fadeIn();
     });
+    $(".bookconfirm").click(function(){
+        $(".overlay").fadeIn();
+        $(".viabookingpopup-area").fadeIn();
+    });
 
     $('.viabooking-item').click(function() {
         // Remove the class from all elements

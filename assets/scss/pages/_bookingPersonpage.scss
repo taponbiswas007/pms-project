@@ -866,6 +866,70 @@
     }
 
 }
+.infoform-footer-area{
+    background: $white;
+    border-top: 2px solid $gray;
+    padding:18px 40px 92px 40px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    .infoform-footer-area-left{
+      
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 20px;
+        button{
+            @include commonBtnstyle;
+            border: 1px solid #D0D5DD;
+            padding: 10px 18px;
+            color: #344054;
+            font-family: $inter;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            &:last-child{
+                color: #E3642D;
+            }
+            span{
+                font-size: 10px;
+                
+            }
+        }
+    }
+    .infoform-footer-area-right{
+       
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 20px;
+        button{
+         @include commonBtnstyle;
+            font-size: 16px;
+             padding: 10px 18px;
+            &:first-child{
+                background: #EBECEE;
+                color: #344054;
+                &:hover{
+                    background: #b2bed6;
+                }
+            }
+            &:last-child{
+                background: #0C256F;
+                color: $white;
+                &:hover{
+                    background: #020f36;
+                }
+            }
+       
+        }
+    }
+}
+
 
 @media screen and (max-width:1300px) {
     .person-information-main-area {
@@ -1010,6 +1074,18 @@
             }
 
 
+        }
+    }
+       .infoform-footer-area{
+        .infoform-footer-area-left{
+            button{
+                font-size: 12px;
+            }
+        }
+        .infoform-footer-area-right{
+            button{
+                font-size: 12px;
+            }
         }
     }
 }
@@ -1180,7 +1256,25 @@
             }
         }
     }
+ 
+       .infoform-footer-area{
+       flex-direction: column;
+       row-gap: 30px;
+       justify-content: right;
+       align-items: flex-end;
+        .infoform-footer-area-left{
+            button{
+                font-size: 16px;
+            }
+        }
+        .infoform-footer-area-right{
+            button{
+                font-size: 16px;
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width:768px) {
     .person-information-main-area {
@@ -1221,6 +1315,22 @@
                 h1 {
                     font-size: 27px;
                 }
+            }
+        }
+    }
+       .infoform-footer-area{
+       flex-direction: column;
+       row-gap: 30px;
+       justify-content: right;
+       align-items: flex-end;
+        .infoform-footer-area-left{
+            button{
+                font-size: 11px;
+            }
+        }
+        .infoform-footer-area-right{
+            button{
+                font-size: 16px;
             }
         }
     }
@@ -1333,6 +1443,26 @@
             }
         }
     }
+       .infoform-footer-area{
+       flex-direction: column;
+       row-gap: 30px;
+       justify-content: right;
+       align-items: flex-end;
+        .infoform-footer-area-left{
+            flex-wrap: wrap;
+            row-gap: 20px;
+            justify-content: right;
+            align-items: flex-end;
+            button{
+                font-size: 16px;
+            }
+        }
+        .infoform-footer-area-right{
+            button{
+                font-size: 16px;
+            }
+        }
+    }
 }
 @media screen and (max-width:540px){
     .person-information-main-area{
@@ -1419,6 +1549,32 @@
             }
         }
     }
+       .infoform-footer-area{
+       flex-direction: column;
+       row-gap: 30px;
+       justify-content: right;
+       align-items: flex-end;
+        .infoform-footer-area-left{
+            flex-wrap: wrap;
+            row-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            button{
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+        .infoform-footer-area-right{
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            justify-content: center;
+            button{
+                font-size: 16px;
+                 width: 100%;
+            }
+        }
+    }
 }
 @media screen and (max-width:376px){
     .person-information-main-area{
@@ -1441,4 +1597,5 @@
             }
         }
     } 
+      
 }

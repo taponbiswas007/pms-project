@@ -1742,6 +1742,116 @@ img {
   text-align: center;
 }
 
+.infoform-footer-area {
+  background: #ffffff;
+  border-top: 2px solid #EBECEE;
+  padding: 18px 40px 92px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.infoform-footer-area .infoform-footer-area-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.infoform-footer-area .infoform-footer-area-left button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: 1px solid #D0D5DD;
+  padding: 10px 18px;
+  color: #344054;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.infoform-footer-area .infoform-footer-area-left button:last-child {
+  color: #E3642D;
+}
+.infoform-footer-area .infoform-footer-area-left button span {
+  font-size: 10px;
+}
+.infoform-footer-area .infoform-footer-area-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.infoform-footer-area .infoform-footer-area-right button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 16px;
+  padding: 10px 18px;
+}
+.infoform-footer-area .infoform-footer-area-right button:first-child {
+  background: #EBECEE;
+  color: #344054;
+}
+.infoform-footer-area .infoform-footer-area-right button:first-child:hover {
+  background: #b2bed6;
+}
+.infoform-footer-area .infoform-footer-area-right button:last-child {
+  background: #0C256F;
+  color: #ffffff;
+}
+.infoform-footer-area .infoform-footer-area-right button:last-child:hover {
+  background: #020f36;
+}
+
 @media screen and (max-width: 1300px) {
   .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area {
     -webkit-column-gap: 20px;
@@ -1830,6 +1940,12 @@ img {
   .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side button:first-child {
     margin-bottom: 10px;
     margin-right: 0;
+  }
+  .infoform-footer-area .infoform-footer-area-left button {
+    font-size: 12px;
+  }
+  .infoform-footer-area .infoform-footer-area-right button {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1954,6 +2070,25 @@ img {
     grid-column-start: 1;
     grid-column-end: 5;
   }
+  .infoform-footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .infoform-footer-area .infoform-footer-area-left button {
+    font-size: 16px;
+  }
+  .infoform-footer-area .infoform-footer-area-right button {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 768px) {
   .person-information-main-area {
@@ -1996,6 +2131,25 @@ img {
   }
   .person-information-main-area .booking-info .personal-info-header h1 {
     font-size: 27px;
+  }
+  .infoform-footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .infoform-footer-area .infoform-footer-area-left button {
+    font-size: 11px;
+  }
+  .infoform-footer-area .infoform-footer-area-right button {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2078,6 +2232,36 @@ img {
     grid-row-start: 4;
     grid-column-start: 1;
     grid-column-end: 5;
+  }
+  .infoform-footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .infoform-footer-area .infoform-footer-area-left {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .infoform-footer-area .infoform-footer-area-left button {
+    font-size: 16px;
+  }
+  .infoform-footer-area .infoform-footer-area-right button {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -2162,6 +2346,51 @@ img {
     grid-row-start: 2 !important;
     grid-column-start: 1 !important;
     grid-column-end: 5 !important;
+  }
+  .infoform-footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .infoform-footer-area .infoform-footer-area-left {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infoform-footer-area .infoform-footer-area-left button {
+    font-size: 16px;
+    width: 100%;
+  }
+  .infoform-footer-area .infoform-footer-area-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .infoform-footer-area .infoform-footer-area-right button {
+    font-size: 16px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 376px) {
@@ -2628,6 +2857,109 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   color: #ffffff;
 }
 
+.confirmpopup .viabooking-main-area .viabooking-header img {
+  width: 100px;
+}
+.confirmpopup .viabooking-main-area .confirm-booking-details {
+  margin: 24px 50px 32px 50px;
+  background: #F7F8FA;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li {
+  display: block;
+}
+.confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:first-child {
+  color: #656970;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 6px;
+}
+.confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:last-child {
+  color: #202020;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+.confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information:last-child {
+  border-right: none;
+}
+.confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information:last-child ul li:last-child {
+  color: #12B76A;
+}
+.confirmpopup .viabooking-main-area .confirm-booking-details .border-separator {
+  height: 50px;
+  width: 2px;
+  background: #D9D9D9;
+}
+.confirmpopup .viabooking-main-area .viabooking-area-footer {
+  border-top: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .confirmpopup .viabooking-main-area .confirm-booking-details {
+    margin: 24px 20px 32px 20px;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li {
+    display: block;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:first-child {
+    color: #656970;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 6px;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:last-child {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  .confirmpopup .viabooking-main-area .confirm-booking-details {
+    margin: 24px 20px 32px 20px;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li {
+    display: block;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:first-child {
+    color: #656970;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 6px;
+  }
+  .confirmpopup .viabooking-main-area .confirm-booking-details .confirm-booking-details-information ul li:last-child {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+  }
+}
 @media screen and (max-width: 540px) {
   .viabookingpopup-area .viabooking-main-area .viabooking-list {
     -ms-flex-wrap: wrap;
