@@ -6,6 +6,8 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     padding-left: 40px;
+    padding-top: 30px;
+    column-gap: 20px;
 
     .personal-info {
         padding: 10px;
@@ -154,7 +156,7 @@
                         select {
                             background: none;
                             border: none;
-                            text-transform: uppercase;
+                            text-transform: capitalize;
                             font-size: 13px;
                             font-family: $roboto;
                             color: $black;
@@ -501,43 +503,214 @@
             }
         }
     }
-    .booking-info{
-        .personal-info-header{
-            h1{
+
+    .booking-info {
+        padding: 10px;
+
+        .personal-info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            h1 {
                 @include informationheader;
+                min-width: 200px;
+            }
+
+            .booking-information-search-area {
+                width: 100%;
+                position: relative;
+
+                input {
+                    color: $black;
+                    font-family: $roboto;
+                    font-size: 17px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    text-align: left;
+                    width: 100%;
+                    background: none;
+                    border: 1px solid $black;
+                    border-radius: 8px;
+                    padding: 10px 8px 10px 68px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #000000a1;
+                    font-size: 17px;
+                }
             }
         }
+
+        .personal-info-input-area {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: auto auto;
+            row-gap: 30px;
+            column-gap: 15px;
+
+            .person-info-item {
+                .info-input-box {
+                    @include dataInputboxStyle;
+                    position: relative;
+
+                    .infolabel {
+                        position: absolute;
+                        top: -10px;
+                        left: 12px;
+                        color: $simpleblack;
+                        font-family: $roboto;
+                        font-weight: 400;
+                        padding: 0 8px;
+                        background: $darkwhite;
+                        font-size: 11px;
+
+                    }
+
+                    input {
+                        color: $black;
+                        font-family: $roboto;
+                        font-size: 13px;
+                        font-weight: 400;
+                        text-align: left;
+                        width: 100%;
+                        background: none;
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .inputnumberbox {
+                        -moz-appearance: textfield;
+                    }
+
+                    select {
+                        background: none;
+                        border: none;
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        font-family: $roboto;
+                        color: $black;
+                        font-weight: 400;
+                    }
+
+                    .gender-select {
+                        width: 100%;
+                    }
+                }
+
+                .numberInputbox {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+
+
+
+
+
+
+            }
+
+
+        }
+
+        .payment-information-area {
+            margin-top: 51px;
+
+            h1 {
+                color: $simpleblack;
+                font-size: 32px;
+                font-weight: 500;
+                font-family: $dmSans;
+                margin-bottom: 15px;
+            }
+
+            
+                .payment-methods-select-area {
+                    display: grid;
+                    grid-template-columns: .75fr .75fr .75fr .75fr 1fr;
+                    grid-template-rows: auto auto;
+                    column-gap: 18px;
+
+                    .payment-mathods-item {
+                        cursor: pointer;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        border: 2px solid $gray;
+                        padding: 4px;
+                        padding-left: 10px;
+                        width: 76px;
+                        height: 44px;
+                        border-radius: 4px;
+                        transition: .3s ease;
+                        ul {
+                            li {
+                                &:first-child{
+                                    margin-bottom: 3px;
+                                }
+                            }
+                        }
+                        img{
+                            width: 41px;
+                        }
+                        &:hover{
+                            border: 2px solid #0570DE;
+                            color: #0570DE;
+                        }
+                        
+                    }
+                
+            }
+
+        }
+
     }
 
 }
 
-@media screen and (max-width:1300px ) {
+@media screen and (max-width:1300px) {
     .person-information-main-area {
         .personal-info {
             .images-id-capture-area {
                 .capture-mian-area {
                     column-gap: 20px;
-                    .images-id-left-side{
+
+                    .images-id-left-side {
                         flex-shrink: 0;
                     }
+
                     .images-id-right-side {
                         button {
-                          &:first-child{
-                            margin-bottom: 10px;
-                            margin-right: 0;
-                          }
-                            
+                            &:first-child {
+                                margin-bottom: 10px;
+                                margin-right: 0;
+                            }
+
                         }
                     }
                 }
             }
 
-          
+
         }
     }
 }
 
-@media screen and (max-width:1100px ) {
+@media screen and (max-width:1100px) {
     .person-information-main-area {
         .personal-info {
             .images-id-capture-area {
@@ -545,84 +718,97 @@
                     column-gap: 20px;
                     flex-direction: column;
                     row-gap: 30px;
-                    .images-id-left-side{
+
+                    .images-id-left-side {
                         flex-shrink: 0;
                     }
+
                     .images-id-right-side {
-                        
+
                         button {
-                          &:first-child{
-                            margin-bottom: 10px;
-                            margin-right: 0;
-                          }
-                            
+                            &:first-child {
+                                margin-bottom: 10px;
+                                margin-right: 0;
+                            }
+
                         }
                     }
                 }
             }
 
-          
+
         }
     }
 }
-@media screen and (max-width:992px ) {
+
+@media screen and (max-width:992px) {
     .person-information-main-area {
         .personal-info {
-            .personal-info-input-area{
-               .person-info-item{
-                &:nth-child(1){
-                    grid-row-start: 1;
-                    grid-column-start: 1;
-                    grid-column-end: 4;
-                }
-                &:nth-child(2){
-                    grid-row-start: 2;
-                    grid-column-start: 1;
-                    grid-column-end: 4;
-                }
-                &:nth-child(3){
-                    grid-row-start: 3;
-                    grid-column-start: 1;
-                    grid-column-end: 4;
-                }
-                &:nth-child(4){
-                    grid-row-start: 4;
-                    grid-column-start: 1;
-                    grid-column-end: 4;
-                }
-
-               } 
-               .other-informaton{
-                grid-row-start: 5;
-                grid-column-start: 1;
-                grid-column-end: 4;
-                .person-info-item{
-                    &:nth-child(1){
+            .personal-info-input-area {
+                .person-info-item {
+                    &:nth-child(1) {
                         grid-row-start: 1;
                         grid-column-start: 1;
                         grid-column-end: 4;
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         grid-row-start: 2;
                         grid-column-start: 1;
                         grid-column-end: 4;
                     }
-                    &:nth-child(3){
+
+                    &:nth-child(3) {
                         grid-row-start: 3;
                         grid-column-start: 1;
                         grid-column-end: 4;
                     }
-                    &:nth-child(4){
+
+                    &:nth-child(4) {
                         grid-row-start: 4;
                         grid-column-start: 1;
                         grid-column-end: 4;
                     }
+
                 }
-               }
+
+                .other-informaton {
+                    grid-row-start: 5;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+
+                    .person-info-item {
+                        &:nth-child(1) {
+                            grid-row-start: 1;
+                            grid-column-start: 1;
+                            grid-column-end: 4;
+                        }
+
+                        &:nth-child(2) {
+                            grid-row-start: 2;
+                            grid-column-start: 1;
+                            grid-column-end: 4;
+                        }
+
+                        &:nth-child(3) {
+                            grid-row-start: 3;
+                            grid-column-start: 1;
+                            grid-column-end: 4;
+                        }
+
+                        &:nth-child(4) {
+                            grid-row-start: 4;
+                            grid-column-start: 1;
+                            grid-column-end: 4;
+                        }
+                    }
+                }
             }
+
             .import-document-area {
                 flex-direction: column;
                 row-gap: 30px;
+
                 .document-area-left {}
             }
         }

@@ -921,6 +921,10 @@ img {
   display: grid;
   grid-template-columns: 2fr 2fr;
   padding-left: 40px;
+  padding-top: 30px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 .person-information-main-area .personal-info {
   padding: 10px;
@@ -1068,7 +1072,7 @@ img {
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box select {
   background: none;
   border: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 13px;
   font-family: "Roboto", sans-serif;
   color: #000000;
@@ -1403,12 +1407,165 @@ img {
 .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item:nth-child(2) {
   margin-right: 15px;
 }
+.person-information-main-area .booking-info {
+  padding: 10px;
+}
+.person-information-main-area .booking-info .personal-info-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
 .person-information-main-area .booking-info .personal-info-header h1 {
   font-size: 33px;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
   color: #202020;
   text-transform: capitalize;
+  min-width: 200px;
+}
+.person-information-main-area .booking-info .personal-info-header .booking-information-search-area {
+  width: 100%;
+  position: relative;
+}
+.person-information-main-area .booking-info .personal-info-header .booking-information-search-area input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 10px 8px 10px 68px;
+}
+.person-information-main-area .booking-info .personal-info-header .booking-information-search-area input:focus {
+  outline: none;
+}
+.person-information-main-area .booking-info .personal-info-header .booking-information-search-area button {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.631372549);
+  font-size: 17px;
+}
+.person-information-main-area .booking-info .personal-info-input-area {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 40px;
+  position: relative;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  background: #F7F8FA;
+  font-size: 11px;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box select {
+  background: none;
+  border: none;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.person-information-main-area .booking-info .personal-info-input-area .person-info-item .numberInputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.person-information-main-area .booking-info .payment-information-area {
+  margin-top: 51px;
+}
+.person-information-main-area .booking-info .payment-information-area h1 {
+  color: #202020;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 15px;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area {
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 0.75fr 0.75fr 1fr;
+  grid-template-rows: auto auto;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .payment-mathods-item {
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 2px solid #EBECEE;
+  padding: 4px;
+  padding-left: 10px;
+  width: 76px;
+  height: 44px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .payment-mathods-item ul li:first-child {
+  margin-bottom: 3px;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .payment-mathods-item img {
+  width: 41px;
+}
+.person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .payment-mathods-item:hover {
+  border: 2px solid #0570DE;
+  color: #0570DE;
 }
 
 @media screen and (max-width: 1300px) {
