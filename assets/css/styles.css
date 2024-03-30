@@ -2623,7 +2623,12 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   padding: 14px;
   background: #ffffff;
   border-radius: 8px;
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
 }
 .reservationPersondetails-alart-area .reservation-person-details-main-area .reservation-person-details-header {
   color: #999999;

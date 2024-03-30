@@ -38,13 +38,16 @@ $(document).ready(function(){
         }
     });
 
-    $('#room1 td:nth-child(n+4):nth-child(-n+4)::after').attr('id', 'roomOneperson');
+
+$('.room1').on('click', function() {
+   $("#reservationPersonDetailsOpen").toggle();
+});
+$('#reservationPersonDetailsClose').on('click', function() {
+   $("#reservationPersonDetailsOpen").hide();
+});
 
 
-   
-    $('#roomOneperson').click(function() {
-        $("#reservationPersonDetailsOpen").show();
-    });
+
     $(".headersearchBtn").click(function(){
         $(".popupinput").show();
     });
