@@ -918,6 +918,12 @@ img {
   .main-item-area .link-area .link-item a span:last-child {
     font-size: 15px;
   }
+  .footer-area .footer-main-area {
+    padding-left: 0;
+  }
+  .footer-area .footer-main-area p {
+    font-size: 17px;
+  }
 }
 .person-information-main-area {
   background: #ffffff;
@@ -1949,6 +1955,223 @@ img {
     grid-column-end: 5;
   }
 }
+@media screen and (max-width: 768px) {
+  .person-information-main-area {
+    padding-left: 0;
+  }
+  .person-information-main-area .personal-info .personal-info-header h1 {
+    font-size: 27px;
+  }
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .person-information-main-area .personal-info .import-document-area .document-area-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .person-information-main-area .booking-info .personal-info-header h1 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .person-information-main-area {
+    padding-left: 0;
+  }
+  .person-information-main-area .personal-info .personal-info-header h1 {
+    font-size: 20px;
+  }
+  .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area {
+    grid-template-columns: 4fr;
+  }
+  .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item {
+    margin-right: 0 !important;
+  }
+  .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item:nth-child(2) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .personal-info-header h1 {
+    font-size: 20px;
+  }
+  .person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(3) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(4) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(5) {
+    grid-row-start: 5 !important;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) {
+    grid-row-start: 6 !important;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 271px !important;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(3) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(4) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 540px) {
+  .person-information-main-area {
+    row-gap: 40px;
+  }
+  .person-information-main-area .personal-info {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .personal-info .personal-info-header h1 {
+    font-size: 33px;
+  }
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side button:first-child {
+    margin-bottom: 0;
+  }
+  .person-information-main-area .personal-info .import-document-area .document-area-right {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .person-information-main-area .booking-info {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .person-information-main-area .booking-info .personal-info-header h1 {
+    font-size: 33px;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) {
+    height: 120px !important;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term {
+    row-gap: 30px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(1) {
+    grid-row-start: 1 !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 2 !important;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(2) {
+    grid-row-start: 1 !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 3 !important;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(3) {
+    grid-row-start: 1 !important;
+    grid-column-start: 3 !important;
+    grid-column-end: 4;
+  }
+  .person-information-main-area .booking-info .payment-card-details-area .card-details-item:nth-child(6) .booking-term .booking-term-item:nth-child(4) {
+    grid-row-start: 2 !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+  }
+}
+@media screen and (max-width: 376px) {
+  .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area .images-id-right-side button {
+    font-size: 12px;
+  }
+  .person-information-main-area .personal-info .import-document-area .document-area-right button {
+    font-size: 12px;
+  }
+}
 header .top-header {
   background: #003087;
   height: 64px;
@@ -2161,7 +2384,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
     font-size: 18px;
   }
   header .top-header .top-header-main-area .top-header-right .search-data-input input {
-    width: 200px;
+    width: 190px;
     display: none;
   }
 }
