@@ -1,7 +1,7 @@
 @import '../utils/variables';
 
 .main-item-area{
-    background: $white;
+   
  
    display: flex;
    align-items: center;
@@ -14,10 +14,10 @@
         width: 100%;
         margin: 0 auto;
         flex-wrap: wrap;
-        background: #F3F7FF;
+       
         padding: 18px 88px 130px 88px;
-        margin-bottom: 100px;
-        margin-top: 145px;
+     
+        margin-top: 90px;
         .link-item{
             a{
                 display: flex;

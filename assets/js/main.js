@@ -45,6 +45,9 @@ $('.room1').on('click', function() {
 $('#reservationPersonDetailsClose').on('click', function() {
    $("#reservationPersonDetailsOpen").hide();
 });
+$('#profile').on('click', function() {
+   $("#profileOption").slideToggle();
+});
 
 $("#bookingPage").click(function(){
     window.location.href = "booking-person-details.html";

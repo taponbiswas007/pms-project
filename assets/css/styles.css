@@ -803,7 +803,6 @@ img {
 }
 
 .main-item-area {
-  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,10 +820,8 @@ img {
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #F3F7FF;
   padding: 18px 88px 130px 88px;
-  margin-bottom: 100px;
-  margin-top: 145px;
+  margin-top: 90px;
 }
 .main-item-area .link-area .link-item a {
   display: -webkit-box;
@@ -2541,6 +2538,41 @@ header .top-header .top-header-main-area .top-header-right .user-logo {
   margin-left: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+header .top-header .top-header-main-area .top-header-right .user-logo .profile-logout-form {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #01286D;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  display: none;
+}
+header .top-header .top-header-main-area .top-header-right .user-logo .profile-logout-form button {
+  color: #01286D;
+  background: #EBECEE;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border-radius: 5px;
+}
+header .top-header .top-header-main-area .top-header-right .user-logo .profile-logout-form button:last-child {
+  margin-bottom: 0;
+}
+header .top-header .top-header-main-area .top-header-right .user-logo .profile-logout-form button:hover {
+  background: #003087;
+  color: #ffffff;
 }
 header .bottom-header {
   background: #01286D;
