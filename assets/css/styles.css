@@ -81,6 +81,10 @@ img {
   margin-right: 10px;
 }
 
+p-bottom {
+  padding-bottom: 50px;
+}
+
 .calenderOrtable-selector {
   padding: 14px 0;
 }
@@ -869,7 +873,7 @@ footer {
 }
 footer .footer-area {
   background: #F1F1F1;
-  height: 59px;
+  height: 50px;
 }
 footer .footer-area .footer-main-area {
   padding-top: 20px;
