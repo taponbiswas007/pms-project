@@ -65,7 +65,7 @@
             .search-date-selector-box {
                 @include dataInputboxStyle;
                 position: relative;
-
+            
                 span {
                     position: absolute;
                     top: -10px;
@@ -86,7 +86,7 @@
                     width: 100%;
                     background: none;
                     border: none;
-
+                    cursor: pointer;
                     &:focus {
                         outline: none;
                     }

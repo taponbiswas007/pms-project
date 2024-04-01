@@ -85,28 +85,38 @@ $("#bookingPage").click(function(){
        
     });
     
-    
-   // function decreaseSize() {
-        // Select all elements within the body
-      //  $('body *').each(function() {
-          // Get the current font size, margins, padding, height, and width
-        //  var fontSize = parseFloat($(this).css('font-size'));
-        
-     
-          
-          // Decrease font size, margins, padding, height, and width by 25%
-         // $(this).css({
-         //   'font-size': fontSize * 0.75 + 'px',
-      
-            
-        //  });
-      //  });
-     // }
-      
-      // Call the function when the document is ready
-    //  decreaseSize();
 
     
-    
+    $("#applyButton").click(function(){
+        var fromDate = formatDate($("#fromDate").val());
+        var toDate = formatDate($("#toDate").val());
+        $("#mainDateInput").val(fromDate + " - " + toDate);
+        toggleDatePicker(); // Close the date picker after applying the date range
+    });
       
 });
+
+
+function formatDate(dateString) {
+    var date = new Date(dateString);
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    return pad(day) + "/" + pad(month) + "/" + year;
+}
+
+function pad(number) {
+    if (number < 10) {
+        return '0' + number;
+    }
+    return number;
+}
+
+function toggleDatePicker() {
+    var datePicker = document.getElementById("datePicker");
+    if (datePicker.style.display === "block") {
+        datePicker.style.display = "none";
+    } else {
+        datePicker.style.display = "block";
+    }
+}
