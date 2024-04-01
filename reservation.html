@@ -92,10 +92,14 @@
                 <div class="search-data-input-item">
                     <h1>Stays Date</h1>
                     <div class="date-input-area">
-                        <input type="text" placeholder="01 Jan 2023 - 05 Jan 2023">
-                        <button>
+                        <input type="text" class="date-input" id="mainDateInput" placeholder="01 Jan 2023 - 05 Jan 2023" onclick="toggleDatePicker()">
+                        <button class="calenderIcon" onclick="toggleDatePicker()">
                             <i class="fa-regular fa-calendar"></i>
                         </button>
+                        <div class="date-picker" id="datePicker">
+                            From: <input type="date" id="fromDate"> To: <input type="date" id="toDate">
+                            <button id="applyButton">Apply</button>
+                        </div>
                     </div>
 
                 </div>

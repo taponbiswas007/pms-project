@@ -2,7 +2,7 @@
 @import '../utils/variables';
 
 .reservation-header {
-  margin-top: 68px;
+  margin-top: 35px;
   margin-bottom: 23px;
 
   .calender-header {
@@ -69,7 +69,7 @@
           width: 100%;
         }
 
-        button {
+        .calenderIcon {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
@@ -290,7 +290,7 @@
               min-width: 170px;
               background: $gray;
               color: $simpleblack;
-              font-size: 13px;
+              font-size: 11px;
               font-weight: 600;
               font-family: $dmSans;
               text-transform: capitalize;
@@ -314,7 +314,7 @@
         tbody {
 
           tr {
-            height: 53px;
+            height: 41px;
 
             td {
               border: 1px solid $gray;
@@ -322,7 +322,7 @@
               text-align: center;
               min-width: 170px;
               background: $white;
-              font-size: 14px;
+              font-size: 12px;
               font-weight: 400;
               font-family: $dmSans;
               vertical-align: middle;
@@ -349,37 +349,37 @@
 
             .pending {
               color: $yellow;
-              font-size: 15px;
+              font-size: 13px;
               text-transform: capitalize;
               text-align: left;
               padding-left: 10px;
 
               .circle {
-                font-size: 12px;
+                font-size: 10px;
               }
             }
 
             .success {
               color: $green;
-              font-size: 15px;
+              font-size: 13px;
               text-transform: capitalize;
               text-align: left;
               padding-left: 10px;
 
               .circle {
-                font-size: 12px;
+                font-size: 10px;
               }
             }
 
             .cancelled {
               color: $simplered;
-              font-size: 15px;
+              font-size: 13px;
               text-transform: capitalize;
               text-align: left;
               padding-left: 10px;
 
               .circle {
-                font-size: 12px;
+                font-size: 10px;
               }
             }
 

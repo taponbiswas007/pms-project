@@ -101,11 +101,12 @@ $("#bookingPage").click(function(){
 
 
 function formatDate(dateString) {
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var date = new Date(dateString);
     var day = date.getDate();
-    var month = date.getMonth() + 1;
+    var month = months[date.getMonth()];
     var year = date.getFullYear();
-    return pad(day) + "/" + pad(month) + "/" + year;
+    return pad(day) + " " + month + " " + year;
 }
 
 function pad(number) {
@@ -114,6 +115,7 @@ function pad(number) {
     }
     return number;
 }
+
 
 function toggleDatePicker() {
     var datePicker = document.getElementById("datePicker");

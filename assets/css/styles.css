@@ -440,7 +440,7 @@ img {
 }
 
 .reservation-header {
-  margin-top: 68px;
+  margin-top: 35px;
   margin-bottom: 23px;
 }
 .reservation-header .calender-header {
@@ -522,7 +522,7 @@ img {
   font-size: 16px;
   width: 100%;
 }
-.resevation-page-search-area .reservation-page-search-main-area .search-data-input-item .date-input-area button {
+.resevation-page-search-area .reservation-page-search-main-area .search-data-input-item .date-input-area .calenderIcon {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -731,7 +731,7 @@ img {
   min-width: 170px;
   background: #EBECEE;
   color: #202020;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
   text-transform: capitalize;
@@ -746,7 +746,7 @@ img {
   min-width: 151px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr {
-  height: 53px;
+  height: 41px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td {
   border: 1px solid #EBECEE;
@@ -754,7 +754,7 @@ img {
   text-align: center;
   min-width: 170px;
   background: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
   vertical-align: middle;
@@ -773,33 +773,33 @@ img {
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .pending {
   color: #E3A52D;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   text-align: left;
   padding-left: 10px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .pending .circle {
-  font-size: 12px;
+  font-size: 10px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .success {
   color: #12B76A;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   text-align: left;
   padding-left: 10px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .success .circle {
-  font-size: 12px;
+  font-size: 10px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .cancelled {
   color: #E3642D;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   text-align: left;
   padding-left: 10px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr .cancelled .circle {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .main-item-area {
@@ -3102,7 +3102,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   border-bottom: 2px solid #EBECEE;
   padding-bottom: 7px;
 }
-.date-picker button {
+.date-picker #applyButton {
   padding: 8px 12px;
   border-radius: 8px;
   font-family: "DM Sans", sans-serif;
