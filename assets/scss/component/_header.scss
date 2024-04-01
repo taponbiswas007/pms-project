@@ -1,10 +1,14 @@
 @import '../utils/variables';
 
 header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99999999999999999999;
     .top-header {
         background: $simpleblue;
-        height: 64px;
-        padding-top: 14px;
+        height: 53px;
+        padding-top: 10px;
 
         .top-header-main-area {
             display: flex;
@@ -25,7 +29,7 @@ header {
 
                 h1 {
                     color: $darkwhite;
-                    font-size: 22px;
+                    font-size: 19px;
                     font-weight: 600;
                     font-family: $dmSans;
                 }
@@ -109,8 +113,8 @@ header {
 
     .bottom-header {
         background: $blue;
-        height: 64px;
-        padding-top: 14px;
+        height: 53px;
+        padding-top: 10px;
         padding-left: 49px;
 
         .bottom-header-main-area {
@@ -122,7 +126,7 @@ header {
 
                         a {
                             color: $white;
-                            font-size: 16px;
+                            font-size: 14px;
                             font-family: $dmSans;
                             font-weight: 600;
                             transition: .3s;

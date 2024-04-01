@@ -322,7 +322,7 @@ img {
   width: 100%;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table thead tr {
-  height: 56px;
+  height: 50px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table thead tr th {
   border: 1px solid #EBECEE;
@@ -331,7 +331,7 @@ img {
   min-width: 100px;
   background: #ffffff;
   color: #202020;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
   text-transform: uppercase;
@@ -349,9 +349,9 @@ img {
 .reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody td button {
   background: #EBECEE;
   width: 100%;
-  height: 56px;
+  height: 41px;
   color: #202020;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
   text-align: left;
@@ -373,7 +373,7 @@ img {
   margin-bottom: -4px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody tr {
-  height: 56px;
+  height: 41px;
 }
 .reservation-search-results-table-area .reservation-search-results-table-main-area .table-container table tbody tr td {
   border: 1px solid #EBECEE;
@@ -862,15 +862,21 @@ img {
   display: block;
 }
 
-.footer-area {
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer .footer-area {
   background: #F1F1F1;
   height: 59px;
 }
-.footer-area .footer-main-area {
+footer .footer-area .footer-main-area {
   padding-top: 20px;
   padding-left: 50px;
 }
-.footer-area .footer-main-area p {
+footer .footer-area .footer-main-area p {
   color: #202020;
   text-align: left;
   font-family: "Poppins", sans-serif;
@@ -930,10 +936,10 @@ img {
   .main-item-area .link-area .link-item a span:last-child {
     font-size: 15px;
   }
-  .footer-area .footer-main-area {
+  footer .footer-area .footer-main-area {
     padding-left: 0;
   }
-  .footer-area .footer-main-area p {
+  footer .footer-area .footer-main-area p {
     font-size: 17px;
   }
 }
@@ -2413,10 +2419,17 @@ img {
     font-size: 12px;
   }
 }
+header {
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100000000000000000000;
+}
 header .top-header {
   background: #003087;
-  height: 64px;
-  padding-top: 14px;
+  height: 53px;
+  padding-top: 10px;
 }
 header .top-header .top-header-main-area {
   display: -webkit-box;
@@ -2449,7 +2462,7 @@ header .top-header .top-header-main-area .logo-area a {
 }
 header .top-header .top-header-main-area .logo-area h1 {
   color: #F7F8FA;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
 }
@@ -2530,8 +2543,8 @@ header .top-header .top-header-main-area .top-header-right .user-logo {
 }
 header .bottom-header {
   background: #01286D;
-  height: 64px;
-  padding-top: 14px;
+  height: 53px;
+  padding-top: 10px;
   padding-left: 49px;
 }
 header .bottom-header .bottom-header-main-area .navbar ul li {
@@ -2540,7 +2553,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li {
 }
 header .bottom-header .bottom-header-main-area .navbar ul li a {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   -webkit-transition: 0.3s;

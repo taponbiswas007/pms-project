@@ -51,21 +51,27 @@
         }
     }
 }
-.footer-area{
-    background: #F1F1F1;
-    height: 59px;
-    .footer-main-area{
-        padding-top: 20px;
-        padding-left: 50px;
-        p{
-            color: $simpleblack;
-            text-align: left;
-            font-family: $poppins;
-            font-size: 19px;
-            font-weight: 400;
-            color: #1E1E1E;
-
-           
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .footer-area{
+        background: #F1F1F1;
+        height: 59px;
+        .footer-main-area{
+            padding-top: 20px;
+            padding-left: 50px;
+            p{
+                color: $simpleblack;
+                text-align: left;
+                font-family: $poppins;
+                font-size: 19px;
+                font-weight: 400;
+                color: #1E1E1E;
+    
+               
+            }
         }
     }
 }
@@ -146,13 +152,15 @@
         }
     }
    } 
-   .footer-area{
-    .footer-main-area{
-        padding-left: 0;
-        p{
-            font-size: 17px;
-        }
+footer{
+    .footer-area{
+        .footer-main-area{
+            padding-left: 0;
+            p{
+                font-size: 17px;
+            }
+           }
        }
-   }
+}
    
 }

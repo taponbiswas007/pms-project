@@ -86,8 +86,26 @@ $("#bookingPage").click(function(){
     });
     
     
-    
-    
+   // function decreaseSize() {
+        // Select all elements within the body
+      //  $('body *').each(function() {
+          // Get the current font size, margins, padding, height, and width
+        //  var fontSize = parseFloat($(this).css('font-size'));
+        
+     
+          
+          // Decrease font size, margins, padding, height, and width by 25%
+         // $(this).css({
+         //   'font-size': fontSize * 0.75 + 'px',
+      
+            
+        //  });
+      //  });
+     // }
+      
+      // Call the function when the document is ready
+    //  decreaseSize();
+
     
     
       
