@@ -116,7 +116,7 @@
                     width: 100%;
                   }
           
-                  button {
+                  .calenderIcon {
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
@@ -144,6 +144,17 @@
 .confirmpopup{
  
     .viabooking-main-area{
+        position: relative;
+        .closeBtn{
+            color: #656970;
+            font-size: 30px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            &:hover{
+                color: $blue;
+            }
+        }
         .viabooking-header{
             img{
                 width: 100px;

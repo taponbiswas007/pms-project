@@ -985,7 +985,7 @@ footer .footer-area .footer-main-area p {
 .person-information-main-area .personal-info .personal-info-input-area {
   display: grid;
   grid-template-columns: repeat(3, 1.33fr);
-  row-gap: 30px;
+  row-gap: 20px;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -999,14 +999,21 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: -10px;
-  left: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #202020;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 0 8px;
-  background: #F7F8FA;
   font-size: 11px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
+  margin-right: 1px;
 }
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box input {
   color: #000000;
@@ -1060,7 +1067,7 @@ footer .footer-area .footer-main-area p {
   grid-template-columns: repeat(2, 2fr);
   /* Two columns with equal width */
   grid-template-rows: auto auto;
-  row-gap: 30px;
+  row-gap: 20px;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -1074,14 +1081,20 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: -10px;
-  left: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #202020;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 0 8px;
-  background: #F7F8FA;
   font-size: 11px;
+  width: calc(100% - 2px);
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box input {
   color: #000000;
@@ -1346,9 +1359,9 @@ footer .footer-area .footer-main-area p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
   margin-bottom: 37px;
 }
 .person-information-main-area .personal-info .additional-catagory-select-area .pet-select-area .pet-item {
@@ -1370,7 +1383,7 @@ footer .footer-area .footer-main-area p {
   grid-template-columns: repeat(2, 2fr);
   /* Two columns with equal width */
   grid-template-rows: auto auto;
-  row-gap: 30px;
+  row-gap: 20px;
 }
 .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box {
   border: 2px solid #202020;
@@ -1381,14 +1394,21 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: -10px;
-  left: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #202020;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 0 8px;
-  background: #F7F8FA;
   font-size: 11px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
+  margin-right: 1px;
 }
 .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box input {
   color: #000000;
@@ -1493,7 +1513,7 @@ footer .footer-area .footer-main-area p {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: auto auto;
-  row-gap: 30px;
+  row-gap: 20px;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -1507,14 +1527,20 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: -10px;
-  left: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #202020;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 0 8px;
-  background: #F7F8FA;
   font-size: 11px;
+  width: calc(100% - 2px);
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
 }
 .person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box input {
   color: #000000;
@@ -1610,14 +1636,20 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box .infolabel {
   position: absolute;
-  top: -10px;
-  left: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #202020;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 0 8px;
-  background: #F7F8FA;
   font-size: 11px;
+  width: calc(100% - 2px);
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
 }
 .person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box select {
   background: none;
@@ -1639,7 +1671,7 @@ footer .footer-area .footer-main-area p {
   -webkit-column-gap: 18px;
      -moz-column-gap: 18px;
           column-gap: 18px;
-  row-gap: 30px;
+  row-gap: 20px;
 }
 .person-information-main-area .booking-info .payment-information-area .payment-card-details-area .card-details-item .info-input-box {
   border: 2px solid #202020;
@@ -1650,14 +1682,20 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .booking-info .payment-information-area .payment-card-details-area .card-details-item .info-input-box .infolabel {
   position: absolute;
-  top: -10px;
-  left: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #202020;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding: 0 8px;
-  background: #F7F8FA;
   font-size: 11px;
+  width: calc(100% - 2px);
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
 }
 .person-information-main-area .booking-info .payment-information-area .payment-card-details-area .card-details-item .info-input-box input {
   color: #000000;
@@ -2895,7 +2933,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   font-size: 16px;
   width: 100%;
 }
-.viabookingpopup-area .viabooking-main-area .viabooking-date-box .search-data-input-item .date-input-area button {
+.viabookingpopup-area .viabooking-main-area .viabooking-date-box .search-data-input-item .date-input-area .calenderIcon {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2925,6 +2963,19 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   color: #ffffff;
 }
 
+.confirmpopup .viabooking-main-area {
+  position: relative;
+}
+.confirmpopup .viabooking-main-area .closeBtn {
+  color: #656970;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.confirmpopup .viabooking-main-area .closeBtn:hover {
+  color: #01286D;
+}
 .confirmpopup .viabooking-main-area .viabooking-header img {
   width: 100px;
   margin-bottom: 20px;
@@ -3107,6 +3158,41 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   padding-bottom: 7px;
 }
 .date-picker #applyButton {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #01286D;
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.date-pickerpopup {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #202020;
+  padding: 10px;
+  z-index: 10;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  border-radius: 8px;
+}
+.date-pickerpopup input {
+  border-bottom: 2px solid #EBECEE;
+  padding-bottom: 7px;
+}
+.date-pickerpopup #applyButtonpopup {
   padding: 8px 12px;
   border-radius: 8px;
   font-family: "DM Sans", sans-serif;

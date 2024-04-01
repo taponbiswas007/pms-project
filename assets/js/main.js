@@ -38,6 +38,28 @@ $(document).ready(function(){
         }
     });
 
+    
+    $('.infolabel').on('click', function() {
+       
+      //  $(".info-input-box").css("border", "3px solid #003087");
+
+        $(this).animate({
+            "top": "-8px",
+            "left": "76px",
+            "background": "#F5F5F5",
+            "height": "15px",
+            "padding-top": "8px",
+            "margin-right": "0",
+            "width": "120px",
+        }, 300);
+    });
+    
+    $('.info-input-box').each(function() {
+        $(this).click(function() {
+            $(this).css('border-color', '#003087');
+        });
+    });
+
 
 $('.room1').on('click', function() {
    $("#reservationPersonDetailsOpen").toggle();
@@ -64,6 +86,10 @@ $("#bookingPage").click(function(){
         $(".overlay").fadeIn();
         $(".viabookingpopup-area").fadeIn();
     });
+    $(".closeBtn").click(function(){
+        $(".overlay").fadeOut();
+        $(".viabookingpopup-area").fadeOut();
+    });
 
     $('.viabooking-item').click(function() {
         // Remove the class from all elements
@@ -89,17 +115,24 @@ $("#bookingPage").click(function(){
     });
     
 
-    
+    //for main page
     $("#applyButton").click(function(){
         var fromDate = formatDate($("#fromDate").val());
         var toDate = formatDate($("#toDate").val());
         $("#mainDateInput").val(fromDate + " - " + toDate);
         toggleDatePicker(); // Close the date picker after applying the date range
     });
+
+    //for popup page
+    $("#applyButtonpopup").click(function(){
+        var fromDate = formatDatepopup($("#fromDatepopup").val());
+        var toDate = formatDatepopup($("#toDatepopup").val());
+        $("#mainDateInputpopup").val(fromDate + " - " + toDate);
+        toggleDatePickerpopup(); // Close the date picker after applying the date range
+    });
       
 });
-
-
+//for main page
 function formatDate(dateString) {
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var date = new Date(dateString);
@@ -125,3 +158,32 @@ function toggleDatePicker() {
         datePicker.style.display = "block";
     }
 }
+
+//for popup page
+function formatDatepopup(dateString) {
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var date = new Date(dateString);
+    var day = date.getDate();
+    var month = months[date.getMonth()];
+    var year = date.getFullYear();
+    return pad(day) + " " + month + " " + year;
+}
+
+function pad(number) {
+    if (number < 10) {
+        return '0' + number;
+    }
+    return number;
+}
+
+
+function toggleDatePickerpopup() {
+    var datePickerpopup = document.getElementById("datePickerpopup");
+    if (datePickerpopup.style.display === "block") {
+        datePickerpopup.style.display = "none";
+    } else {
+        datePickerpopup.style.display = "block";
+    }
+}
+
+

@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body class="p-bottom"> 
     <!-- header area start -->
     <header>
         <div class="top-header">
@@ -42,8 +42,12 @@
                         <button class="headersearchBtn">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                        <div class="user-logo">
+                        <div class="user-logo" id="profile">
                             <span>D</span>
+                            <div class="profile-logout-form" id="profileOption">
+                                <button> <i class="fa-regular fa-user"></i> Profile</button>
+                                <button> <i class="fa-solid fa-arrow-right-from-bracket"></i> logout</button>
+                            </div>
                         </div>
                     </div>
                     <button class="toggle-bar">
@@ -487,6 +491,7 @@
     <!-- via booking pop up area start -->
     <div class="viabookingpopup-area confirmpopup">
         <div class="viabooking-main-area">
+            <button class="closeBtn"><i class="fa-solid fa-x"></i></button>
             <div class="viabooking-header">
                 <img src="assets/images/congratulation.png" alt="">
                 <ul>
