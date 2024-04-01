@@ -1911,6 +1911,11 @@ footer .footer-area .footer-main-area p {
   background: #020f36;
 }
 
+.footer-hidden {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
 @media screen and (max-width: 1300px) {
   .person-information-main-area .personal-info .images-id-capture-area .capture-mian-area {
     -webkit-column-gap: 20px;

@@ -187,3 +187,11 @@ function toggleDatePickerpopup() {
 }
 
 
+window.addEventListener('scroll', function() {
+    var footer = document.getElementById('footer');
+    if (window.scrollY > 0) {
+        footer.classList.add('footer-hidden');
+    } else {
+        footer.classList.remove('footer-hidden');
+    }
+});
