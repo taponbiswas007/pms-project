@@ -42,20 +42,19 @@
 
                     .infolabel {
                         position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            color: $simpleblack;
-                            background: $white;
-                            font-family: $roboto;
-                            font-weight: 400;
-                            padding: 0 8px;
-                            font-size: 11px;
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 8px;
-                            padding-top: 15px;
-                            margin-right: 1px;
+                        top: 0;
+                        left: 0;
+                        color: $simpleblack;
+                        background: $white;
+                        font-family: $roboto;
+                        font-weight: 400;
+                        padding: 0 8px;
+                        font-size: 11px;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 8px;
+                        padding-top: 15px;
+                        margin-right: 1px;
 
                     }
 
@@ -129,9 +128,8 @@
 
                         .infolabel {
                             position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            top: 0;
+                            left: 0;
                             color: $simpleblack;
                             background: $white;
                             font-family: $roboto;
@@ -142,7 +140,7 @@
                             height: 100%;
                             border-radius: 8px;
                             padding-top: 15px;
-                            
+
 
                         }
 
@@ -446,9 +444,8 @@
 
                         .infolabel {
                             position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            top: 0;
+                            left: 0;
                             color: $simpleblack;
                             background: $white;
                             font-family: $roboto;
@@ -583,20 +580,19 @@
 
                     .infolabel {
                         position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            color: $simpleblack;
-                            background: $white;
-                            font-family: $roboto;
-                            font-weight: 400;
-                            padding: 0 8px;
-                            font-size: 11px;
-                            width: calc(100% - 2px);
-                            height: 100%;
-                            border-radius: 8px;
-                            padding-top: 15px;
-                           
+                        top: 0;
+                        left: 0;
+                        color: $simpleblack;
+                        background: $white;
+                        font-family: $roboto;
+                        font-weight: 400;
+                        padding: 0 8px;
+                        font-size: 11px;
+                        width: calc(100% - 2px);
+                        height: 100%;
+                        border-radius: 8px;
+                        padding-top: 15px;
+
 
 
                     }
@@ -714,9 +710,8 @@
 
                         .infolabel {
                             position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            top: 0;
+                            left: 0;
                             color: $simpleblack;
                             background: $white;
                             font-family: $roboto;
@@ -727,7 +722,7 @@
                             height: 100%;
                             border-radius: 8px;
                             padding-top: 15px;
-                          
+
 
                         }
 
@@ -765,9 +760,8 @@
 
                         .infolabel {
                             position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            top: 0;
+                            left: 0;
                             color: $simpleblack;
                             background: $white;
                             font-family: $roboto;
@@ -778,7 +772,7 @@
                             height: 100%;
                             border-radius: 8px;
                             padding-top: 15px;
-                           
+
 
                         }
 
@@ -903,21 +897,24 @@
     }
 
 }
-.infoform-footer-area{
+
+.infoform-footer-area {
     background: $white;
     border-top: 2px solid $gray;
-    padding:18px 40px 92px 40px ;
+    padding: 18px 40px 92px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 20px;
-    .infoform-footer-area-left{
-      
+
+    .infoform-footer-area-left {
+
         display: flex;
         justify-content: flex-start;
         align-items: center;
         column-gap: 20px;
-        button{
+
+        button {
             @include commonBtnstyle;
             border: 1px solid #D0D5DD;
             padding: 10px 18px;
@@ -929,40 +926,48 @@
             justify-content: center;
             align-items: center;
             column-gap: 10px;
-            &:last-child{
+
+            &:last-child {
                 color: #E3642D;
             }
-            span{
+
+            span {
                 font-size: 10px;
-                
+
             }
         }
     }
-    .infoform-footer-area-right{
-       
+
+    .infoform-footer-area-right {
+
         display: flex;
         justify-content: flex-end;
         align-items: center;
         column-gap: 20px;
-        button{
-         @include commonBtnstyle;
+
+        button {
+            @include commonBtnstyle;
             font-size: 16px;
-             padding: 10px 18px;
-            &:first-child{
+            padding: 10px 18px;
+
+            &:first-child {
                 background: #EBECEE;
                 color: #344054;
-                &:hover{
+
+                &:hover {
                     background: #b2bed6;
                 }
             }
-            &:last-child{
+
+            &:last-child {
                 background: #0C256F;
                 color: $white;
-                &:hover{
+
+                &:hover {
                     background: #020f36;
                 }
             }
-       
+
         }
     }
 }
@@ -1116,14 +1121,16 @@
 
         }
     }
-       .infoform-footer-area{
-        .infoform-footer-area-left{
-            button{
+
+    .infoform-footer-area {
+        .infoform-footer-area-left {
+            button {
                 font-size: 12px;
             }
         }
-        .infoform-footer-area-right{
-            button{
+
+        .infoform-footer-area-right {
+            button {
                 font-size: 12px;
             }
         }
@@ -1296,19 +1303,21 @@
             }
         }
     }
- 
-       .infoform-footer-area{
-       flex-direction: column;
-       row-gap: 30px;
-       justify-content: right;
-       align-items: flex-end;
-        .infoform-footer-area-left{
-            button{
+
+    .infoform-footer-area {
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: right;
+        align-items: flex-end;
+
+        .infoform-footer-area-left {
+            button {
                 font-size: 16px;
             }
         }
-        .infoform-footer-area-right{
-            button{
+
+        .infoform-footer-area-right {
+            button {
                 font-size: 16px;
             }
         }
@@ -1358,18 +1367,21 @@
             }
         }
     }
-       .infoform-footer-area{
-       flex-direction: column;
-       row-gap: 30px;
-       justify-content: right;
-       align-items: flex-end;
-        .infoform-footer-area-left{
-            button{
+
+    .infoform-footer-area {
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: right;
+        align-items: flex-end;
+
+        .infoform-footer-area-left {
+            button {
                 font-size: 11px;
             }
         }
-        .infoform-footer-area-right{
-            button{
+
+        .infoform-footer-area-right {
+            button {
                 font-size: 16px;
             }
         }
@@ -1386,23 +1398,28 @@
                     font-size: 20px;
                 }
             }
-            .additional-catagory-select-area{
-                .additional-item-data-input-area{
+
+            .additional-catagory-select-area {
+                .additional-item-data-input-area {
                     grid-template-columns: 4fr;
-                    .person-info-item{
+
+                    .person-info-item {
                         margin-right: 0 !important;
-                        &:nth-child(1){
+
+                        &:nth-child(1) {
                             grid-row-start: 1;
                             grid-column-start: 1;
                             grid-column-end: 5;
                         }
-                        &:nth-child(2){
+
+                        &:nth-child(2) {
                             grid-row-start: 2;
                             grid-column-start: 1;
                             grid-column-end: 5;
-                            
+
                         }
-                        &:nth-child(2){
+
+                        &:nth-child(2) {
                             grid-row-start: 3;
                             grid-column-start: 1;
                             grid-column-end: 5;
@@ -1419,59 +1436,69 @@
                     font-size: 20px;
                 }
             }
-            .payment-information-area{
-                .payment-methods-select-area{
-                    .speacial-charge-box{
-                        grid-column-start: 1;
-                        grid-column-end: 5 ;
-                    }
-                }
-            }
-            .payment-card-details-area{
-                .card-details-item{
-                    &:nth-child(2){
-                        grid-row-start: 2 ;
+
+            .payment-information-area {
+                .payment-methods-select-area {
+                    .speacial-charge-box {
                         grid-column-start: 1;
                         grid-column-end: 5;
                     }
-                    &:nth-child(3){
+                }
+            }
+
+            .payment-card-details-area {
+                .card-details-item {
+                    &:nth-child(2) {
+                        grid-row-start: 2;
+                        grid-column-start: 1;
+                        grid-column-end: 5;
+                    }
+
+                    &:nth-child(3) {
                         grid-row-start: 3;
                         grid-column-start: 1;
                         grid-column-end: 5;
                     }
-                    &:nth-child(4){
+
+                    &:nth-child(4) {
                         grid-row-start: 4;
                         grid-column-start: 1;
                         grid-column-end: 5;
                     }
-                    &:nth-child(5){
+
+                    &:nth-child(5) {
                         grid-row-start: 5 !important;
                         grid-column-start: 1;
                         grid-column-end: 5;
                     }
-                    &:nth-child(6){
+
+                    &:nth-child(6) {
                         grid-row-start: 6 !important;
                         grid-column-start: 1;
                         grid-column-end: 5;
                         height: 271px !important;
-                        .booking-term{
-                            .booking-term-item{
-                                &:nth-child(1){
-                                    grid-row-start: 1 ;
+
+                        .booking-term {
+                            .booking-term-item {
+                                &:nth-child(1) {
+                                    grid-row-start: 1;
                                     grid-column-start: 1;
                                     grid-column-end: 5;
                                 }
-                                &:nth-child(2){
+
+                                &:nth-child(2) {
                                     grid-row-start: 2;
                                     grid-column-start: 1;
                                     grid-column-end: 5;
                                 }
-                                &:nth-child(3){
+
+                                &:nth-child(3) {
                                     grid-row-start: 3;
                                     grid-column-start: 1;
                                     grid-column-end: 5;
                                 }
-                                &:nth-child(4){
+
+                                &:nth-child(4) {
                                     grid-row-start: 4;
                                     grid-column-start: 1;
                                     grid-column-end: 5;
@@ -1483,54 +1510,64 @@
             }
         }
     }
-       .infoform-footer-area{
-       flex-direction: column;
-       row-gap: 30px;
-       justify-content: right;
-       align-items: flex-end;
-        .infoform-footer-area-left{
+
+    .infoform-footer-area {
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: right;
+        align-items: flex-end;
+
+        .infoform-footer-area-left {
             flex-wrap: wrap;
             row-gap: 20px;
             justify-content: right;
             align-items: flex-end;
-            button{
+
+            button {
                 font-size: 16px;
             }
         }
-        .infoform-footer-area-right{
-            button{
+
+        .infoform-footer-area-right {
+            button {
                 font-size: 16px;
             }
         }
     }
 }
-@media screen and (max-width:540px){
-    .person-information-main-area{
+
+@media screen and (max-width:540px) {
+    .person-information-main-area {
         row-gap: 40px;
-        .personal-info{
+
+        .personal-info {
             grid-row-start: 1;
             grid-column-start: 1;
             grid-column-end: 5;
-            .personal-info-header{
-                h1{
+
+            .personal-info-header {
+                h1 {
                     font-size: 33px;
                 }
             }
-            .images-id-capture-area{
-                .capture-mian-area{
-                    .images-id-right-side{
+
+            .images-id-capture-area {
+                .capture-mian-area {
+                    .images-id-right-side {
                         flex-direction: row;
                         column-gap: 20px;
                         justify-content: space-between;
                         align-items: center;
-                        button{
-                            &:first-child{
+
+                        button {
+                            &:first-child {
                                 margin-bottom: 0;
                             }
                         }
                     }
                 }
             }
+
             .import-document-area {
                 .document-area-right {
                     justify-content: space-between;
@@ -1540,15 +1577,18 @@
                 }
             }
         }
-        .booking-info{
+
+        .booking-info {
             grid-row-start: 2;
             grid-column-start: 1;
             grid-column-end: 5;
-            .personal-info-header{
-                h1{
+
+            .personal-info-header {
+                h1 {
                     font-size: 33px;
                 }
             }
+
             .payment-card-details-area {
                 .card-details-item {
                     &:nth-child(6) {
@@ -1557,7 +1597,7 @@
                         .booking-term {
                             row-gap: 30px;
                             column-gap: 10px;
-                            grid-template-columns:  repeat(3, 1fr) !important;
+                            grid-template-columns: repeat(3, 1fr) !important;
 
                             .booking-term-item {
 
@@ -1567,16 +1607,19 @@
                                     grid-column-start: 1 !important;
                                     grid-column-end: 2 !important;
                                 }
+
                                 &:nth-child(2) {
                                     grid-row-start: 1 !important;
                                     grid-column-start: 2 !important;
                                     grid-column-end: 3 !important;
                                 }
+
                                 &:nth-child(3) {
                                     grid-row-start: 1 !important;
                                     grid-column-start: 3 !important;
                                     grid-column-end: 4;
                                 }
+
                                 &:nth-child(4) {
                                     grid-row-start: 2 !important;
                                     grid-column-start: 1 !important;
@@ -1589,53 +1632,60 @@
             }
         }
     }
-       .infoform-footer-area{
-       flex-direction: column;
-       row-gap: 30px;
-       justify-content: right;
-       align-items: flex-end;
-        .infoform-footer-area-left{
+
+    .infoform-footer-area {
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: right;
+        align-items: flex-end;
+
+        .infoform-footer-area-left {
             flex-wrap: wrap;
             row-gap: 20px;
             justify-content: center;
             align-items: center;
-            button{
+
+            button {
                 font-size: 16px;
                 width: 100%;
             }
         }
-        .infoform-footer-area-right{
+
+        .infoform-footer-area-right {
             flex-direction: column;
             row-gap: 20px;
             align-items: center;
             justify-content: center;
-            button{
+
+            button {
                 font-size: 16px;
-                 width: 100%;
+                width: 100%;
             }
         }
     }
 }
-@media screen and (max-width:376px){
-    .person-information-main-area{
-        .personal-info{
-            .images-id-capture-area{
-                .capture-mian-area{
-                    .images-id-right-side{
-                        button{
+
+@media screen and (max-width:376px) {
+    .person-information-main-area {
+        .personal-info {
+            .images-id-capture-area {
+                .capture-mian-area {
+                    .images-id-right-side {
+                        button {
                             font-size: 12px;
                         }
                     }
                 }
             }
-            .import-document-area{
-                .document-area-right{
-                    button{
+
+            .import-document-area {
+                .document-area-right {
+                    button {
                         font-size: 12px;
                     }
                 }
             }
         }
-    } 
-      
+    }
+
 }

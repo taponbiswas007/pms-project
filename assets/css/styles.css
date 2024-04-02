@@ -999,10 +999,8 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   color: #202020;
   background: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1081,10 +1079,8 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .personal-info .personal-info-input-area .other-informaton .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   color: #202020;
   background: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1394,10 +1390,8 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .personal-info .additional-catagory-select-area .additional-item-data-input-area .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   color: #202020;
   background: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1527,10 +1521,8 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .booking-info .personal-info-input-area .person-info-item .info-input-box .infolabel {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   color: #202020;
   background: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1636,10 +1628,8 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box .infolabel {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   color: #202020;
   background: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1682,10 +1672,8 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .booking-info .payment-information-area .payment-card-details-area .card-details-item .info-input-box .infolabel {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   color: #202020;
   background: #ffffff;
   font-family: "Roboto", sans-serif;

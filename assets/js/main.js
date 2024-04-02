@@ -44,13 +44,14 @@ $(document).ready(function(){
       //  $(".info-input-box").css("border", "3px solid #003087");
 
         $(this).animate({
-            "top": "-8px",
-            "left": "76px",
+            "top": "-15px",
+            "left": "10px",
             "background": "#F5F5F5",
             "height": "15px",
             "padding-top": "8px",
             "margin-right": "0",
             "width": "120px",
+            "border-radius": "0",
         }, 300);
     });
     
