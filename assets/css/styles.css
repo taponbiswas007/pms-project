@@ -1012,6 +1012,7 @@ footer .footer-area .footer-main-area p {
   border-radius: 8px;
   padding-top: 15px;
   margin-right: 1px;
+  text-transform: capitalize;
 }
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box input {
   color: #000000;

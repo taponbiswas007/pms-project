@@ -38,11 +38,9 @@ $(document).ready(function(){
         }
     });
 
-   
+   /*
     $('.infolabel').on('click', function() {
        
-      //  $(".info-input-box").css("border", "3px solid #003087");
-
         $(this).animate({
             "top": "-15px",
             "left": "10px",
@@ -54,6 +52,62 @@ $(document).ready(function(){
             "border-radius": "0",
         }, 300);
     });
+    
+    */
+  
+    var $prevClickedLabel = null;
+
+    $('.infolabel').on('click', function() {
+           
+        // If there was a previously clicked label, revert its styles
+        if ($prevClickedLabel !== null) {
+            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input');
+            $prevClickedLabel.animate({
+              
+                "top": "-15px",
+                "left": "10px",
+                "background": "#F5F5F5",
+                "height": "15px",
+                "padding-top": "8px",
+                "margin-right": "0",
+                "width": "120px",
+                "border-radius": "0"
+            },300);
+            
+            // Only revert input field styles if it's empty
+            if ($prevInputField.val().trim() === '') {
+                $prevClickedLabel.animate({
+                    "top": "0",
+                    "left": "0",
+                    "color": "#000",
+                    "background": "#ffffff",
+                    "width": "100%",
+                    "height": "100%",
+                    "border-radius": "8px",
+                    "padding-top": "10px",
+                    "margin-right": "1px"
+                },300);
+            }
+        }
+        
+        // Apply the new CSS styles to the current label
+       
+        $(this).animate({
+            "top": "-15px",
+            "left": "10px",
+            "background": "#F5F5F5",
+            "height": "15px",
+            "padding-top": "8px",
+            "margin-right": "0",
+            "width": "120px",
+            "border-radius": "0"
+        },300);
+        
+        
+        // Set the current label as the previously clicked label
+        $prevClickedLabel = $(this);
+    });
+    
     
     
 
