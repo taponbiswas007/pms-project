@@ -38,60 +38,56 @@ $(document).ready(function(){
         }
     });
 
-   /*
-    $('.infolabel').on('click', function() {
-       
-        $(this).animate({
-            "top": "-15px",
-            "left": "10px",
-            "background": "#F5F5F5",
-            "height": "15px",
-            "padding-top": "8px",
-            "margin-right": "0",
-            "width": "120px",
-            "border-radius": "0",
-        }, 300);
-    });
-    
-    */
+ 
+ 
   
     var $prevClickedLabel = null;
 
     $('.infolabel').on('click', function() {
-           
+        // Check if the clicked label contains an input field
+        var $inputField = $(this).closest('.info-input-box').find('input , select');
+        if ($inputField.length === 0) {
+            return; // Exit the function if no input field found
+        }
+    
         // If there was a previously clicked label, revert its styles
         if ($prevClickedLabel !== null) {
-            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input');
-            $prevClickedLabel.animate({
-              
-                "top": "-15px",
-                "left": "10px",
-                "background": "#F5F5F5",
-                "height": "15px",
-                "padding-top": "8px",
-                "margin-right": "0",
-                "width": "120px",
-                "border-radius": "0"
-            },300);
+            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input , select');
             
-            // Only revert input field styles if it's empty
-            if ($prevInputField.val().trim() === '') {
+            // Determine if the previously clicked label contains a select element
+            var isPrevSelect = $prevInputField.is('select');
+            
+            // Revert styles based on the type of the input field
+            if (isPrevSelect) {
                 $prevClickedLabel.animate({
-                    "top": "0",
-                    "left": "0",
-                    "color": "#000",
-                    "background": "#ffffff",
-                    "width": "100%",
-                    "height": "100%",
-                    "border-radius": "8px",
-                    "padding-top": "10px",
-                    "margin-right": "1px"
-                },300);
+                    "top": "-15px",
+                    "left": "10px",
+                    "background": "#F5F5F5",
+                    "height": "15px",
+                    "padding-top": "8px",
+                    "margin-right": "0",
+                    "width": "120px",
+                    "border-radius": "0"
+                }, 300);
+            } else {
+                // Revert input field styles if it's empty
+                if ($prevInputField.val().trim() === '') {
+                    $prevClickedLabel.animate({
+                        "top": "0",
+                        "left": "0",
+                        "color": "#000",
+                        "background": "#ffffff",
+                        "width": "100%",
+                        "height": "100%",
+                        "border-radius": "8px",
+                        "padding-top": "10px",
+                        "margin-right": "1px"
+                    }, 300);
+                }
             }
         }
         
         // Apply the new CSS styles to the current label
-       
         $(this).animate({
             "top": "-15px",
             "left": "10px",
@@ -101,8 +97,7 @@ $(document).ready(function(){
             "margin-right": "0",
             "width": "120px",
             "border-radius": "0"
-        },300);
-        
+        }, 300);
         
         // Set the current label as the previously clicked label
         $prevClickedLabel = $(this);
