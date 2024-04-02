@@ -1324,9 +1324,6 @@ footer .footer-area .footer-main-area p {
   text-transform: capitalize;
   margin-bottom: 23px;
 }
-.person-information-main-area .personal-info #petInfo {
-  display: none;
-}
 .person-information-main-area .personal-info #petInfo .additional-catagory-item button {
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
@@ -1345,6 +1342,9 @@ footer .footer-area .footer-main-area p {
 .person-information-main-area .personal-info #petInfo .additional-catagory-item button:hover {
   color: #0570DE;
   border-bottom: 2px solid #0570DE;
+}
+.person-information-main-area .personal-info #vehicalInfo {
+  display: none;
 }
 .person-information-main-area .personal-info #vehicalInfo .additional-catagory-item button {
   font-size: 20px;
