@@ -40,7 +40,6 @@ $(document).ready(function(){
 
  
  
-  
     var $prevClickedLabel = null;
 
     $('.infolabel').on('click', function() {
@@ -50,13 +49,19 @@ $(document).ready(function(){
             return; // Exit the function if no input field found
         }
     
+        // Set border color for all .info-input-box elements to #202020
+        $('.info-input-box').css('border-color', '#202020');
+    
+        // Set border color for the clicked .info-input-box to #003087
+        $(this).closest('.info-input-box').css('border-color', '#003087');
+    
         // If there was a previously clicked label, revert its styles
         if ($prevClickedLabel !== null) {
             var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input , select');
-            
+    
             // Determine if the previously clicked label contains a select element
             var isPrevSelect = $prevInputField.is('select');
-            
+    
             // Revert styles based on the type of the input field
             if (isPrevSelect) {
                 $prevClickedLabel.animate({
@@ -86,7 +91,7 @@ $(document).ready(function(){
                 }
             }
         }
-        
+    
         // Apply the new CSS styles to the current label
         $(this).animate({
             "top": "-15px",
@@ -98,34 +103,10 @@ $(document).ready(function(){
             "width": "120px",
             "border-radius": "0"
         }, 300);
-        
+    
         // Set the current label as the previously clicked label
         $prevClickedLabel = $(this);
     });
-    
-    
-    
-
-
-    $('.info-input-box').each(function() {
-        var clickedOnce = false;
-    
-        $(this).click(function() {
-            // If this is the first click, apply border color and set clickedOnce to true
-            if (!clickedOnce) {
-                $('.info-input-box').css('border-color', '#202020');
-                $(this).css('border-color', '#003087');
-                clickedOnce = true;
-            } else {
-                // Check if there is any input text
-                var inputText = $(this).find('input').val();
-                if (inputText.trim() === '') {
-                    $(this).css('border-color', '#202020');
-                }
-            }
-        });
-    });
-    
     
     
 
