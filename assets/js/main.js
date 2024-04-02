@@ -38,7 +38,7 @@ $(document).ready(function(){
         }
     });
 
-    
+   
     $('.infolabel').on('click', function() {
        
       //  $(".info-input-box").css("border", "3px solid #003087");
@@ -54,6 +54,11 @@ $(document).ready(function(){
         }, 300);
     });
     
+    
+
+
+
+
     $('.info-input-box').each(function() {
         $(this).click(function() {
             $(this).css('border-color', '#003087');
