@@ -3157,10 +3157,13 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   width: 100%;
   left: 0;
   border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
 }
 .date-picker input {
   border-bottom: 2px solid #EBECEE;
   padding-bottom: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .date-picker #applyButton {
   padding: 8px 12px;
@@ -3192,10 +3195,13 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   width: 100%;
   left: 0;
   border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
 }
 .date-pickerpopup input {
   border-bottom: 2px solid #EBECEE;
   padding-bottom: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .date-pickerpopup #applyButtonpopup {
   padding: 8px 12px;
