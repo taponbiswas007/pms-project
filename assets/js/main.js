@@ -57,13 +57,27 @@ $(document).ready(function(){
     
 
 
-
-
     $('.info-input-box').each(function() {
+        var clickedOnce = false;
+    
         $(this).click(function() {
-            $(this).css('border-color', '#003087');
+            // If this is the first click, apply border color and set clickedOnce to true
+            if (!clickedOnce) {
+                $('.info-input-box').css('border-color', '#202020');
+                $(this).css('border-color', '#003087');
+                clickedOnce = true;
+            } else {
+                // Check if there is any input text
+                var inputText = $(this).find('input').val();
+                if (inputText.trim() === '') {
+                    $(this).css('border-color', '#202020');
+                }
+            }
         });
     });
+    
+    
+    
 
 
 $('.room1').on('click', function() {
