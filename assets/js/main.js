@@ -1,36 +1,36 @@
-$(document).ready(function(){
-    $(".toggle-bar").click(function(){
+$(document).ready(function () {
+    $(".toggle-bar").click(function () {
         $(".bottom-header").slideToggle();
         $(".bars").toggle();
         $(".close").toggle();
     });
-    $('#show-more').on('click', function() {
+    $('#show-more').on('click', function () {
         $('.doubleroom-row').toggle();
-        
+
         var isVisible = $('.doubleroom-row').is(':visible');
-        
+
         if (isVisible) {
             $(".down-arrow").css("transform", "rotate(180deg)");
         } else {
             $(".down-arrow").css("transform", "rotate(0deg)");
         }
     });
-    $('#show-moreFamillyRoom').on('click', function() {
+    $('#show-moreFamillyRoom').on('click', function () {
         $('.famillyroom-row').toggle();
-        
+
         var isVisible = $('.famillyroom-row').is(':visible');
-        
+
         if (isVisible) {
             $(".down-arrow2").css("transform", "rotate(180deg)");
         } else {
             $(".down-arrow2").css("transform", "rotate(0deg)");
         }
     });
-    $('#show-morestandardRoom').on('click', function() {
+    $('#show-morestandardRoom').on('click', function () {
         $('.standardroom-row').toggle();
-        
+
         var isVisible = $('.standardroom-row').is(':visible');
-        
+
         if (isVisible) {
             $(".down-arrow3").css("transform", "rotate(180deg)");
         } else {
@@ -38,30 +38,30 @@ $(document).ready(function(){
         }
     });
 
- 
- 
+
+
     var $prevClickedLabel = null;
 
-    $('.infolabel').on('click', function() {
+    $('.infolabel').on('click', function () {
         // Check if the clicked label contains an input field
         var $inputField = $(this).closest('.info-input-box').find('input , select');
         if ($inputField.length === 0) {
             return; // Exit the function if no input field found
         }
-    
+
         // Set border color for all .info-input-box elements to #202020
         $('.info-input-box').css('border-color', '#202020');
-    
+
         // Set border color for the clicked .info-input-box to #003087
         $(this).closest('.info-input-box').css('border-color', '#003087');
-    
+
         // If there was a previously clicked label, revert its styles
         if ($prevClickedLabel !== null) {
             var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input , select');
-    
+
             // Determine if the previously clicked label contains a select element
             var isPrevSelect = $prevInputField.is('select');
-    
+
             // Revert styles based on the type of the input field
             if (isPrevSelect) {
                 $prevClickedLabel.animate({
@@ -91,7 +91,7 @@ $(document).ready(function(){
                 }
             }
         }
-    
+
         // Apply the new CSS styles to the current label
         $(this).animate({
             "top": "-15px",
@@ -103,70 +103,75 @@ $(document).ready(function(){
             "width": "120px",
             "border-radius": "0"
         }, 300);
-    
+
         // Set the current label as the previously clicked label
         $prevClickedLabel = $(this);
     });
-    
-    
 
 
-$('.room1').on('click', function() {
-   $("#reservationPersonDetailsOpen").toggle();
-});
-$('#reservationPersonDetailsClose').on('click', function() {
-   $("#reservationPersonDetailsOpen").hide();
-});
-$('#profile').on('click', function() {
-   $("#profileOption").slideToggle();
-});
 
-$("#bookingPage").click(function(){
-    window.location.href = "booking-person-details.html";
-});
 
-    $(".headersearchBtn").click(function(){
+    $('.room1').on('click', function () {
+        $("#reservationPersonDetailsOpen").toggle();
+    });
+    $('#reservationPersonDetailsClose').on('click', function () {
+        $("#reservationPersonDetailsOpen").hide();
+    });
+    $('#profile').on('click', function () {
+        $("#profileOption").slideToggle();
+    });
+
+    $("#bookingPage").click(function () {
+        window.location.href = "booking-person-details.html";
+    });
+
+    $(".headersearchBtn").click(function () {
         $(".popupinput").show();
     });
-    $("#newReservation").click(function(){
+    $("#newReservation").click(function () {
         $(".overlay").fadeIn();
         $(".viabookingpopup-area").fadeIn();
     });
-    $(".bookconfirm").click(function(){
+    $(".bookconfirm").click(function () {
         $(".overlay").fadeIn();
         $(".viabookingpopup-area").fadeIn();
     });
-    $(".closeBtn").click(function(){
+    $(".closeBtn").click(function () {
         $(".overlay").fadeOut();
         $(".viabookingpopup-area").fadeOut();
     });
 
-    $('.viabooking-item').click(function() {
+    $('.viabooking-item').click(function () {
         // Remove the class from all elements
         $('.viabooking-item').removeClass('viaselect');
-    
+
         // Toggle the class for the clicked item
         $(this).addClass('viaselect');
-    
+
         // Hide the checkmark from all elements
         $('.viabooking-item .checkmark').hide();
-    
+
         // Show the checkmark for the clicked item
         $(this).find(".checkmark").show();
     });
-    $('.payment-mathods-item').click(function() {
+    $('.payment-mathods-item').click(function () {
         // Remove the class from all elements
         $('.payment-mathods-item').removeClass('active-payment-method');
-    
+
         // Toggle the class for the clicked item
         $(this).addClass('active-payment-method');
-    
-       
+
+
+    });
+    $('.pet-item').click(function () {
+        // Toggle the class for the clicked item
+        $(this).toggleClass('active-p-v');
     });
     
 
+
     //for main page
-    $("#applyButton").click(function(){
+    $("#applyButton").click(function () {
         var fromDate = formatDate($("#fromDate").val());
         var toDate = formatDate($("#toDate").val());
         $("#mainDateInput").val(fromDate + " - " + toDate);
@@ -174,13 +179,13 @@ $("#bookingPage").click(function(){
     });
 
     //for popup page
-    $("#applyButtonpopup").click(function(){
+    $("#applyButtonpopup").click(function () {
         var fromDate = formatDatepopup($("#fromDatepopup").val());
         var toDate = formatDatepopup($("#toDatepopup").val());
         $("#mainDateInputpopup").val(fromDate + " - " + toDate);
         toggleDatePickerpopup(); // Close the date picker after applying the date range
     });
-      
+
 });
 //for main page
 function formatDate(dateString) {
@@ -237,7 +242,7 @@ function toggleDatePickerpopup() {
 }
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var footer = document.getElementById('footer');
     if (window.scrollY > 0) {
         footer.classList.add('footer-hidden');
