@@ -85,7 +85,7 @@ $(document).ready(function () {
                         "width": "100%",
                         "height": "100%",
                         "border-radius": "8px",
-                        "padding-top": "10px",
+                        "padding-top": "15px",
                         "margin-right": "1px"
                     }, 300);
                 }
@@ -167,7 +167,7 @@ $(document).ready(function () {
         // Toggle the class for the clicked item
         $(this).toggleClass('active-p-v');
     });
-    
+
 
 
     //for main page
@@ -184,6 +184,22 @@ $(document).ready(function () {
         var toDate = formatDatepopup($("#toDatepopup").val());
         $("#mainDateInputpopup").val(fromDate + " - " + toDate);
         toggleDatePickerpopup(); // Close the date picker after applying the date range
+    });
+
+
+    //additional info area
+
+
+    $(".vehicalinfoBtn").click(function (event) {
+        event.preventDefault(); // Prevent default behavior of the button click
+        $("#vehicalInfo").show();
+        $("#petInfo").hide();
+    });
+
+    $(".petinfoBtn").click(function (event) {
+        event.preventDefault(); // Prevent default behavior of the button click
+        $("#vehicalInfo").hide();
+        $("#petInfo").show();
     });
 
 });

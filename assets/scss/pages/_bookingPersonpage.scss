@@ -376,7 +376,7 @@
         }
 
         #petInfo {
-            
+
 
             .additional-catagory-item {
                 button {
@@ -407,6 +407,7 @@
 
         #vehicalInfo {
             display: none;
+
             .additional-catagory-item {
                 button {
                     font-size: 20px;
@@ -480,9 +481,11 @@
                         border-radius: 6px;
                         cursor: pointer;
                         border: 1px solid $gray;
-                        img{
+
+                        img {
                             width: 47px;
                         }
+
                         &:hover {
                             border: 1px solid $blue;
                         }
@@ -1251,11 +1254,13 @@
             }
         }
     }
-    .personal-info{
-        #vehicalInfo{
-            .pet-select-area{
+
+    .personal-info {
+        #vehicalInfo {
+            .pet-select-area {
                 flex-wrap: wrap;
-                .person-info-item{
+
+                .person-info-item {
                     width: 100%;
                 }
             }
@@ -1598,11 +1603,13 @@
                     }
                 }
             }
-            #vehicalInfo{
-                .vehical-details-input-box-area{
+
+            #vehicalInfo {
+                .vehical-details-input-box-area {
                     flex-wrap: wrap;
                     row-gap: 20px;
-                    .person-info-item{
+
+                    .person-info-item {
                         width: 100%;
                     }
                 }
