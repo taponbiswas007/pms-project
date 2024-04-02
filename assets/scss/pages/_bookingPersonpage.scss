@@ -1597,6 +1597,15 @@
                     }
                 }
             }
+            #vehicalInfo{
+                .vehical-details-input-box-area{
+                    flex-wrap: wrap;
+                    row-gap: 20px;
+                    .person-info-item{
+                        width: 100%;
+                    }
+                }
+            }
 
         }
 

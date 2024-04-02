@@ -2390,6 +2390,14 @@ footer .footer-area .footer-main-area p {
     grid-column-start: 1;
     grid-column-end: 5;
   }
+  .person-information-main-area .personal-info #vehicalInfo .vehical-details-input-box-area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .person-information-main-area .personal-info #vehicalInfo .vehical-details-input-box-area .person-info-item {
+    width: 100%;
+  }
   .person-information-main-area .booking-info .personal-info-header h1 {
     font-size: 20px;
   }
