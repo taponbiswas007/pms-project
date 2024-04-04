@@ -203,7 +203,7 @@
                                 </div>
                             </div>
                             <div class="document-area-right">
-                                <button>+ Extra Guest</button>
+                                <button class="guestListbtn">+ Extra Guest</button>
                                 <button class="booking-historybtn"><i class="fa-solid fa-clock-rotate-left clock-icon"></i>Booking History</button>
                             </div>
                         </div>
@@ -650,7 +650,7 @@
 
 
     <!-- booking history popup list start -->
-    <div class="booking-history-popup-area">
+    <div class="booking-history-popup-area" id="bookinghistory">
         <div class="booking-history-popup-main-area">
             <div class="header">
                 <h1>Booking History <i class="fa-solid fa-clock-rotate-left clock-icon"></i></h1>
@@ -761,6 +761,129 @@
         </div>
     </div>
     <!-- booking history popup list end -->
+
+
+    <!-- guest list popup list start -->
+    <div class="booking-history-popup-area guestlist-area" id="guestList">
+        <div class="booking-history-popup-main-area">
+            <div class="header">
+                <h1>Guest List</h1>
+                <button class="closeBtn"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="guest-details-input-area">
+                <div class="person-info-item">
+                    <div class="info-input-box">
+                        <span class="infolabel">Full Name </span>
+                        <input type="text" placeholder="Guest full name">
+
+                    </div>
+                </div>
+            </div>
+            <div class="booking-history-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Room Type / No.</th>
+                            <th>Rating</th>
+                            <th>Booking via</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>01 Jan - 05 Jan 2023</td>
+                            <td>Deluxe Room, 123</td>
+                            <td>
+                                <ul>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star gr-color"></i></li>
+                                   
+                                </ul>
+                            </td>
+                            <td>Remarks Here</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>01 Jan - 05 Jan 2023</td>
+                            <td>Deluxe Room, 123</td>
+                            <td>
+                                <ul>
+                                    <li><i class="fa-solid fa-star r-color"></i></li>
+                                    <li><i class="fa-solid fa-star r-color"></i></li>
+                                    <li><i class="fa-solid fa-star gr-color"></i></li>
+                                    <li><i class="fa-solid fa-star gr-color"></i></li>
+                                    <li><i class="fa-solid fa-star gr-color"></i></li>
+                                   
+                                </ul>
+                            </td>
+                            <td>Remarks Here</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>01 Jan - 05 Jan 2023</td>
+                            <td>Deluxe Room, 123</td>
+                            <td>
+                                <ul>
+                                    <li><i class="fa-solid fa-star y-color"></i></li>
+                                    <li><i class="fa-solid fa-star y-color"></i></li>
+                                    <li><i class="fa-solid fa-star y-color"></i></li>
+                                    <li><i class="fa-solid fa-star gr-color"></i></li>
+                                    <li><i class="fa-solid fa-star gr-color"></i></li>
+                                   
+                                </ul>
+                            </td>
+                            <td>Remarks Here</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>01 Jan - 05 Jan 2023</td>
+                            <td>Deluxe Room, 123</td>
+                            <td>
+                                <ul>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                   
+                                </ul>
+                            </td>
+                            <td>Remarks Here</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>01 Jan - 05 Jan 2023</td>
+                            <td>Deluxe Room, 123</td>
+                            <td>
+                                <ul>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star g-color"></i></li>
+                                    <li><i class="fa-solid fa-star gr-color"></i></li>
+                                   
+                                </ul>
+                            </td>
+                            <td>Remarks Here</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="rating-area">
+                <ul>
+                    <li><i class="fa-solid fa-star m-r"></i>3.5 - 5 </li>
+                    <li><i class="fa-solid fa-star m-r"></i>2.5 - 3.5</li>
+                    <li><i class="fa-solid fa-star m-r"></i>1 - 2.5  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- guest popup list end -->
     <!-- font awesome js link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
         integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="

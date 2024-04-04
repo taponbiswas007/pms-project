@@ -1,0 +1,28 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.guestlist-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 925px;
+    width: 100%;
+    z-index: 4;
+    padding: 10px;
+    display: block;
+
+    .booking-history-popup-main-area {
+        padding: 20px;
+        background: $white;
+        position: relative;
+
+        .guest-details-input-area{
+            .person-info-item{
+              .info-input-box{
+                
+              }  
+            }
+        }
+    }
+}

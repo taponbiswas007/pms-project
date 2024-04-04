@@ -150,13 +150,24 @@ $(document).ready(function () {
         $(".viabookingpopup-area").fadeOut();
     });
 
-    $(".booking-historybtn").click(function () {
+  
+    $(".booking-historybtn").click(function (event) {
+        event.preventDefault(); // Prevent default behavior of the button click
+        $("#bookinghistory").fadeIn();
         $(".overlay").fadeIn();
-        $(".booking-history-popup-area").fadeIn();
     });
     $(".closeBtn").click(function () {
         $(".overlay").fadeOut();
-        $(".booking-history-popup-area").fadeOut();
+        $("#bookinghistory").fadeOut();
+    });
+    $(".guestListbtn").click(function (event) {
+        event.preventDefault(); // Prevent default behavior of the button click
+        $("#guestList").fadeIn();
+        $(".overlay").fadeIn();
+    });
+    $(".closeBtn").click(function () {
+        $(".overlay").fadeOut();
+        $("#guestList").fadeOut();
     });
  
 
