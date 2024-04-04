@@ -136,6 +136,12 @@ $(document).ready(function () {
         $(".overlay").fadeIn();
         $(".viabookingpopup-area").fadeIn();
     });
+
+    $(".checkinNow").click(function () {
+        $(".overlay").fadeIn();
+        $(".checkin-nowpopup-area").fadeIn();
+    });
+    
     $(".closeBtn").click(function () {
         $(".overlay").fadeOut();
         $(".viabookingpopup-area").fadeOut();
