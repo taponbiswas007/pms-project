@@ -2619,6 +2619,43 @@ footer .footer-area .footer-main-area p {
     font-size: 12px;
   }
 }
+.checkin-full-wrapper {
+  background: #ffffff;
+  margin: 38px 19px 80px 19px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.checkin-full-wrapper .reservation-header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-button button {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
 header {
   position: sticky;
   top: 0;
