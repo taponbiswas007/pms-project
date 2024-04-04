@@ -4045,7 +4045,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 925px;
+  max-width: 1283px;
   width: 100%;
   z-index: 4;
   padding: 10px;
@@ -4055,4 +4055,89 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   padding: 20px;
   background: #ffffff;
   position: relative;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 20px;
+  margin-top: 43px;
+  margin-bottom: 31px;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item {
+  width: 16%;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 50px;
+  position: relative;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #202020;
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  font-size: 11px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
+  margin-right: 1px;
+  text-transform: capitalize;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .info-input-box select {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item .numberInputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
