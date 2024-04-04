@@ -2640,9 +2640,9 @@ footer .footer-area .footer-main-area p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2655,7 +2655,138 @@ footer .footer-area .footer-main-area p {
   margin-top: 20px;
   font-size: 14px;
 }
+.checkin-full-wrapper .reservation-results-header .reservation-results-header-main-area {
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.checkin-full-wrapper .reservation-results-header .reservation-results-header-main-area h1 {
+  color: #464646;
+  font-size: 21px;
+  font-weight: 500;
+}
+.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item {
+  width: 249px;
+  height: 199px;
+  background: #ffffff;
+  border: 1px solid rgba(220, 220, 220, 0.46);
+  padding: 20px;
+}
+.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type {
+  background: rgba(0, 47, 135, 0.2392156863);
+  padding: 5px;
+}
+.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type h1 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 47, 135, 0.7882352941);
+}
+.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-icon {
+  width: 25px;
+}
 
+@media screen and (max-width: 1300px) {
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-button {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-button {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-button {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 600px) {
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(3) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item:nth-child(4) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-button {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 420px) {
+  .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
+    padding-left: 0;
+  }
+}
 header {
   position: sticky;
   top: 0;
