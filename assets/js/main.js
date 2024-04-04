@@ -150,6 +150,16 @@ $(document).ready(function () {
         $(".viabookingpopup-area").fadeOut();
     });
 
+    $(".booking-historybtn").click(function () {
+        $(".overlay").fadeIn();
+        $(".booking-history-popup-area").fadeIn();
+    });
+    $(".closeBtn").click(function () {
+        $(".overlay").fadeOut();
+        $(".booking-history-popup-area").fadeOut();
+    });
+ 
+
     $('.viabooking-item').click(function () {
         // Remove the class from all elements
         $('.viabooking-item').removeClass('viaselect');

@@ -85,6 +85,22 @@ p-bottom {
   padding-bottom: 50px;
 }
 
+.g-color {
+  color: #12B76A;
+}
+
+.r-color {
+  color: #E3642D;
+}
+
+.y-color {
+  color: #E3A52D;
+}
+
+.gr-color {
+  color: #EBECEE;
+}
+
 .calenderOrtable-selector {
   padding: 14px 0;
 }
@@ -3868,4 +3884,157 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   .checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area h1 {
     font-size: 17px;
   }
+}
+.booking-history-popup-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 925px;
+  width: 100%;
+  z-index: 4;
+  padding: 10px;
+  display: none;
+}
+.booking-history-popup-area .booking-history-popup-main-area {
+  padding: 20px;
+  background: #ffffff;
+  position: relative;
+}
+.booking-history-popup-area .booking-history-popup-main-area .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .header h1 {
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 21px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .header h1 .clock-icon {
+  color: #01286D;
+  -webkit-transform: rotateZ(160deg);
+          transform: rotateZ(160deg);
+}
+.booking-history-popup-area .booking-history-popup-main-area .header button {
+  color: #000000;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table {
+  position: relative;
+  overflow: auto;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table thead tr {
+  height: 31px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table thead tr th {
+  color: #202020;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 11px;
+  vertical-align: middle;
+  background: #EBECEE;
+  padding-left: 10px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table thead tr th:nth-child(1) {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  min-width: 77px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table thead tr th:nth-child(2) {
+  min-width: 200px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table thead tr th:nth-child(3) {
+  min-width: 170px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table thead tr th:nth-child(4) {
+  min-width: 122px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table thead tr th:nth-child(5) {
+  min-width: 233px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr {
+  height: 61px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr td {
+  border: 1px solid #EBECEE;
+  font-size: 15px;
+  color: #202020;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+  background: #ffffff;
+  padding-left: 10px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  min-width: 77px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr td:nth-child(2) {
+  min-width: 200px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr td:nth-child(3) {
+  min-width: 170px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr td:nth-child(4) {
+  min-width: 122px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr td:nth-child(4) ul li {
+  display: inline-block;
+}
+.booking-history-popup-area .booking-history-popup-main-area .booking-history-table table tbody tr td:nth-child(5) {
+  min-width: 233px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .rating-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.booking-history-popup-area .booking-history-popup-main-area .rating-area ul {
+  padding: 6px 25px;
+  background: #F8F8F8;
+}
+.booking-history-popup-area .booking-history-popup-main-area .rating-area ul li {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.booking-history-popup-area .booking-history-popup-main-area .rating-area ul li:nth-child(1) {
+  color: #12B76A;
+}
+.booking-history-popup-area .booking-history-popup-main-area .rating-area ul li:nth-child(2) {
+  color: #E3A52D;
+}
+.booking-history-popup-area .booking-history-popup-main-area .rating-area ul li:nth-child(3) {
+  color: #E3642D;
+  margin-right: 0;
 }
