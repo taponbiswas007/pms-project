@@ -2621,7 +2621,7 @@ footer .footer-area .footer-main-area p {
 }
 .checkin-full-wrapper {
   background: #ffffff;
-  margin: 38px 19px 80px 19px;
+  margin: 22px 19px 20px 19px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -2629,12 +2629,23 @@ footer .footer-area .footer-main-area p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.checkin-full-wrapper .reservation-header h1 {
+  font-size: 27px;
+}
 .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto auto;
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+.checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item input {
+  height: 44px;
+}
+.checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-data-input-item .date-input-area input {
+  height: 44px;
 }
 .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area .search-button {
   display: -webkit-box;
@@ -2664,14 +2675,118 @@ footer .footer-area .footer-main-area p {
   font-size: 21px;
   font-weight: 500;
 }
-.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item {
-  width: 249px;
+.checkin-full-wrapper .booking-details-room-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item {
+  width: 19%;
   height: 199px;
   background: #ffffff;
   border: 1px solid rgba(220, 220, 220, 0.46);
   padding: 20px;
+  border-radius: 6px;
 }
-.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header {
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type {
+  background: rgba(0, 47, 135, 0.2392156863);
+  padding: 5px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type h1 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 47, 135, 0.7882352941);
+  margin-bottom: 0;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-icon {
+  margin-top: 5px;
+  width: 25px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkin-person-name {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkin-person-name h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #000000;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkin-person-name ul li {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkin-person-name ul li:first-child {
+  color: #7D7D7D;
+  margin-bottom: 2px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .checkin-person-name ul li:last-child {
+  color: #000000;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-number-time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 17px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-number-time ul li {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-number-time ul li:first-child {
+  color: #7D7D7D;
+  margin-bottom: 2px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-number-time ul li:last-child {
+  color: #003087;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-number-time ul:last-child li:last-child {
+  color: #000000;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-date-footer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2682,18 +2797,76 @@ footer .footer-area .footer-main-area p {
       -ms-flex-align: center;
           align-items: center;
 }
-.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type {
-  background: rgba(0, 47, 135, 0.2392156863);
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li:first-child {
+  color: #7D7D7D;
+  margin-bottom: 2px;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li:last-child {
+  color: #000000;
+}
+.checkin-full-wrapper .booking-details-room-area .booking-details-room-item .booking-details-room-main-area .booking-date-footer button {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background: #003087;
   padding: 5px;
 }
-.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type h1 {
-  font-size: 15px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  color: rgba(0, 47, 135, 0.7882352941);
+.checkin-full-wrapper .available-room-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
 }
-.checkin-full-wrapper .booking-details-room-main-area .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-icon {
-  width: 25px;
+.checkin-full-wrapper .available-room-area .available-room-item {
+  width: 19%;
+  height: 180px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 6px 0 rgba(217, 217, 217, 0.5);
+          box-shadow: 0 0 6px 0 rgba(217, 217, 217, 0.5);
+  padding: 20px;
+  border-radius: 6px;
+}
+.checkin-full-wrapper .available-room-area .available-room-item .available-room-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+}
+.checkin-full-wrapper .available-room-area .available-room-item .available-room-main-area .room-images {
+  width: 142px;
+  height: 81px;
+}
+.checkin-full-wrapper .available-room-area .available-room-item .available-room-main-area h1 {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgba(27, 27, 27, 0.7882352941);
+  text-align: center;
 }
 
 @media screen and (max-width: 1300px) {
@@ -2704,6 +2877,12 @@ footer .footer-area .footer-main-area p {
     grid-row-start: 2;
     grid-column-start: 4;
     grid-column-end: 5;
+  }
+  .checkin-full-wrapper .booking-details-room-area .booking-details-room-item {
+    width: 24%;
+  }
+  .checkin-full-wrapper .available-room-area .available-room-item {
+    width: 24%;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -2720,6 +2899,14 @@ footer .footer-area .footer-main-area p {
     grid-row-start: 2;
     grid-column-start: 3;
     grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 992px) {
+  .checkin-full-wrapper .booking-details-room-area .booking-details-room-item {
+    width: 32%;
+  }
+  .checkin-full-wrapper .available-room-area .available-room-item {
+    width: 32%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2751,6 +2938,12 @@ footer .footer-area .footer-main-area p {
     grid-column-start: 3;
     grid-column-end: 5;
   }
+  .checkin-full-wrapper .booking-details-room-area .booking-details-room-item {
+    width: 48%;
+  }
+  .checkin-full-wrapper .available-room-area .available-room-item {
+    width: 48%;
+  }
 }
 @media screen and (max-width: 600px) {
   .checkin-full-wrapper .resevation-page-search-area .reservation-page-search-main-area {
@@ -2780,6 +2973,14 @@ footer .footer-area .footer-main-area p {
     grid-row-start: 5;
     grid-column-start: 1;
     grid-column-end: 5;
+  }
+}
+@media screen and (max-width: 540px) {
+  .checkin-full-wrapper .booking-details-room-area .booking-details-room-item {
+    width: 100%;
+  }
+  .checkin-full-wrapper .available-room-area .available-room-item {
+    width: 100%;
   }
 }
 @media screen and (max-width: 420px) {
