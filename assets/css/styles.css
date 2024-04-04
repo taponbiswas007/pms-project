@@ -3744,3 +3744,128 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   padding: 2px 8px;
   border-radius: 4px;
 }
+
+.checkin-nowpopup-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 576px;
+  width: 100%;
+  z-index: 4;
+  padding: 10px;
+  display: none;
+}
+.checkin-nowpopup-area .checkinpopup-main-area {
+  background: #ffffff;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkinpopup-header h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #01286D;
+  padding: 10px 23px;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area {
+  background: #F7F8FA;
+  padding: 24px;
+  margin: 26px 47px 40px 47px;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area h1 {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area h1 span {
+  font-weight: 400;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area .checkin-content-details {
+  border-top: 1px solid #D9D9D9;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area .checkin-content-details ul li {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area .checkin-content-details ul:last-child li {
+  text-align: right;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area .checkin-content-details ul:last-child li:nth-child(2) {
+  font-weight: 500;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area .checkin-content-details ul:last-child li:nth-child(3) {
+  color: rgba(0, 47, 135, 0.8156862745);
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-confirm-button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  padding-bottom: 30px;
+  padding-right: 47px;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-confirm-button-area button {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 8px 10px;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-confirm-button-area button:first-child {
+  color: #01286D;
+  border: 1px solid #01286D;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-confirm-button-area button:first-child:hover {
+  color: #ffffff;
+  background: #01286D;
+  border: 1px solid #01286D;
+}
+.checkin-nowpopup-area .checkinpopup-main-area .checkin-confirm-button-area button:last-child {
+  color: #ffffff;
+  background: #01286D;
+  border: 1px solid #01286D;
+}
+
+@media screen and (max-width: 600px) {
+  .checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area .checkin-content-details ul li {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area {
+    padding: 24px 7px;
+  }
+  .checkin-nowpopup-area .checkinpopup-main-area .checkin-details-main-content-area h1 {
+    font-size: 17px;
+  }
+}
