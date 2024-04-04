@@ -124,6 +124,9 @@ $(document).ready(function () {
     $("#bookingPage").click(function () {
         window.location.href = "booking-person-details.html";
     });
+    $("#checkinNew").click(function () {
+        window.location.href = "checkin-booking-person-details.html";
+    });
 
     $(".headersearchBtn").click(function () {
         $(".popupinput").show();
@@ -141,7 +144,7 @@ $(document).ready(function () {
         $(".overlay").fadeIn();
         $(".checkin-nowpopup-area").fadeIn();
     });
-    
+
     $(".closeBtn").click(function () {
         $(".overlay").fadeOut();
         $(".viabookingpopup-area").fadeOut();
