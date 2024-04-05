@@ -3591,6 +3591,8 @@ footer .footer-area .footer-main-area p {
   width: 100%;
   z-index: 4;
   overflow: hidden;
+  background-color: rgba(0, 0, 255, 0.25);
+  padding: 40px;
 }
 .full-wrapper .login-page-main-area .right-side .hotel-description p {
   color: #ffffff;
@@ -3599,8 +3601,6 @@ footer .footer-area .footer-main-area p {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   line-height: 40px;
-  padding: 100px;
-  padding-bottom: 0;
   display: none;
 }
 

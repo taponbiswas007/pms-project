@@ -142,6 +142,15 @@ $(document).ready(function () {
     $("#godeshboard").click(function () {
         window.location.href = "front-desk-dashboard.html";
     });
+    $(".loginbtn").click(function () {
+        window.location.href = "front-desk-dashboard.html";
+    });
+    $(".register").click(function () {
+        window.location.href = "register.html";
+    });
+    $(".login").click(function () {
+        window.location.href = "login.html";
+    });
 
     $(".headersearchBtn").click(function () {
         $(".popupinput").show();
@@ -285,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       slides[index].style.display = "block";
       index = (index + 1) % slides.length;
-      setTimeout(showSlide, 15000);
+      setTimeout(showSlide, 10000);
     }
   
     showSlide();
