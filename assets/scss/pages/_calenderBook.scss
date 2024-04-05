@@ -65,7 +65,7 @@
             .search-date-selector-box {
                 @include dataInputboxStyle;
                 position: relative;
-            
+
                 span {
                     position: absolute;
                     top: -10px;
@@ -87,6 +87,7 @@
                     background: none;
                     border: none;
                     cursor: pointer;
+
                     &:focus {
                         outline: none;
                     }
@@ -189,6 +190,7 @@
         .table-container {
             overflow: auto;
             position: relative;
+
             table {
                 border-collapse: collapse;
                 width: 100%;
@@ -245,11 +247,13 @@
                                 font-size: 20px;
                                 margin-bottom: -4px;
                             }
+
                             .down-arrow2 {
                                 margin-left: 5px;
                                 font-size: 20px;
                                 margin-bottom: -4px;
                             }
+
                             .down-arrow3 {
                                 margin-left: 5px;
                                 font-size: 20px;

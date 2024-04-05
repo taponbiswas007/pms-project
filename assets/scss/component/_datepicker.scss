@@ -1,5 +1,6 @@
 @import '../utils/mixins';
 @import '../utils/variables';
+
 .date-picker {
     display: none;
     position: absolute;
@@ -12,13 +13,15 @@
     left: 0;
     border-radius: 8px;
     font-family: $dmSans;
-    input{
+
+    input {
         border-bottom: 2px solid $gray;
         padding-bottom: 7px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    #applyButton{
+
+    #applyButton {
         @include commonBtnstyle;
         background: $blue;
         color: $white;
@@ -26,9 +29,10 @@
         font-size: 12px;
         padding: 2px 8px;
         border-radius: 4px;
-       
+
     }
 }
+
 .date-pickerpopup {
     display: none;
     position: absolute;
@@ -41,13 +45,15 @@
     left: 0;
     border-radius: 8px;
     font-family: $dmSans;
-    input{
+
+    input {
         border-bottom: 2px solid $gray;
         padding-bottom: 7px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    #applyButtonpopup{
+
+    #applyButtonpopup {
         @include commonBtnstyle;
         background: $blue;
         color: $white;
@@ -55,6 +61,6 @@
         font-size: 12px;
         padding: 2px 8px;
         border-radius: 4px;
-       
+
     }
 }

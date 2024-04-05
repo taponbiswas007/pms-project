@@ -61,6 +61,7 @@
     align-items: flex-start;
     column-gap: 15px;
     margin-top: 20px;
+
     .generate-task-table {
         position: relative;
         overflow: auto;
@@ -91,7 +92,7 @@
                             top: 0;
                             z-index: 2;
                             min-width: 151px;
-                         
+
                         }
 
                         &:nth-child(2) {
@@ -118,10 +119,12 @@
 
                             min-width: 137px;
                         }
+
                         &:nth-child(7) {
 
                             min-width: 129px;
                         }
+
                         &:nth-child(8) {
 
                             min-width: 136px;
@@ -162,7 +165,8 @@
 
                         &:nth-child(3) {
                             min-width: 90px;
-                            span{
+
+                            span {
                                 padding: 2px 7px;
                                 border-radius: 3px;
                             }
@@ -170,8 +174,9 @@
 
                         &:nth-child(4) {
                             min-width: 99px;
-                            span{
-                        
+
+                            span {
+
                                 padding: 2px 7px;
                                 border-radius: 3px;
                             }
@@ -186,21 +191,25 @@
 
                             min-width: 137px;
                         }
-                        &:nth-child(7) { 
+
+                        &:nth-child(7) {
                             min-width: 129px;
-                            
+
                         }
+
                         &:nth-child(8) {
                             min-width: 136px;
+
                             ul {
                                 li {
                                     display: inline-block;
                                     font-size: 17px;
                                     margin-right: 10px;
-                                    button{
+
+                                    button {
                                         width: 20px;
                                         padding: 0;
-                                      
+
                                     }
                                 }
                             }
@@ -213,31 +222,37 @@
 
     .generate-task-box {
         width: 240px;
-        .todayHousekeepingStatus{
+
+        .todayHousekeepingStatus {
             background: #ffffff;
             box-shadow: 0 4px 4px 0 rgba(217, 217, 217, 0.25);
             margin-bottom: 20px;
-            .todayhousekeepingstatus-header{
+
+            .todayhousekeepingstatus-header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 1px solid $simpleGray;
                 padding: 10px 10px;
                 cursor: pointer;
-                h1{
+
+                h1 {
                     color: $black;
                     font-size: 12px;
                     font-family: $dmSans;
                     font-weight: 500;
-                    span{
+
+                    span {
                         color: $black;
                         font-size: 13px;
                     }
                 }
             }
-            ul{
+
+            ul {
                 padding: 10px;
-                li{
+
+                li {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -246,8 +261,9 @@
                     color: #525252;
                     font-size: 11px;
                     margin-bottom: 10px;
-                    span{
-                        
+
+                    span {
+
                         padding: 2px 7px;
                         border-radius: 3px;
                         color: #202020;
@@ -257,33 +273,38 @@
         }
     }
 }
+
 @media screen and (max-width:768px) {
-    .generate-task-auto-table-area{
+    .generate-task-auto-table-area {
         flex-direction: column;
         row-gap: 30px;
         margin-bottom: 50px;
-        .generate-task-box{
+
+        .generate-task-box {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            .todayHousekeepingStatus{
+
+            .todayHousekeepingStatus {
                 width: 49%;
             }
         }
     }
 
 }
+
 @media screen and (max-width:420px) {
-    .generate-task-auto-table-area{
-        .generate-task-box{
+    .generate-task-auto-table-area {
+        .generate-task-box {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             flex-direction: column;
             row-gap: 30px;
-            .todayHousekeepingStatus{
+
+            .todayHousekeepingStatus {
                 width: 100%;
             }
         }

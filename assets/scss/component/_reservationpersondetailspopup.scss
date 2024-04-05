@@ -1,4 +1,4 @@
-.reservationPersondetails-alart-area{
+.reservationPersondetails-alart-area {
     max-width: 428px;
     width: 100%;
     padding: 14px;
@@ -9,8 +9,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    .reservation-person-details-main-area{
-        .reservation-person-details-header{
+
+    .reservation-person-details-main-area {
+        .reservation-person-details-header {
             color: #999999;
             display: flex;
             justify-content: space-between;
@@ -19,20 +20,24 @@
             font-family: $dmSans;
             font-weight: 400;
             margin-bottom: 27px;
-            button{
+
+            button {
                 font-size: 19px;
                 font-family: $dmSans;
                 font-weight: 400;
                 color: #999999;
             }
         }
-        .person-detalis-content{
+
+        .person-detalis-content {
             display: grid;
             grid-template-columns: 2fr 2fr;
-            .information-item{
-                .contact-item{
+
+            .information-item {
+                .contact-item {
                     margin-bottom: 19px;
-                    h1{
+
+                    h1 {
                         color: #6D6D6D;
                         font-size: 15px;
                         font-weight: 400;
@@ -40,34 +45,38 @@
                         margin-bottom: 5px;
                         text-transform: capitalize;
                     }
-                    p{
-                        color:#292929 ;
+
+                    p {
+                        color: #292929;
                         font-size: 15px;
                         font-weight: 500;
                         font-family: $dmSans;
                         text-transform: lowercase;
                     }
-                    span{
+
+                    span {
                         color: #2DAE00;
                         font-size: 15px;
                         font-weight: 500;
                         font-family: $dmSans;
                         text-transform: capitalize;
                     }
-                    
-                    .massage-item{
-                        ul{
-                            li{
+
+                    .massage-item {
+                        ul {
+                            li {
                                 display: inline-block;
                                 margin-right: 15px;
-                                &:last-child{
+
+                                &:last-child {
                                     margin-right: 0;
                                 }
-                               
+
                             }
                         }
                     }
-                    button{
+
+                    button {
                         color: #FF4848;
                         background: #FFE1E1;
                         border-radius: 4px;
@@ -79,9 +88,10 @@
                         margin-top: 15px;
                     }
                 }
-                .reservationType{
-                    span{
-                        color: #292929 ;
+
+                .reservationType {
+                    span {
+                        color: #292929;
                     }
                 }
             }

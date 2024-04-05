@@ -899,8 +899,10 @@ p-bottom {
 }
 .main-item-area .link-area {
   display: grid;
-  grid-template-rows: auto auto; /* Two rows */
-  grid-template-columns: auto auto auto; /* Three columns */
+  grid-template-rows: auto auto;
+  /* Two rows */
+  grid-template-columns: auto auto auto;
+  /* Three columns */
   row-gap: 100px;
   max-width: 1316px;
   width: 100%;

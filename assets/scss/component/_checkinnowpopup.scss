@@ -1,19 +1,22 @@
 @import '../utils/mixins';
 @import '../utils/variables';
-.checkin-nowpopup-area{
+
+.checkin-nowpopup-area {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     max-width: 576px;
     width: 100%;
     z-index: 4;
     padding: 10px;
     display: none;
-    .checkinpopup-main-area{
+
+    .checkinpopup-main-area {
         background: $white;
-        .checkinpopup-header{
-            h1{
+
+        .checkinpopup-header {
+            h1 {
                 font-family: $dmSans;
                 font-size: 21px;
                 font-weight: 600;
@@ -22,41 +25,48 @@
                 padding: 10px 23px;
             }
         }
-        .checkin-details-main-content-area{
+
+        .checkin-details-main-content-area {
             background: #F7F8FA;
             padding: 24px;
             margin: 26px 47px 40px 47px;
-            h1{
+
+            h1 {
                 font-size: 20px;
                 font-family: $dmSans;
                 color: $black;
                 font-weight: 600;
                 margin-bottom: 15px;
-                span{
+
+                span {
                     font-weight: 400;
                 }
             }
-            .checkin-content-details{
+
+            .checkin-content-details {
                 border-top: 1px solid #D9D9D9;
                 padding-top: 20px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-              
-                ul{
-                    li{
+
+                ul {
+                    li {
                         font-family: $dmSans;
                         font-size: 16px;
                         color: $black;
                         margin-bottom: 20px;
                     }
-                    &:last-child{
-                        li{
+
+                    &:last-child {
+                        li {
                             text-align: right;
-                            &:nth-child(2){
+
+                            &:nth-child(2) {
                                 font-weight: 500;
                             }
-                            &:nth-child(3){
+
+                            &:nth-child(3) {
                                 color: #002f87d0;
                             }
                         }
@@ -64,81 +74,89 @@
                 }
             }
         }
-        .checkin-confirm-button-area{
+
+        .checkin-confirm-button-area {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             column-gap: 20px;
             padding-bottom: 30px;
             padding-right: 47px;
-      
-            button{
+
+            button {
                 font-size: 12px;
                 font-family: $roboto;
                 font-weight: 400;
                 padding: 8px 10px;
-                &:first-child{
+
+                &:first-child {
                     color: $blue;
                     border: 1px solid $blue;
                     transition: .5s;
-                   &:hover{
+
+                    &:hover {
+                        color: $white;
+
+                        background: $blue;
+                        border: 1px solid $blue;
+                    }
+                }
+
+                &:last-child {
                     color: $white;
-                   
+
                     background: $blue;
                     border: 1px solid $blue;
-                   }
-                }
-                &:last-child{
-                    color: $white;
-                   
-                    background: $blue;
-                    border: 1px solid $blue;
                 }
             }
         }
     }
 }
-@media  screen and (max-width: 600px){
-    
-   .checkin-nowpopup-area{
-  
-    .checkinpopup-main-area{
-        .checkin-details-main-content-area{
-            margin-left: 10px;
-            margin-right: 10px;
+
+@media screen and (max-width: 600px) {
+
+    .checkin-nowpopup-area {
+
+        .checkinpopup-main-area {
+            .checkin-details-main-content-area {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     }
-   } 
 }
-@media  screen and (max-width: 490px){
-    
-   .checkin-nowpopup-area{
-  
-    .checkinpopup-main-area{
-        .checkin-details-main-content-area{
-           .checkin-content-details{
-            ul{
-                li{
-                    font-size: 12px;
+
+@media screen and (max-width: 490px) {
+
+    .checkin-nowpopup-area {
+
+        .checkinpopup-main-area {
+            .checkin-details-main-content-area {
+                .checkin-content-details {
+                    ul {
+                        li {
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
-           }
         }
     }
-   } 
 }
-@media  screen and (max-width: 420px){
-    
-   .checkin-nowpopup-area{
-  
-    .checkinpopup-main-area{
-        .checkin-details-main-content-area{
-            padding: 24px 7px;
-            h1{
-                font-size: 17px;
+
+@media screen and (max-width: 420px) {
+
+    .checkin-nowpopup-area {
+
+        .checkinpopup-main-area {
+            .checkin-details-main-content-area {
+                padding: 24px 7px;
+
+                h1 {
+                    font-size: 17px;
+                }
+
             }
-          
         }
     }
-   } 
 }

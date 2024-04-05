@@ -1,40 +1,43 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 
-.viabookingpopup-area{
+.viabookingpopup-area {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     max-width: 1240px;
     width: 100%;
     z-index: 4;
     display: none;
-    .viabooking-main-area{
+
+    .viabooking-main-area {
         background: $white;
         border-radius: 8px;
         margin: 20px;
         padding-top: 72px;
-        .viabooking-header{
+
+        .viabooking-header {
             text-align: center;
-          
-            ul{
-                li{
+
+            ul {
+                li {
                     display: inline-block;
-                    
-                    &:last-child{
+
+                    &:last-child {
                         vertical-align: top;
                         font-size: 32px;
-                    font-family: $dmSans;
-                    font-weight: 500;
-                    color: $simpleblack;
-                    margin-top: 4px;
-                    margin-left: 10px;
+                        font-family: $dmSans;
+                        font-weight: 500;
+                        color: $simpleblack;
+                        margin-top: 4px;
+                        margin-left: 10px;
                     }
                 }
             }
         }
-        p{
+
+        p {
             font-size: 16px;
             font-weight: 400;
             font-family: $dmSans;
@@ -43,97 +46,107 @@
             margin-top: 7px;
             margin-bottom: 28px;
         }
-        .viabooking-list{
+
+        .viabooking-list {
             display: flex;
             justify-content: center;
             align-items: center;
             column-gap: 16px;
             margin-bottom: 39px;
-            .viabooking-item{
+
+            .viabooking-item {
                 @include commonBtnstyle;
                 background: $white;
                 color: $simpleblack;
                 border: 1px solid $gray;
                 cursor: pointer;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         display: inline-block;
                         margin-right: 7px;
                         vertical-align: middle;
-                        span{
+
+                        span {
                             display: block;
                             color: $green;
 
                         }
-                        .checkmark{
+
+                        .checkmark {
                             display: none;
                         }
                     }
                 }
-                &:hover{
+
+                &:hover {
                     border: 1px solid #0C256F;
-                    background:#EAF1FF ;
+                    background: #EAF1FF;
                 }
             }
-            .viaselect{
+
+            .viaselect {
                 border: 1px solid #0C256F;
-                background:#EAF1FF ;
+                background: #EAF1FF;
             }
         }
-       
-        .viabooking-date-box{
+
+        .viabooking-date-box {
             max-width: 310px;
             width: 100%;
             margin: 0 auto;
+
             .search-data-input-item {
 
                 h1 {
-                  color: $searchlabelcolor;
-                  font-family: $inter;
-                  font-size: 14px;
-                  font-weight: 500;
-                  margin-bottom: 6px
+                    color: $searchlabelcolor;
+                    font-family: $inter;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 6px
                 }
-          
+
                 input {
-                  @include dataInputboxStyle;
-                  border: 1px solid #D0D5DD;
-                  color: #667085;
-                  font-family: $inter;
-                  font-size: 16px;
-                  width: 100%;
-                }
-          
-                .date-input-area {
-                  position: relative;
-          
-                  input {
                     @include dataInputboxStyle;
                     border: 1px solid #D0D5DD;
                     color: #667085;
                     font-family: $inter;
                     font-size: 16px;
                     width: 100%;
-                  }
-          
-                  .calenderIcon {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 8px;
-                    color: $simpleblack;
-                    font-size: 20px;
-                  }
                 }
-          
-              }
+
+                .date-input-area {
+                    position: relative;
+
+                    input {
+                        @include dataInputboxStyle;
+                        border: 1px solid #D0D5DD;
+                        color: #667085;
+                        font-family: $inter;
+                        font-size: 16px;
+                        width: 100%;
+                    }
+
+                    .calenderIcon {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 8px;
+                        color: $simpleblack;
+                        font-size: 20px;
+                    }
+                }
+
+            }
         }
-        .viabooking-area-footer{
+
+        .viabooking-area-footer {
             border-top: 1px solid $gray;
             padding: 18px 40px;
             text-align: right;
             margin-top: 35px;
-            button{
+
+            button {
                 @include commonBtnstyle;
                 background: $blue;
                 color: $white;
@@ -141,77 +154,90 @@
         }
     }
 }
-.confirmpopup{
- 
-    .viabooking-main-area{
+
+.confirmpopup {
+
+    .viabooking-main-area {
         position: relative;
-        .closeBtn{
+
+        .closeBtn {
             color: #656970;
             font-size: 30px;
             position: absolute;
             top: 20px;
             right: 20px;
-            &:hover{
+
+            &:hover {
                 color: $blue;
             }
         }
-        .viabooking-header{
-            img{
+
+        .viabooking-header {
+            img {
                 width: 100px;
                 margin-bottom: 20px;
             }
-          
+
         }
-        p{
+
+        p {
             margin-top: 20px;
         }
-        .confirm-booking-details{
+
+        .confirm-booking-details {
             margin: 24px 50px 32px 50px;
             background: #F7F8FA;
             padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .confirm-booking-details-information{
-                
-                
-                ul{
-                    li{
+
+            .confirm-booking-details-information {
+
+
+                ul {
+                    li {
                         display: block;
-                        &:first-child{
+
+                        &:first-child {
                             color: #656970;
-                           font-size: 12px;
-                           font-weight: 500;
-                           font-family: $dmSans;
-                           margin-bottom: 6px;
+                            font-size: 12px;
+                            font-weight: 500;
+                            font-family: $dmSans;
+                            margin-bottom: 6px;
                         }
-                        &:last-child{
+
+                        &:last-child {
                             color: #202020;
-                           font-size: 16px;
-                           font-weight: 400;
-                           font-family: $dmSans;
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: $dmSans;
                         }
                     }
                 }
-                &:last-child{
+
+                &:last-child {
                     border-right: none;
-                    ul{
-                        li{
-                            &:last-child{
+
+                    ul {
+                        li {
+                            &:last-child {
                                 color: #12B76A;
                             }
                         }
                     }
                 }
             }
-            .border-separator{
+
+            .border-separator {
                 height: 50px;
                 width: 2px;
                 background: #D9D9D9;
             }
-          
+
         }
-        .viabooking-area-footer{
+
+        .viabooking-area-footer {
             border-top: none;
             display: flex;
             justify-content: center;
@@ -223,156 +249,171 @@
         }
     }
 }
-@media  screen and (max-width: 992px){
-    .confirmpopup{
- 
-        .viabooking-main-area{
-            
-            .confirm-booking-details{
+
+@media screen and (max-width: 992px) {
+    .confirmpopup {
+
+        .viabooking-main-area {
+
+            .confirm-booking-details {
                 margin: 24px 20px 32px 20px;
-                
-                .confirm-booking-details-information{
-                    
-                    
-                    ul{
-                        li{
+
+                .confirm-booking-details-information {
+
+
+                    ul {
+                        li {
                             display: block;
-                            &:first-child{
+
+                            &:first-child {
                                 color: #656970;
-                               font-size: 12px;
-                               font-weight: 500;
-                               font-family: $dmSans;
-                               margin-bottom: 6px;
+                                font-size: 12px;
+                                font-weight: 500;
+                                font-family: $dmSans;
+                                margin-bottom: 6px;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 color: #202020;
-                               font-size: 16px;
-                               font-weight: 400;
-                               font-family: $dmSans;
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: $dmSans;
                             }
                         }
                     }
-                 
+
                 }
-               
-              
+
+
             }
-          
+
         }
     }
 }
-@media  screen and (max-width: 768px){
-    .confirmpopup{
- 
-        .viabooking-main-area{
-            
-            .confirm-booking-details{
+
+@media screen and (max-width: 768px) {
+    .confirmpopup {
+
+        .viabooking-main-area {
+
+            .confirm-booking-details {
                 margin: 24px 20px 32px 20px;
-                
-                .confirm-booking-details-information{
-                    
-                    
-                    ul{
-                        li{
+
+                .confirm-booking-details-information {
+
+
+                    ul {
+                        li {
                             display: block;
-                            &:first-child{
+
+                            &:first-child {
                                 color: #656970;
-                               font-size: 9px;
-                               font-weight: 500;
-                               font-family: $dmSans;
-                               margin-bottom: 6px;
+                                font-size: 9px;
+                                font-weight: 500;
+                                font-family: $dmSans;
+                                margin-bottom: 6px;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 color: #202020;
-                               font-size: 11px;
-                               font-weight: 400;
-                               font-family: $dmSans;
+                                font-size: 11px;
+                                font-weight: 400;
+                                font-family: $dmSans;
                             }
                         }
                     }
-                 
+
                 }
-               
-              
+
+
             }
-          
+
         }
     }
 }
-@media  screen and (max-width: 600px){
-    .confirmpopup{
- 
-        .viabooking-main-area{
-          
-            .confirm-booking-details{
+
+@media screen and (max-width: 600px) {
+    .confirmpopup {
+
+        .viabooking-main-area {
+
+            .confirm-booking-details {
                 margin: 24px 20px 32px 20px;
                 flex-wrap: wrap;
                 row-gap: 20px;
                 column-gap: 20px;
                 justify-content: space-between;
                 align-items: center;
-                .confirm-booking-details-information{
-                    
-                    
-                    ul{
-                        li{
+
+                .confirm-booking-details-information {
+
+
+                    ul {
+                        li {
                             display: block;
-                            &:first-child{
+
+                            &:first-child {
                                 color: #656970;
-                               font-size: 12px;
-                               font-weight: 500;
-                               font-family: $dmSans;
-                               margin-bottom: 6px;
+                                font-size: 12px;
+                                font-weight: 500;
+                                font-family: $dmSans;
+                                margin-bottom: 6px;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 color: #202020;
-                               font-size: 16px;
-                               font-weight: 400;
-                               font-family: $dmSans;
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: $dmSans;
                             }
                         }
                     }
-                 
+
                 }
-                .border-separator{
+
+                .border-separator {
                     display: none;
                 }
-               
-              
+
+
             }
-          
+
         }
     }
 }
-@media  screen and (max-width: 540px) {
-    .viabookingpopup-area{
-        .viabooking-main-area{
-            .viabooking-list{
+
+@media screen and (max-width: 540px) {
+    .viabookingpopup-area {
+        .viabooking-main-area {
+            .viabooking-list {
                 flex-wrap: wrap;
                 row-gap: 20px;
             }
         }
     }
 }
-@media  screen and (max-width: 376px) {
-    .viabookingpopup-area{
-        .viabooking-main-area{
-         .viabooking-date-box{
-            max-width: 257px;
-         }
+
+@media screen and (max-width: 376px) {
+    .viabookingpopup-area {
+        .viabooking-main-area {
+            .viabooking-date-box {
+                max-width: 257px;
+            }
         }
     }
 }
-@media  screen and (max-width: 346px) {
-    .viabookingpopup-area{
-        .viabooking-main-area{
-           p{
-            font-size: 12px;
-            margin-left: 10px;
-            margin-right: 10px;
-           } 
+
+@media screen and (max-width: 346px) {
+    .viabookingpopup-area {
+        .viabooking-main-area {
+            p {
+                font-size: 12px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     }
+
     //body{
     //    overflow-x: hidden;
     //}

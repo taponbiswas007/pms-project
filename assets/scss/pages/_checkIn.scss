@@ -9,7 +9,8 @@
     .reservation-header {
         margin-top: 0;
         margin-bottom: 0;
-        h1{
+
+        h1 {
             font-size: 27px;
         }
     }
@@ -21,16 +22,19 @@
             column-gap: 10px;
             padding-bottom: 0;
             padding-top: 20px;
+
             .search-data-input-item {
-                input{
+                input {
                     height: 44px;
                 }
-                .date-input-area{
-                    input{
+
+                .date-input-area {
+                    input {
                         height: 44px;
                     }
                 }
             }
+
             .search-button {
                 display: flex;
                 justify-content: flex-end;
@@ -67,6 +71,7 @@
         row-gap: 30px;
         flex-wrap: wrap;
         padding-bottom: 30px;
+
         .booking-details-room-item {
             width: 19%;
             height: 199px;
@@ -83,6 +88,7 @@
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: 15px;
+
                     .checkin-room-type {
                         background: #002f873d;
                         padding: 5px;
@@ -117,8 +123,9 @@
                         color: $black;
 
                     }
-                    ul{
-                        li{
+
+                    ul {
+                        li {
                             font-size: 12px;
                             font-family: $roboto;
                             font-weight: 400;
@@ -141,6 +148,7 @@
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: 17px;
+
                     ul {
                         li {
                             font-size: 12px;
@@ -172,7 +180,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                 
+
 
                     ul {
                         li {
@@ -203,39 +211,44 @@
             }
         }
     }
-    .available-room-area{
+
+    .available-room-area {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 30px;
         flex-wrap: wrap;
         row-gap: 30px;
-        .available-room-item{
+
+        .available-room-item {
             width: 19%;
             height: 180px;
             background: $white;
             box-shadow: 0 0 6px 0 rgba(217, 217, 217, .5);
             padding: 20px;
             border-radius: 6px;
-            .available-room-main-area{
+
+            .available-room-main-area {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
                 row-gap: 30px;
-              .room-images{
-                width: 142px;
-                height: 81px;
-               
-              }  
-              h1{
-                font-size: 17px;
-                font-family: $roboto;
-                font-weight: 500;
-                color: #1b1b1bc9;
-                text-align: center;
-               
-              }
+
+                .room-images {
+                    width: 142px;
+                    height: 81px;
+
+                }
+
+                h1 {
+                    font-size: 17px;
+                    font-family: $roboto;
+                    font-weight: 500;
+                    color: #1b1b1bc9;
+                    text-align: center;
+
+                }
             }
         }
     }
@@ -247,7 +260,7 @@
             .reservation-page-search-main-area {
                 grid-template-columns: repeat(4, 1fr);
 
-               
+
 
                 .search-button {
                     grid-row-start: 2;
@@ -258,13 +271,15 @@
             }
 
         }
-        .booking-details-room-area{
-            .booking-details-room-item{
+
+        .booking-details-room-area {
+            .booking-details-room-item {
                 width: 24%;
             }
         }
-        .available-room-area{
-            .available-room-item{
+
+        .available-room-area {
+            .available-room-item {
                 width: 24%;
             }
         }
@@ -298,20 +313,23 @@
 
     }
 }
+
 @media screen and (max-width: 992px) {
-    .checkin-full-wrapper{
-        .booking-details-room-area{
-            .booking-details-room-item{
+    .checkin-full-wrapper {
+        .booking-details-room-area {
+            .booking-details-room-item {
                 width: 32%;
             }
         }
-        .available-room-area{
-            .available-room-item{
+
+        .available-room-area {
+            .available-room-item {
                 width: 32%;
             }
         }
     }
 }
+
 @media screen and (max-width: 768px) {
     .checkin-full-wrapper {
         .resevation-page-search-area {
@@ -353,13 +371,15 @@
             }
 
         }
-        .booking-details-room-area{
-            .booking-details-room-item{
+
+        .booking-details-room-area {
+            .booking-details-room-item {
                 width: 48%;
             }
         }
-        .available-room-area{
-            .available-room-item{
+
+        .available-room-area {
+            .available-room-item {
                 width: 48%;
             }
         }
@@ -409,20 +429,23 @@
         }
     }
 }
-@media screen and (max-width: 540px){
-    .checkin-full-wrapper{
-        .booking-details-room-area{
-            .booking-details-room-item{
+
+@media screen and (max-width: 540px) {
+    .checkin-full-wrapper {
+        .booking-details-room-area {
+            .booking-details-room-item {
                 width: 100%;
             }
         }
-        .available-room-area{
-            .available-room-item{
+
+        .available-room-area {
+            .available-room-item {
                 width: 100%;
             }
         }
     }
 }
+
 @media screen and (max-width: 420px) {
     .checkin-full-wrapper {
         .resevation-page-search-area {

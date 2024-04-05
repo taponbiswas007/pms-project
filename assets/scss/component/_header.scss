@@ -5,6 +5,7 @@ header {
     top: 0;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 99999999999999999999;
+
     .top-header {
         background: $simpleblue;
         height: 53px;
@@ -108,7 +109,8 @@ header {
                     flex-shrink: 0;
                     position: relative;
                     cursor: pointer;
-                    .profile-logout-form{
+
+                    .profile-logout-form {
                         background-color: $white;
                         padding: 15px;
                         border: 1px solid $blue;
@@ -118,7 +120,8 @@ header {
                         right: 0;
                         width: 150px;
                         display: none;
-                        button{
+
+                        button {
                             color: $blue;
                             background: $gray;
                             margin-bottom: 10px;
@@ -131,10 +134,12 @@ header {
                             text-transform: capitalize;
                             transition: .7s;
                             border-radius: 5px;
-                            &:last-child{
+
+                            &:last-child {
                                 margin-bottom: 0;
                             }
-                            &:hover{
+
+                            &:hover {
                                 background: $simpleblue;
                                 color: $white;
                             }
@@ -304,6 +309,7 @@ header {
 
     }
 }
+
 @media screen and (max-width: 420px) {
     header {
         .top-header {
@@ -311,7 +317,7 @@ header {
                 .top-header-right {
                     .search-data-input {
                         input {
-                           
+
                             width: 200px;
                             display: none;
                         }
@@ -320,27 +326,30 @@ header {
 
                     }
 
-                
+
                 }
             }
         }
 
     }
 }
+
 @media screen and (max-width: 346px) {
     header {
         .top-header {
             .top-header-main-area {
                 .logo-area {
                     min-width: 174px;
-                    h1{
+
+                    h1 {
                         font-size: 18px;
                     }
                 }
+
                 .top-header-right {
                     .search-data-input {
                         input {
-                           
+
                             width: 190px;
                             display: none;
                         }
@@ -349,7 +358,7 @@ header {
 
                     }
 
-                
+
                 }
             }
         }
