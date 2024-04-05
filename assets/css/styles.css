@@ -138,6 +138,21 @@ p-bottom {
   border: 1px solid #0088B4;
 }
 
+.inspect {
+  background: #FFD8BB;
+  border: 1px solid #B46C00;
+}
+
+.outOfOrder {
+  background: #E3E3E3;
+  border: 1px solid #C1C1C1;
+}
+
+.doNotDisturb {
+  background: #FFFCBF;
+  border: 1px solid #FFEA2E;
+}
+
 .vacant {
   background: #49C14E;
   color: #ffffff;
@@ -2874,7 +2889,108 @@ footer .footer-area .footer-main-area p {
 .generate-task-auto-table-area .generate-task-box {
   width: 240px;
 }
+.generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus {
+  background: #ffffff;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(217, 217, 217, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(217, 217, 217, 0.25);
+  margin-bottom: 20px;
+}
+.generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus .todayhousekeepingstatus-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #F5F5F5;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus .todayhousekeepingstatus-header h1 {
+  color: #000000;
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+.generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus .todayhousekeepingstatus-header h1 span {
+  color: #000000;
+  font-size: 13px;
+}
+.generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus ul {
+  padding: 10px;
+}
+.generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: #525252;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus ul li span {
+  padding: 2px 7px;
+  border-radius: 3px;
+  color: #202020;
+}
 
+@media screen and (max-width: 768px) {
+  .generate-task-auto-table-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
+  .generate-task-auto-table-area .generate-task-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .generate-task-auto-table-area .generate-task-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .generate-task-auto-table-area .generate-task-box .todayHousekeepingStatus {
+    width: 100%;
+  }
+}
 .checkin-full-wrapper {
   background: #ffffff;
   margin: 22px 19px 20px 19px;

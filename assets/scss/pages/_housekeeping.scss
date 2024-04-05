@@ -213,5 +213,80 @@
 
     .generate-task-box {
         width: 240px;
+        .todayHousekeepingStatus{
+            background: #ffffff;
+            box-shadow: 0 4px 4px 0 rgba(217, 217, 217, 0.25);
+            margin-bottom: 20px;
+            .todayhousekeepingstatus-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $simpleGray;
+                padding: 10px 10px;
+                cursor: pointer;
+                h1{
+                    color: $black;
+                    font-size: 12px;
+                    font-family: $dmSans;
+                    font-weight: 500;
+                    span{
+                        color: $black;
+                        font-size: 13px;
+                    }
+                }
+            }
+            ul{
+                padding: 10px;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: $dmSans;
+                    font-weight: 500;
+                    color: #525252;
+                    font-size: 11px;
+                    margin-bottom: 10px;
+                    span{
+                        
+                        padding: 2px 7px;
+                        border-radius: 3px;
+                        color: #202020;
+                    }
+                }
+            }
+        }
     }
+}
+@media screen and (max-width:768px) {
+    .generate-task-auto-table-area{
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 50px;
+        .generate-task-box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .todayHousekeepingStatus{
+                width: 49%;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:420px) {
+    .generate-task-auto-table-area{
+        .generate-task-box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 30px;
+            .todayHousekeepingStatus{
+                width: 100%;
+            }
+        }
+    }
+
 }

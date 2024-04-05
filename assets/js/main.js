@@ -38,6 +38,18 @@ $(document).ready(function () {
         }
     });
 
+    $('.todayhousekeepingstatus-header').on('click', function () {
+        var $status = $(this).next('.todaystatus');
+        $status.slideToggle();
+        var $arrow = $(this).find(".down-arrow3");
+        if ($arrow.css("transform") === 'none') {
+            $arrow.css("transform", "rotate(180deg)");
+        } else {
+            $arrow.css("transform", "");
+        }
+    });
+    
+
 
 
     var $prevClickedLabel = null;
