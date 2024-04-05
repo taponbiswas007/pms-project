@@ -1,0 +1,15 @@
+@import 'utils/mixins';
+@import 'utils/variables';
+
+.daily-task-header{
+    .reservation-results-header-main-area{
+        .daily-auto-task-generate-on-0ff-area{
+            p{
+                font-size: 12px;
+                font-family: $inter;
+                font-weight: 400;
+                color: #667085;
+            }
+        }
+    }
+}

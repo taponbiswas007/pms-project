@@ -101,6 +101,11 @@ p-bottom {
   color: #EBECEE;
 }
 
+.mr-both {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .calenderOrtable-selector {
   padding: 14px 0;
 }
