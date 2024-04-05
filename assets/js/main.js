@@ -139,6 +139,9 @@ $(document).ready(function () {
     $("#checkinNew").click(function () {
         window.location.href = "checkin-booking-person-details.html";
     });
+    $("#godeshboard").click(function () {
+        window.location.href = "front-desk-dashboard.html";
+    });
 
     $(".headersearchBtn").click(function () {
         $(".popupinput").show();
