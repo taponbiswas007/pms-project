@@ -12,6 +12,7 @@
             padding: 40px;
             width: 50%;
             height: 100%;
+          
             .header{
                 display: flex;
                 justify-content: flex-start;
@@ -27,149 +28,160 @@
                     font-weight: 600;
                 }
             }
-            h2{
-                font-family: $roboto;
-                    color: $blue;
-                    font-size: 25px;
-                    font-weight: 600;
-                    text-transform: capitalize;
-                    margin-top: 80px;
-                    margin-bottom: 10px;
-            }
-            p{
-                color: $blue;
-                font-size: 14px;
-                font-weight: 500;
-                font-family: $dmSans;
-            }
-            .login-information{
-                margin-top: 50px;
-                .login-input-item{
-                    margin-bottom: 30px;
-                    h3{
-                        font-size: 18px;
+            .login-area{
+                display: flex;
+                justify-content: center;
+                .main-login-area{
+                    max-width: 500px;
+                    width: 100%;
+                   
+                    h2{
+                        font-family: $roboto;
+                            color: $blue;
+                            font-size: 25px;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            margin-top: 60px;
+                            margin-bottom: 10px;
+                    }
+                    p{
+                        color: $blue;
+                        font-size: 14px;
                         font-weight: 500;
                         font-family: $dmSans;
+                    }
+                    .login-information{
+                        margin-top: 50px;
+                        .login-input-item{
+                            margin-bottom: 30px;
+                            h3{
+                                font-size: 18px;
+                                font-weight: 500;
+                                font-family: $dmSans;
+                                text-transform: capitalize;
+                                margin-bottom: 10px;
+                            }
+                            input{
+                                width: 100%;
+                                border: 1px solid $gray;
+                                height: 53px;
+                                color: $simpleblack;
+                                font-family: $inter;
+                                border-radius: 10px;
+                                padding: 0 20px;
+                            }
+                        }
+                    }
+                    .loginbtn{
+                        background: $blue;
+                        color: $white;
                         text-transform: capitalize;
-                        margin-bottom: 10px;
-                    }
-                    input{
                         width: 100%;
-                        border: 1px solid $gray;
-                        height: 53px;
-                        color: $simpleblack;
-                        font-family: $inter;
+                        height: 50px;
                         border-radius: 10px;
-                        padding: 0 20px;
+                        transition: all .5s;
+                        font-family: $dmSans;
+                        font-weight: 500;
+                        font-size: 18px;
+                        &:hover{
+                            background: $simpleblue;
+                        }
                     }
-                }
-            }
-            .loginbtn{
-                background: $blue;
-                color: $white;
-                text-transform: capitalize;
-                width: 100%;
-                height: 50px;
-                border-radius: 10px;
-                transition: all .5s;
-                font-family: $dmSans;
-                font-weight: 500;
-                font-size: 18px;
-                &:hover{
-                    background: $simpleblue;
-                }
-            }
-            .didnthaveaccount{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                column-gap: 15px;
-                margin-top: 30px;
-                span{
-                    color: $black;
-                    font-weight: 400;
-                    font-family: $inter;
-                    font-size: 14px;
-                }
-                button{
-                    color: $blue;
-                    font-weight: 600;
-                    font-size: 20px;
-                    transition: .3s;
-                    font-family: $dmSans;
-                    &:hover{
-                        color: $simpleblack;
-                    }
-                }
-            }
-            .login-with{
-                font-size: 20px;
-                font-family: $roboto;
-                font-weight: 500;
-                color: gray;
-                display: flex;
-                justify-content: center;
-                column-gap: 15px;
-                align-items: center;
-                text-transform: capitalize;
-                margin-top: 30px;
-                .loginwith-content{
-                    width: 316px;
-                }
-                .bar{
-                    background: gray;
-                    height: 2px;
-                    width: 100%;
-                    border-radius: 1px;
-                }
-            }
-            .social-media-icon{
-                display: flex;
-                justify-content: center;
-                margin-top: 30px;
-                ul{
-                    li{
-                        display: inline-block;
-                        margin-right: 15px;
-                        a{
-                         
-                            height: 30px;
-                            width: 30px;
-                            display: block;
-                            border-radius: 50%;
-                            font-size: 15px;
-                            text-align: center;
-                            color: $white;
-                            padding-top: 8px;
+                    .didnthaveaccount{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 15px;
+                        margin-top: 30px;
+                        span{
+                            color: $black;
+                            font-weight: 400;
+                            font-family: $inter;
+                            font-size: 14px;
+                        }
+                        button{
+                            color: $blue;
+                            font-weight: 600;
+                            font-size: 20px;
                             transition: .3s;
-                           &:hover{
-                            background: #00173b !important;
-                           }
-                        }
-                        &:nth-child(1){
-                            a{
-                                background: #0863F7;
+                            font-family: $dmSans;
+                            &:hover{
+                                color: $simpleblack;
                             }
                         }
-                        &:nth-child(2){
-                            a{
-                                background: #1C9CEA;
-                            }
+                    }
+                    .login-with{
+                        font-size: 20px;
+                        font-family: $roboto;
+                        font-weight: 500;
+                        color: gray;
+                        display: flex;
+                        justify-content: center;
+                        column-gap: 15px;
+                        align-items: center;
+                        text-transform: capitalize;
+                        margin-top: 30px;
+                        .loginwith-content{
+                            flex-shrink: 0;
                         }
-                        &:nth-child(3){
-                            a{
-                                background: #2A61A6;
-                            }
+                        .bar{
+                            background: gray;
+                            height: 2px;
+                            width: 100%;
+                            border-radius: 1px;
                         }
-                        &:nth-child(4){
-                            a{
-                                background: #C31786;
+                    }
+                    .social-media-icon{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 30px;
+                        ul{
+                            li{
+                                display: inline-block;
+                                margin-right: 15px;
+                                a{
+                                 
+                                    height: 30px;
+                                    width: 30px;
+                                    display: block;
+                                    border-radius: 50%;
+                                    font-size: 15px;
+                                    text-align: center;
+                                    color: $white;
+                                    padding-top: 8px;
+                                    transition: .3s;
+                                   &:hover{
+                                    background: #00173b !important;
+                                   }
+                                }
+                                &:nth-child(1){
+                                    a{
+                                        background: #0863F7;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    a{
+                                        background: #1C9CEA;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    a{
+                                        background: #2A61A6;
+                                    }
+                                }
+                                &:nth-child(4){
+                                    a{
+                                        background: #C31786;
+                                    }
+                                    margin-right: 0;
+                                }
                             }
-                            margin-right: 0;
                         }
                     }
                 }
             }
+          
+         
         }
         .right-side{
             width: 50%;
@@ -211,6 +223,29 @@
                 display: none;
             }
            }
+        }
+    }
+}
+@media screen  and (max-width: 768px){
+    .full-wrapper{
+        .login-page-main-area{
+            .left-side{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+@media screen  and (max-width: 600px){
+    .full-wrapper{
+        .login-page-main-area{
+            flex-direction: column;
+            .left-side{
+                width: 100%;
+            }
+            .right-side{
+                width: 100%;
+            }
         }
     }
 }

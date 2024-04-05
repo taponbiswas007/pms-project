@@ -3405,35 +3405,47 @@ footer .footer-area .footer-main-area p {
   font-size: 25px;
   font-weight: 600;
 }
-.full-wrapper .login-page-main-area .left-side h2 {
+.full-wrapper .login-page-main-area .left-side .login-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area {
+  max-width: 500px;
+  width: 100%;
+}
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area h2 {
   font-family: "Roboto", sans-serif;
   color: #01286D;
   font-size: 25px;
   font-weight: 600;
   text-transform: capitalize;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 10px;
 }
-.full-wrapper .login-page-main-area .left-side p {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area p {
   color: #01286D;
   font-size: 14px;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
 }
-.full-wrapper .login-page-main-area .left-side .login-information {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-information {
   margin-top: 50px;
 }
-.full-wrapper .login-page-main-area .left-side .login-information .login-input-item {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-information .login-input-item {
   margin-bottom: 30px;
 }
-.full-wrapper .login-page-main-area .left-side .login-information .login-input-item h3 {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-information .login-input-item h3 {
   font-size: 18px;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
-.full-wrapper .login-page-main-area .left-side .login-information .login-input-item input {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-information .login-input-item input {
   width: 100%;
   border: 1px solid #EBECEE;
   height: 53px;
@@ -3442,7 +3454,7 @@ footer .footer-area .footer-main-area p {
   border-radius: 10px;
   padding: 0 20px;
 }
-.full-wrapper .login-page-main-area .left-side .loginbtn {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .loginbtn {
   background: #01286D;
   color: #ffffff;
   text-transform: capitalize;
@@ -3455,10 +3467,10 @@ footer .footer-area .footer-main-area p {
   font-weight: 500;
   font-size: 18px;
 }
-.full-wrapper .login-page-main-area .left-side .loginbtn:hover {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .loginbtn:hover {
   background: #003087;
 }
-.full-wrapper .login-page-main-area .left-side .didnthaveaccount {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .didnthaveaccount {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3473,13 +3485,13 @@ footer .footer-area .footer-main-area p {
           column-gap: 15px;
   margin-top: 30px;
 }
-.full-wrapper .login-page-main-area .left-side .didnthaveaccount span {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .didnthaveaccount span {
   color: #000000;
   font-weight: 400;
   font-family: "Inter", sans-serif;
   font-size: 14px;
 }
-.full-wrapper .login-page-main-area .left-side .didnthaveaccount button {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .didnthaveaccount button {
   color: #01286D;
   font-weight: 600;
   font-size: 20px;
@@ -3487,10 +3499,10 @@ footer .footer-area .footer-main-area p {
   transition: 0.3s;
   font-family: "DM Sans", sans-serif;
 }
-.full-wrapper .login-page-main-area .left-side .didnthaveaccount button:hover {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .didnthaveaccount button:hover {
   color: #202020;
 }
-.full-wrapper .login-page-main-area .left-side .login-with {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-with {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -3510,16 +3522,17 @@ footer .footer-area .footer-main-area p {
   text-transform: capitalize;
   margin-top: 30px;
 }
-.full-wrapper .login-page-main-area .left-side .login-with .loginwith-content {
-  width: 316px;
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-with .loginwith-content {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
-.full-wrapper .login-page-main-area .left-side .login-with .bar {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-with .bar {
   background: gray;
   height: 2px;
   width: 100%;
   border-radius: 1px;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3528,11 +3541,11 @@ footer .footer-area .footer-main-area p {
           justify-content: center;
   margin-top: 30px;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li {
   display: inline-block;
   margin-right: 15px;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li a {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li a {
   height: 30px;
   width: 30px;
   display: block;
@@ -3544,22 +3557,22 @@ footer .footer-area .footer-main-area p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li a:hover {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li a:hover {
   background: #00173b !important;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(1) a {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li:nth-child(1) a {
   background: #0863F7;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(2) a {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li:nth-child(2) a {
   background: #1C9CEA;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(3) a {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li:nth-child(3) a {
   background: #2A61A6;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(4) {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li:nth-child(4) {
   margin-right: 0;
 }
-.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(4) a {
+.full-wrapper .login-page-main-area .left-side .login-area .main-login-area .social-media-icon ul li:nth-child(4) a {
   background: #C31786;
 }
 .full-wrapper .login-page-main-area .right-side {
@@ -3602,6 +3615,34 @@ footer .footer-area .footer-main-area p {
   font-weight: 500;
   line-height: 40px;
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .full-wrapper .login-page-main-area .left-side {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .full-wrapper .login-page-main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .full-wrapper .login-page-main-area .left-side {
+    width: 100%;
+  }
+  .full-wrapper .login-page-main-area .right-side {
+    width: 100%;
+  }
+}
+.register-full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-information .login-input-item {
+  margin-bottom: 15px;
+}
+.register-full-wrapper .login-page-main-area .left-side .login-area .main-login-area .login-information .login-input-item input {
+  height: 45px;
+  border-radius: 7px;
 }
 
 header {

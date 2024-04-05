@@ -145,6 +145,7 @@ $(document).ready(function () {
     $(".loginbtn").click(function () {
         window.location.href = "front-desk-dashboard.html";
     });
+   
     $(".register").click(function () {
         window.location.href = "register.html";
     });
