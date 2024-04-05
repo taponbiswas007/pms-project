@@ -161,6 +161,15 @@ $(document).ready(function () {
         $(".overlay").fadeOut();
         $(".viabookingpopup-area").fadeOut();
     });
+    $(".addCleaningtask").click(function () {
+        $(".overlay").fadeIn();
+        $(".edit-cleaning-popup").fadeIn();
+    });
+
+    $(".closebtn").click(function () {
+        $(".overlay").fadeOut();
+        $(".edit-cleaning-popup").fadeOut();
+    });
 
   
     $(".booking-historybtn").click(function (event) {
