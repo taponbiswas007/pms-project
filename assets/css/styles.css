@@ -3362,6 +3362,215 @@ footer .footer-area .footer-main-area p {
     padding-left: 0;
   }
 }
+.full-wrapper {
+  background: #ffffff;
+  height: 100vh;
+}
+.full-wrapper .login-page-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.full-wrapper .login-page-main-area .left-side {
+  padding: 40px;
+  width: 50%;
+}
+.full-wrapper .login-page-main-area .left-side .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.full-wrapper .login-page-main-area .left-side .header logo {
+  width: 40px;
+}
+.full-wrapper .login-page-main-area .left-side .header h1 {
+  font-family: "Roboto", sans-serif;
+  color: #01286D;
+  font-size: 25px;
+  font-weight: 600;
+}
+.full-wrapper .login-page-main-area .left-side h2 {
+  font-family: "Roboto", sans-serif;
+  color: #01286D;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.full-wrapper .login-page-main-area .left-side p {
+  color: #01286D;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+.full-wrapper .login-page-main-area .left-side .login-information {
+  margin-top: 50px;
+}
+.full-wrapper .login-page-main-area .left-side .login-information .login-input-item {
+  margin-bottom: 30px;
+}
+.full-wrapper .login-page-main-area .left-side .login-information .login-input-item h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.full-wrapper .login-page-main-area .left-side .login-information .login-input-item input {
+  width: 100%;
+  border: 1px solid #EBECEE;
+  height: 53px;
+  color: #202020;
+  font-family: "Inter", sans-serif;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.full-wrapper .login-page-main-area .left-side .loginbtn {
+  background: #01286D;
+  color: #ffffff;
+  text-transform: capitalize;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.full-wrapper .login-page-main-area .left-side .loginbtn:hover {
+  background: #003087;
+}
+.full-wrapper .login-page-main-area .left-side .didnthaveaccount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  margin-top: 30px;
+}
+.full-wrapper .login-page-main-area .left-side .didnthaveaccount span {
+  color: #000000;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+.full-wrapper .login-page-main-area .left-side .didnthaveaccount button {
+  color: #01286D;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "DM Sans", sans-serif;
+}
+.full-wrapper .login-page-main-area .left-side .didnthaveaccount button:hover {
+  color: #202020;
+}
+.full-wrapper .login-page-main-area .left-side .login-with {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+.full-wrapper .login-page-main-area .left-side .login-with .loginwith-content {
+  width: 316px;
+}
+.full-wrapper .login-page-main-area .left-side .login-with .bar {
+  background: gray;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li a {
+  height: 30px;
+  width: 30px;
+  display: block;
+  border-radius: 50%;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li a:hover {
+  background: #00173b !important;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(1) a {
+  background: #0863F7;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(2) a {
+  background: #1C9CEA;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(3) a {
+  background: #2A61A6;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(4) {
+  margin-right: 0;
+}
+.full-wrapper .login-page-main-area .left-side .social-media-icon ul li:nth-child(4) a {
+  background: #C31786;
+}
+.full-wrapper .login-page-main-area .right-side {
+  width: 50%;
+}
+.full-wrapper .login-page-main-area .right-side img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 header {
   position: sticky;
   top: 0;
