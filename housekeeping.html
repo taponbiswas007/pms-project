@@ -47,14 +47,11 @@
                 <div class="bottom-header-main-area">
                     <nav class="navbar">
                         <ul>
-                            <li><a href="calender_book.html">Dashboard</a></li>
-                            <li><a class="active" href="reservation.html">Reservation</a></li>
-                            <li><a href="#">Check-in</a></li>
+                            <li><a href="front-desk-dashboard.html">Dashboard</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li><a href="check-in.html">Check-in</a></li>
                             <li><a href="#">Check-out</a></li>
-                            <li><a href="#">Housekeeping</a></li>
-                            <li><a href="#">Manage Staff</a></li>
-                            <li><a href="#">Promotion</a></li>
-                            <li><a href="#">Reports</a></li>
+                            <li><a class="active"  href="housekeeping.html">Housekeeping</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -64,16 +61,16 @@
     <!-- header area end -->
 
     <!-- main area start -->
-    <div class="reservation-header mr-both">
+    <div class="reservation-header mr-both" style="margin-bottom: 11px; margin-top: 20px;">
         <div class="container-fluid">
             <div class="calender-header">
                 <h1>Housekeeping</h1>
             </div>
         </div>
     </div>
-    <div class="resevation-page-search-area mr-both">
+    <div class="resevation-page-search-area mr-both" style="margin-bottom: 20px;">
         <div class="container-fluid">
-            <div class="reservation-page-search-main-area">
+            <div class="reservation-page-search-main-area p-both">
                 <div class="search-data-input-item">
                     <h1>Room No.</h1>
                     <input type="text" placeholder="Search Room No.">
@@ -99,12 +96,16 @@
         </div>
     </div>
 
-    <!-- reservation search results table area start -->
+    <!-- task results table area start -->
     <div class=" daily-task-header reservation-results-header mr-both">
         <div class="container-fluid">
             <div class="reservation-results-header-main-area">
                 <div class="daily-auto-task-generate-on-0ff-area">
                     <p>Auto Generate tasks on daily audit & check out</p>
+                    <div class="onoff-area">
+                        <span class="onoff-status">off</span>
+                        <button class="onoffbtn"><span class="onof-circle"></span></button>
+                    </div>
                 </div>
                 <div class="search-results-filter-area">
                     <div class="filter-item">
@@ -114,212 +115,248 @@
             </div>
         </div>
     </div>
-    <div class="reservation-search-results-table-area mr-both">
-        <div class="container-fluid">
-            <div class="reservation-search-results-table-main-area">
-                <div class="resevation-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Booking ID</th>
-                                <th>Guest Name</th>
-                                <th>Occupants</th>
-                                <th>Date</th>
-                                <th>Rooms</th>
-                                <th>Amount</th>
-                                <th>Booking via</th>
-                                <th>Status</th>
-                               
+    <div class="generate-task-auto-table-area mr-both">
+        <div class="generate-task-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room No.</th>
+                        <th>Room Type</th>
+                        <th>Status</th>
+                        <th>Availability</th>
+                        <th>Task Date</th>
+                        <th>Assign To</th>
+                        <th>Priority</th>
+                        <th>Action</th> 
+                    </tr>
+                </thead>
+                <tbody>
 
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                          
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><i class="fa-solid fa-phone-volume"></i></li>
-                                    <li>Call</li>
-                                </ul></td>
-                                <td class="pending">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Pending
-                                </td>
-                                
-                            </tr>
-                            <tr >
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
-                                    <li>Booking.com</li>
-                                </ul></td>
-                                <td class="success">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Success
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><i class="fa-solid fa-person-walking"></i></li>
-                                    <li>Call</li>
-                                </ul></td>
-                                <td class="cancelled">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Cancelled
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><i class="fa-solid fa-person-walking"></i></li>
-                                    <li>Call</li>
-                                </ul></td>
-                                <td class="pending">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Pending
-                                </td>
-                                
-                            </tr>
-                            <tr >
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><i class="fa-solid fa-phone-volume"></i></li>
-                                    <li>Call</li>
-                                </ul></td>
-                                <td class="success">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Success
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
-                                    <li>Booking.com</li>
-                                </ul></td>
-                                <td class="success">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    success
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><i class="fa-solid fa-phone-volume"></i></li>
-                                    <li>Call</li>
-                                </ul></td>
-                                <td class="pending">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Pending
-                                </td>
-                                
-                            </tr>
-                            <tr >
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><img src="assets/images/Booking.com - jpeg.svg" alt=""></li>
-                                    <li>Booking.com</li>
-                                </ul></td>
-                                <td class="success">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Success
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td><ul>
-                                    <li><i class="fa-solid fa-person-walking"></i></li>
-                                    <li>Call</li>
-                                </ul></td>
-                                <td class="cancelled">
-                                    <i class="fa-solid fa-circle circle"></i>
-                                    Pending
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                               
-                                
-                            </tr>
-                            
-                          
-
-
-
-                        </tbody>
-                    </table>
-
+                  
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="dirty">Dirty</span></td>
+                        <td><span class="vacant">Vacant</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="normal">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            Normal
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="dirty">Dirty</span></td>
+                        <td><span  class="vacant">Vacant</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="low">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            low
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="ready">Ready</span></td>
+                        <td><span class="vacant">Vacant</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="high">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                           high
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="dirty">Dirty</span></td>
+                        <td><span class="vacant">Vacant</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="high">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            high
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="dirty">Dirty</span></td>
+                        <td><span class="vacant">Vacant</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="normal">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            Normal
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="cleaning">Cleaning</span></td>
+                        <td><span class="stayover">Stayover</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="normal">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            Normal
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="dirty">Dirty</span></td>
+                        <td><span class="stayover">Stayover</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="low">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            low
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="ready">Ready</span></td>
+                        <td><span class="stayover">Stayover</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="high">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                           high
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="ready">Ready</span></td>
+                        <td><span class="vacant">Vacant</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="normal">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            Normal
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>#AB21B8</td>
+                        <td>Deluxe Room, 123</td>
+                        <td><span class="dirty">Dirty</span></td>
+                        <td><span class="stayover">Stayover</span></td>
+                        <td>01 Jan - 05 Jan 2023</td>
+                        <td>N/A</td>
+                        <td class="high">
+                            <i class="fa-solid fa-circle n-h-l-circle"></i>
+                            high
+                        </td>
+                        <td>
+                            <ul>
+                                <li><button><i class="fa-regular fa-pen-to-square g-color"></i></button></li>
+                                <li><button><i class="fa-regular fa-trash-can r-color"></i></button></li>
+                                <li><button><img src="assets/images/suffix-gray.svg" alt=""></button></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
                     
+                    
+                  
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="generate-task-box"></div>
+    </div>
+  
+    <!-- task  results table area end -->
+    <!-- main area end -->
+    <footer id="footer">
+        <div class="footer-area">
+            <div class="container-fluid">
+                <div class="footer-main-area">
+                    <p> D. Talaviya - 28th Mar 24 02:25 PM</p>
                 </div>
-
-
             </div>
         </div>
-    </div>
-    <!-- reservation search results table area end -->
-    <!-- main area end -->
-
+    </footer>
     <!-- font awesome js link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
         integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="

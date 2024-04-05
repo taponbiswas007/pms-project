@@ -46,3 +46,40 @@ p-bottom{
     margin-left: 15px;
     margin-right: 15px;
 }
+.normal{
+    color: #E3A52D !important;
+}
+.high{
+    color: #E3642D !important;
+}
+.low{
+    color: #3CB2E4 !important;
+}
+.n-h-l-circle{
+    font-size: 8px !important;
+    margin-right: 5px;
+}
+.dirty{
+    background: #FFBBBB;
+    border: 1px solid #FFA5A5;
+}
+.ready{
+    background: #DBFFE3;
+    border: 1px solid #00D32F;
+}
+.cleaning{
+    background: #BBE7FF;
+    border: 1px solid #0088B4;
+}
+.vacant{
+    background: #49C14E;
+    color: $white;
+}
+.stayover{
+    background: #4979C1;
+    color: $white;
+}
+.p-both{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

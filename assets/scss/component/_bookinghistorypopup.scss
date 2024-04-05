@@ -11,80 +11,96 @@
     z-index: 4;
     padding: 10px;
     display: none;
+
     .booking-history-popup-main-area {
         padding: 20px;
         background: $white;
         position: relative;
-        .header{
+
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
-            h1{
+
+            h1 {
                 font-family: $dmSans;
                 color: $black;
                 font-weight: 600;
                 font-size: 21px;
-                .clock-icon{
+
+                .clock-icon {
                     color: $blue;
                     transform: rotateZ(160deg);
                 }
             }
-            button{
+
+            button {
                 color: $black;
-               
+
             }
         }
-        .booking-history-table{
+
+        .booking-history-table {
             position: relative;
-             overflow: auto;
-            table{
-                  border-collapse: collapse;
+            overflow: auto;
+
+            table {
+                border-collapse: collapse;
                 width: 100%;
-                thead{
-                    tr{
-                      
+
+                thead {
+                    tr {
+
                         height: 31px;
-                        th{
+
+                        th {
                             color: $simpleblack;
                             font-family: $dmSans;
                             font-weight: 600;
                             text-align: left;
                             font-size: 11px;
                             vertical-align: middle;
-                              background: #EBECEE;
-                                padding-left: 10px;
-                            &:nth-child(1){
+                            background: #EBECEE;
+                            padding-left: 10px;
+
+                            &:nth-child(1) {
                                 position: sticky;
                                 left: 0;
                                 top: 0;
                                 z-index: 2;
                                 min-width: 77px;
                             }
-                            &:nth-child(2){
-                               
+
+                            &:nth-child(2) {
+
                                 min-width: 200px;
                             }
-                            &:nth-child(3){
-                              
+
+                            &:nth-child(3) {
+
                                 min-width: 170px;
                             }
-                            &:nth-child(4){
-                              
+
+                            &:nth-child(4) {
+
                                 min-width: 122px;
                             }
-                            &:nth-child(5){
-                               
+
+                            &:nth-child(5) {
+
                                 min-width: 233px;
                             }
                         }
                     }
                 }
-                tbody{
-                    tr{
-                      
+
+                tbody {
+                    tr {
+
                         height: 61px;
-                        td{
+
+                        td {
                             border: 1px solid #EBECEE;
                             font-size: 15px;
                             color: $simpleblack;
@@ -92,33 +108,39 @@
                             font-weight: 400;
                             text-align: left;
                             vertical-align: middle;
-                              background: #ffffff;
-                              padding-left: 10px;
-                            &:nth-child(1){
+                            background: #ffffff;
+                            padding-left: 10px;
+
+                            &:nth-child(1) {
                                 position: sticky;
                                 left: 0;
                                 top: 0;
                                 z-index: 2;
                                 min-width: 77px;
                             }
-                            &:nth-child(2){
-                               
+
+                            &:nth-child(2) {
+
                                 min-width: 200px;
                             }
-                            &:nth-child(3){
-                              
+
+                            &:nth-child(3) {
+
                                 min-width: 170px;
                             }
-                            &:nth-child(4){
+
+                            &:nth-child(4) {
                                 min-width: 122px;
-                                ul{
-                                    li{
+
+                                ul {
+                                    li {
                                         display: inline-block;
                                     }
                                 }
                             }
-                            &:nth-child(5){
-                               
+
+                            &:nth-child(5) {
+
                                 min-width: 233px;
                             }
                         }
@@ -126,34 +148,39 @@
                 }
             }
         }
-        .rating-area{
+
+        .rating-area {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             margin-top: 20px;
-           
 
-            ul{
-                 padding: 6px 25px;
-                 background: #F8F8F8;
-                li{
+
+            ul {
+                padding: 6px 25px;
+                background: #F8F8F8;
+
+                li {
                     font-size: 12px;
                     font-weight: 600;
                     font-family: $dmSans;
                     display: inline-block;
                     margin-right: 15px;
                     vertical-align: middle;
-                    &:nth-child(1){
+
+                    &:nth-child(1) {
                         color: $green;
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         color: $yellow;
                     }
-                    &:nth-child(3){
+
+                    &:nth-child(3) {
                         color: $simplered;
                         margin-right: 0;
                     }
-                  
+
                 }
             }
         }

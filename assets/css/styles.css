@@ -106,6 +106,53 @@ p-bottom {
   margin-right: 15px;
 }
 
+.normal {
+  color: #E3A52D !important;
+}
+
+.high {
+  color: #E3642D !important;
+}
+
+.low {
+  color: #3CB2E4 !important;
+}
+
+.n-h-l-circle {
+  font-size: 8px !important;
+  margin-right: 5px;
+}
+
+.dirty {
+  background: #FFBBBB;
+  border: 1px solid #FFA5A5;
+}
+
+.ready {
+  background: #DBFFE3;
+  border: 1px solid #00D32F;
+}
+
+.cleaning {
+  background: #BBE7FF;
+  border: 1px solid #0088B4;
+}
+
+.vacant {
+  background: #49C14E;
+  color: #ffffff;
+}
+
+.stayover {
+  background: #4979C1;
+  color: #ffffff;
+}
+
+.p-both {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .calenderOrtable-selector {
   padding: 14px 0;
 }
@@ -2640,6 +2687,194 @@ footer .footer-area .footer-main-area p {
     font-size: 12px;
   }
 }
+.daily-task-header .reservation-results-header-main-area .daily-auto-task-generate-on-0ff-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.daily-task-header .reservation-results-header-main-area .daily-auto-task-generate-on-0ff-area p {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #667085;
+}
+.daily-task-header .reservation-results-header-main-area .daily-auto-task-generate-on-0ff-area .onoff-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.daily-task-header .reservation-results-header-main-area .daily-auto-task-generate-on-0ff-area .onoff-area span {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #6A6A6A;
+  width: 20px;
+}
+.daily-task-header .reservation-results-header-main-area .daily-auto-task-generate-on-0ff-area .onoff-area button {
+  width: 34px;
+  height: 17px;
+  border-radius: 30px;
+  background: #D1D1D6;
+  position: relative;
+  margin-left: 10px;
+}
+.daily-task-header .reservation-results-header-main-area .daily-auto-task-generate-on-0ff-area .onoff-area button .onof-circle {
+  content: " ";
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 2px;
+  border-radius: 50%;
+}
+
+.generate-task-auto-table-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  margin-top: 20px;
+}
+.generate-task-auto-table-area .generate-task-table {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+.generate-task-auto-table-area .generate-task-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr {
+  height: 36px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th {
+  color: #202020;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 13px;
+  vertical-align: middle;
+  background: #EBECEE;
+  padding-left: 20px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(1) {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  min-width: 151px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(2) {
+  min-width: 170px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(3) {
+  min-width: 90px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(4) {
+  min-width: 99px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(5) {
+  min-width: 183px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(6) {
+  min-width: 137px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(7) {
+  min-width: 129px;
+}
+.generate-task-auto-table-area .generate-task-table table thead tr th:nth-child(8) {
+  min-width: 136px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr {
+  height: 45px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td {
+  border: 1px solid #EBECEE;
+  font-size: 13px;
+  color: #202020;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+  background: #ffffff;
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  min-width: 151px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(2) {
+  min-width: 170px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(3) {
+  min-width: 90px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(3) span {
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(4) {
+  min-width: 99px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(4) span {
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(5) {
+  min-width: 183px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(6) {
+  min-width: 137px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(7) {
+  min-width: 129px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(8) {
+  min-width: 136px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(8) ul li {
+  display: inline-block;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.generate-task-auto-table-area .generate-task-table table tbody tr td:nth-child(8) ul li button {
+  width: 20px;
+  padding: 0;
+}
+.generate-task-auto-table-area .generate-task-box {
+  width: 240px;
+}
+
 .checkin-full-wrapper {
   background: #ffffff;
   margin: 22px 19px 20px 19px;

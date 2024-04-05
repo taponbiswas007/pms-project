@@ -232,6 +232,25 @@ $(document).ready(function () {
         $("#petInfo").show();
     });
 
+
+    //on off function
+
+    $('.onoffbtn').click(function(){
+        $(this).toggleClass('on');
+        $('.onoff-status').text($(this).hasClass('on') ? 'on' : 'off');
+        if ($(this).hasClass('on')) {
+            $(this).next('.onoff-status').show();
+            $(".onof-circle").css({'right': '2px', 'left': 'auto', 'background-color': 'yellow'} );
+        } else {
+            $(this).next('.onoff-status').hide();
+            $(".onof-circle").css({'left': '2px', 'right': 'auto', 'background-color': 'white'});
+        }
+    });
+    
+      
+    
+      
+
 });
 //for main page
 function formatDate(dateString) {
