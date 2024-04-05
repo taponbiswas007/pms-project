@@ -271,11 +271,26 @@ $(document).ready(function () {
         }
     });
     
-      
-    
+
       
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var slides = document.querySelectorAll("#slideshow p");
+    var index = 0;
+  
+    function showSlide() {
+      slides.forEach(function (slide) {
+        slide.style.display = "none";
+      });
+      slides[index].style.display = "block";
+      index = (index + 1) % slides.length;
+      setTimeout(showSlide, 15000);
+    }
+  
+    showSlide();
+  });
+  
 //for main page
 function formatDate(dateString) {
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

@@ -3363,7 +3363,7 @@ footer .footer-area .footer-main-area p {
   }
 }
 .full-wrapper {
-  background: #ffffff;
+  background: #F3F7FF;
   height: 100vh;
 }
 .full-wrapper .login-page-main-area {
@@ -3380,6 +3380,7 @@ footer .footer-area .footer-main-area p {
 .full-wrapper .login-page-main-area .left-side {
   padding: 40px;
   width: 50%;
+  height: 100%;
 }
 .full-wrapper .login-page-main-area .left-side .header {
   display: -webkit-box;
@@ -3563,12 +3564,44 @@ footer .footer-area .footer-main-area p {
 }
 .full-wrapper .login-page-main-area .right-side {
   width: 50%;
+  height: calc(100vh - 3px);
+  position: relative;
 }
 .full-wrapper .login-page-main-area .right-side img {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+.full-wrapper .login-page-main-area .right-side .imagesoverly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+}
+.full-wrapper .login-page-main-area .right-side .hotel-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  z-index: 4;
+  overflow: hidden;
+}
+.full-wrapper .login-page-main-area .right-side .hotel-description p {
+  color: #ffffff;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 40px;
+  padding: 100px;
+  padding-bottom: 0;
+  display: none;
 }
 
 header {

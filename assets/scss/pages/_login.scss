@@ -2,7 +2,7 @@
 @import '../utils/variables';
 
 .full-wrapper{
-    background: $white;
+    background: #F3F7FF;
     height: 100vh;
     .login-page-main-area{
         display: flex;
@@ -11,6 +11,7 @@
         .left-side{
             padding: 40px;
             width: 50%;
+            height: 100%;
             .header{
                 display: flex;
                 justify-content: flex-start;
@@ -172,11 +173,44 @@
         }
         .right-side{
             width: 50%;
+            height: calc(100vh - 3px);
+            position: relative;
            img{
             width: 100%;
             height: 100%;
             background-size: cover;
             background-position: center;
+           }
+           .imagesoverly{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            background: rgba($color: #000000, $alpha: 0.5);
+           }
+           .hotel-description{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 4;
+            overflow: hidden;
+          
+           
+            p{
+                color: $white;
+                text-align: left;
+                font-size: 15px;
+                font-family: $inter;
+                font-weight: 500;
+                line-height: 40px;
+                padding: 100px;
+                padding-bottom: 0;
+                display: none;
+            }
            }
         }
     }
