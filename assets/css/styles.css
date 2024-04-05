@@ -74,7 +74,7 @@ img {
   height: 100%;
   z-index: 3;
   background: rgba(0, 0, 0, 0.5);
-  display: none;
+  display: block;
 }
 
 .m-r {
@@ -4611,4 +4611,53 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   .guestlist-area .booking-history-popup-main-area .guest-details-input-area .person-info-item {
     width: 100%;
   }
+}
+.edit-cleaning-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 572px;
+  width: 100%;
+  z-index: 4;
+  padding: 10px;
+}
+.edit-cleaning-popup .edit-cleaning-popup-main-area {
+  background: #ffffff;
+  padding: 10px;
+}
+.edit-cleaning-popup .edit-cleaning-popup-main-area h1 {
+  font-size: 25px;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #202020;
+}
+.edit-cleaning-popup .edit-cleaning-popup-main-area .main-content-area .content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.edit-cleaning-popup .edit-cleaning-popup-main-area .main-content-area .content-item .content-item-title h2 {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #202020;
+}
+.edit-cleaning-popup .edit-cleaning-popup-main-area .main-content-area .content-item .content-item-value {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  color: #202020;
 }

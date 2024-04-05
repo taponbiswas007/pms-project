@@ -1,0 +1,50 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.edit-cleaning-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 572px;
+    width: 100%;
+    z-index: 4;
+    padding: 10px;
+
+    .edit-cleaning-popup-main-area{
+        background: $white;
+        padding: 10px;
+        h1{
+            font-size: 25px;
+            font-family: $dmSans;
+            text-align: center;
+            font-weight: 400;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: $simpleblack;
+        }
+        .main-content-area{
+            .content-item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .content-item-title{
+                   h2{
+                    font-size: 16px;
+                    font-family: $dmSans;
+                    text-align: center;
+                    font-weight: 400;
+                    color: $simpleblack;
+                   }
+                }
+                .content-item-value{
+                    font-size: 16px;
+                    font-family: $dmSans;
+                    text-align: center;
+                    font-weight: 500;
+                    color: $simpleblack;
+                }
+            }
+        }
+    }
+}
