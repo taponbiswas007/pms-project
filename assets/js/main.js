@@ -152,6 +152,9 @@ $(document).ready(function () {
     $(".login").click(function () {
         window.location.href = "login.html";
     });
+    $(".forget").click(function () {
+        window.location.href = "forgetpassword.html";
+    });
 
     $(".headersearchBtn").click(function () {
         $(".popupinput").show();

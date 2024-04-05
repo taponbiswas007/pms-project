@@ -87,6 +87,22 @@
                             background: $simpleblue;
                         }
                     }
+                    .forgetpassword{
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: flex-end;
+                        button{
+                            color: $blue;
+                            font-weight: 600;
+                            font-size: 15px;
+                            transition: .3s;
+                            font-family: $dmSans;
+                            text-transform: capitalize;
+                            &:hover{
+                                color: $simpleblack;
+                            }
+                        }
+                    }
                     .didnthaveaccount{
                         display: flex;
                         justify-content: center;
