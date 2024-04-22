@@ -48,7 +48,6 @@ $(document).ready(function () {
             $arrow.css("transform", "");
         }
     });
-    
 
 
 
@@ -56,7 +55,7 @@ $(document).ready(function () {
 
     $('.infolabel').on('click', function () {
         // Check if the clicked label contains an input field
-        var $inputField = $(this).closest('.info-input-box').find('input , select');
+        var $inputField = $(this).closest('.info-input-box').find('input, select');
         if ($inputField.length === 0) {
             return; // Exit the function if no input field found
         }
@@ -69,7 +68,7 @@ $(document).ready(function () {
 
         // If there was a previously clicked label, revert its styles
         if ($prevClickedLabel !== null) {
-            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input , select');
+            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input, select');
 
             // Determine if the previously clicked label contains a select element
             var isPrevSelect = $prevInputField.is('select');
@@ -118,7 +117,48 @@ $(document).ready(function () {
 
         // Set the current label as the previously clicked label
         $prevClickedLabel = $(this);
+
+        // Focus on the next input field
+        var $nextInputField = $inputField.eq($inputField.index(this) + 1);
+        if ($nextInputField.length !== 0) {
+            $nextInputField.focus();
+        }
+
+        $('.person-info-item input, .person-info-item select').on('keydown', function (e) {
+            if (e.which === 9) { // Tab key
+                e.preventDefault(); // Prevent default tab behavior
+                var $nextInputField = $(this).closest('.person-info-item').nextAll('.person-info-item').find('input, select').first();
+                if ($nextInputField.length !== 0) {
+                    // Find the next .infolabel element and trigger click on it only if it's not already clicked
+                    var $infolabel = $nextInputField.closest('.person-info-item').find('.infolabel').first();
+                    if (!$infolabel.data('clicked')) {
+                        $infolabel.data('clicked', true);
+                        $infolabel.click();
+                    }
+                }
+            }
+        });
+        $('.card-details-item input, .card-details-item select').on('keydown', function (e) {
+            if (e.which === 9) { // Tab key
+                e.preventDefault(); // Prevent default tab behavior
+                var $nextInputField = $(this).closest('.card-details-item').nextAll('.card-details-item').find('input, select').first();
+                if ($nextInputField.length !== 0) {
+                    // Find the next .infolabel element and trigger click on it only if it's not already clicked
+                    var $infolabel = $nextInputField.closest('.card-details-item').find('.infolabel').first();
+                    if (!$infolabel.data('clicked')) {
+                        $infolabel.data('clicked', true);
+                        $infolabel.click();
+                    }
+                }
+            }
+        });
+
+
     });
+
+
+
+
 
 
 
@@ -145,7 +185,7 @@ $(document).ready(function () {
     $(".loginbtn").click(function () {
         window.location.href = "front-desk-dashboard.html";
     });
-   
+
     $(".register").click(function () {
         window.location.href = "register.html";
     });
@@ -187,7 +227,7 @@ $(document).ready(function () {
         $(".edit-cleaning-popup").fadeOut();
     });
 
-  
+
     $(".booking-historybtn").click(function (event) {
         event.preventDefault(); // Prevent default behavior of the button click
         $("#bookinghistory").fadeIn();
@@ -206,7 +246,7 @@ $(document).ready(function () {
         $(".overlay").fadeOut();
         $("#guestList").fadeOut();
     });
- 
+
 
     $('.viabooking-item').click(function () {
         // Remove the class from all elements
@@ -272,38 +312,38 @@ $(document).ready(function () {
 
     //on off function
 
-    $('.onoffbtn').click(function(){
+    $('.onoffbtn').click(function () {
         $(this).toggleClass('on');
         $('.onoff-status').text($(this).hasClass('on') ? 'on' : 'off');
         if ($(this).hasClass('on')) {
             $(this).next('.onoff-status').show();
-            $(".onof-circle").css({'right': '2px', 'left': 'auto', 'background-color': 'yellow'} );
+            $(".onof-circle").css({ 'right': '2px', 'left': 'auto', 'background-color': 'yellow' });
         } else {
             $(this).next('.onoff-status').hide();
-            $(".onof-circle").css({'left': '2px', 'right': 'auto', 'background-color': 'white'});
+            $(".onof-circle").css({ 'left': '2px', 'right': 'auto', 'background-color': 'white' });
         }
     });
-    
 
-      
+
+
 
 });
 document.addEventListener("DOMContentLoaded", function () {
     var slides = document.querySelectorAll("#slideshow p");
     var index = 0;
-  
+
     function showSlide() {
-      slides.forEach(function (slide) {
-        slide.style.display = "none";
-      });
-      slides[index].style.display = "block";
-      index = (index + 1) % slides.length;
-      setTimeout(showSlide, 10000);
+        slides.forEach(function (slide) {
+            slide.style.display = "none";
+        });
+        slides[index].style.display = "block";
+        index = (index + 1) % slides.length;
+        setTimeout(showSlide, 10000);
     }
-  
+
     showSlide();
-  });
-  
+});
+
 //for main page
 function formatDate(dateString) {
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
