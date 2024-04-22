@@ -3,8 +3,10 @@
 @mixin dataInputboxStyle {
     border: 2px solid $simpleblack;
     border-radius: 8px;
-    padding: 12px 20px;
+   padding: 12px 20px;
+  
     height: 50px;
+   
 }
 
 @mixin optionselectStyle {
@@ -17,6 +19,8 @@
     border: none;
     margin-top: -5px;
     line-height: 24px;
+   
+    
 }
 
 @mixin commonBtnstyle {

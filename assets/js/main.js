@@ -93,7 +93,7 @@ $(document).ready(function () {
                         "left": "0",
                         "color": "#000",
                         "background": "#ffffff",
-                        "width": "100%",
+                        "width": "calc(100% - 2px)",
                         "height": "100%",
                         "border-radius": "8px",
                         "padding-top": "15px",
@@ -138,6 +138,7 @@ $(document).ready(function () {
                 }
             }
         });
+       
         $('.card-details-item input, .card-details-item select').on('keydown', function (e) {
             if (e.which === 9) { // Tab key
                 e.preventDefault(); // Prevent default tab behavior
@@ -158,9 +159,7 @@ $(document).ready(function () {
 
 
 
-
-
-
+ 
 
 
     $('.room1').on('click', function () {
@@ -407,3 +406,6 @@ window.addEventListener('scroll', function () {
         footer.classList.remove('footer-hidden');
     }
 });
+
+
+
