@@ -50,106 +50,106 @@ $(document).ready(function () {
     });
 
 
-var $prevClickedLabel = null;
+    var $prevClickedLabel = null;
 
-$('.infolabel').on('click', function () {
-    var $inputField = $(this).closest('.info-input-box').find('input, select');
-    if ($inputField.length === 0) {
-        return;
-    }
+    $('.infolabel').on('click', function () {
+        var $inputField = $(this).closest('.info-input-box').find('input, select');
+        if ($inputField.length === 0) {
+            return;
+        }
 
-    // Stop ongoing animations before starting new ones
-    $('.infolabel').stop(true, true);
-    
-    $('.info-input-box').css('border-color', '#202020');
-    $(this).closest('.info-input-box').css('border-color', '#003087');
+        // Stop ongoing animations before starting new ones
+        $('.infolabel').stop(true, true);
 
-    if ($prevClickedLabel !== null && $prevClickedLabel[0] !== this) {
-        var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input, select');
-        var isPrevSelect = $prevInputField.is('select');
-        if (isPrevSelect) {
-            $prevClickedLabel.animate({
-                "top": "-15px",
-                "left": "10px",
-                "background": "#F5F5F5",
-                "height": "15px",
-                "padding-top": "8px",
-                "margin-right": "0",
-                "border-radius": "0",
-                "width":"120px"
-            }, 300);
-        } else {
-            if ($prevInputField.val().trim() === '') {
+        $('.info-input-box').css('border-color', '#202020');
+        $(this).closest('.info-input-box').css('border-color', '#003087');
+
+        if ($prevClickedLabel !== null && $prevClickedLabel[0] !== this) {
+            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input, select');
+            var isPrevSelect = $prevInputField.is('select');
+            if (isPrevSelect) {
                 $prevClickedLabel.animate({
-                    "top": "0",
-                    "left": "0",
-                    "color": "#000",
-                    "background": "#ffffff",
-                    "height": "100%",
-                    "border-radius": "8px",
-                    "padding-top": "15px",
-                    "margin-right": "1px",
-                    "z-index": "1",
-                    "width":"100%"
+                    "top": "-15px",
+                    "left": "10px",
+                    "background": "#F5F5F5",
+                    "height": "15px",
+                    "padding-top": "8px",
+                    "margin-right": "0",
+                    "border-radius": "0",
+                    "width": "120px"
                 }, 300);
+            } else {
+                if ($prevInputField.val().trim() === '') {
+                    $prevClickedLabel.animate({
+                        "top": "0",
+                        "left": "0",
+                        "color": "#000",
+                        "background": "#ffffff",
+                        "height": "100%",
+                        "border-radius": "8px",
+                        "padding-top": "15px",
+                        "margin-right": "1px",
+                        "z-index": "1",
+                        "width": "100%"
+                    }, 300);
+                }
             }
         }
-    }
 
-    $(this).animate({
-        "top": "-15px",
-        "left": "10px",
-        "background": "#F5F5F5",
-        "height": "15px",
-        "padding-top": "8px",
-        "margin-right": "0",
-        "border-radius": "0",
-         "width":"120px"
-    }, 300);
+        $(this).animate({
+            "top": "-15px",
+            "left": "10px",
+            "background": "#F5F5F5",
+            "height": "15px",
+            "padding-top": "8px",
+            "margin-right": "0",
+            "border-radius": "0",
+            "width": "120px"
+        }, 300);
 
-    $prevClickedLabel = $(this);
+        $prevClickedLabel = $(this);
 
-    $inputField.eq($inputField.index(this) + 1).focus();
-    $(this).data('clicked', true);
-});
+        $inputField.eq($inputField.index(this) + 1).focus();
+        $(this).data('clicked', true);
+    });
 
-// Unbind and rebind event handlers to prevent multiple bindings
-$('.person-info-item input, .person-info-item select').off('keydown').on('keydown', function (e) {
-    if (e.which === 9) { // Tab key
-        e.preventDefault();
-        var $nextInputField = $(this).closest('.person-info-item').nextAll('.person-info-item').find('input, select').first();
-        if ($nextInputField.length !== 0) {
-            var $infolabel = $nextInputField.closest('.person-info-item').find('.infolabel').first();
-            $infolabel.data('clicked', false); // Reset clicked status
-            $infolabel.click();
+    // Unbind and rebind event handlers to prevent multiple bindings
+    $('.person-info-item input, .person-info-item select').off('keydown').on('keydown', function (e) {
+        if (e.which === 9) { // Tab key
+            e.preventDefault();
+            var $nextInputField = $(this).closest('.person-info-item').nextAll('.person-info-item').find('input, select').first();
+            if ($nextInputField.length !== 0) {
+                var $infolabel = $nextInputField.closest('.person-info-item').find('.infolabel').first();
+                $infolabel.data('clicked', false); // Reset clicked status
+                $infolabel.click();
+            }
         }
-    }
-});
+    });
 
-$('.card-details-item input, .card-details-item select').off('keydown').on('keydown', function (e) {
-    if (e.which === 9) { // Tab key
-        e.preventDefault();
-        var $nextInputField = $(this).closest('.card-details-item').nextAll('.card-details-item').find('input, select').first();
-        if ($nextInputField.length !== 0) {
-            var $infolabel = $nextInputField.closest('.card-details-item').find('.infolabel').first();
-            $infolabel.data('clicked', false); // Reset clicked status
-            $infolabel.click();
+    $('.card-details-item input, .card-details-item select').off('keydown').on('keydown', function (e) {
+        if (e.which === 9) { // Tab key
+            e.preventDefault();
+            var $nextInputField = $(this).closest('.card-details-item').nextAll('.card-details-item').find('input, select').first();
+            if ($nextInputField.length !== 0) {
+                var $infolabel = $nextInputField.closest('.card-details-item').find('.infolabel').first();
+                $infolabel.data('clicked', false); // Reset clicked status
+                $infolabel.click();
+            }
         }
-    }
-});
+    });
 
 
     //select box design area start
     $('.info-input-box').each(function () {
         var $this = $(this);
         var isSelectManuVisible = false; // Track visibility state
-    
+
         $this.find('.selectbox').click(function () {
             $this.find('.select-manu').slideToggle();
             isSelectManuVisible = !isSelectManuVisible; // Toggle visibility state
             toggleArrow();
         });
-    
+
         $this.find('.select-manu li').click(function () {
             var selectedValue = $(this).text();
             $this.find('.selectbox').val(selectedValue);
@@ -157,13 +157,13 @@ $('.card-details-item input, .card-details-item select').off('keydown').on('keyd
             isSelectManuVisible = false; // Update visibility state
             toggleArrow();
         });
-    
+
         $this.find('.downarrowbtn').click(function () {
             $this.find('.select-manu').slideToggle();
             isSelectManuVisible = !isSelectManuVisible; // Toggle visibility state
             toggleArrow();
         });
-    
+
         function toggleArrow() {
             var $downArrow = $this.find('.downarrowbtn');
             if (isSelectManuVisible) {
@@ -173,7 +173,7 @@ $('.card-details-item input, .card-details-item select').off('keydown').on('keyd
             }
         }
     });
-    
+
     //select box design area end
 
 
@@ -181,10 +181,10 @@ $('.card-details-item input, .card-details-item select').off('keydown').on('keyd
     $('.booking-information-search-area input[type="search"]').on('keyup', function () {
         var searchText = $(this).val().toLowerCase();
         var $searchItemField = $('.booking-information-search-area .search-item-feild');
-    
+
         // Show search item field if it's hidden
         $searchItemField.show();
-    
+
         // Filter list items based on search input
         $searchItemField.find('li').each(function () {
             var listItemText = $(this).text().toLowerCase();
@@ -195,13 +195,13 @@ $('.card-details-item input, .card-details-item select').off('keydown').on('keyd
             }
         });
     });
-    
+
     // Click event handler for suggested items
     $('.booking-information-search-area .search-item-feild').on('click', 'li', function () {
         var clickedText = $(this).text();
         $('.booking-information-search-area input[type="search"]').val(clickedText);
     });
-    
+
     //search box area end
 
     $('.room1').on('click', function () {
