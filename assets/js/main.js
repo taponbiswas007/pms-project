@@ -160,42 +160,32 @@ $(document).ready(function () {
 
     });
 
-
-
-    $('.selectbox').click(function(){
-        $('.select-manu').slideToggle();
-        $('.downarrowbtn').css({
-            "transform":"rotateZ(180deg) translateY(45%)",
-         
-            
-           
+    //select box design area start
+    $('.info-input-box').each(function() {
+        var $this = $(this);
+        $this.find('.selectbox').click(function(){
+            $this.find('.select-manu').slideToggle();
+            $this.find('.downarrowbtn').css({
+                "transform":"rotateZ(180deg) translateY(45%)"
+            });
+        });
+        
+        $this.find('.select-manu li').click(function(){
+            var selectedValue = $(this).text();
+            $this.find('.selectbox').val(selectedValue);
+            $this.find('.select-manu').hide();
+            $this.find('.downarrowbtn').css({"transform":"rotateZ(360deg) translateY(-50%)"});
+        });
+        
+        $this.find('.downarrowbtn').click(function(){
+            $this.find('.select-manu').slideToggle();
+            $this.find('.downarrowbtn').css({
+                "transform":"rotateZ(180deg) translateY(45%)"
+            });
         });
     });
     
-    $('.select-manu li').click(function(){
-        var selectedValue = $(this).text();
-        $('.selectbox').val(selectedValue);
-        $('.select-manu').hide();
-        $('.downarrowbtn').css({"transform":"rotateZ(360deg) translateY(-50%)"});
-    });
-    $('.downarrowbtn').click(function(){
-        $('.select-manu').slideToggle();
-        $('.downarrowbtn').css({
-            "transform":"rotateZ(180deg) translateY(45%)",
-         
-            
-           
-        });
-    });
-    
-    $('.select-manu li').click(function(){
-        var selectedValue = $(this).text();
-        $('.selectbox').val(selectedValue);
-        $('.select-manu').hide();
-        $('.downarrowbtn').css({"transform":"rotateZ(360deg) translateY(-50%)"});
-    });
-    
-
+  //select box design area end
 
     $('.room1').on('click', function () {
         $("#reservationPersonDetailsOpen").toggle();
