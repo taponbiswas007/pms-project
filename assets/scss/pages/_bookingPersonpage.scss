@@ -235,6 +235,9 @@
                         color: $black;
                         font-weight: 400;
                         outline: none;
+                        option{
+                            font-size: 20px;
+                        }
                     }
 
                     .gender-select {
@@ -673,13 +676,14 @@
                     position: absolute;
                     top: 0;
                     left: 0;
+                    right: 0;
                     color: $simpleblack;
                     background: $white;
                     font-family: $roboto;
                     font-weight: 400;
                     padding: 0 8px;
                     font-size: 11px;
-                    width: 100%;
+                   // width: 100%;
                     height: 100%;
                     border-radius: 8px;
                     padding-top: 15px;
@@ -715,6 +719,9 @@
                     color: $black;
                     font-weight: 400;
                     outline: none;
+                    option{
+                        font-size: 20px;
+                    }
                 }
 
                 .gender-select {

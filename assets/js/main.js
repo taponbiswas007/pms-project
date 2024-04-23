@@ -92,9 +92,10 @@ $(document).ready(function () {
                     $prevClickedLabel.animate({
                         "top": "0",
                         "left": "0",
+                        "right": "0",
                         "color": "#000",
                         "background": "#ffffff",
-                        "width": "100%",
+                       // "width": "100%",
                         "height": "100%",
                         "border-radius": "8px",
                         "padding-top": "15px",
