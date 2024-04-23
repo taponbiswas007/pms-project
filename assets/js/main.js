@@ -50,118 +50,91 @@ $(document).ready(function () {
     });
 
 
+var $prevClickedLabel = null;
 
-    var $prevClickedLabel = null;
+$('.infolabel').on('click', function () {
+    var $inputField = $(this).closest('.info-input-box').find('input, select');
+    if ($inputField.length === 0) {
+        return;
+    }
 
-    $('.infolabel').on('click', function () {
-        // Check if the clicked label contains an input field
-        var $inputField = $(this).closest('.info-input-box').find('input, select');
-        if ($inputField.length === 0) {
-            return; // Exit the function if no input field found
-        }
+    // Stop ongoing animations before starting new ones
+    $('.infolabel').stop(true, true);
+    
+    $('.info-input-box').css('border-color', '#202020');
+    $(this).closest('.info-input-box').css('border-color', '#003087');
 
-        // Set border color for all .info-input-box elements to #202020
-        $('.info-input-box').css('border-color', '#202020');
-
-        // Set border color for the clicked .info-input-box to #003087
-        $(this).closest('.info-input-box').css('border-color', '#003087');
-
-        // If there was a previously clicked label, revert its styles
-        if ($prevClickedLabel !== null) {
-            var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input, select');
-
-            // Determine if the previously clicked label contains a select element
-            var isPrevSelect = $prevInputField.is('select');
-
-            // Revert styles based on the type of the input field
-            if (isPrevSelect) {
+    if ($prevClickedLabel !== null && $prevClickedLabel[0] !== this) {
+        var $prevInputField = $prevClickedLabel.closest('.info-input-box').find('input, select');
+        var isPrevSelect = $prevInputField.is('select');
+        if (isPrevSelect) {
+            $prevClickedLabel.animate({
+                "top": "-15px",
+                "left": "10px",
+                "background": "#F5F5F5",
+                "height": "15px",
+                "padding-top": "8px",
+                "margin-right": "0",
+                "border-radius": "0"
+            }, 300);
+        } else {
+            if ($prevInputField.val().trim() === '') {
                 $prevClickedLabel.animate({
-                    "top": "-15px",
-                    "left": "10px",
-                    "right":"inherit",
-                    "background": "#F5F5F5",
-                    "height": "15px",
-                    "padding-top": "8px",
-                    "margin-right": "0",
-                    //"width": "120px",
-
-                    "border-radius": "0"
+                    "top": "0",
+                    "left": "0",
+                    "color": "#000",
+                    "background": "#ffffff",
+                    "height": "100%",
+                    "border-radius": "8px",
+                    "padding-top": "15px",
+                    "margin-right": "1px",
+                    "z-index": "1"
                 }, 300);
-            } else {
-                // Revert input field styles if it's empty
-                if ($prevInputField.val().trim() === '') {
-                    $prevClickedLabel.animate({
-                        "top": "0",
-                        "left": "0",
-                        "right": "0",
-                        "color": "#000",
-                        "background": "#ffffff",
-                       // "width": "100%",
-                        "height": "100%",
-                        "border-radius": "8px",
-                        "padding-top": "15px",
-                        "margin-right": "1px",
-                        "z-index": "1"
-                    }, 300);
-                }
             }
         }
+    }
 
-        // Apply the new CSS styles to the current label
-        $(this).animate({
-            "top": "-15px",
-            "left": "10px",
-            "right":"inherit",
-            "background": "#F5F5F5",
-            "height": "15px",
-            "padding-top": "8px",
-            "margin-right": "0",
-            //"width": "120px",
+    $(this).animate({
+        "top": "-15px",
+        "left": "10px",
+        "background": "#F5F5F5",
+        "height": "15px",
+        "padding-top": "8px",
+        "margin-right": "0",
+        "border-radius": "0"
+    }, 300);
 
-            "border-radius": "0"
-        }, 300);
+    $prevClickedLabel = $(this);
 
-        // Set the current label as the previously clicked label
-        $prevClickedLabel = $(this);
+    $inputField.eq($inputField.index(this) + 1).focus();
+    $(this).data('clicked', true);
+});
 
-        // Focus on the next input field
-        var $nextInputField = $inputField.eq($inputField.index(this) + 1);
+// Unbind and rebind event handlers to prevent multiple bindings
+$('.person-info-item input, .person-info-item select').off('keydown').on('keydown', function (e) {
+    if (e.which === 9) { // Tab key
+        e.preventDefault();
+        var $nextInputField = $(this).closest('.person-info-item').nextAll('.person-info-item').find('input, select').first();
         if ($nextInputField.length !== 0) {
-            $nextInputField.focus();
+            var $infolabel = $nextInputField.closest('.person-info-item').find('.infolabel').first();
+            $infolabel.data('clicked', false); // Reset clicked status
+            $infolabel.click();
         }
+    }
+});
 
-        $('.person-info-item input, .person-info-item select').on('keydown', function (e) {
-            if (e.which === 9) { // Tab key
-                e.preventDefault(); // Prevent default tab behavior
-                var $nextInputField = $(this).closest('.person-info-item').nextAll('.person-info-item').find('input, select').first();
-                if ($nextInputField.length !== 0) {
-                    // Find the next .infolabel element and trigger click on it only if it's not already clicked
-                    var $infolabel = $nextInputField.closest('.person-info-item').find('.infolabel').first();
-                    if (!$infolabel.data('clicked')) {
-                        $infolabel.data('clicked', true);
-                        $infolabel.click();
-                    }
-                }
-            }
-        });
+$('.card-details-item input, .card-details-item select').off('keydown').on('keydown', function (e) {
+    if (e.which === 9) { // Tab key
+        e.preventDefault();
+        var $nextInputField = $(this).closest('.card-details-item').nextAll('.card-details-item').find('input, select').first();
+        if ($nextInputField.length !== 0) {
+            var $infolabel = $nextInputField.closest('.card-details-item').find('.infolabel').first();
+            $infolabel.data('clicked', false); // Reset clicked status
+            $infolabel.click();
+        }
+    }
+});
 
-        $('.card-details-item input, .card-details-item select').on('keydown', function (e) {
-            if (e.which === 9) { // Tab key
-                e.preventDefault(); // Prevent default tab behavior
-                var $nextInputField = $(this).closest('.card-details-item').nextAll('.card-details-item').find('input, select').first();
-                if ($nextInputField.length !== 0) {
-                    // Find the next .infolabel element and trigger click on it only if it's not already clicked
-                    var $infolabel = $nextInputField.closest('.card-details-item').find('.infolabel').first();
-                    if (!$infolabel.data('clicked')) {
-                        $infolabel.data('clicked', true);
-                        $infolabel.click();
-                    }
-                }
-            }
-        });
-
-
-    });
 
     //select box design area start
     $('.info-input-box').each(function () {
