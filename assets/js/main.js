@@ -142,28 +142,38 @@ $('.card-details-item input, .card-details-item select').off('keydown').on('keyd
     //select box design area start
     $('.info-input-box').each(function () {
         var $this = $(this);
+        var isSelectManuVisible = false; // Track visibility state
+    
         $this.find('.selectbox').click(function () {
             $this.find('.select-manu').slideToggle();
-            $this.find('.downarrowbtn').css({
-                "transform": "rotateZ(180deg) translateY(45%)"
-            });
+            isSelectManuVisible = !isSelectManuVisible; // Toggle visibility state
+            toggleArrow();
         });
-
+    
         $this.find('.select-manu li').click(function () {
             var selectedValue = $(this).text();
             $this.find('.selectbox').val(selectedValue);
             $this.find('.select-manu').hide();
-            $this.find('.downarrowbtn').css({ "transform": "rotateZ(360deg) translateY(-50%)" });
+            isSelectManuVisible = false; // Update visibility state
+            toggleArrow();
         });
-
+    
         $this.find('.downarrowbtn').click(function () {
             $this.find('.select-manu').slideToggle();
-            $this.find('.downarrowbtn').css({
-                "transform": "rotateZ(180deg) translateY(45%)"
-            });
+            isSelectManuVisible = !isSelectManuVisible; // Toggle visibility state
+            toggleArrow();
         });
+    
+        function toggleArrow() {
+            var $downArrow = $this.find('.downarrowbtn');
+            if (isSelectManuVisible) {
+                $downArrow.css({ "transform": "rotateZ(180deg) translateY(45%)" });
+            } else {
+                $downArrow.css({ "transform": "" }); // Reset to default transform
+            }
+        }
     });
-
+    
     //select box design area end
 
 

@@ -44,7 +44,7 @@
                         position: absolute;
                         top: 0;
                         left: 0;
-                       
+
                         z-index: 1;
                         color: $simpleblack;
                         background: $white;
@@ -79,9 +79,11 @@
                     .inputnumberbox {
                         -moz-appearance: textfield;
                     }
-                    .numbercode{
+
+                    .numbercode {
                         width: 44px !important;
                     }
+
                     select {
 
                         background: none;
@@ -100,24 +102,27 @@
                     .gender-select {
                         width: 100%;
                     }
-                    .selectbox{
+
+                    .selectbox {
                         text-transform: uppercase;
                         font-size: 13px;
                         font-family: $roboto;
                         color: $black;
                         cursor: pointer;
                     }
-                    .downarrowbtn{
+
+                    .downarrowbtn {
                         position: absolute;
                         right: 7px;
                         color: $black;
                         font-size: 20px;
                         top: 50%;
                         transform: translateY(-50%);
-                        
-                       
+
+
                     }
-                    .select-manu{
+
+                    .select-manu {
                         position: absolute;
                         top: 110%;
                         left: 0;
@@ -132,20 +137,22 @@
                         padding: 10px;
                         z-index: 2;
                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                       display: none;
-                        
-                            li{
-                                margin-bottom: 10px;
-                                width: 100%;
-                                padding: 10px;
-                                transition: .3s;
-                                cursor: pointer;
-                                &:hover{
-                                    background: $gray;
-                                   
-                                }
+                        display: none;
+
+                        li {
+                            margin-bottom: 10px;
+                            width: 100%;
+                            padding: 10px;
+                            transition: .3s;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: $blue;
+                                color: $white;
+
                             }
-                        
+                        }
+
                     }
 
 
@@ -236,7 +243,8 @@
                         color: $black;
                         font-weight: 400;
                         outline: none;
-                        option{
+
+                        option {
                             font-size: 20px;
                         }
                     }
@@ -719,7 +727,8 @@
                     color: $black;
                     font-weight: 400;
                     outline: none;
-                    option{
+
+                    option {
                         font-size: 20px;
                     }
                 }
@@ -798,8 +807,8 @@
                 color: #000000a1;
                 font-size: 17px;
             }
-          
-            .search-item-feild{
+
+            .search-item-feild {
                 position: absolute;
                 top: 110%;
                 left: 0;
@@ -814,20 +823,22 @@
                 padding: 10px;
                 z-index: 2;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-               display: none;
-                
-                    li{
-                        margin-bottom: 10px;
-                        width: 100%;
-                        padding: 10px;
-                        transition: .3s;
-                        cursor: pointer;
-                        &:hover{
-                            background: $gray;
-                           
-                        }
+                display: none;
+
+                li {
+                    margin-bottom: 10px;
+                    width: 100%;
+                    padding: 10px;
+                    transition: .3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $blue;
+                        color: $white;
+
                     }
-                
+                }
+
             }
         }
     }
@@ -896,24 +907,27 @@
                 .gender-select {
                     width: 100%;
                 }
-                .selectbox{
+
+                .selectbox {
                     text-transform: uppercase;
                     font-size: 13px;
                     font-family: $roboto;
                     color: $black;
                     cursor: pointer;
                 }
-                .downarrowbtn{
+
+                .downarrowbtn {
                     position: absolute;
                     right: 7px;
                     color: $black;
                     font-size: 20px;
                     top: 50%;
                     transform: translateY(-50%);
-                    
-                   
+
+
                 }
-                .select-manu{
+
+                .select-manu {
                     position: absolute;
                     top: 110%;
                     left: 0;
@@ -928,20 +942,22 @@
                     padding: 10px;
                     z-index: 2;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                   display: none;
-                    
-                        li{
-                            margin-bottom: 10px;
-                            width: 100%;
-                            padding: 10px;
-                            transition: .3s;
-                            cursor: pointer;
-                            &:hover{
-                                background: $gray;
-                               
-                            }
+                    display: none;
+
+                    li {
+                        margin-bottom: 10px;
+                        width: 100%;
+                        padding: 10px;
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: $blue;
+                            color: $white;
+
                         }
-                    
+                    }
+
                 }
             }
 
@@ -1054,29 +1070,33 @@
                     .gender-select {
                         width: 100%;
                     }
-                    .selectbox{
+
+                    .selectbox {
                         text-transform: uppercase;
                         font-size: 13px;
                         font-family: $roboto;
                         color: $black;
                         cursor: pointer;
                         border: none;
-                        &:focus{
+
+                        &:focus {
                             border: none;
                             outline: none;
                         }
                     }
-                    .downarrowbtn{
+
+                    .downarrowbtn {
                         position: absolute;
                         right: 7px;
                         color: $black;
                         font-size: 20px;
                         top: 50%;
                         transform: translateY(-50%);
-                        
-                       
+
+
                     }
-                    .select-manu{
+
+                    .select-manu {
                         position: absolute;
                         top: 110%;
                         left: 0;
@@ -1091,20 +1111,22 @@
                         padding: 10px;
                         z-index: 2;
                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                       display: none;
-                        
-                            li{
-                                margin-bottom: 10px;
-                                width: 100%;
-                                padding: 10px;
-                                transition: .3s;
-                                cursor: pointer;
-                                &:hover{
-                                    background: $gray;
-                                   
-                                }
+                        display: none;
+
+                        li {
+                            margin-bottom: 10px;
+                            width: 100%;
+                            padding: 10px;
+                            transition: .3s;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: $blue;
+                                color: $white;
+
                             }
-                        
+                        }
+
                     }
                 }
             }
@@ -1342,6 +1364,7 @@
 .footer-hidden {
     transform: translateY(100%);
 }
+
 
 @media screen and (max-width:1300px) {
     .person-information-main-area {

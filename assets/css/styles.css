@@ -1176,7 +1176,8 @@ footer .footer-area .footer-main-area p {
   cursor: pointer;
 }
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .select-manu li:hover {
-  background: #EBECEE;
+  background: #01286D;
+  color: #ffffff;
 }
 .person-information-main-area .personal-info .personal-info-input-area .numberInputbox {
   display: -webkit-box;
@@ -1825,7 +1826,8 @@ footer .footer-area .footer-main-area p {
   cursor: pointer;
 }
 .booking-info .personal-info-header .booking-information-search-area .search-item-feild li:hover {
-  background: #EBECEE;
+  background: #01286D;
+  color: #ffffff;
 }
 .booking-info .personal-info-input-area {
   display: grid;
@@ -1931,7 +1933,8 @@ footer .footer-area .footer-main-area p {
   cursor: pointer;
 }
 .booking-info .personal-info-input-area .person-info-item .info-input-box .select-manu li:hover {
-  background: #EBECEE;
+  background: #01286D;
+  color: #ffffff;
 }
 .booking-info .personal-info-input-area .person-info-item .numberInputbox {
   display: -webkit-box;
@@ -2074,7 +2077,8 @@ footer .footer-area .footer-main-area p {
   cursor: pointer;
 }
 .booking-info .payment-information-area .payment-methods-select-area .speacial-charge-box .info-input-box .select-manu li:hover {
-  background: #EBECEE;
+  background: #01286D;
+  color: #ffffff;
 }
 .booking-info .payment-information-area .payment-card-details-area {
   margin-top: 40px;
