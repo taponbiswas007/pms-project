@@ -75,7 +75,8 @@ $('.infolabel').on('click', function () {
                 "height": "15px",
                 "padding-top": "8px",
                 "margin-right": "0",
-                "border-radius": "0"
+                "border-radius": "0",
+                "width":"120px"
             }, 300);
         } else {
             if ($prevInputField.val().trim() === '') {
@@ -88,7 +89,8 @@ $('.infolabel').on('click', function () {
                     "border-radius": "8px",
                     "padding-top": "15px",
                     "margin-right": "1px",
-                    "z-index": "1"
+                    "z-index": "1",
+                    "width":"100%"
                 }, 300);
             }
         }
@@ -101,7 +103,8 @@ $('.infolabel').on('click', function () {
         "height": "15px",
         "padding-top": "8px",
         "margin-right": "0",
-        "border-radius": "0"
+        "border-radius": "0",
+         "width":"120px"
     }, 300);
 
     $prevClickedLabel = $(this);

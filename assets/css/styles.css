@@ -1086,7 +1086,6 @@ footer .footer-area .footer-main-area p {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 1;
   color: #202020;
   background: #ffffff;
@@ -1094,6 +1093,7 @@ footer .footer-area .footer-main-area p {
   font-weight: 400;
   padding: 0 8px;
   font-size: 11px;
+  width: calc(100% - 2px);
   height: 100%;
   border-radius: 8px;
   padding-top: 15px;
@@ -5393,4 +5393,4 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
