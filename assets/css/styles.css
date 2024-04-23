@@ -1792,6 +1792,35 @@ footer .footer-area .footer-main-area p {
   color: rgba(0, 0, 0, 0.631372549);
   font-size: 17px;
 }
+.booking-info .personal-info-header .booking-information-search-area .search-item-feild {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.booking-info .personal-info-header .booking-information-search-area .search-item-feild li {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.booking-info .personal-info-header .booking-information-search-area .search-item-feild li:hover {
+  background: #EBECEE;
+}
 .booking-info .personal-info-input-area {
   display: grid;
   grid-template-columns: repeat(2, 2fr);

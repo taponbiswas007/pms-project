@@ -83,7 +83,7 @@ $(document).ready(function () {
                     "padding-top": "8px",
                     "margin-right": "0",
                     "width": "120px",
-                   
+
                     "border-radius": "0"
                 }, 300);
             } else {
@@ -99,7 +99,7 @@ $(document).ready(function () {
                         "border-radius": "8px",
                         "padding-top": "15px",
                         "margin-right": "1px",
-                        "z-index":"1"
+                        "z-index": "1"
                     }, 300);
                 }
             }
@@ -113,8 +113,8 @@ $(document).ready(function () {
             "height": "15px",
             "padding-top": "8px",
             "margin-right": "0",
-           "width": "120px",
-          
+            "width": "120px",
+
             "border-radius": "0"
         }, 300);
 
@@ -141,7 +141,7 @@ $(document).ready(function () {
                 }
             }
         });
-       
+
         $('.card-details-item input, .card-details-item select').on('keydown', function (e) {
             if (e.which === 9) { // Tab key
                 e.preventDefault(); // Prevent default tab behavior
@@ -161,31 +161,59 @@ $(document).ready(function () {
     });
 
     //select box design area start
-    $('.info-input-box').each(function() {
+    $('.info-input-box').each(function () {
         var $this = $(this);
-        $this.find('.selectbox').click(function(){
+        $this.find('.selectbox').click(function () {
             $this.find('.select-manu').slideToggle();
             $this.find('.downarrowbtn').css({
-                "transform":"rotateZ(180deg) translateY(45%)"
+                "transform": "rotateZ(180deg) translateY(45%)"
             });
         });
-        
-        $this.find('.select-manu li').click(function(){
+
+        $this.find('.select-manu li').click(function () {
             var selectedValue = $(this).text();
             $this.find('.selectbox').val(selectedValue);
             $this.find('.select-manu').hide();
-            $this.find('.downarrowbtn').css({"transform":"rotateZ(360deg) translateY(-50%)"});
+            $this.find('.downarrowbtn').css({ "transform": "rotateZ(360deg) translateY(-50%)" });
         });
-        
-        $this.find('.downarrowbtn').click(function(){
+
+        $this.find('.downarrowbtn').click(function () {
             $this.find('.select-manu').slideToggle();
             $this.find('.downarrowbtn').css({
-                "transform":"rotateZ(180deg) translateY(45%)"
+                "transform": "rotateZ(180deg) translateY(45%)"
             });
         });
     });
+
+    //select box design area end
+
+
+    //search box area start
+    $('.booking-information-search-area input[type="search"]').on('keyup', function () {
+        var searchText = $(this).val().toLowerCase();
+        var $searchItemField = $('.booking-information-search-area .search-item-feild');
     
-  //select box design area end
+        // Show search item field if it's hidden
+        $searchItemField.show();
+    
+        // Filter list items based on search input
+        $searchItemField.find('li').each(function () {
+            var listItemText = $(this).text().toLowerCase();
+            if (listItemText.includes(searchText)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    });
+    
+    // Click event handler for suggested items
+    $('.booking-information-search-area .search-item-feild').on('click', 'li', function () {
+        var clickedText = $(this).text();
+        $('.booking-information-search-area input[type="search"]').val(clickedText);
+    });
+    
+    //search box area end
 
     $('.room1').on('click', function () {
         $("#reservationPersonDetailsOpen").toggle();
