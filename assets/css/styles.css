@@ -1116,6 +1116,9 @@ footer .footer-area .footer-main-area p {
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .inputnumberbox {
   -moz-appearance: textfield;
 }
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .numbercode {
+  width: 44px !important;
+}
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box select {
   background: none;
   border: none;

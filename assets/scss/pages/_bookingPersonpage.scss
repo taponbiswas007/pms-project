@@ -78,7 +78,9 @@
                     .inputnumberbox {
                         -moz-appearance: textfield;
                     }
-
+                    .numbercode{
+                        width: 44px !important;
+                    }
                     select {
 
                         background: none;
@@ -111,6 +113,8 @@
                         font-size: 20px;
                         top: 50%;
                         transform: translateY(-50%);
+                        
+                       
                     }
                     .select-manu{
                         position: absolute;

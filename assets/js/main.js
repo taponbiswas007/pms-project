@@ -166,6 +166,23 @@ $(document).ready(function () {
         $('.select-manu').slideToggle();
         $('.downarrowbtn').css({
             "transform":"rotateZ(180deg) translateY(45%)",
+         
+            
+           
+        });
+    });
+    
+    $('.select-manu li').click(function(){
+        var selectedValue = $(this).text();
+        $('.selectbox').val(selectedValue);
+        $('.select-manu').hide();
+        $('.downarrowbtn').css({"transform":"rotateZ(360deg) translateY(-50%)"});
+    });
+    $('.downarrowbtn').click(function(){
+        $('.select-manu').slideToggle();
+        $('.downarrowbtn').css({
+            "transform":"rotateZ(180deg) translateY(45%)",
+         
             
            
         });
