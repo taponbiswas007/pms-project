@@ -83,6 +83,7 @@ $(document).ready(function () {
                     "padding-top": "8px",
                     "margin-right": "0",
                     "width": "120px",
+                   
                     "border-radius": "0"
                 }, 300);
             } else {
@@ -93,11 +94,12 @@ $(document).ready(function () {
                         "left": "0",
                         "color": "#000",
                         "background": "#ffffff",
-                        "width": "calc(100% - 2px)",
+                        "width": "100%",
                         "height": "100%",
                         "border-radius": "8px",
                         "padding-top": "15px",
-                        "margin-right": "1px"
+                        "margin-right": "1px",
+                        "z-index":"1"
                     }, 300);
                 }
             }
@@ -111,7 +113,8 @@ $(document).ready(function () {
             "height": "15px",
             "padding-top": "8px",
             "margin-right": "0",
-            "width": "120px",
+           "width": "120px",
+          
             "border-radius": "0"
         }, 300);
 
@@ -159,7 +162,22 @@ $(document).ready(function () {
 
 
 
- 
+    $('.selectbox').click(function(){
+        $('.select-manu').slideToggle();
+        $('.downarrowbtn').css({
+            "transform":"rotateZ(180deg) translateY(45%)",
+            
+           
+        });
+    });
+    
+    $('.select-manu li').click(function(){
+        var selectedValue = $(this).text();
+        $('.selectbox').val(selectedValue);
+        $('.select-manu').hide();
+        $('.downarrowbtn').css({"transform":"rotateZ(360deg) translateY(-50%)"});
+    });
+    
 
 
     $('.room1').on('click', function () {

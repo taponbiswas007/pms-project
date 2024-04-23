@@ -44,6 +44,7 @@
                         position: absolute;
                         top: 0;
                         left: 0;
+                        z-index: 1;
                         color: $simpleblack;
                         background: $white;
                         font-family: $roboto;
@@ -96,16 +97,58 @@
                     .gender-select {
                         width: 100%;
                     }
+                    .selectbox{
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        font-family: $roboto;
+                        color: $black;
+                        cursor: pointer;
+                    }
+                    .downarrowbtn{
+                        position: absolute;
+                        right: 7px;
+                        color: $black;
+                        font-size: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    .select-manu{
+                        position: absolute;
+                        top: 110%;
+                        left: 0;
+                        right: 0;
+                        background: $white;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        font-family: $roboto;
+                        color: $black;
+                        font-weight: 400;
+                        border-radius: 8px;
+                        padding: 10px;
+                        z-index: 2;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                       display: none;
+                        
+                            li{
+                                margin-bottom: 10px;
+                                width: 100%;
+                                padding: 10px;
+                                transition: .3s;
+                                cursor: pointer;
+                                &:hover{
+                                    background: $gray;
+                                   
+                                }
+                            }
+                        
+                    }
 
 
 
                 }
 
 
-                .menu-open {
-                    display: block;
-                    opacity: 1;
-                }
+
             }
 
             .numberInputbox {

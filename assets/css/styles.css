@@ -1086,6 +1086,7 @@ footer .footer-area .footer-main-area p {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   color: #202020;
   background: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1129,9 +1130,50 @@ footer .footer-area .footer-main-area p {
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .gender-select {
   width: 100%;
 }
-.person-information-main-area .personal-info .personal-info-input-area .person-info-item .menu-open {
-  display: block;
-  opacity: 1;
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .selectbox {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .downarrowbtn {
+  position: absolute;
+  right: 7px;
+  color: #000000;
+  font-size: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .select-manu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .select-manu li {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box .select-manu li:hover {
+  background: #EBECEE;
 }
 .person-information-main-area .personal-info .personal-info-input-area .numberInputbox {
   display: -webkit-box;
@@ -5089,4 +5131,4 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
        -moz-column-gap: 10px;
             column-gap: 10px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
