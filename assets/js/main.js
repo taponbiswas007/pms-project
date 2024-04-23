@@ -78,11 +78,12 @@ $(document).ready(function () {
                 $prevClickedLabel.animate({
                     "top": "-15px",
                     "left": "10px",
+                    "right":"inherit",
                     "background": "#F5F5F5",
                     "height": "15px",
                     "padding-top": "8px",
                     "margin-right": "0",
-                    "width": "120px",
+                    //"width": "120px",
 
                     "border-radius": "0"
                 }, 300);
@@ -110,11 +111,12 @@ $(document).ready(function () {
         $(this).animate({
             "top": "-15px",
             "left": "10px",
+            "right":"inherit",
             "background": "#F5F5F5",
             "height": "15px",
             "padding-top": "8px",
             "margin-right": "0",
-            "width": "120px",
+            //"width": "120px",
 
             "border-radius": "0"
         }, 300);
