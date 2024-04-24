@@ -142,37 +142,77 @@ $(document).ready(function () {
     //select box design area start
     $('.info-input-box').each(function () {
         var $this = $(this);
-        var isSelectManuVisible = false; // Track visibility state
-
+    
+        // Click event for .selectbox
         $this.find('.selectbox').click(function () {
-            $this.find('.select-manu').slideToggle();
-            isSelectManuVisible = !isSelectManuVisible; // Toggle visibility state
-            toggleArrow();
+            var $selectManu = $this.find('.select-manu');
+            var $downArrow = $this.find('.downarrowbtn');
+            var isSelectManuVisible = $selectManu.is(':visible');
+    
+            // Close all other open dropdowns
+            $('.select-manu').not($selectManu).hide();
+            $('.downarrowbtn').not($downArrow).css({ "transform": "" });
+    
+            // Toggle visibility of this dropdown
+            $selectManu.slideToggle();
+            if (!isSelectManuVisible) {
+                $downArrow.css({ "transform": "rotateZ(180deg) translateY(45%)" });
+            } else {
+                $downArrow.css({ "transform": "" }); // Reset to default transform
+            }
         });
-
+    
+        // Click event for items in dropdown
         $this.find('.select-manu li').click(function () {
             var selectedValue = $(this).text();
             $this.find('.selectbox').val(selectedValue);
             $this.find('.select-manu').hide();
-            isSelectManuVisible = false; // Update visibility state
-            toggleArrow();
+            toggleArrow(false);
         });
-
-        $this.find('.downarrowbtn').click(function () {
-            $this.find('.select-manu').slideToggle();
-            isSelectManuVisible = !isSelectManuVisible; // Toggle visibility state
-            toggleArrow();
+    
+        // Click event for .downarrowbtn
+        $this.find('.downarrowbtn').click(function (event) {
+            event.stopPropagation(); // Prevent event from bubbling up to document body
+    
+            var $selectManu = $this.find('.select-manu');
+            var isSelectManuVisible = $selectManu.is(':visible');
+    
+            // Close all other open dropdowns
+            $('.select-manu').not($selectManu).hide();
+            $('.downarrowbtn').not($(this)).css({ "transform": "" });
+    
+            // Toggle visibility of this dropdown
+            $selectManu.slideToggle();
+            toggleArrow(!isSelectManuVisible);
         });
-
-        function toggleArrow() {
+    
+        // Click event for .infolabel
+        $this.find('.infolabel').click(function () {
+            $('.select-manu').hide();
+            $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
+        });
+    
+        function toggleArrow(isVisible) {
             var $downArrow = $this.find('.downarrowbtn');
-            if (isSelectManuVisible) {
+            if (isVisible) {
                 $downArrow.css({ "transform": "rotateZ(180deg) translateY(45%)" });
             } else {
                 $downArrow.css({ "transform": "" }); // Reset to default transform
             }
         }
     });
+    
+    // Click event for the document body
+    $(document.body).click(function (event) {
+        // Check if the click was outside of the dropdown or another box
+        if (!$(event.target).closest('.info-input-box').length) {
+            $('.select-manu').hide();
+            $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
+        }
+    });
+    
+
+    
 
     //select box design area end
 
