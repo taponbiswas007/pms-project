@@ -295,54 +295,266 @@
     <!-- main area end -->
     <!-- new staff popup area start -->
     <div class="overlay"></div>
-    <div class="add-new-staff-popup-area">
+    <div class="add-new-staff-popup-area add-roles-popup-area">
         <div class="add-new-staff-popup-main-area">
+            <button class="x-mark closebtn">X</button>
             <h1>Create Roll</h1>
             <div class="person-info-item">
                 <div class="info-input-box">
-                    <span class="infolabel">name <span style="color: red;">*</span></span>
-                    <input type="text" placeholder="Enter your name">
+                    <span class="infolabel">Roll Name <span style="color: red;">*</span></span>
+                    <input type="text" placeholder="Enter Role name">
 
                 </div>
+              
             </div>
-            <div class="person-info-item">
-                <div class="info-input-box">
-                    <span class="infolabel">user name <span style="color: red;">*</span></span>
-                    <input type="text" placeholder="Enter your user name">
+            <h2>Permissions</h2>
 
-                </div>
-            </div>
-            <div class="person-info-item">
-                <div class="info-input-box">
-                    <span class="infolabel">email <span style="color: red;">*</span></span>
-                    <input type="text" placeholder="Enter your user Email">
-
-                </div>
-            </div>
-            <div class="person-info-item">
-                <div class="info-input-box">
-                    <span class="infolabel">role <span style="color: red;">*</span></span>
-                    <input type="text" placeholder="Select your Role" class="selectbox">
-                    <div class="downarrowbtn">
-                        <i class="fa-solid fa-angle-up"></i>
-                    </div>
-                    <ul class="select-manu">
-                        <li>Housekeeping</li>
-                        <li>Receptionist</li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="person-info-item">
-                <div class="info-input-box">
-                    <span class="infolabel">Password <span style="color: red;">*</span></span>
-                    <input type="password" placeholder="Enter your password">
-                </div>
-            </div>
-            <div class="save-close-button-area">
-                <button>save</button>
-                <button class="closebtn">close</button>
-            </div>
+          <div class="rolepopuptable-container">
+            <table class="header-admin-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <ul>
+                                <li>
+                                    <span class="checkbox">
+                                        <i class="fa-solid fa-check check-mark-icon"></i>
+                                    </span>
+                                </li>
+                                <li>all</li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li>
+                                    <span class="checkbox">
+                                        <i class="fa-solid fa-check check-mark-icon"></i>
+                                    </span>
+                                </li>
+                                <li>read</li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li>
+                                    <span class="checkbox">
+                                        <i class="fa-solid fa-check check-mark-icon"></i>
+                                    </span>
+                                </li>
+                                <li>write</li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li>
+                                    <span class="checkbox">
+                                        <i class="fa-solid fa-check check-mark-icon"></i>
+                                    </span>
+                                </li>
+                                <li>delete</li>
+                            </ul>
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admin</td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                      
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="admin-data-table">
+              
+                <tbody>
+                    <tr>
+                        <td>Hotel Admin</td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                      
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="admin-data-table">
+              
+                <tbody>
+                    <tr>
+                        <td>Housekeeping</td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                      
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="admin-data-table">
+              
+                <tbody>
+                    <tr>
+                        <td>Main Admin</td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                      
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <table class="admin-data-table">
+              
+                <tbody>
+                    <tr>
+                        <td>Front-Desk</td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="content-center">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-mark-icon"></i>
+                            </span>
+                          </span>
+                        </td>
+                      
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+            
+          </div>
+           
+           
+            
         </div>
     </div>
     <!-- new staff popup area end-->
