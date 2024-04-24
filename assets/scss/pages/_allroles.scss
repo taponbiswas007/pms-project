@@ -1,0 +1,153 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.manage-allroles-table-area {
+    padding: 0 40px;
+
+    .manage-staff-table-container {
+        position: relative;
+        overflow: auto;
+        width: 100%;
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+            thead {
+                tr {
+
+                    height: 41px;
+
+                    th {
+                        color: $simpleblack;
+                        font-family: $dmSans;
+                        font-weight: 600;
+                        text-align: left;
+                        font-size: 15px;
+                        vertical-align: middle;
+                        background: #EBECEE;
+                        padding-left: 20px;
+
+                        &:nth-child(1) {
+                            position: sticky;
+                            left: 0;
+                            top: 0;
+                            z-index: 2;
+                            min-width: 100px;
+
+                        }
+
+                        &:nth-child(2) {
+
+                            min-width: 140px;
+                        }
+
+                        &:nth-child(3) {
+
+                            min-width: 215px;
+                        }
+
+                        &:nth-child(4) {
+
+                            min-width: 226px;
+                        }
+
+                        &:nth-child(5) {
+
+                            min-width: 140px;
+                        }
+
+                        &:nth-child(6) {
+
+                            min-width: 140px;
+                        }
+
+                        &:nth-child(7) {
+
+                            min-width: 130px;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+
+                tr {
+
+                    height: 60px;
+
+                    td {
+                        border: 1px solid #EBECEE;
+                        font-size: 15px;
+                        color: $simpleblack;
+                        font-family: $dmSans;
+                        font-weight: 400;
+                        text-align: left;
+                        vertical-align: middle;
+                        background: #ffffff;
+                        padding-left: 20px;
+                        text-transform: capitalize;
+
+                        &:nth-child(1) {
+                            position: sticky;
+                            left: 0;
+                            top: 0;
+                            z-index: 2;
+                            min-width: 100px;
+                            border-left: 2px solid #EBECEE;
+
+                        }
+
+                        &:nth-child(2) {
+
+                            min-width: 140px;
+                        }
+
+                        &:nth-child(3) {
+                            min-width: 215px;
+
+
+                        }
+
+                        &:nth-child(4) {
+                            min-width: 226px;
+
+
+                        }
+
+                        &:nth-child(5) {
+
+                            min-width: 140px;
+                        }
+
+                        &:nth-child(6) {
+
+                            min-width: 140px;
+                        }
+
+                        &:nth-child(7) {
+                            min-width: 130px;
+
+                            ul {
+                                li {
+                                    display: inline-block;
+                                    font-size: 17px;
+                                    margin-right: 30px;
+
+                                    button {
+                                        width: 22px;
+                                        padding: 0;
+                                        font-size: 24px;
+
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
