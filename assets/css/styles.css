@@ -74,15 +74,20 @@ img {
   height: 100%;
   z-index: 3;
   background: rgba(0, 0, 0, 0.5);
-  display: block;
+  display: none;
 }
 
 .m-r {
   margin-right: 10px;
 }
 
-p-bottom {
+.p-bottom {
   padding-bottom: 50px;
+}
+
+.p-topbutton {
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
 }
 
 .g-color {
@@ -5583,5 +5588,181 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   50% {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
+  }
+}
+
+.add-new-staff-popup-area {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 572px;
+  width: 100%;
+  z-index: 4;
+  padding: 10px;
+  display: none;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area {
+  background: #ffffff;
+  padding: 44px;
+  border-radius: 10px;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area h1 {
+  font-size: 34px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item {
+  margin-top: 30px;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 50px;
+  position: relative;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #202020;
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  font-size: 11px;
+  width: calc(100% - 2px);
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
+  margin-right: 1px;
+  text-transform: capitalize;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .numbercode {
+  width: 44px !important;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box select {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  outline: none;
+  border-radius: 8px;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .selectbox {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .downarrowbtn {
+  position: absolute;
+  right: 7px;
+  color: #000000;
+  font-size: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .select-manu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .select-manu li {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .person-info-item .info-input-box .select-manu li:hover {
+  background: #01286D;
+  color: #ffffff;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .save-close-button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  margin-top: 30px;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .save-close-button-area button {
+  width: 145px;
+  height: 47px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .save-close-button-area button:first-child {
+  background: #01286D;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .save-close-button-area button:first-child:hover {
+  background: #021942;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .save-close-button-area button:last-child {
+  background: #8E8E8E;
+}
+.add-new-staff-popup-area .add-new-staff-popup-main-area .save-close-button-area button:last-child:hover {
+  background: #021942;
+}
+
+@media screen and (max-width: 376px) {
+  .add-new-staff-popup-area .add-new-staff-popup-main-area h1 {
+    font-size: 25px;
   }
 }

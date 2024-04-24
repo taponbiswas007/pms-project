@@ -308,6 +308,16 @@ $(document).ready(function () {
         $(".edit-cleaning-popup").fadeOut();
     });
 
+    $(".newstaffaddbtn").click(function () {
+        $(".overlay").fadeIn();
+        $(".add-new-staff-popup-area").fadeIn();
+    });
+
+    $(".closebtn").click(function () {
+        $(".overlay").fadeOut();
+        $(".add-new-staff-popup-area").fadeOut();
+    });
+
 
     $(".booking-historybtn").click(function (event) {
         event.preventDefault(); // Prevent default behavior of the button click
