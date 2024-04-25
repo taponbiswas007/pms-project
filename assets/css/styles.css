@@ -4045,6 +4045,79 @@ footer .footer-area .footer-main-area p {
   border-radius: 7px;
 }
 
+.hotelregister-fullwrapper {
+  background: url(../../images/registerbg.jpg) no-repeat 0 0/100% 100%;
+  background-size: cover;
+}
+.hotelregister-fullwrapper .main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 150px;
+}
+.hotelregister-fullwrapper .main-area .left-side {
+  width: 45%;
+}
+.hotelregister-fullwrapper .main-area .right-side {
+  width: 50%;
+}
+.hotelregister-fullwrapper .main-area .right-side .header span {
+  color: #000000;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  margin-right: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.hotelregister-fullwrapper .main-area .right-side .header span:nth-child(2) {
+  color: #202020;
+  font-weight: 500;
+}
+.hotelregister-fullwrapper .main-area .right-side .underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+.hotelregister-fullwrapper .main-area .right-side .underline .bar {
+  width: 187px;
+  height: 9px;
+  border-radius: 20px;
+  background: #01286D;
+}
+.hotelregister-fullwrapper .main-area .right-side .underline .bar:nth-child(2) {
+  background: #BCCBE8;
+  width: 100px;
+}
+.hotelregister-fullwrapper .main-area .right-side h1 {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 100px;
+  text-transform: capitalize;
+}
+.hotelregister-fullwrapper .main-area .right-side h1 span {
+  color: #202020;
+  font-weight: 500;
+  font-size: 15px;
+}
+
 .manage-allroles-table-area {
   padding: 0 40px;
 }
@@ -6195,4 +6268,4 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   .add-new-staff-popup-area .add-new-staff-popup-main-area h1 {
     font-size: 25px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
