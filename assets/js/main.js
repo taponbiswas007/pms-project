@@ -142,17 +142,17 @@ $(document).ready(function () {
     //select box design area start
     $('.info-input-box').each(function () {
         var $this = $(this);
-    
+
         // Click event for .selectbox
         $this.find('.selectbox').click(function () {
             var $selectManu = $this.find('.select-manu');
             var $downArrow = $this.find('.downarrowbtn');
             var isSelectManuVisible = $selectManu.is(':visible');
-    
+
             // Close all other open dropdowns
             $('.select-manu').not($selectManu).hide();
             $('.downarrowbtn').not($downArrow).css({ "transform": "" });
-    
+
             // Toggle visibility of this dropdown
             $selectManu.slideToggle();
             if (!isSelectManuVisible) {
@@ -161,7 +161,7 @@ $(document).ready(function () {
                 $downArrow.css({ "transform": "" }); // Reset to default transform
             }
         });
-    
+
         // Click event for items in dropdown
         $this.find('.select-manu li').click(function () {
             var selectedValue = $(this).text();
@@ -169,29 +169,29 @@ $(document).ready(function () {
             $this.find('.select-manu').hide();
             toggleArrow(false);
         });
-    
+
         // Click event for .downarrowbtn
         $this.find('.downarrowbtn').click(function (event) {
             event.stopPropagation(); // Prevent event from bubbling up to document body
-    
+
             var $selectManu = $this.find('.select-manu');
             var isSelectManuVisible = $selectManu.is(':visible');
-    
+
             // Close all other open dropdowns
             $('.select-manu').not($selectManu).hide();
             $('.downarrowbtn').not($(this)).css({ "transform": "" });
-    
+
             // Toggle visibility of this dropdown
             $selectManu.slideToggle();
             toggleArrow(!isSelectManuVisible);
         });
-    
+
         // Click event for .infolabel
         $this.find('.infolabel').click(function () {
             $('.select-manu').hide();
             $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
         });
-    
+
         function toggleArrow(isVisible) {
             var $downArrow = $this.find('.downarrowbtn');
             if (isVisible) {
@@ -201,7 +201,7 @@ $(document).ready(function () {
             }
         }
     });
-    
+
     // Click event for the document body
     $(document.body).click(function (event) {
         // Check if the click was outside of the dropdown or another box
@@ -210,9 +210,9 @@ $(document).ready(function () {
             $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
         }
     });
-    
 
-    
+
+
 
     //select box design area end
 
@@ -416,10 +416,10 @@ $(document).ready(function () {
     });
 
     //checkbox functoin area start
-    $('.checkbox').click(function(){
+    $('.checkbox').click(function () {
         // Toggle visibility of check-mark-icon for this checkbox
         $(this).find('.check-mark-icon').toggle();
-    
+
         // Check if check-mark-icon is visible for this checkbox
         if ($(this).find('.check-mark-icon').is(':visible')) {
             // Apply CSS to checkbox when check-mark-icon is visible
@@ -427,35 +427,35 @@ $(document).ready(function () {
                 'height': '15px',
                 'width': '15px',
                 'background-color': '#0A7AFF',
-                'border':'none'
+                'border': 'none'
             });
         } else {
             // Reset CSS of checkbox when check-mark-icon is hidden
             $(this).css({
                 'height': '', // Reset to default
                 'width': '', // Reset to default
-                'background-color': '' ,
-                'border':''// Reset to default
+                'background-color': '',
+                'border': ''// Reset to default
             });
         }
     });
-    
+
     //checkbox functoin area end
 
 
     //registration area
-    $('.nextstep').click(function(){
-        $('.first-step').hide(0, function() {
+    $('.nextstep').click(function () {
+        $('.first-step').hide(0, function () {
             $('.second-step').show(0);
         });
     });
-    
-    $('.backbtn').click(function(){
-        $('.second-step').hide(0, function() {
+
+    $('.backbtn').click(function () {
+        $('.second-step').hide(0, function () {
             $('.first-step').show(0);
         });
     });
-    
+
 
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -540,35 +540,35 @@ window.addEventListener('scroll', function () {
 
 
 //increase decrease function area
-  // Get all numberofproperty elements
-  const numberofproperties = document.querySelectorAll('.numberofproperty');
+// Get all numberofproperty elements
+const numberofproperties = document.querySelectorAll('.numberofproperty');
 
-  // Iterate over each numberofproperty element
-  numberofproperties.forEach(numberofproperty => {
-      // Get elements within the numberofproperty
-      const decreaseBtn = numberofproperty.querySelector('.decrease');
-      const increaseBtn = numberofproperty.querySelector('.increase');
-      const countNumber = numberofproperty.querySelector('.count-number');
+// Iterate over each numberofproperty element
+numberofproperties.forEach(numberofproperty => {
+    // Get elements within the numberofproperty
+    const decreaseBtn = numberofproperty.querySelector('.decrease');
+    const increaseBtn = numberofproperty.querySelector('.increase');
+    const countNumber = numberofproperty.querySelector('.count-number');
 
-      // Add event listeners for this numberofproperty
-      decreaseBtn.addEventListener('click', () => {
-          // Get the current count value
-          let count = parseInt(countNumber.textContent);
-          // Decrease the count if it's greater than 0
-          if (count > 0) {
-              count--;
-              countNumber.textContent = count;
-          }
-      });
+    // Add event listeners for this numberofproperty
+    decreaseBtn.addEventListener('click', () => {
+        // Get the current count value
+        let count = parseInt(countNumber.textContent);
+        // Decrease the count if it's greater than 0
+        if (count > 0) {
+            count--;
+            countNumber.textContent = count;
+        }
+    });
 
-      increaseBtn.addEventListener('click', () => {
-          // Get the current count value
-          let count = parseInt(countNumber.textContent);
-          // Increase the count
-          count++;
-          countNumber.textContent = count;
-      });
-  });
+    increaseBtn.addEventListener('click', () => {
+        // Get the current count value
+        let count = parseInt(countNumber.textContent);
+        // Increase the count
+        count++;
+        countNumber.textContent = count;
+    });
+});
 
 
 
