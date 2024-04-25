@@ -445,9 +445,17 @@ $(document).ready(function () {
 
     //registration area
     $('.nextstep').click(function(){
-        $('.first-step').fadeOut();
-        $('.second-step').fadeIn();
+        $('.first-step').hide(0, function() {
+            $('.second-step').show(0);
+        });
     });
+    
+    $('.backbtn').click(function(){
+        $('.second-step').hide(0, function() {
+            $('.first-step').show(0);
+        });
+    });
+    
 
 });
 document.addEventListener("DOMContentLoaded", function () {

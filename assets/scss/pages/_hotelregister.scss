@@ -181,20 +181,21 @@
 
         .second-step {
             display: none;
-           .underline{
-            .bar {
-                width: 118px;
-                height: 9px;
-                border-radius: 3.954px;
-                background:  #DEE9FC;
 
-                &:nth-child(2) {
+            .underline {
+                .bar {
+                    width: 118px;
+                    height: 9px;
                     border-radius: 3.954px;
-                    background: #01286D ;
-                    width: 222px;
+                    background: #DEE9FC;
+
+                    &:nth-child(2) {
+                        border-radius: 3.954px;
+                        background: #01286D;
+                        width: 222px;
+                    }
                 }
             }
-           }
 
             .information-input-area {
                 .information-input-main-area {
@@ -269,7 +270,7 @@
                 border: 1px solid #01286D;
                 background: none;
                 color: #01286D;
-
+                margin-right: 20px;
                 &:hover {
                     color: $white;
                 }
