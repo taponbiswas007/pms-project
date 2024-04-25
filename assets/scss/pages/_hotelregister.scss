@@ -6,12 +6,13 @@
     height: 100vh;
     position: relative;
     padding: 164px 40px 150px 82px;
+
     //background-size: cover;
     .main-area {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-      
+
 
         .left-side {
             width: 45%;
@@ -19,6 +20,7 @@
             justify-content: flex-start;
             align-items: center;
             height: 100%;
+
             .banner-img {
                 width: 481px;
                 height: 481px;
@@ -170,34 +172,138 @@
                 padding: 16px 63px;
                 margin-top: 20px;
                 transition: .3s;
-                &:hover{
+
+                &:hover {
                     background: #011029;
                 }
             }
         }
+
+        .second-step {
+            display: none;
+           .underline{
+            .bar {
+                width: 118px;
+                height: 9px;
+                border-radius: 3.954px;
+                background:  #DEE9FC;
+
+                &:nth-child(2) {
+                    border-radius: 3.954px;
+                    background: #01286D ;
+                    width: 222px;
+                }
+            }
+           }
+
+            .information-input-area {
+                .information-input-main-area {
+                    .input-item {
+                        .numberofproperty {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            column-gap: 10px;
+                            padding-top: 9px;
+
+                            .decrease {
+                                width: 32px;
+                                height: 32px;
+                                background: #01286D;
+                                border-radius: 5px;
+                                font-size: 30px;
+                                color: $white;
+                                font-weight: 700;
+                                padding: 4px 0 0 0;
+                                line-height: 20px;
+                                margin-top: 0;
+                                transition: .3s;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background: #01112c;
+                                }
+                            }
+
+                            .increase {
+                                cursor: pointer;
+                                width: 32px;
+                                height: 32px;
+                                background: #01286D;
+                                border-radius: 5px;
+                                font-size: 30px;
+                                color: $white;
+                                font-weight: 700;
+                                padding: 0 0 0 -1px;
+                                line-height: 20px;
+                                margin-top: 0;
+                                transition: .3s;
+
+                                &:hover {
+                                    background: #01112c;
+                                }
+                            }
+
+                            span {
+                                border-radius: 6px;
+                                background: #E0E0E0;
+                                width: 78px;
+                                height: 32px;
+                                text-align: center;
+                                color: #000;
+                                text-align: center;
+                                font-family: $inter;
+                                font-size: 18.2px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .backbtn {
+                border-radius: 4.943px;
+                border: 1px solid #01286D;
+                background: none;
+                color: #01286D;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
     }
-    .small-circle{
+
+    .small-circle {
         width: 33px;
     }
-    .big-circle{
+
+    .big-circle {
         width: 81px;
     }
-    .top-small{
+
+    .top-small {
         position: absolute;
         top: 51px;
         right: 126px;
     }
-    .top-big{
+
+    .top-big {
         position: absolute;
         top: 15px;
         right: 17px;
     }
-    .bottom-small{
+
+    .bottom-small {
         position: absolute;
         bottom: 59px;
         left: 151px;
     }
-    .bottom-big{
+
+    .bottom-big {
         position: absolute;
         bottom: 22px;
         left: 42px;
@@ -206,15 +312,25 @@
 
 
 @media screen and (max-width:992px) {
-    .hotelregister-fullwrapper{
+    .hotelregister-fullwrapper {
         height: auto;
-        .main-area{
-            .right-side{
-                h1{
+        padding-left: 40px;
+
+        .main-area {
+            .left-side {
+                .banner-img {
+                    padding-top: 300px;
+                    width: 300px;
+                }
+            }
+
+            .right-side {
+                h1 {
                     font-size: 20px;
                 }
-                .information-input-area{
-                    .information-input-main-area{
+
+                .information-input-area {
+                    .information-input-main-area {
                         grid-template-columns: 4fr;
                     }
                 }
@@ -222,31 +338,186 @@
         }
     }
 }
+
 @media screen and (max-width:768px) {
-    .hotelregister-fullwrapper{
+    .hotelregister-fullwrapper {
         padding-top: 60px;
         padding-left: 40px;
-        .main-area{
+
+        .main-area {
             flex-direction: column;
             row-gap: 40px;
-            .left-side{
+
+            .left-side {
                 width: 100%;
                 justify-content: center;
-                .banner-img{
+
+                .banner-img {
+                    width: 300px;
+                    height: 300px;
+                    padding-top: 0;
+                }
+            }
+
+            .right-side {
+                width: 100%;
+
+                h1 {
+                    font-size: 29px;
+                }
+
+                .information-input-area {
+                    .information-input-main-area {
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .hotelregister-fullwrapper {
+
+        .main-area {
+
+            .right-side {
+
+                .information-input-area {
+                    .information-input-main-area {
+                        grid-template-columns: 4fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:491px) {
+    .hotelregister-fullwrapper {
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .main-area {
+            flex-direction: column;
+            row-gap: 40px;
+
+            .left-side {
+                width: 100%;
+                justify-content: center;
+
+                .banner-img {
                     width: 300px;
                     height: 300px;
                 }
             }
-            .right-side{
+
+            .right-side {
                 width: 100%;
-                h1{
-                    font-size: 29px;
+
+                h1 {
+                    font-size: 25px;
                 }
-                .information-input-area{
-                    .information-input-main-area{
-                        grid-template-columns: 2fr ;
+
+                .information-input-area {
+                    .information-input-main-area {
+                        grid-template-columns: 4fr;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+    .hotelregister-fullwrapper {
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .main-area {
+            flex-direction: column;
+            row-gap: 40px;
+
+            .left-side {
+                width: 100%;
+                justify-content: center;
+
+                .banner-img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .right-side {
+                width: 100%;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                .information-input-area {
+                    .information-input-main-area {
+                        grid-template-columns: 4fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:374px) {
+    .hotelregister-fullwrapper {
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .main-area {
+            flex-direction: column;
+            row-gap: 40px;
+
+            .left-side {
+                width: 100%;
+                justify-content: center;
+
+                .banner-img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .right-side {
+                .header {
+                    span {
+                        font-size: 20px;
+
+                        &:nth-child(2) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                width: 100%;
+
+                h1 {
+                    font-size: 18px;
+
+                    span {
+                        font-size: 10px;
+
+                        img {
+                            width: 10px;
+                        }
+                    }
+                }
+
+                .information-input-area {
+                    .information-input-main-area {
+                        grid-template-columns: 4fr;
+                    }
+                }
+
             }
         }
     }

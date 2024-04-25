@@ -4229,6 +4229,95 @@ footer .footer-area .footer-main-area p {
 .hotelregister-fullwrapper .main-area .right-side button:hover {
   background: #011029;
 }
+.hotelregister-fullwrapper .main-area .second-step {
+  display: none;
+}
+.hotelregister-fullwrapper .main-area .second-step .underline .bar {
+  width: 118px;
+  height: 9px;
+  border-radius: 3.954px;
+  background: #DEE9FC;
+}
+.hotelregister-fullwrapper .main-area .second-step .underline .bar:nth-child(2) {
+  border-radius: 3.954px;
+  background: #01286D;
+  width: 222px;
+}
+.hotelregister-fullwrapper .main-area .second-step .information-input-area .information-input-main-area .input-item .numberofproperty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  padding-top: 9px;
+}
+.hotelregister-fullwrapper .main-area .second-step .information-input-area .information-input-main-area .input-item .numberofproperty .decrease {
+  width: 32px;
+  height: 32px;
+  background: #01286D;
+  border-radius: 5px;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 4px 0 0 0;
+  line-height: 20px;
+  margin-top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.hotelregister-fullwrapper .main-area .second-step .information-input-area .information-input-main-area .input-item .numberofproperty .decrease:hover {
+  background: #01112c;
+}
+.hotelregister-fullwrapper .main-area .second-step .information-input-area .information-input-main-area .input-item .numberofproperty .increase {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background: #01286D;
+  border-radius: 5px;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0 0 0 -1px;
+  line-height: 20px;
+  margin-top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hotelregister-fullwrapper .main-area .second-step .information-input-area .information-input-main-area .input-item .numberofproperty .increase:hover {
+  background: #01112c;
+}
+.hotelregister-fullwrapper .main-area .second-step .information-input-area .information-input-main-area .input-item .numberofproperty span {
+  border-radius: 6px;
+  background: #E0E0E0;
+  width: 78px;
+  height: 32px;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 18.2px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 5px;
+}
+.hotelregister-fullwrapper .main-area .second-step .backbtn {
+  border-radius: 4.943px;
+  border: 1px solid #01286D;
+  background: none;
+  color: #01286D;
+}
+.hotelregister-fullwrapper .main-area .second-step .backbtn:hover {
+  color: #ffffff;
+}
 .hotelregister-fullwrapper .small-circle {
   width: 33px;
 }
@@ -4259,6 +4348,11 @@ footer .footer-area .footer-main-area p {
 @media screen and (max-width: 992px) {
   .hotelregister-fullwrapper {
     height: auto;
+    padding-left: 40px;
+  }
+  .hotelregister-fullwrapper .main-area .left-side .banner-img {
+    padding-top: 300px;
+    width: 300px;
   }
   .hotelregister-fullwrapper .main-area .right-side h1 {
     font-size: 20px;
@@ -4288,6 +4382,7 @@ footer .footer-area .footer-main-area p {
   .hotelregister-fullwrapper .main-area .left-side .banner-img {
     width: 300px;
     height: 300px;
+    padding-top: 0;
   }
   .hotelregister-fullwrapper .main-area .right-side {
     width: 100%;
@@ -4296,7 +4391,123 @@ footer .footer-area .footer-main-area p {
     font-size: 29px;
   }
   .hotelregister-fullwrapper .main-area .right-side .information-input-area .information-input-main-area {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hotelregister-fullwrapper .main-area .right-side .information-input-area .information-input-main-area {
+    grid-template-columns: 4fr;
+  }
+}
+@media screen and (max-width: 491px) {
+  .hotelregister-fullwrapper {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hotelregister-fullwrapper .main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 40px;
+  }
+  .hotelregister-fullwrapper .main-area .left-side {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hotelregister-fullwrapper .main-area .left-side .banner-img {
+    width: 300px;
+    height: 300px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side {
+    width: 100%;
+  }
+  .hotelregister-fullwrapper .main-area .right-side h1 {
+    font-size: 25px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side .information-input-area .information-input-main-area {
+    grid-template-columns: 4fr;
+  }
+}
+@media screen and (max-width: 440px) {
+  .hotelregister-fullwrapper {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hotelregister-fullwrapper .main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 40px;
+  }
+  .hotelregister-fullwrapper .main-area .left-side {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hotelregister-fullwrapper .main-area .left-side .banner-img {
+    width: 200px;
+    height: 200px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side {
+    width: 100%;
+  }
+  .hotelregister-fullwrapper .main-area .right-side h1 {
+    font-size: 20px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side .information-input-area .information-input-main-area {
+    grid-template-columns: 4fr;
+  }
+}
+@media screen and (max-width: 374px) {
+  .hotelregister-fullwrapper {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hotelregister-fullwrapper .main-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 40px;
+  }
+  .hotelregister-fullwrapper .main-area .left-side {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hotelregister-fullwrapper .main-area .left-side .banner-img {
+    width: 200px;
+    height: 200px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side {
+    width: 100%;
+  }
+  .hotelregister-fullwrapper .main-area .right-side .header span {
+    font-size: 20px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side .header span:nth-child(2) {
+    font-size: 15px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side h1 {
+    font-size: 18px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side h1 span {
+    font-size: 10px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side h1 span img {
+    width: 10px;
+  }
+  .hotelregister-fullwrapper .main-area .right-side .information-input-area .information-input-main-area {
+    grid-template-columns: 4fr;
   }
 }
 .manage-allroles-table-area {

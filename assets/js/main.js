@@ -443,6 +443,12 @@ $(document).ready(function () {
     //checkbox functoin area end
 
 
+    //registration area
+    $('.nextstep').click(function(){
+        $('.first-step').fadeOut();
+        $('.second-step').fadeIn();
+    });
+
 });
 document.addEventListener("DOMContentLoaded", function () {
     var slides = document.querySelectorAll("#slideshow p");
@@ -523,6 +529,38 @@ window.addEventListener('scroll', function () {
         footer.classList.remove('footer-hidden');
     }
 });
+
+
+//increase decrease function area
+  // Get all numberofproperty elements
+  const numberofproperties = document.querySelectorAll('.numberofproperty');
+
+  // Iterate over each numberofproperty element
+  numberofproperties.forEach(numberofproperty => {
+      // Get elements within the numberofproperty
+      const decreaseBtn = numberofproperty.querySelector('.decrease');
+      const increaseBtn = numberofproperty.querySelector('.increase');
+      const countNumber = numberofproperty.querySelector('.count-number');
+
+      // Add event listeners for this numberofproperty
+      decreaseBtn.addEventListener('click', () => {
+          // Get the current count value
+          let count = parseInt(countNumber.textContent);
+          // Decrease the count if it's greater than 0
+          if (count > 0) {
+              count--;
+              countNumber.textContent = count;
+          }
+      });
+
+      increaseBtn.addEventListener('click', () => {
+          // Get the current count value
+          let count = parseInt(countNumber.textContent);
+          // Increase the count
+          count++;
+          countNumber.textContent = count;
+      });
+  });
 
 
 
