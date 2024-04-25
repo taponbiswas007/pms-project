@@ -1,0 +1,23 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.register-full-wrapper {
+    .login-page-main-area {
+        .left-side {
+            .login-area {
+                .main-login-area {
+                    .login-information {
+                        .login-input-item {
+                            margin-bottom: 15px;
+
+                            input {
+                                height: 45px;
+                                border-radius: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

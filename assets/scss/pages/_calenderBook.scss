@@ -1,0 +1,330 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+
+.calenderOrtable-selector {
+    padding: 14px 0;
+
+    .calenderOrtable-button-area {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 15px;
+
+        button {
+            width: 40px;
+            height: 35px;
+            border-radius: 5px;
+            font-size: 23px;
+
+            &:first-child {
+                background: $blue;
+                color: $white;
+            }
+
+            &:last-child {
+                background: $white;
+                color: $blue;
+                border: 2px solid $gray;
+                transition: .3s ease;
+
+                &:hover {
+                    background: $blue;
+                    color: $white;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.resevation-search-area {
+    margin-bottom: 40px;
+
+    .reservation-search-main-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .calender-header {
+            h1 {
+                color: $simpleblack;
+                font-size: 38px;
+                font-family: $dmSans;
+                font-weight: 600;
+                padding-left: 49px;
+            }
+        }
+
+        .reservation-search-property {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 14px;
+
+            .search-date-selector-box {
+                @include dataInputboxStyle;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    top: -10px;
+                    left: 12px;
+                    color: $simpleblack;
+                    font-family: $roboto;
+                    font-weight: 400;
+                    padding: 0 8px;
+                    background: $darkwhite;
+                }
+
+                input {
+                    color: $black;
+                    font-family: $roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .paidOrunpaid-selector {
+                @include dataInputboxStyle;
+
+                select {
+                    @include optionselectStyle;
+                }
+            }
+
+            .resevationtype-selector {
+                @include dataInputboxStyle;
+
+                select {
+                    @include optionselectStyle;
+                }
+            }
+
+            .dailyOrmonthly-selector {
+                @include dataInputboxStyle;
+
+                select {
+                    @include optionselectStyle;
+                }
+            }
+
+            .reservation-search-btn {
+                @include commonBtnstyle;
+                background: $blue;
+
+                &:hover {
+                    background: $simpleblue
+                }
+
+            }
+
+            .new-reservation-btn {
+                @include commonBtnstyle;
+                background: $simpleblack;
+
+                &:hover {
+                    background: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .resevation-search-area {
+        .reservation-search-main-area {
+            .calender-header {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .resevation-search-area {
+        .reservation-search-main-area {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 30px;
+
+            .calender-header {
+                h1 {
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .resevation-search-area {
+        .reservation-search-main-area {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 30px;
+
+            .reservation-search-property {
+                flex-wrap: wrap;
+                row-gap: 20px;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+
+.reservation-search-results-table-area {
+    .reservation-search-results-table-main-area {
+        .table-container {
+            overflow: auto;
+            position: relative;
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+
+                thead {
+                    tr {
+                        height: 50px;
+
+                        th {
+                            border: 1px solid $gray;
+                            vertical-align: middle;
+                            text-align: center;
+                            min-width: 100px;
+                            background: $white;
+                            color: $simpleblack;
+                            font-size: 12px;
+                            font-weight: 600;
+                            font-family: $dmSans;
+                            text-transform: uppercase;
+
+                            &:first-child {
+                                position: sticky;
+                                left: 0;
+                                z-index: 2;
+                                top: 0;
+                                min-width: 153px;
+                            }
+
+                            button {
+                                img {
+                                    width: 36px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    td {
+
+                        button {
+                            background: $gray;
+                            width: 100%;
+                            height: 41px;
+                            color: $simpleblack;
+                            font-size: 11px;
+                            font-weight: 600;
+                            font-family: $dmSans;
+                            text-align: left;
+                            padding-left: 20px;
+
+                            .down-arrow {
+                                margin-left: 5px;
+                                font-size: 20px;
+                                margin-bottom: -4px;
+                            }
+
+                            .down-arrow2 {
+                                margin-left: 5px;
+                                font-size: 20px;
+                                margin-bottom: -4px;
+                            }
+
+                            .down-arrow3 {
+                                margin-left: 5px;
+                                font-size: 20px;
+                                margin-bottom: -4px;
+                            }
+                        }
+                    }
+
+                    tr {
+                        height: 41px;
+
+                        td {
+                            border: 1px solid $gray;
+                            white-space: normal;
+                            text-align: center;
+                            min-width: 100px;
+                            background: $white;
+                            font-size: 14px;
+                            font-weight: 600;
+                            font-family: $dmSans;
+                            vertical-align: middle;
+                            text-align: center;
+
+
+                            &:first-child {
+                                position: sticky;
+                                left: 0;
+                                z-index: 2;
+                                min-width: 153px;
+                            }
+
+                        }
+
+                    }
+                }
+
+                .room1 {
+                    td {
+                        position: relative;
+
+                        &:nth-child(n+4):nth-child(-n+4)::after {
+                            content: "Kumar, Pritam - 301";
+                            width: 188px;
+                            @include reservationdatelengthStyles;
+                        }
+                    }
+                }
+
+                .room2 {
+                    td {
+                        position: relative;
+
+                        &:nth-child(n+3):nth-child(-n+3)::after {
+                            content: "Smith, John - NA";
+                            @include reservationdatelengthStyles;
+                            width: 384px;
+
+                        }
+                    }
+                }
+
+
+
+
+            }
+
+
+        }
+
+
+
+
+    }
+}
