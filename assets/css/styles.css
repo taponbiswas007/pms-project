@@ -4484,7 +4484,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   padding: 14px;
   background: #ffffff;
   border-radius: 8px;
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -4565,7 +4565,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
 }
 
 .viabookingpopup-area {
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -4978,7 +4978,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
 }
 
 .checkin-nowpopup-area {
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5102,7 +5102,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   }
 }
 .booking-history-popup-area {
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5256,7 +5256,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
 }
 
 .guestlist-area {
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5471,7 +5471,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   }
 }
 .edit-cleaning-popup {
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5763,7 +5763,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
 }
 
 .add-new-staff-popup-area {
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5942,7 +5942,7 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
 }
 
 .add-new-staff-popup-area {
-  position: fixed;
+  position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
