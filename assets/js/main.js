@@ -308,6 +308,16 @@ $(document).ready(function () {
         $(".edit-cleaning-popup").fadeOut();
     });
 
+    $(".newstaffaddbtn").click(function () {
+        $(".overlay").fadeIn();
+        $(".add-new-staff-popup-area").fadeIn();
+    });
+
+    $(".closebtn").click(function () {
+        $(".overlay").fadeOut();
+        $(".add-new-staff-popup-area").fadeOut();
+    });
+
 
     $(".booking-historybtn").click(function (event) {
         event.preventDefault(); // Prevent default behavior of the button click
@@ -405,7 +415,32 @@ $(document).ready(function () {
         }
     });
 
-
+    //checkbox functoin area start
+    $('.checkbox').click(function(){
+        // Toggle visibility of check-mark-icon for this checkbox
+        $(this).find('.check-mark-icon').toggle();
+    
+        // Check if check-mark-icon is visible for this checkbox
+        if ($(this).find('.check-mark-icon').is(':visible')) {
+            // Apply CSS to checkbox when check-mark-icon is visible
+            $(this).css({
+                'height': '15px',
+                'width': '15px',
+                'background-color': '#0A7AFF',
+                'border':'none'
+            });
+        } else {
+            // Reset CSS of checkbox when check-mark-icon is hidden
+            $(this).css({
+                'height': '', // Reset to default
+                'width': '', // Reset to default
+                'background-color': '' ,
+                'border':''// Reset to default
+            });
+        }
+    });
+    
+    //checkbox functoin area end
 
 
 });

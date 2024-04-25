@@ -8,8 +8,13 @@
 @import 'pages/housekeeping';
 @import 'pages/checkIn';
 @import 'pages/login';
+@import 'pages/managestaff';
 @import 'pages/register';
+<<<<<<< HEAD
 @import 'pages/hotelregister';
+=======
+@import 'pages/allroles';
+>>>>>>> bf0334a965cab4f69827938db1dc0b09f5476b3f
 @import 'utils/mixins';
 @import 'utils/variables';
 @import 'component/header';
@@ -21,3 +26,5 @@
 @import 'component/guestlistpopup';
 @import 'component/editcleaningpopup';
 @import 'component/spinner';
+@import 'component/new-staff-popup';
+@import 'component/allrolespopup';

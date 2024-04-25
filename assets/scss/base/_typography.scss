@@ -22,13 +22,15 @@ img{
     height: 100%;
     z-index: 3;
     background: rgba($color: #000000, $alpha: 0.5);
-    display: none;
+   display: none;
 }
 .m-r{
     margin-right: 10px;
 }
-p-bottom{
-    padding-bottom: 50px;
+
+.p-topbutton{
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
 }
 .g-color{
     color: $green;

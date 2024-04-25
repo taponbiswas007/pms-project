@@ -2,17 +2,17 @@
 @import '../utils/variables';
 
 .edit-cleaning-popup {
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     max-width: 572px;
     width: 100%;
     z-index: 4;
     padding: 10px;
     display: none;
 
-    & .edit-cleaning-popup-main-area {
+     .edit-cleaning-popup-main-area {
         background: $white;
         padding: 10px;
 
