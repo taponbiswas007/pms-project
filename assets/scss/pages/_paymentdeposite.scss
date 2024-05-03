@@ -1,92 +1,6 @@
 @import '../utils/mixins';
 @import '../utils/variables';
-
-header {
-    .bottom-header {
-        .bottom-header-main-area {
-            .navbar {
-                ul {
-                    .revenue-report-all-item {
-                        position: relative;
-
-                        .opendropdown {
-                            span {
-                                margin-left: 10px;
-
-                                .dropdown-icon {
-                                    margin-bottom: -4px;
-                                }
-                            }
-                        }
-
-                        ul {
-                            position: absolute;
-                            top: 40px;
-                            left: 0;
-                            background: $white;
-                            padding: 10px 20px 20px 20px;
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                            border-radius: 10px;
-                            z-index: 9999999999999999;
-                            width: 350px;
-                            display: none;
-
-                            li {
-                                margin-top: 30px;
-
-                                a {
-                                    color: $simpleblack;
-                                    font-size: 20px;
-                                    font-weight: 500;
-                                    font-family: $roboto;
-                                    text-transform: capitalize;
-                                    transition: .3s ease;
-
-                                    &:hover {
-                                        transform: translateX(10px);
-                                        display: block;
-                                        color: aqua;
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.reservation-header {
-    .revenue-report-header {
-        ul {
-            li {
-                display: inline-block;
-                margin-right: 15px;
-                color: #A5A5A5;
-                font-family: $dmSans;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                text-transform: capitalize;
-
-                span {
-                    height: 24px;
-                    width: 24px;
-                    border: 3px solid #A5A5A5;
-                    display: block;
-                    padding: 0 0 0 3px;
-                    border-radius: 50%;
-                    font-weight: 700;
-                }
-            }
-        }
-    }
-}
-
-.report-wrapper {
+.paymentreport-wrapper {
     .report-main-area {
         background: $white;
         padding: 20px;
@@ -287,44 +201,34 @@ header {
                                 th {
 
                                     &:nth-child(1) {
-                                        min-width: 200px;
+                                        min-width: 172px;
                                     }
 
                                     &:nth-child(2) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(3) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(4) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(5) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(6) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(7) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
-                                    &:nth-child(8) {
-                                        min-width: 120px;
-                                    }
-
-                                    &:nth-child(9) {
-                                        min-width: 120px;
-                                    }
-
-                                    &:nth-child(10) {
-                                        min-width: 120px;
-                                    }
+                                  
                                 }
                             }
                         }
@@ -335,27 +239,27 @@ header {
                                     border: none;
 
                                     &:nth-child(1) {
-                                        min-width: 200px;
+                                        min-width: 172px;
                                     }
 
                                     &:nth-child(2) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(3) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(4) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(5) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
                                     &:nth-child(6) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                         ul{
                                             cursor: pointer;
                                             li{
@@ -370,20 +274,9 @@ header {
                                     }
 
                                     &:nth-child(7) {
-                                        min-width: 120px;
+                                        min-width: 190px;
                                     }
 
-                                    &:nth-child(8) {
-                                        min-width: 120px;
-                                    }
-
-                                    &:nth-child(9) {
-                                        min-width: 120px;
-                                    }
-
-                                    &:nth-child(10) {
-                                        min-width: 120px;
-                                    }
                                 }
                             }
                         }
@@ -492,31 +385,10 @@ header {
         }
     }
 }
-
 @media screen and (max-width: 992px) {
-    header {
-        .bottom-header {
-            .bottom-header-main-area {
-                .navbar {
-                    ul {
-                        .revenue-report-all-item {
+   
 
-
-                            ul {
-                                left: 100%;
-                                top: 100%;
-
-
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .report-wrapper {
+    .paymentreport-wrapper {
         .report-main-area {
             .resevation-page-search-area {
                 .reservation-page-search-main-area {
@@ -551,7 +423,7 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .report-wrapper {
+    .paymentreport-wrapper {
         .report-main-area {
             .resevation-page-search-area {
                 .reservation-page-search-main-area {
@@ -587,36 +459,8 @@ header {
 }
 
 @media screen and (max-width: 540px) {
-    header {
-        .bottom-header {
-            .bottom-header-main-area {
-                .navbar {
-                    ul {
-                        .revenue-report-all-item {
-
-
-                            ul {
-                                right: 0;
-                                width: 240px;
-
-
-                                li {
-                                    margin-top: 30px;
-
-                                    a {
-
-                                        font-size: 13px;
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .report-wrapper{
+   
+    .paymentreport-wrapper{
         .report-main-area{
             .page-change-and-print-area{
                 .left-side{
@@ -630,66 +474,4 @@ header {
     }
 }
 
-@media screen and (max-width: 420px) {
-    header {
-        .bottom-header {
-            .bottom-header-main-area {
-                .navbar {
-                    ul {
-                        .revenue-report-all-item {
 
-
-                            ul {
-                                right: 0;
-                                width: 200px;
-
-
-                                li {
-                                    margin-top: 20px;
-
-                                    a {
-
-                                        font-size: 13px;
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 374px) {
-    header {
-        .bottom-header {
-            .bottom-header-main-area {
-                .navbar {
-                    ul {
-                        .revenue-report-all-item {
-
-
-                            ul {
-                                right: 0;
-                                width: 150px;
-
-
-                                li {
-                                    margin-top: 10px;
-
-                                    a {
-
-                                        font-size: 10px;
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}

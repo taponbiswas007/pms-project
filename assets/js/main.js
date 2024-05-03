@@ -151,14 +151,20 @@ $(document).ready(function () {
 
             // Close all other open dropdowns
             $('.select-manu').not($selectManu).hide();
-            $('.downarrowbtn').not($downArrow).css({ "transform": "" });
+            $('.downarrowbtn').not($downArrow).css({
+                "transform": ""
+            });
 
             // Toggle visibility of this dropdown
             $selectManu.slideToggle();
             if (!isSelectManuVisible) {
-                $downArrow.css({ "transform": "rotateZ(180deg) translateY(45%)" });
+                $downArrow.css({
+                    "transform": "rotateZ(180deg) translateY(45%)"
+                });
             } else {
-                $downArrow.css({ "transform": "" }); // Reset to default transform
+                $downArrow.css({
+                    "transform": ""
+                }); // Reset to default transform
             }
         });
 
@@ -179,7 +185,9 @@ $(document).ready(function () {
 
             // Close all other open dropdowns
             $('.select-manu').not($selectManu).hide();
-            $('.downarrowbtn').not($(this)).css({ "transform": "" });
+            $('.downarrowbtn').not($(this)).css({
+                "transform": ""
+            });
 
             // Toggle visibility of this dropdown
             $selectManu.slideToggle();
@@ -189,15 +197,21 @@ $(document).ready(function () {
         // Click event for .infolabel
         $this.find('.infolabel').click(function () {
             $('.select-manu').hide();
-            $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
+            $('.downarrowbtn').css({
+                "transform": ""
+            }); // Reset arrow transform for all dropdowns
         });
 
         function toggleArrow(isVisible) {
             var $downArrow = $this.find('.downarrowbtn');
             if (isVisible) {
-                $downArrow.css({ "transform": "rotateZ(180deg) translateY(45%)" });
+                $downArrow.css({
+                    "transform": "rotateZ(180deg) translateY(45%)"
+                });
             } else {
-                $downArrow.css({ "transform": "" }); // Reset to default transform
+                $downArrow.css({
+                    "transform": ""
+                }); // Reset to default transform
             }
         }
     });
@@ -207,7 +221,9 @@ $(document).ready(function () {
         // Check if the click was outside of the dropdown or another box
         if (!$(event.target).closest('.info-input-box').length) {
             $('.select-manu').hide();
-            $('.downarrowbtn').css({ "transform": "" }); // Reset arrow transform for all dropdowns
+            $('.downarrowbtn').css({
+                "transform": ""
+            }); // Reset arrow transform for all dropdowns
         }
     });
 
@@ -408,10 +424,18 @@ $(document).ready(function () {
         $('.onoff-status').text($(this).hasClass('on') ? 'on' : 'off');
         if ($(this).hasClass('on')) {
             $(this).next('.onoff-status').show();
-            $(".onof-circle").css({ 'right': '2px', 'left': 'auto', 'background-color': 'yellow' });
+            $(".onof-circle").css({
+                'right': '2px',
+                'left': 'auto',
+                'background-color': 'yellow'
+            });
         } else {
             $(this).next('.onoff-status').hide();
-            $(".onof-circle").css({ 'left': '2px', 'right': 'auto', 'background-color': 'white' });
+            $(".onof-circle").css({
+                'left': '2px',
+                'right': 'auto',
+                'background-color': 'white'
+            });
         }
     });
 
@@ -435,7 +459,7 @@ $(document).ready(function () {
                 'height': '', // Reset to default
                 'width': '', // Reset to default
                 'background-color': '',
-                'border': ''// Reset to default
+                'border': '' // Reset to default
             });
         }
     });
@@ -460,27 +484,35 @@ $(document).ready(function () {
     // Function to close submenu and reset dropdown icon rotation
     function closeSubmenu() {
         $(".submenu").slideUp();
-        $(".dropdown-icon").css({ "transform": "rotate(0deg)" });
+        $(".dropdown-icon").css({
+            "transform": "rotate(0deg)"
+        });
     }
 
     // Click event for opendropdown
     $(".opendropdown").click(function (event) {
         event.stopPropagation();
         var $submenu = $(this).siblings(".submenu");
-        $submenu.slideToggle();
         var $dropdownIcon = $(this).find('.dropdown-icon');
 
         // Check if the submenu is visible
         if ($submenu.is(":visible")) {
-            $dropdownIcon.css({ "transform": "rotate(180deg)" });
+            $submenu.slideUp();
+            $dropdownIcon.css({
+                "transform": "rotate(0deg)"
+            }); // Reset rotation
         } else {
-            $dropdownIcon.css({ "transform": "rotate(0deg)" }); // Reset rotation
+            $submenu.slideDown();
+            $dropdownIcon.css({
+                "transform": "rotate(180deg)"
+            });
+            // Hide other open submenus
+            $(".submenu").not($submenu).slideUp();
+            // Reset rotation of other dropdown icons
+            $(".dropdown-icon").not($dropdownIcon).css({
+                "transform": "rotate(0deg)"
+            });
         }
-
-        // Hide other open submenus
-        $(".submenu").not($submenu).slideUp();
-        // Reset rotation of other dropdown icons
-        $(".dropdown-icon").not($dropdownIcon).css({ "transform": "rotate(0deg)" });
     });
 
     // Click event for document to close submenu when clicking elsewhere
@@ -497,6 +529,7 @@ $(document).ready(function () {
     $(".submenu").click(function (event) {
         event.stopPropagation();
     });
+
 
 
 
@@ -612,6 +645,3 @@ numberofproperties.forEach(numberofproperty => {
         countNumber.textContent = count;
     });
 });
-
-
-

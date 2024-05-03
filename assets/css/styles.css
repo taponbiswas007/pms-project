@@ -4899,6 +4899,16 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(6) {
   min-width: 120px;
 }
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(6) ul {
+  cursor: pointer;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(6) ul li {
+  display: inline-block;
+  color: #074996;
+  margin-right: 7px;
+  font-weight: 700;
+  font-size: 15px;
+}
 .report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(7) {
   min-width: 120px;
 }
@@ -5119,6 +5129,406 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   }
   header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li a {
     font-size: 10px;
+  }
+}
+.paymentreport-wrapper .report-main-area {
+  background: #ffffff;
+  padding: 20px;
+}
+.paymentreport-wrapper .report-main-area h1 {
+  color: #5F5F5F;
+  font-family: "DM Sans", sans-serif;
+  font-size: 26.283px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.paymentreport-wrapper .report-main-area hr {
+  height: 1px;
+  background: #D8D8D8;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area {
+  margin-bottom: 0;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(1) {
+  width: 120px;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(2) {
+  width: 25%;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(3) {
+  width: 25%;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(4) {
+  width: 25%;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(5) {
+  width: 120px;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .search-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .search-button button {
+  margin-top: 0;
+  margin-left: 0;
+  padding: 12px 12px;
+  font-size: 23px;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 50px;
+  border: 2px solid #D0D5DD;
+  position: relative;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #202020;
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  font-size: 11px;
+  width: calc(100% - 2px);
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
+  margin-right: 1px;
+  text-transform: capitalize;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .numbercode {
+  width: 44px !important;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .selectbox {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .downarrowbtn {
+  position: absolute;
+  right: 7px;
+  color: #000000;
+  font-size: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .select-manu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .select-manu li {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .select-manu li:hover {
+  background: #01286D;
+  color: #ffffff;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(1) {
+  min-width: 172px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(2) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(3) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(4) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(5) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(6) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(7) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td {
+  border: none;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(1) {
+  min-width: 172px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(2) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(3) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(4) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(5) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(6) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(6) ul {
+  cursor: pointer;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(6) ul li {
+  display: inline-block;
+  color: #074996;
+  margin-right: 7px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(7) {
+  min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side button {
+  background: #01286D;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 9px 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side button:hover {
+  background: #202020;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side button .angleicon {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea span {
+  color: #000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13.561px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 3.077px 0px 0px 3.077px;
+  display: block;
+  padding: 12px 19px;
+  background: #EFEFEF;
+  text-transform: capitalize;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea span:nth-child(2) {
+  background: none;
+  border: 1px solid #EFEFEF;
+  border-radius: none;
+  width: 150px;
+  padding: 11px 19px;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea span:nth-child(3) {
+  border-radius: 0px 3.077px 3.077px 0px;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .right-side button {
+  padding: 8px 12px;
+  border-radius: 3px;
+  margin-left: 20px;
+  color: #FFF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .right-side button:nth-child(1) {
+  background: #000;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .right-side button:nth-child(2) {
+  background: #009432;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .right-side button .ps-icon {
+  margin-right: 10px;
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .right-side button .replayicon {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.paymentreport-wrapper .report-main-area .page-change-and-print-area .right-side button:hover {
+  background: #01286D;
+}
+
+@media screen and (max-width: 992px) {
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(1) {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(2) {
+    width: 23%;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(3) {
+    width: 23%;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(4) {
+    width: 23%;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(5) {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .search-button {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(1) {
+    width: 100%;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(2) {
+    width: 100%;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(3) {
+    width: 100%;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(4) {
+    width: 100%;
+  }
+  .paymentreport-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(5) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .paymentreport-wrapper .report-main-area .page-change-and-print-area .left-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 header {
