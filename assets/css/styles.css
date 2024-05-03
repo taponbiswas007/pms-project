@@ -4654,10 +4654,307 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   color: aqua;
 }
 
+.reservation-header .revenue-report-header ul li {
+  display: inline-block;
+  margin-right: 15px;
+  color: #A5A5A5;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.reservation-header .revenue-report-header ul li span {
+  height: 24px;
+  width: 24px;
+  border: 3px solid #A5A5A5;
+  display: block;
+  padding: 0 0 0 3px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.report-wrapper .report-main-area {
+  background: #ffffff;
+  padding: 20px;
+}
+.report-wrapper .report-main-area h1 {
+  color: #5F5F5F;
+  font-family: "DM Sans", sans-serif;
+  font-size: 26.283px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.report-wrapper .report-main-area hr {
+  height: 1px;
+  background: #D8D8D8;
+}
+.report-wrapper .report-main-area .resevation-page-search-area {
+  margin-bottom: 0;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(1) {
+  width: 120px;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(2) {
+  width: 25%;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(3) {
+  width: 25%;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(4) {
+  width: 25%;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(5) {
+  width: 120px;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .search-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .search-button button {
+  margin-top: 0;
+  margin-left: 0;
+  padding: 12px 12px;
+  font-size: 23px;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box {
+  border: 2px solid #202020;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 50px;
+  border: 2px solid #D0D5DD;
+  position: relative;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .infolabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #202020;
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+  font-size: 11px;
+  width: calc(100% - 2px);
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 15px;
+  margin-right: 1px;
+  text-transform: capitalize;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .numbercode {
+  width: 44px !important;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .selectbox {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .downarrowbtn {
+  position: absolute;
+  right: 7px;
+  color: #000000;
+  font-size: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .select-manu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .select-manu li {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box .select-manu li:hover {
+  background: #01286D;
+  color: #ffffff;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(1) {
+  min-width: 200px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(2) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(3) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(4) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(5) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(6) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(7) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(8) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(9) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table thead tr th:nth-child(10) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td {
+  border: none;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(1) {
+  min-width: 200px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(2) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(3) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(4) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(5) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(6) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(7) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(8) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(9) {
+  min-width: 120px;
+}
+.report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(10) {
+  min-width: 120px;
+}
+
 @media screen and (max-width: 992px) {
   header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul {
     left: 100%;
     top: 100%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(1) {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(2) {
+    width: 23%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(3) {
+    width: 23%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(4) {
+    width: 23%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(5) {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .search-button {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(1) {
+    width: 100%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(2) {
+    width: 100%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(3) {
+    width: 100%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(4) {
+    width: 100%;
+  }
+  .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .report-head-item:nth-child(5) {
+    width: 100%;
   }
 }
 @media screen and (max-width: 540px) {

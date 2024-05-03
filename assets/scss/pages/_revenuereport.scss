@@ -57,21 +57,317 @@ header {
         }
     }
 }
-@media screen and (max-width: 992px){
+
+.reservation-header {
+    .revenue-report-header {
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 15px;
+                color: #A5A5A5;
+                font-family: $dmSans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+
+                span {
+                    height: 24px;
+                    width: 24px;
+                    border: 3px solid #A5A5A5;
+                    display: block;
+                    padding: 0 0 0 3px;
+                    border-radius: 50%;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.report-wrapper {
+    .report-main-area {
+        background: $white;
+        padding: 20px;
+
+        h1 {
+            color: #5F5F5F;
+            font-family: $dmSans;
+            font-size: 26.283px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+        hr{
+            height: 1px;
+            background: #D8D8D8;
+        }
+
+        .resevation-page-search-area {
+            margin-bottom: 0;
+
+            .reservation-page-search-main-area {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 0 0 0;
+                box-shadow: none;
+                column-gap: 20px;
+                row-gap: 20px;
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+                .report-head-item{
+                    &:nth-child(1){
+                        width: 120px;
+                    }
+                    &:nth-child(2){
+                        width: 25%;
+                    }
+                    &:nth-child(3){
+                        width: 25%;
+                    }
+                    &:nth-child(4){
+                        width: 25%;
+                    }
+                    &:nth-child(5){
+                        width: 120px;
+                    }
+                }
+                .search-button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 10px;
+                    row-gap: 20px;
+                    flex-wrap: wrap;
+                    button{
+                        margin-top: 0;
+                        margin-left: 0;
+                        padding: 12px 12px;
+                        font-size: 23px;
+                       
+                        
+                    }
+                }
+                .person-info-item {
+                    .info-input-box {
+                        @include dataInputboxStyle;
+                        border: 2px solid #D0D5DD;
+                        position: relative;
+
+                        .infolabel {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+
+                            z-index: 1;
+                            color: $simpleblack;
+                            background: $white;
+                            font-family: $roboto;
+                            font-weight: 400;
+                            padding: 0 8px;
+                            font-size: 11px;
+                            width: calc(100% - 2px);
+                            height: 100%;
+                            border-radius: 8px;
+                            padding-top: 15px;
+                            margin-right: 1px;
+                            text-transform: capitalize;
+
+                        }
+
+                        input {
+                            color: $black;
+                            font-family: $roboto;
+                            font-size: 13px;
+                            font-weight: 400;
+                            text-align: left;
+                            width: 100%;
+                            background: none;
+                            border: none;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .inputnumberbox {
+                            -moz-appearance: textfield;
+                        }
+
+                        .numbercode {
+                            width: 44px !important;
+                        }
+
+
+
+                        .gender-select {
+                            width: 100%;
+                        }
+
+                        .selectbox {
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            font-family: $roboto;
+                            color: $black;
+                            cursor: pointer;
+                        }
+
+                        .downarrowbtn {
+                            position: absolute;
+                            right: 7px;
+                            color: $black;
+                            font-size: 20px;
+                            top: 50%;
+                            transform: translateY(-50%);
+
+
+                        }
+
+                        .select-manu {
+                            position: absolute;
+                            top: 110%;
+                            left: 0;
+                            right: 0;
+                            background: $white;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            font-family: $roboto;
+                            color: $black;
+                            font-weight: 400;
+                            border-radius: 8px;
+                            padding: 10px;
+                            z-index: 2;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                            display: none;
+
+                            li {
+                                margin-bottom: 10px;
+                                width: 100%;
+                                padding: 10px;
+                                transition: .3s;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background: $blue;
+                                    color: $white;
+
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+
+
+
+                }
+            }
+        }
+        .reservation-search-results-table-area{
+            .reservation-search-results-table-main-area{
+              .resevation-table-container{
+                table{
+                    thead{
+                        tr{
+                            th{
+                               
+                                &:nth-child(1){
+                                    min-width: 200px;
+                                }
+                                &:nth-child(2){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(3){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(4){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(5){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(6){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(7){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(8){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(9){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(10){
+                                    min-width: 120px;
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                border: none;
+                                &:nth-child(1){
+                                    min-width: 200px;
+                                }
+                                &:nth-child(2){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(3){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(4){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(5){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(6){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(7){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(8){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(9){
+                                    min-width: 120px;
+                                }
+                                &:nth-child(10){
+                                    min-width: 120px;
+                                }
+                            }
+                        }
+                    }
+                }
+              }  
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
     header {
         .bottom-header {
             .bottom-header-main-area {
                 .navbar {
                     ul {
                         .revenue-report-all-item {
-                            
-    
+
+
                             ul {
                                 left: 100%;
-                               top: 100%;
-                                
-    
-                               
+                                top: 100%;
+
+
+
                             }
                         }
                     }
@@ -79,28 +375,86 @@ header {
             }
         }
     }
+    .report-wrapper{
+        .report-main-area{
+           .resevation-page-search-area{
+            .reservation-page-search-main-area{
+                .report-head-item{
+                    &:nth-child(1){
+                      
+                        flex-shrink: 0;
+                    }
+                    &:nth-child(2){
+                        
+                        width: 23%;
+                    }
+                    &:nth-child(3){
+                        width: 23%;
+                    }
+                    &:nth-child(4){
+                        width: 23%;
+                    }
+                    &:nth-child(5){
+                      
+                        flex-shrink: 0;
+                    }
+                }
+            }
+           } 
+        }
+    }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 768px){
+    .report-wrapper{
+        .report-main-area{
+           .resevation-page-search-area{
+            .reservation-page-search-main-area{
+                .search-button{
+                    justify-content: flex-start;
+                }
+                .report-head-item{
+                    &:nth-child(1){
+                      width: 100%;
+                    }
+                    &:nth-child(2){
+                        width: 100%;
+                    }
+                    &:nth-child(3){
+                        width: 100%;
+                    }
+                    &:nth-child(4){
+                        width: 100%;
+                    }
+                    &:nth-child(5){
+                        width: 100%;
+                    }
+                }
+            }
+           } 
+        }
+    }
+}
+@media screen and (max-width: 540px) {
     header {
         .bottom-header {
             .bottom-header-main-area {
                 .navbar {
                     ul {
                         .revenue-report-all-item {
-                            
-    
+
+
                             ul {
                                 right: 0;
                                 width: 240px;
-                                
-    
+
+
                                 li {
                                     margin-top: 30px;
-    
+
                                     a {
-                                       
+
                                         font-size: 13px;
-                                     
+
                                     }
                                 }
                             }
@@ -111,27 +465,28 @@ header {
         }
     }
 }
-@media screen and (max-width: 420px){
+
+@media screen and (max-width: 420px) {
     header {
         .bottom-header {
             .bottom-header-main-area {
                 .navbar {
                     ul {
                         .revenue-report-all-item {
-                            
-    
+
+
                             ul {
                                 right: 0;
                                 width: 200px;
-                                
-    
+
+
                                 li {
                                     margin-top: 20px;
-    
+
                                     a {
-                                       
+
                                         font-size: 13px;
-                                     
+
                                     }
                                 }
                             }
@@ -142,27 +497,28 @@ header {
         }
     }
 }
-@media screen and (max-width: 374px){
+
+@media screen and (max-width: 374px) {
     header {
         .bottom-header {
             .bottom-header-main-area {
                 .navbar {
                     ul {
                         .revenue-report-all-item {
-                            
-    
+
+
                             ul {
                                 right: 0;
                                 width: 150px;
-                                
-    
+
+
                                 li {
                                     margin-top: 10px;
-    
+
                                     a {
-                                       
+
                                         font-size: 10px;
-                                     
+
                                     }
                                 }
                             }

@@ -98,204 +98,265 @@
     <!-- main area start -->
     <div class="reservation-header">
         <div class="container-fluid">
-            <div class="calender-header">
-                <h1>Reservations</h1>
-
+            <div class="revenue-report-header">
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-angle-left"></i></span>
+                    </li>
+                    <li>/</li>
+                    <li>Reports</li>
+                    <li>/</li>
+                    <li> revenu Reports</li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="resevation-page-search-area">
+ 
+
+    <!-- report table area start -->
+    <div class="report-wrapper">
         <div class="container-fluid">
-            <div class="reservation-page-search-main-area">
-                <div class="search-data-input-item">
-                    <h1>Guest Name</h1>
-                    <input type="text" placeholder="Search name">
-                </div>
-                <div class="search-data-input-item">
-                    <h1>Booking ID</h1>
-                    <input type="text" placeholder="#00000">
-                </div>
-                <div class="search-data-input-item">
-                    <h1>Invoice Number</h1>
-                    <input type="text" placeholder="INV.00000">
-                </div>
-                <div class="search-data-input-item">
-                    <h1>Stays Date</h1>
-                    <div class="date-input-area">
-                        <input type="text" class="date-input" id="mainDateInput" placeholder="01 Jan 2023 - 05 Jan 2023"
-                            onclick="toggleDatePicker()">
-                        <button class="calenderIcon" onclick="toggleDatePicker()">
-                            <i class="fa-regular fa-calendar"></i>
-                        </button>
-                        <div class="date-picker" id="datePicker">
-                            From: <input type="date" id="fromDate"> To: <input type="date" id="toDate">
-                            <button id="applyButton">Apply</button>
+            <div class="report-main-area">
+                <h1>Revenue Report</h1>
+                <hr>
+                <div class="resevation-page-search-area">
+                    <div class="container-fluid">
+                        <div class="reservation-page-search-main-area">
+                            <div class="search-button report-head-item">
+                                <!-- auto refresh button -->
+                                <button><i class="fa-solid fa-arrows-rotate"></i></button>
+                                <!-- filter button -->
+                                <button><i class="fa-solid fa-filter"></i></button>
+                            </div>
+                             <!-- date area  -->
+                            <div class="search-data-input-item report-head-item">
+                               
+                                <div class="date-input-area">
+                                    <input type="text" class="date-input" id="mainDateInput" placeholder="01 Jan 2023 - 05 Jan 2023"
+                                        onclick="toggleDatePicker()">
+                                    <button class="calenderIcon" onclick="toggleDatePicker()">
+                                        <i class="fa-regular fa-calendar"></i>
+                                    </button>
+                                    <div class="date-picker" id="datePicker">
+                                        From: <input type="date" id="fromDate"> To: <input type="date" id="toDate">
+                                        <button id="applyButton">Apply</button>
+                                    </div>
+                                </div>
+            
+                            </div>
+                               <!-- charge select area -->
+                            <div class="person-info-item report-head-item">
+                             
+                                <div class="info-input-box">
+                                    <span class="infolabel itemselect">Charge Type </span>
+                                    
+                                    <input type="text" placeholder="Select Charge Type" class="selectbox">
+                                    <div class="downarrowbtn">
+                                        <i class="fa-solid fa-angle-up"></i>
+                                    </div>
+                                    <ul class="select-manu">
+                                        <li>Tax</li>
+                                        <li>VAT</li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                            <!-- room select area -->
+                            <div class="person-info-item report-head-item">
+                                
+                                <div class="info-input-box">
+                                    <span class="infolabel itemselect">Room Type </span>
+                                    
+                                    <input type="text" placeholder="Select room Type" class="selectbox">
+                                    <div class="downarrowbtn">
+                                        <i class="fa-solid fa-angle-up"></i>
+                                    </div>
+                                    <ul class="select-manu">
+                                        <li>single</li>
+                                        <li>delux</li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                          <!-- search button -->
+                            <div class="search-button">
+                                <button>search</button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="search-button">
-                    <button>search</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- reservation search results table area start -->
-    <div class="reservation-results-header">
-        <div class="container-fluid">
-            <div class="reservation-results-header-main-area">
-                <h1>8 Reservations found</h1>
-                <div class="search-results-filter-area">
-                    <div class="filter-item">
-                        <button class="filterBtn">
-                            Export
-                        </button>
+            <!-- revenue report table start -->
+            <div class="reservation-search-results-table-area">
+        
+                
+                    <div class="reservation-search-results-table-main-area">
+                        <div class="resevation-table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Revenue</th>
+                                        <th>Actual Today</th>
+                                        <th>Adjusted</th>
+                                        <th>Net Today</th>
+                                        <th>M-T-D</th>
+                                        <th>LY-M-T-D</th>
+                                        <th>Variance</th>
+                                        <th>Y-T-D</th>
+                                        <th>LY-T-D</th>
+                                        <th>LY-T-D</th>
+        
+        
+        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional room revenue</td>
+                                        <td>$4,514.70</td>
+                                        <td>-$3.89</td>
+                                        <td>$4,510.81</td>
+                                        <td>$119,223.90</td>
+                                        <td>$129,077.78</td>
+                                        <td>-$9,853.88</td>
+                                        <td>$246,769.88</td>
+                                        <td>$709,391.65</td>
+                                        <td>-$462,621.77</td>
+                                    </tr>
+                                    
+        
+        
+        
+        
+        
+                                </tbody>
+                            </table>
+        
+        
+                        </div>
+        
+        
                     </div>
-                    <div class="filter-item">
-                        <button id="newReservation">+ New Reservations</button>
-                    </div>
-
-                </div>
+               
             </div>
+             <!-- revenue report table end -->
+             <div class="page-change-and-print-area">
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+             </div>
+        </div>
         </div>
     </div>
-    <div class="reservation-search-results-table-area">
-        <div class="container-fluid">
-            <div class="reservation-search-results-table-main-area">
-                <div class="resevation-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Booking ID</th>
-                                <th>Guest Name</th>
-                                <th>Occupants</th>
-                                <th>Date</th>
-                                <th>Rooms</th>
-                                <th>Amount</th>
-                                <th>Amount Remaining</th>
-                                <th>Invoice Number</th>
-
-
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-                            <tr>
-                                <td>#AB21B8</td>
-                                <td>Mr. Kumar, Pritam</td>
-                                <td>2 Adults, 0 Kid</td>
-                                <td>01 Jan - 05 Jan 2023</td>
-                                <td>Deluxe Room, 123</td>
-                                <td>$000.00</td>
-                                <td>-$00.00</td>
-                                <td>INV.00000</td>
-                            </tr>
-
-
-
-
-
-                        </tbody>
-                    </table>
-
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
+    
     <!-- reservation search results table area end -->
     <!-- main area end -->
     <footer id="footer">
