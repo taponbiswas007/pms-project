@@ -207,7 +207,7 @@
 
                         .booking-details-room-item {
                             width: 247px;
-                            height: 200px;
+                            height: 206px;
                             background: $white;
                             border: 1px solid rgba(220, 220, 220, 0.46);
                             padding: 20px;
@@ -287,9 +287,142 @@
                                     }
 
                                     ul {
-                                        width: 40%;
+                                        width: 50%;
+                                        
 
                                         li {
+                                            text-align: start;
+                                            font-size: 12px;
+                                            font-family: $roboto;
+                                            font-weight: 400;
+                                            text-align: left;
+
+                                            &:nth-child(1) {
+                                                color: #7D7D7D;
+                                                margin-bottom: 2px;
+                                            }
+
+                                            &:nth-child(2) {
+                                                color: #003087;
+                                                text-decoration: underline;
+                                            }
+                                        }
+
+                                        &:last-child {
+                                            li {
+                                                text-align: end;
+                                                &:last-child {
+                                                    color: #000; 
+                                                    font-family: $roboto;
+                                                    font-size: 12.42px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: normal;
+                                                    text-decoration: none;
+                                                   
+                                                }
+                                            }
+                                        }
+                                      
+                                        .person-info-item {
+                                            .info-input-box {
+                                                height: 23px;
+                                                width: 100%;
+                                                border: 1px solid #D0D5DD;
+                                                position: relative;
+                
+                                                input {
+                                                    color: $black;
+                                                    font-family: $roboto;
+                                                    font-size: 13px;
+                                                    font-weight: 400;
+                                                    text-align: left;
+                                                    width: 100%;
+                                                    background: none;
+                                                    border: none;
+                
+                                                    &:focus {
+                                                        outline: none;
+                                                    }
+                                                }
+                
+                                                .inputnumberbox {
+                                                    -moz-appearance: textfield;
+                                                }
+                
+                                                .numbercode {
+                                                    width: 44px !important;
+                                                }
+                
+                
+                
+                                                .gender-select {
+                                                    width: 100%;
+                                                }
+                
+                                                .selectbox {
+                                                    text-transform: capitalize;
+                                                    font-size: 10px;
+                                                    font-family: $roboto;
+                                                    color: $black;
+                                                    cursor: pointer;
+                                                }
+                
+                                                .downarrowbtn {
+                                                    position: absolute;
+                                                    right: 7px;
+                                                    color: $black;
+                                                    font-size: 15px;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                
+                
+                                                }
+                
+                                                .select-manu {
+                                                    position: absolute;
+                                                    top: 110%;
+                                                    left: 0;
+                                                    width: 100px;
+                                                    background: $white;
+                                                    text-transform: uppercase;
+                                                    font-size: 13px;
+                                                    font-family: $roboto;
+                                                    color: $black;
+                                                    font-weight: 400;
+                                                    border-radius: 8px;
+                                                    padding: 10px;
+                                                    z-index: 2;
+                                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                                                    display: none;
+                
+                                                    li {
+                                                        margin-bottom: 10px;
+                                                        width: 100%;
+                                                        padding: 10px;
+                                                        transition: .3s;
+                                                        cursor: pointer;
+                
+                                                        &:hover {
+                                                            background: $blue;
+                                                            color: $white;
+                
+                                                        }
+                                                    }
+                
+                                                }
+                
+                
+                
+                                            }
+                
+                
+                
+                                        }
+                                    }
+                                    .bookingnumber{
+                                        li{
+                                            text-align: start !important;
                                             font-size: 12px;
                                             font-family: $roboto;
                                             font-weight: 400;
@@ -301,24 +434,15 @@
                                             }
 
                                             &:last-child {
-                                                color: #003087;
-                                                text-decoration: underline;
+                                                color: #003087 !important;
+                                                text-decoration: underline !important;
                                             }
                                         }
-
-                                        &:last-child {
-                                            li {
-                                                &:last-child {
-                                                    color: #000;
-                                                    font-family: $roboto;
-                                                    font-size: 12.42px;
-                                                    font-style: normal;
-                                                    font-weight: 400;
-                                                    line-height: normal;
-                                                    text-decoration: none;
-                                                }
-                                            }
-                                        }
+                                    }
+                                }
+                                .selet-rooms{
+                                    p{
+                                        margin-bottom: -14px;
                                     }
                                 }
 
@@ -382,6 +506,10 @@
                                         color: $white;
                                         background: #003087;
                                         padding: 5px;
+                                    }
+                                    .checkout{
+                                        background: #ED3131;
+                                        color: $white;
                                     }
                                 }
                             }
