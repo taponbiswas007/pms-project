@@ -1,0 +1,368 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.checkin-vertical-header {
+    margin: 15px 7px 0 7px;
+}
+
+.vertical-check-in-main-wrapper {
+    .verical-check-in-content {
+        .vertical-content-item {
+            padding: 17px;
+            width: 344px;
+            border-radius: 6.874px;
+            background: #FFF;
+
+            .vertcal-contenti-item-main-area {
+
+                .vertical-content-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h1 {
+                        color: #333;
+                        font-family: $poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+
+                    .right-side {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        column-gap: 10px;
+
+                        button {
+                            color: #FFF;
+                            font-family: "DM Sans";
+                            font-size: 11.84px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 14.759px;
+                            /* 124.657% */
+                            border-radius: 4.92px;
+                            border: 0.615px solid #000;
+                            background: #202020;
+                            text-transform: capitalize;
+                            padding: 5px;
+                        }
+
+                        .searchbtn {
+                            background: none;
+                            border: none;
+                            color: #bdbdbd;
+                            font-size: 20px
+                        }
+
+                        .person-info-item {
+                            .info-input-box {
+                                height: 28px;
+                                width: 86px;
+                                border: 2px solid #D0D5DD;
+                                position: relative;
+
+                                input {
+                                    color: $black;
+                                    font-family: $roboto;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    text-align: left;
+                                    width: 100%;
+                                    background: none;
+                                    border: none;
+
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+
+                                .inputnumberbox {
+                                    -moz-appearance: textfield;
+                                }
+
+                                .numbercode {
+                                    width: 44px !important;
+                                }
+
+
+
+                                .gender-select {
+                                    width: 100%;
+                                }
+
+                                .selectbox {
+                                    text-transform: capitalize;
+                                    font-size: 10px;
+                                    font-family: $roboto;
+                                    color: $black;
+                                    cursor: pointer;
+                                }
+
+                                .downarrowbtn {
+                                    position: absolute;
+                                    right: 7px;
+                                    color: $black;
+                                    font-size: 15px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+
+
+                                }
+
+                                .select-manu {
+                                    position: absolute;
+                                    top: 110%;
+                                    left: 0;
+                                    right: 0;
+                                    background: $white;
+                                    text-transform: uppercase;
+                                    font-size: 13px;
+                                    font-family: $roboto;
+                                    color: $black;
+                                    font-weight: 400;
+                                    border-radius: 8px;
+                                    padding: 10px;
+                                    z-index: 2;
+                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                                    display: none;
+
+                                    li {
+                                        margin-bottom: 10px;
+                                        width: 100%;
+                                        padding: 10px;
+                                        transition: .3s;
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            background: $blue;
+                                            color: $white;
+
+                                        }
+                                    }
+
+                                }
+
+
+
+                            }
+
+
+
+                        }
+                    }
+                }
+
+                .vertical-content-body {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    overflow-y: auto;
+                    height: 200px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 5px;
+                        border-radius: 5px;
+                        height: 100%;
+
+                        background-color: #ccc;
+
+                        z-index: 1;
+
+                    }
+
+                    .reservation-item {
+
+                        .booking-details-room-item {
+                            width: 247px;
+                            height: 206px;
+                            background: $white;
+                            border: 1px solid rgba(220, 220, 220, 0.46);
+                            padding: 20px;
+                            border-radius: 6px;
+                            position: relative;
+
+                            .active-icon {
+                                position: absolute;
+                                top: 5px;
+                                right: 5px;
+                                color: #49C14E;
+                                font-size: 10px;
+                            }
+
+                            .booking-details-room-main-area {
+
+                                .checkinroom-details-header {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-bottom: 15px;
+
+                                    .checkin-room-type {
+
+
+                                        h1 {
+                                            color: #000;
+                                            font-family: $roboto;
+                                            font-size: 18.969px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: normal;
+
+                                        }
+                                    }
+
+                                    .right-side {
+                                        ul {
+                                            li {
+                                                display: inline-block;
+                                                color: #0C0C0C;
+                                                font-family: $roboto;
+                                                font-size: 12px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: normal;
+
+                                                &:last-child {
+                                                    color: #7D7D7D;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+
+
+                                .booking-number-time {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-top: 20px;
+
+                                    p {
+                                        color: rgba(0, 48, 135, 0.85);
+                                        font-family: $roboto;
+                                        font-size: 11.994px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        border-radius: 0.97px;
+                                        background: rgba(0, 48, 135, 0.12);
+                                        padding: 5px;
+
+                                    }
+
+                                    ul {
+                                        width: 40%;
+
+                                        li {
+                                            font-size: 12px;
+                                            font-family: $roboto;
+                                            font-weight: 400;
+                                            text-align: left;
+
+                                            &:first-child {
+                                                color: #7D7D7D;
+                                                margin-bottom: 2px;
+                                            }
+
+                                            &:last-child {
+                                                color: #003087;
+                                                text-decoration: underline;
+                                            }
+                                        }
+
+                                        &:last-child {
+                                            li {
+                                                &:last-child {
+                                                    color: #000;
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .booking-date-footer {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-top: 20px;
+
+
+                                    ul {
+                                        li {
+                                            font-size: 12px;
+                                            font-family: $roboto;
+                                            font-weight: 400;
+
+                                            &:first-child {
+                                                color: #7D7D7D;
+                                                margin-bottom: 2px;
+                                            }
+
+                                            &:last-child {
+                                                color: #000000;
+                                            }
+                                        }
+
+                                        &:last-child {
+                                            li {
+                                                display: inline-block;
+
+                                                &:first-child {
+                                                    color: $black;
+                                                    font-size: 20px;
+                                                }
+
+                                                &:last-child {
+                                                    
+                                                    
+                                                }
+                                                button{
+                                                    border-radius: 2.178px;
+                                                    background: #FFB6B6;
+                                                    padding: 3px 7px;
+                                                    .xroundmark {
+                                                        border: 2px solid;
+                                                        color: rgb(190, 4, 4);
+                                                        border-radius: 50%;
+                                                        padding: 2px 3px;
+                                                        font-size: 10px;
+                                                    }
+                                                 }
+                                         
+                                            }
+                                        }
+                                    }
+
+                                    button {
+                                        font-size: 12px;
+                                        font-family: $roboto;
+                                        font-weight: 400;
+                                        color: $white;
+                                        background: #003087;
+                                        padding: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

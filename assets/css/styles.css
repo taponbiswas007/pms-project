@@ -5547,6 +5547,321 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
             align-items: center;
   }
 }
+.checkin-vertical-header {
+  margin: 15px 7px 0 7px;
+}
+
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item {
+  padding: 17px;
+  width: 344px;
+  border-radius: 6.874px;
+  background: #FFF;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header h1 {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side button {
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 11.84px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14.759px;
+  /* 124.657% */
+  border-radius: 4.92px;
+  border: 0.615px solid #000;
+  background: #202020;
+  text-transform: capitalize;
+  padding: 5px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .searchbtn {
+  background: none;
+  border: none;
+  color: #bdbdbd;
+  font-size: 20px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box {
+  height: 28px;
+  width: 86px;
+  border: 2px solid #D0D5DD;
+  position: relative;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box input {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box input:focus {
+  outline: none;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .numbercode {
+  width: 44px !important;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .gender-select {
+  width: 100%;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .selectbox {
+  text-transform: capitalize;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .downarrowbtn {
+  position: absolute;
+  right: 7px;
+  color: #000000;
+  font-size: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .select-manu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .select-manu li {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .person-info-item .info-input-box .select-manu li:hover {
+  background: #01286D;
+  color: #ffffff;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  overflow-y: auto;
+  height: 200px;
+  position: relative;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  border-radius: 5px;
+  height: 100%;
+  background-color: #ccc;
+  z-index: 1;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item {
+  width: 247px;
+  height: 206px;
+  background: #ffffff;
+  border: 1px solid rgba(220, 220, 220, 0.46);
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .active-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #49C14E;
+  font-size: 10px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type h1 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18.969px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .right-side ul li {
+  display: inline-block;
+  color: #0C0C0C;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .right-side ul li:last-child {
+  color: #7D7D7D;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time p {
+  color: rgba(0, 48, 135, 0.85);
+  font-family: "Roboto", sans-serif;
+  font-size: 11.994px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.97px;
+  background: rgba(0, 48, 135, 0.12);
+  padding: 5px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time ul {
+  width: 40%;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time ul li {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time ul li:first-child {
+  color: #7D7D7D;
+  margin-bottom: 2px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time ul li:last-child {
+  color: #003087;
+  text-decoration: underline;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time ul:last-child li:last-child {
+  color: #000;
+  text-decoration: none;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li:first-child {
+  color: #7D7D7D;
+  margin-bottom: 2px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li:last-child {
+  color: #000000;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul:last-child li {
+  display: inline-block;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul:last-child li:first-child {
+  color: #000000;
+  font-size: 20px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul:last-child li button {
+  border-radius: 2.178px;
+  background: #FFB6B6;
+  padding: 3px 7px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul:last-child li button .xroundmark {
+  border: 2px solid;
+  color: rgb(190, 4, 4);
+  border-radius: 50%;
+  padding: 2px 3px;
+  font-size: 10px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer button {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background: #003087;
+  padding: 5px;
+}
+
 header {
   position: sticky;
   top: 0;

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main styles sheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="p-bottom">
+    <!-- header area start -->
+    <header>
+        <div class="top-header">
+            <div class="container-fluid">
+                <div class="top-header-main-area">
+                    <div class="logo-area">
+                        <a href="#" class="logo">
+                            <img src="assets/images/Bed.svg" alt="logo">
+                        </a>
+                        <h1>PMS UX/UI</h1>
+                    </div>
+                    <!-- <div class="top-header-right">
+                        <div class="search-data-input">
+                            <input type="search" placeholder="Search for Name, Phone, Guest ID" class="popupinput">
+                        </div>
+                        <button class="headersearchBtn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="user-logo" id="profile">
+                            <span>D</span>
+                            <div class="profile-logout-form" id="profileOption">
+                                <button> <i class="fa-regular fa-user"></i> Profile</button>
+                                <button> <i class="fa-solid fa-arrow-right-from-bracket"></i> logout</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    <button class="toggle-bar">
+                        <i class="fa-solid fa-bars bars"></i>
+                        <i class="fa-solid fa-x close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container-fluid">
+                <div class="bottom-header-main-area">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="front-desk-dashboard.html">Dashboard</a></li>
+                            <li><a href="frontdeskreservation.html">Reservation</a></li>
+                            <li class="revenue-report-all-item"><a class="opendropdown">Check-in <span><i
+                                            class="fa-solid fa-angle-down dropdown-icon"></i></span></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Revenue report</a></li>
+                                    <li><a href="#">tax report</a></li>
+                                    <li><a href="#">property charges report</a></li>
+                                    <li><a href="#">room statistics report</a></li>
+                                    <li><a href="#">payment report</a></li>
+                                    <li><a href="#">deposite information report</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="checkout.html">Check-out</a></li>
+                            <li><a href="housekeeping.html">Housekeeping</a></li>
+                            <li class="revenue-report-all-item"><a class="opendropdown">Reports <span><i
+                                            class="fa-solid fa-angle-down dropdown-icon"></i></span></a>
+                                <ul class="submenu">
+                                    <li><a href="revenue-report.html">Revenue report</a></li>
+                                    <li><a href="tax-report.html">tax report</a></li>
+                                    <li><a href="property-charges-report.html">property charges report</a></li>
+                                    <li><a href="room-statistics-report.html">room statistics report</a></li>
+                                    <li><a href="payment-report.html">payment report</a></li>
+                                    <li><a href="deposite-information-report.html">deposite information report</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- main area start -->
+    <div class="checkin-vertical-header">
+        <div class="container-fluid">
+            <div class="resevation-page-search-area">
+
+                <div class="reservation-page-search-main-area">
+                    <div class="search-data-input-item">
+                        <h1>Guest Name</h1>
+                        <input type="text" placeholder="Search name">
+                    </div>
+                    <div class="search-data-input-item">
+                        <h1>Driving License</h1>
+                        <input type="text" placeholder="#00000">
+                    </div>
+                    <div class="search-data-input-item">
+                        <h1>Mobile number</h1>
+                        <input type="text" placeholder="Mo. number">
+                    </div>
+                    <div class="search-data-input-item">
+                        <h1>Stays Date</h1>
+                        <div class="date-input-area">
+                            <input type="text" class="date-input" id="mainDateInput"
+                                placeholder="01 Jan 2023 - 05 Jan 2023" onclick="toggleDatePicker()">
+                            <button class="calenderIcon" onclick="toggleDatePicker()">
+                                <i class="fa-regular fa-calendar"></i>
+                            </button>
+                            <div class="date-picker" id="datePicker">
+                                From: <input type="date" id="fromDate"> To: <input type="date" id="toDate">
+                                <button id="applyButton">Apply</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="search-button">
+                        <button>search</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="vertical-check-in-main-wrapper">
+        <div class="container-fluid">
+            <div class="verical-check-in-content">
+                <div class="vertical-content-item">
+                    <div class="vertcal-contenti-item-main-area">
+                        <!-- vertical content header start -->
+                        <div class="vertical-content-header">
+                            <h1>Reservation</h1>
+                            <div class="right-side">
+                                <button>new</button>
+                                <div class="person-info-item">
+
+                                    <div class="info-input-box">
+
+                                        <input type="text" placeholder="Select day" class="selectbox">
+                                        <div class="downarrowbtn">
+                                            <i class="fa-solid fa-angle-up"></i>
+                                        </div>
+                                        <ul class="select-manu">
+                                            <li>Today</li>
+                                            <li>Todays</li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <button class="searchbtn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- vertical content body start -->
+                        <div class="vertical-content-body">
+                            <div class="reservation-item">
+                                <div class="booking-details-room-item">
+                                    <div class="active-icon">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> Jack</h1>
+                                            </div>
+                                            <div class="right-side">
+                                                <ul>
+                                                    <li>DOR:</li>
+                                                    <li>23rd Apr 2024</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Booking No.</li>
+                                                <li>#AB21B8</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Occupants</li>
+                                                <li>2 Adults, 2 Kid</li>
+                                            </ul>
+                                        </div>
+                                        <div class="booking-number-time">
+                                            <p> Executive Suite</p>
+                                            <ul>
+                                                <li>Booking Via</li>
+                                                <li><i class="fa-solid fa-person-walking"></i>Walking</li>
+                                            </ul>
+                                        </div>
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Date</li>
+                                                <li>20 Apr - 23 Apr 2024</li>
+                                            </ul>
+                                            <ul>
+                                                <li><i class="fa-solid fa-dollar-sign"></i></li>
+                                                <li><button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- main area end -->
+
+
+
+    <!-- font awesome js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- main js link -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
