@@ -5337,8 +5337,24 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(3) {
   min-width: 190px;
 }
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(3) ul {
+  cursor: pointer;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(3) ul li {
+  display: inline-block;
+  color: #074996;
+  margin-right: 7px;
+  font-weight: 700;
+  font-size: 15px;
+}
 .paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(4) {
   min-width: 190px;
+}
+.paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(4) span {
+  background: #A5FF96;
+  padding: 3px 8px;
+  color: #202020;
+  text-align: center;
 }
 .paymentreport-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(5) {
   min-width: 190px;

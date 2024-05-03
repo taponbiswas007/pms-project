@@ -63,7 +63,7 @@
                     <nav class="navbar">
                         <ul>
                             <li><a href="front-desk-dashboard.html">Dashboard</a></li>
-                            <li><a  href="frontdeskreservation.html">Reservation</a></li>
+                            <li><a href="frontdeskreservation.html">Reservation</a></li>
                             <li class="revenue-report-all-item"><a class="opendropdown">Check-in <span><i
                                             class="fa-solid fa-angle-down dropdown-icon"></i></span></a>
                                 <ul class="submenu">
@@ -108,7 +108,7 @@
                     <li>/</li>
                     <li>Reports</li>
                     <li>/</li>
-                    <li> Payments Report</li>
+                    <li> Deposit Information Report</li>
                 </ul>
             </div>
         </div>
@@ -119,7 +119,7 @@
     <div class="paymentreport-wrapper">
         <div class="container-fluid">
             <div class="report-main-area">
-                <h1>Payments Report</h1>
+                <h1>Deposit Information Report</h1>
                 <hr>
                 <div class="resevation-page-search-area">
                     <div class="container-fluid">
@@ -146,34 +146,16 @@
                                 </div>
 
                             </div>
-                            <!-- Payment method select area -->
-                           
+
+                            <!-- Customer id area -->
+
                             <div class="person-info-item report-head-item">
 
                                 <div class="info-input-box">
-                                    <span class="infolabel itemselect">Payment Metho </span>
+                                    <span class="infolabel itemselect">Customer ID</span>
 
-                                    <input type="text" placeholder="Select Payment Method" class="selectbox">
-                                    <div class="downarrowbtn">
-                                        <i class="fa-solid fa-angle-up"></i>
-                                    </div>
-                                    <ul class="select-manu">
-                                        <li>cash</li>
-                                        <li>card</li>
-                                    </ul>
+                                    <input type="text" placeholder=" Enter Customer ID">
 
-
-                                </div>
-                            </div>
-                            <!-- Transaction Type area -->
-                           
-                            <div class="person-info-item report-head-item">
-
-                                <div class="info-input-box">
-                                    <span class="infolabel itemselect">Transaction Type</span>
-
-                                    <input type="text" placeholder=" Enter Transaction Type" >
-                                   
 
 
                                 </div>
@@ -194,14 +176,14 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Reservation No.</th>
-                                        <th>Guest Name</th>
-                                        <th>Payment Date</th>
-                                        <th>Payment Method</th>
-                                        <th>Transaction Type</th>
+                                        <th>Customer ID</th>
+                                        <th>Deposit Date</th>
                                         <th>Description</th>
-                                        <th>Total</th>
-                                       
+                                        <th>Status</th>
+                                        <th>Withdrawal</th>
+                                        <th>Deposit</th>
+                                        <th>Total Balance</th>
+
 
 
 
@@ -210,156 +192,186 @@
                                 <tbody>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
                                     <tr>
                                         <td>#AB21B8</td>
-                                        <td>Mr. Kumar, Pritam</td>
                                         <td>23 april 2024</td>
-                                        <td>Cash</td>
-                                        <td>Payment</td>
                                         <td>
                                             <ul>
                                                 <li><i class="fa-solid fa-pen"></i></li>
                                                 <li> Description..</li>
                                             </ul>
-                                           </td>
+                                        </td>
+                                        <td>
+                                            <span>Settled</span>
+                                        </td>
+                                        <td>$ 100</td>
                                         <td>$ 1,095</td>
-                                        
+
+                                        <td>$ 1,095</td>
+
                                     </tr>
-                                    
-                                    
+
+
 
 
 
@@ -400,13 +412,13 @@
         </div>
     </div>
 
-    
+
     <!-- main area end -->
-    
 
 
-    
-    
+
+
+
     <!-- font awesome js link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
         integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="

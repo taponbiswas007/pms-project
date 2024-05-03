@@ -1,5 +1,6 @@
 @import '../utils/mixins';
 @import '../utils/variables';
+
 .paymentreport-wrapper {
     .report-main-area {
         background: $white;
@@ -228,7 +229,7 @@
                                         min-width: 190px;
                                     }
 
-                                  
+
                                 }
                             }
                         }
@@ -248,10 +249,32 @@
 
                                     &:nth-child(3) {
                                         min-width: 190px;
+
+                                        ul {
+                                            cursor: pointer;
+
+                                            li {
+                                                display: inline-block;
+                                                color: #074996;
+                                                margin-right: 7px;
+                                                font-weight: 700;
+                                                font-size: 15px;
+
+                                            }
+                                        }
                                     }
 
                                     &:nth-child(4) {
                                         min-width: 190px;
+
+                                        span {
+                                            background: #A5FF96;
+                                          
+                                            padding: 3px 8px;
+                                            color: #202020;
+
+                                            text-align: center;
+                                        }
                                     }
 
                                     &:nth-child(5) {
@@ -260,15 +283,17 @@
 
                                     &:nth-child(6) {
                                         min-width: 190px;
-                                        ul{
+
+                                        ul {
                                             cursor: pointer;
-                                            li{
+
+                                            li {
                                                 display: inline-block;
                                                 color: #074996;
                                                 margin-right: 7px;
                                                 font-weight: 700;
                                                 font-size: 15px;
-                                                
+
                                             }
                                         }
                                     }
@@ -292,6 +317,7 @@
             align-items: center;
             flex-wrap: wrap;
             row-gap: 20px;
+
             .left-side {
                 display: flex;
                 column-gap: 7px;
@@ -353,10 +379,11 @@
                 row-gap: 20px;
                 justify-content: flex-end;
                 align-items: center;
+
                 button {
                     padding: 8px 12px;
                     border-radius: 3px;
-                   margin-left: 20px;
+                    margin-left: 20px;
                     color: #FFF;
                     font-family: $dmSans;
                     font-size: 16px;
@@ -364,20 +391,24 @@
                     font-weight: 700;
                     line-height: 24px;
                     transition: .3s;
-                  
-                    &:nth-child(1){
+
+                    &:nth-child(1) {
                         background: #000;
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         background: #009432;
                     }
-                    .ps-icon{
+
+                    .ps-icon {
                         margin-right: 10px;
                     }
-                    .replayicon{
+
+                    .replayicon {
                         transform: scaleX(-1);
                     }
-                    &:hover{
+
+                    &:hover {
                         background: $blue;
                     }
                 }
@@ -385,8 +416,9 @@
         }
     }
 }
+
 @media screen and (max-width: 992px) {
-   
+
 
     .paymentreport-wrapper {
         .report-main-area {
@@ -459,11 +491,11 @@
 }
 
 @media screen and (max-width: 540px) {
-   
-    .paymentreport-wrapper{
-        .report-main-area{
-            .page-change-and-print-area{
-                .left-side{
+
+    .paymentreport-wrapper {
+        .report-main-area {
+            .page-change-and-print-area {
+                .left-side {
                     flex-direction: column;
                     row-gap: 20px;
                     justify-content: center;
@@ -473,5 +505,3 @@
         }
     }
 }
-
-
