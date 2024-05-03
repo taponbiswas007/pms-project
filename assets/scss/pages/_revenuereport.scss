@@ -100,7 +100,8 @@ header {
             line-height: normal;
             margin-bottom: 15px;
         }
-        hr{
+
+        hr {
             height: 1px;
             background: #D8D8D8;
         }
@@ -118,39 +119,47 @@ header {
                 row-gap: 20px;
                 flex-wrap: wrap;
                 padding-bottom: 20px;
-                .report-head-item{
-                    &:nth-child(1){
+
+                .report-head-item {
+                    &:nth-child(1) {
                         width: 120px;
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         width: 25%;
                     }
-                    &:nth-child(3){
+
+                    &:nth-child(3) {
                         width: 25%;
                     }
-                    &:nth-child(4){
+
+                    &:nth-child(4) {
                         width: 25%;
                     }
-                    &:nth-child(5){
+
+                    &:nth-child(5) {
                         width: 120px;
                     }
                 }
-                .search-button{
+
+                .search-button {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     column-gap: 10px;
                     row-gap: 20px;
                     flex-wrap: wrap;
-                    button{
+
+                    button {
                         margin-top: 0;
                         margin-left: 0;
                         padding: 12px 12px;
                         font-size: 23px;
-                       
-                        
+
+
                     }
                 }
+
                 .person-info-item {
                     .info-input-box {
                         @include dataInputboxStyle;
@@ -268,86 +277,206 @@ header {
                 }
             }
         }
-        .reservation-search-results-table-area{
-            .reservation-search-results-table-main-area{
-              .resevation-table-container{
-                table{
-                    thead{
-                        tr{
-                            th{
-                               
-                                &:nth-child(1){
-                                    min-width: 200px;
-                                }
-                                &:nth-child(2){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(3){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(4){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(5){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(6){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(7){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(8){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(9){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(10){
-                                    min-width: 120px;
+
+        .reservation-search-results-table-area {
+            .reservation-search-results-table-main-area {
+                .resevation-table-container {
+                    table {
+                        thead {
+                            tr {
+                                th {
+
+                                    &:nth-child(1) {
+                                        min-width: 200px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(3) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(4) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(5) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(6) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(7) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(8) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(9) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(10) {
+                                        min-width: 120px;
+                                    }
                                 }
                             }
                         }
-                    }
-                    tbody{
-                        tr{
-                            td{
-                                border: none;
-                                &:nth-child(1){
-                                    min-width: 200px;
-                                }
-                                &:nth-child(2){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(3){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(4){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(5){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(6){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(7){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(8){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(9){
-                                    min-width: 120px;
-                                }
-                                &:nth-child(10){
-                                    min-width: 120px;
+
+                        tbody {
+                            tr {
+                                td {
+                                    border: none;
+
+                                    &:nth-child(1) {
+                                        min-width: 200px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(3) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(4) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(5) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(6) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(7) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(8) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(9) {
+                                        min-width: 120px;
+                                    }
+
+                                    &:nth-child(10) {
+                                        min-width: 120px;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-              }  
+            }
+        }
+
+        .page-change-and-print-area {
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            .left-side {
+                display: flex;
+                column-gap: 7px;
+
+                button {
+                    background: $blue;
+                    color: $white;
+                    border-radius: 5px;
+                    padding: 9px 12px;
+                    transition: .3s;
+
+                    &:hover {
+                        background: $simpleblack;
+                    }
+
+                    .angleicon {
+                        border: 2px solid $white;
+                        border-radius: 50%;
+                        padding: 2px 5px;
+                    }
+                }
+
+                .numberofpagearea {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        color: #000;
+                        text-align: center;
+                        font-family: $inter;
+                        font-size: 13.561px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        border-radius: 3.077px 0px 0px 3.077px;
+                        display: block;
+                        padding: 12px 19px;
+                        background: #EFEFEF;
+                        text-transform: capitalize;
+
+                        &:nth-child(2) {
+                            background: none;
+                            border: 1px solid #EFEFEF;
+                            border-radius: none;
+                            width: 150px;
+                            padding: 11px 19px;
+                        }
+
+                        &:nth-child(3) {
+                            border-radius: 0px 3.077px 3.077px 0px;
+                        }
+                    }
+                }
+            }
+
+            .right-side {
+                display: flex;
+                row-gap: 20px;
+                justify-content: flex-end;
+                align-items: center;
+                button {
+                    padding: 8px 12px;
+                    border-radius: 3px;
+                   margin-left: 20px;
+                    color: #FFF;
+                    font-family: $dmSans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px;
+                    transition: .3s;
+                  
+                    &:nth-child(1){
+                        background: #000;
+                    }
+                    &:nth-child(2){
+                        background: #009432;
+                    }
+                    .ps-icon{
+                        margin-right: 10px;
+                    }
+                    .replayicon{
+                        transform: scaleX(-1);
+                    }
+                    &:hover{
+                        background: $blue;
+                    }
+                }
             }
         }
     }
@@ -375,65 +504,77 @@ header {
             }
         }
     }
-    .report-wrapper{
-        .report-main-area{
-           .resevation-page-search-area{
-            .reservation-page-search-main-area{
-                .report-head-item{
-                    &:nth-child(1){
-                      
-                        flex-shrink: 0;
-                    }
-                    &:nth-child(2){
-                        
-                        width: 23%;
-                    }
-                    &:nth-child(3){
-                        width: 23%;
-                    }
-                    &:nth-child(4){
-                        width: 23%;
-                    }
-                    &:nth-child(5){
-                      
-                        flex-shrink: 0;
-                    }
-                }
-            }
-           } 
-        }
-    }
-}
-@media screen and (max-width: 768px){
-    .report-wrapper{
-        .report-main-area{
-           .resevation-page-search-area{
-            .reservation-page-search-main-area{
-                .search-button{
-                    justify-content: flex-start;
-                }
-                .report-head-item{
-                    &:nth-child(1){
-                      width: 100%;
-                    }
-                    &:nth-child(2){
-                        width: 100%;
-                    }
-                    &:nth-child(3){
-                        width: 100%;
-                    }
-                    &:nth-child(4){
-                        width: 100%;
-                    }
-                    &:nth-child(5){
-                        width: 100%;
+
+    .report-wrapper {
+        .report-main-area {
+            .resevation-page-search-area {
+                .reservation-page-search-main-area {
+                    .report-head-item {
+                        &:nth-child(1) {
+
+                            flex-shrink: 0;
+                        }
+
+                        &:nth-child(2) {
+
+                            width: 23%;
+                        }
+
+                        &:nth-child(3) {
+                            width: 23%;
+                        }
+
+                        &:nth-child(4) {
+                            width: 23%;
+                        }
+
+                        &:nth-child(5) {
+
+                            flex-shrink: 0;
+                        }
                     }
                 }
             }
-           } 
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .report-wrapper {
+        .report-main-area {
+            .resevation-page-search-area {
+                .reservation-page-search-main-area {
+                    .search-button {
+                        justify-content: flex-start;
+                    }
+
+                    .report-head-item {
+                        &:nth-child(1) {
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            width: 100%;
+                        }
+
+                        &:nth-child(3) {
+                            width: 100%;
+                        }
+
+                        &:nth-child(4) {
+                            width: 100%;
+                        }
+
+                        &:nth-child(5) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 540px) {
     header {
         .bottom-header {
@@ -460,6 +601,18 @@ header {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .report-wrapper{
+        .report-main-area{
+            .page-change-and-print-area{
+                .left-side{
+                    flex-direction: column;
+                    row-gap: 20px;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }

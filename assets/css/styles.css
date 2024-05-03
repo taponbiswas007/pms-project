@@ -4911,6 +4911,121 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .report-wrapper .report-main-area .reservation-search-results-table-area .reservation-search-results-table-main-area .resevation-table-container table tbody tr td:nth-child(10) {
   min-width: 120px;
 }
+.report-wrapper .report-main-area .page-change-and-print-area {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side button {
+  background: #01286D;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 9px 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side button:hover {
+  background: #202020;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side button .angleicon {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea span {
+  color: #000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13.561px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 3.077px 0px 0px 3.077px;
+  display: block;
+  padding: 12px 19px;
+  background: #EFEFEF;
+  text-transform: capitalize;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea span:nth-child(2) {
+  background: none;
+  border: 1px solid #EFEFEF;
+  border-radius: none;
+  width: 150px;
+  padding: 11px 19px;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .left-side .numberofpagearea span:nth-child(3) {
+  border-radius: 0px 3.077px 3.077px 0px;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .right-side button {
+  padding: 8px 12px;
+  border-radius: 3px;
+  margin-left: 20px;
+  color: #FFF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .right-side button:nth-child(1) {
+  background: #000;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .right-side button:nth-child(2) {
+  background: #009432;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .right-side button .ps-icon {
+  margin-right: 10px;
+}
+.report-wrapper .report-main-area .page-change-and-print-area .right-side button .replayicon {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.report-wrapper .report-main-area .page-change-and-print-area .right-side button:hover {
+  background: #01286D;
+}
 
 @media screen and (max-width: 992px) {
   header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul {
@@ -4967,6 +5082,19 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   }
   header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li a {
     font-size: 13px;
+  }
+  .report-wrapper .report-main-area .page-change-and-print-area .left-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (max-width: 420px) {
