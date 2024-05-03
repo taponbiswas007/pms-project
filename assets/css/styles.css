@@ -4640,7 +4640,7 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 }
 header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li a {
   color: #202020;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
@@ -4750,8 +4750,8 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .search-button button {
   margin-top: 0;
   margin-left: 0;
-  padding: 12px 12px;
-  font-size: 23px;
+  padding: 12px 16px;
+  font-size: 15px;
 }
 .report-wrapper .report-main-area .resevation-page-search-area .reservation-page-search-main-area .person-info-item .info-input-box {
   border: 2px solid #202020;
