@@ -87,19 +87,19 @@ img {
 }
 
 .g-color {
-  color: #12B76A;
+  color: #12B76A !important;
 }
 
 .r-color {
-  color: #E3642D;
+  color: #E3642D !important;
 }
 
 .y-color {
-  color: #E3A52D;
+  color: #E3A52D !important;
 }
 
 .gr-color {
-  color: #EBECEE;
+  color: #EBECEE !important;
 }
 
 .mr-both {
@@ -155,13 +155,13 @@ img {
 }
 
 .vacant {
-  background: #49C14E;
-  color: #ffffff;
+  background: #49C14E !important;
+  color: #ffffff !important;
 }
 
 .stayover {
-  background: #4979C1;
-  color: #ffffff;
+  background: #4979C1 !important;
+  color: #ffffff !important;
 }
 
 .p-both {
@@ -4640,18 +4640,17 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 }
 header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li a {
   color: #202020;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  padding: 10px;
 }
 header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li a:hover {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-  display: block;
-  color: aqua;
+  color: #ffffff;
+  background: #01286D;
 }
 
 .reservation-header .revenue-report-header ul li {
@@ -5567,10 +5566,13 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item {
   padding: 17px;
-  width: 344px;
+  min-width: 344px;
   border-radius: 6.874px;
   background: #FFF;
 }
@@ -5619,7 +5621,7 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   border: 0.615px solid #000;
   background: #202020;
   text-transform: capitalize;
-  padding: 5px;
+  padding: 5px 3px;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .searchbtn {
   background: none;
@@ -5745,8 +5747,9 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   scrollbar-track-color: transparent;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item {
-  width: 247px;
-  height: 206px;
+  min-width: 247px;
+  width: 100%;
+  height: 210px;
   background: #ffffff;
   border: 1px solid rgba(220, 220, 220, 0.46);
   padding: 20px;
@@ -5886,7 +5889,7 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   position: absolute;
   right: 7px;
   color: #000000;
-  font-size: 15px;
+  font-size: 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -5936,8 +5939,21 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   color: #003087 !important;
   text-decoration: underline !important;
 }
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time .stayoverbtn {
+  font-family: "Roboto", sans-serif;
+  font-size: 12.005px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 4.8px 9.601px;
+  margin-bottom: -17px;
+}
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .selet-rooms p {
   margin-bottom: -14px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .housekeepingstatus ul li .circle-size {
+  font-size: 10px;
+  margin-right: 7px;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer {
   width: 100%;
@@ -5963,6 +5979,17 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li:last-child {
   color: #000000;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li .edit {
+  color: #12B76A;
+  border-radius: 2.234px;
+  background: #A4FFA7 !important;
+  padding: 5px !important;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li .trash {
+  color: #FF4242;
+  border-radius: 2.234px;
+  padding: 5px !important;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul:last-child li {
   display: inline-block;

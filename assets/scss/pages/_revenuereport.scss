@@ -36,16 +36,17 @@ header {
 
                                 a {
                                     color: $simpleblack;
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     font-weight: 500;
                                     font-family: $roboto;
                                     text-transform: capitalize;
-                                    transition: .3s ease;
-
+                                    transition: .5s ease;
+                                    padding: 10px;
+                                    
                                     &:hover {
-                                        transform: translateX(10px);
-                                        display: block;
-                                        color: aqua;
+                                        
+                                        color: $white;
+                                        background: $blue;
 
                                     }
                                 }
