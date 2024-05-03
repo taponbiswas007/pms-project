@@ -5548,9 +5548,26 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   }
 }
 .checkin-vertical-header {
-  margin: 15px 7px 0 7px;
+  margin-top: 10px;
+}
+.checkin-vertical-header .resevation-page-search-area {
+  margin-bottom: 7px;
 }
 
+.vertical-check-in-main-wrapper .verical-check-in-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item {
   padding: 17px;
   width: 344px;
@@ -5701,23 +5718,35 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
           flex-direction: column;
   row-gap: 20px;
   overflow-y: auto;
-  height: 200px;
+  height: 550px;
   position: relative;
+  scrollbar-width: thin;
+  /* "auto" or "thin" */
+  scrollbar-color: #D9D9D9 transparent;
+  /* For WebKit (Chrome, Safari) */
+  /* For Firefox */
+  /* For Firefox track */
 }
-.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 5px;
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .vertical-content-body::-webkit-scrollbar {
+  width: 9px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .vertical-content-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .vertical-content-body::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
   border-radius: 5px;
-  height: 100%;
-  background-color: #ccc;
-  z-index: 1;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .vertical-content-body {
+  scrollbar-width: thin;
+  scrollbar-color: #D9D9D9 transparent;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .vertical-content-body {
+  scrollbar-track-color: transparent;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item {
   width: 247px;
-  height: 206px;
+  height: 200px;
   background: #ffffff;
   border: 1px solid rgba(220, 220, 220, 0.46);
   padding: 20px;
@@ -5726,8 +5755,8 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .active-icon {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 8px;
+  right: 8px;
   color: #49C14E;
   font-size: 10px;
 }
@@ -5807,6 +5836,11 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time ul:last-child li:last-child {
   color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 12.42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   text-decoration: none;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer {
