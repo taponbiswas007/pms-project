@@ -27,7 +27,7 @@ header {
                             padding: 10px 20px 20px 20px;
                             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                             border-radius: 10px;
-                            z-index: 2;
+                            z-index: 9999999999999999;
                             width: 350px;
                             display: none;
 
@@ -47,6 +47,122 @@ header {
                                         display: block;
                                         color: aqua;
 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    header {
+        .bottom-header {
+            .bottom-header-main-area {
+                .navbar {
+                    ul {
+                        .revenue-report-all-item {
+                            
+    
+                            ul {
+                                left: 100%;
+                               top: 100%;
+                                
+    
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px){
+    header {
+        .bottom-header {
+            .bottom-header-main-area {
+                .navbar {
+                    ul {
+                        .revenue-report-all-item {
+                            
+    
+                            ul {
+                                right: 0;
+                                width: 240px;
+                                
+    
+                                li {
+                                    margin-top: 30px;
+    
+                                    a {
+                                       
+                                        font-size: 13px;
+                                     
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    header {
+        .bottom-header {
+            .bottom-header-main-area {
+                .navbar {
+                    ul {
+                        .revenue-report-all-item {
+                            
+    
+                            ul {
+                                right: 0;
+                                width: 200px;
+                                
+    
+                                li {
+                                    margin-top: 20px;
+    
+                                    a {
+                                       
+                                        font-size: 13px;
+                                     
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 374px){
+    header {
+        .bottom-header {
+            .bottom-header-main-area {
+                .navbar {
+                    ul {
+                        .revenue-report-all-item {
+                            
+    
+                            ul {
+                                right: 0;
+                                width: 150px;
+                                
+    
+                                li {
+                                    margin-top: 10px;
+    
+                                    a {
+                                       
+                                        font-size: 10px;
+                                     
                                     }
                                 }
                             }

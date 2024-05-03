@@ -467,20 +467,20 @@ $(document).ready(function () {
     $(".opendropdown").click(function (event) {
         event.stopPropagation();
         var $submenu = $(this).siblings(".submenu");
+        $submenu.slideToggle();
         var $dropdownIcon = $(this).find('.dropdown-icon');
 
         // Check if the submenu is visible
         if ($submenu.is(":visible")) {
-            $submenu.slideUp();
-            $dropdownIcon.css({ "transform": "rotate(0deg)" }); // Reset rotation
-        } else {
-            $submenu.slideDown();
             $dropdownIcon.css({ "transform": "rotate(180deg)" });
-            // Hide other open submenus
-            $(".submenu").not($submenu).slideUp();
-            // Reset rotation of other dropdown icons
-            $(".dropdown-icon").not($dropdownIcon).css({ "transform": "rotate(0deg)" });
+        } else {
+            $dropdownIcon.css({ "transform": "rotate(0deg)" }); // Reset rotation
         }
+
+        // Hide other open submenus
+        $(".submenu").not($submenu).slideUp();
+        // Reset rotation of other dropdown icons
+        $(".dropdown-icon").not($dropdownIcon).css({ "transform": "rotate(0deg)" });
     });
 
     // Click event for document to close submenu when clicking elsewhere
@@ -497,7 +497,6 @@ $(document).ready(function () {
     $(".submenu").click(function (event) {
         event.stopPropagation();
     });
-
 
 
 
