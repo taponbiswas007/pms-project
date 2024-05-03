@@ -4613,6 +4613,47 @@ footer .footer-area .footer-main-area p {
   font-size: 24px;
 }
 
+header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item {
+  position: relative;
+}
+header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item .opendropdown span {
+  margin-left: 10px;
+}
+header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item .opendropdown span .dropdown-icon {
+  margin-bottom: -4px;
+}
+header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff;
+  padding: 10px 20px 20px 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 2;
+  width: 350px;
+  display: none;
+}
+header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li {
+  margin-top: 30px;
+}
+header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li a {
+  color: #202020;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-item ul li a:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  display: block;
+  color: aqua;
+}
+
 header {
   position: sticky;
   top: 0;

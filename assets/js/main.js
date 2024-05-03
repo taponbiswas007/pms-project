@@ -456,6 +456,50 @@ $(document).ready(function () {
         });
     });
 
+    //sub menu area
+    // Function to close submenu and reset dropdown icon rotation
+    function closeSubmenu() {
+        $(".submenu").slideUp();
+        $(".dropdown-icon").css({ "transform": "rotate(0deg)" });
+    }
+
+    // Click event for opendropdown
+    $(".opendropdown").click(function (event) {
+        event.stopPropagation();
+        var $submenu = $(this).siblings(".submenu");
+        var $dropdownIcon = $(this).find('.dropdown-icon');
+
+        // Check if the submenu is visible
+        if ($submenu.is(":visible")) {
+            $submenu.slideUp();
+            $dropdownIcon.css({ "transform": "rotate(0deg)" }); // Reset rotation
+        } else {
+            $submenu.slideDown();
+            $dropdownIcon.css({ "transform": "rotate(180deg)" });
+            // Hide other open submenus
+            $(".submenu").not($submenu).slideUp();
+            // Reset rotation of other dropdown icons
+            $(".dropdown-icon").not($dropdownIcon).css({ "transform": "rotate(0deg)" });
+        }
+    });
+
+    // Click event for document to close submenu when clicking elsewhere
+    $(document).click(function () {
+        closeSubmenu();
+    });
+
+    // Prevent closing submenu when clicking on opendropdown
+    $(".opendropdown").click(function (event) {
+        event.stopPropagation();
+    });
+
+    // Click event for submenu to prevent closing when clicking on it
+    $(".submenu").click(function (event) {
+        event.stopPropagation();
+    });
+
+
+
 
 });
 document.addEventListener("DOMContentLoaded", function () {
