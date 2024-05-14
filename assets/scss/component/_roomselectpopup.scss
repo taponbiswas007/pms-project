@@ -218,14 +218,15 @@
 
         .available-room-area {
             margin: 0 40px 40px 40px;
-           
-            .available-room-inner-area{
+
+            .available-room-inner-area {
                 display: flex;
                 justify-content: flex-start;
                 column-gap: 10px;
                 row-gap: 10px;
                 align-items: center;
                 flex-wrap: wrap;
+
                 .rooms {
                     width: 154.326px;
                     height: 102.395px;
@@ -234,13 +235,13 @@
                     border: 0.966px solid #C2C2C2;
                     cursor: pointer;
                     box-shadow: inset 6px 0px 0px 0px #5EB6F8, 0px 10.75px 15.91px 0px rgba(0, 0, 0, 0.10), 0px 4.3px 6.45px 0px rgba(0, 0, 0, 0.05);
-    
+
                     background: #FFF;
                     padding: 17px 0 0 12px;
-    
+
                     .rooms-inner {
                         position: relative;
-    
+
                         h1 {
                             color: #292929;
                             font-family: Poppins;
@@ -251,7 +252,7 @@
                             letter-spacing: 0.21px;
                             margin-bottom: 10px;
                         }
-    
+
                         h2 {
                             color: #292929;
                             font-family: Inter;
@@ -261,7 +262,7 @@
                             line-height: 20.19px;
                             /* 150% */
                         }
-    
+
                         .maintanenceicon {
                             position: absolute;
                             top: -2px;
@@ -270,33 +271,41 @@
                         }
                     }
                 }
-                .roomselected{
+
+                .roomselected {
                     background: $blue;
-                    .rooms-inner{
-                        h1{
+
+                    .rooms-inner {
+                        h1 {
                             color: $white !important;
                         }
-                        h2{
+
+                        h2 {
                             color: $white !important;
                         }
                     }
                 }
             }
 
-            
+
         }
-        #groundFloor{
+
+        #groundFloor {
             display: none;
         }
-        #firstFloor{
+
+        #firstFloor {
             display: none;
         }
-        #secondFloor{
+
+        #secondFloor {
             display: none;
         }
-        #thirdFloor{
+
+        #thirdFloor {
             display: none;
         }
+
         .checkin-confirm-button-area {
             display: flex;
             justify-content: flex-end;
@@ -338,18 +347,20 @@
         }
     }
 }
+
 @media screen and (max-width:768px) {
-    .rooms-select-popup{
-        .checkinpopup-main-area{
-            .booking-details-area{
-                ul{
+    .rooms-select-popup {
+        .checkinpopup-main-area {
+            .booking-details-area {
+                ul {
                     flex-wrap: wrap;
                     row-gap: 20px;
                     column-gap: 20px;
-                   
+
                 }
             }
-            .roomchange-area{
+
+            .roomchange-area {
                 flex-wrap: wrap;
                 row-gap: 20px;
             }

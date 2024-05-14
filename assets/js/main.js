@@ -530,31 +530,31 @@ $(document).ready(function () {
         event.stopPropagation();
     });
 
-    //floor select area
-    $(".continuecheckin").click(function(){
+    //floor select area start
+    $(".continuecheckin").click(function () {
         $(".rooms-select-popup").fadeIn();
         $(".overlay").fadeIn();
     });
-    $(".bookingconfirm").click(function(){
+    $(".bookingconfirm").click(function () {
         $(".rooms-select-popup").fadeOut();
         $(".overlay").fadeOut();
     });
-    $('.roomchange-area button').click(function(){
+    $('.roomchange-area button').click(function () {
         $('.roomchange-area button').removeClass('activebtn'); // Remove active class from all buttons
         $(this).addClass('activebtn'); // Add active class to clicked button
     });
-    $('.rooms').click(function() {
+    $('.rooms').click(function () {
         $(this).toggleClass('roomselected');
     });
-    $(".roomchange-area button").click(function() {
+    $(".roomchange-area button").click(function () {
         // Hide all floors
         $(".floor").hide();
-        
+
         // Show the corresponding floor
         var floorId = $(this).attr("id").replace("open", "");
         $("#" + floorId).show();
     });
-
+    //floor select area end
 
 });
 document.addEventListener("DOMContentLoaded", function () {
