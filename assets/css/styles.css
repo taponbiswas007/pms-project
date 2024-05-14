@@ -8254,6 +8254,15 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
   line-height: normal;
   margin-top: 10px;
 }
+.rooms-select-popup .checkinpopup-main-area .booking-details-area ul li:nth-child(1) ul li:nth-child(2) {
+  color: #003087;
+  font-family: Roboto;
+  font-size: 15.733px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
 .rooms-select-popup .checkinpopup-main-area .roomchange-area {
   display: -webkit-box;
   display: -ms-flexbox;
