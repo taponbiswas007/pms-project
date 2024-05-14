@@ -1,0 +1,148 @@
+//snipped area start
+.snipped-full-wrapper {
+    margin: 15px 0;
+
+    .snipped-main-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .snipped-item {
+            width: 19%;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 5.267px 5.267px 47.405px 0px rgba(0, 0, 0, 0.05);
+            padding: 14px;
+
+            .snipped-inner-area {
+                .snipped-top-area {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .snipped-top-left {
+                        h1 {
+                            color: #202224;
+                            font-family: "Nunito Sans";
+                            font-size: 14.046px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            opacity: 0.7;
+                        }
+
+                        h2 {
+                            color: #202224;
+                            font-family: "Nunito Sans";
+                            font-size: 24.58px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 0.878px;
+                        }
+
+
+                    }
+
+                    .snipped-top-right {
+                        width: 52.672px;
+                        height: 52.672px;
+                        background: rgba(130, 128, 255, .21);
+                        padding: 12px;
+                        border-radius: 20px;
+
+                    }
+                }
+
+                .snipped-bottom-area {
+                    margin-top: 25px;
+
+                    ul {
+                        li {
+                            display: inline-block;
+                            color: #00B69B;
+                            font-family: "Nunito Sans";
+                            font-size: 14.046px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            margin-right: 3px;
+
+                            &:last-child {
+                                color: #606060;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .snipped-inner-area {
+                    .snipped-top-area {
+                        .snipped-top-right {
+                            width: 52.672px;
+                            height: 52.672px;
+                            background: none;
+                            padding: 0;
+                            border-radius: none;
+                        }
+                    }
+                }
+            }
+            &:nth-child(5) {
+                .snipped-inner-area {
+                    .snipped-top-area {
+                        .snipped-top-right {
+                            width: 52.672px;
+                            height: 52.672px;
+                            background: none;
+                            padding: 0;
+                            border-radius: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .snipped-full-wrapper{
+        .snipped-main-area{
+         
+            flex-wrap: wrap;
+            
+            row-gap: 22px;
+            .snipped-item{
+                width: 32%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .snipped-full-wrapper{
+        .snipped-main-area{
+         
+            flex-wrap: wrap;
+            
+            row-gap: 22px;
+            .snipped-item{
+                width: 48%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 490px) {
+    .snipped-full-wrapper{
+        .snipped-main-area{
+         
+            flex-wrap: wrap;
+            
+            row-gap: 22px;
+            .snipped-item{
+                width: 100%;
+            }
+        }
+    }
+}
+//snipped area end

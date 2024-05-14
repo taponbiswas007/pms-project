@@ -1,0 +1,101 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.rooms-select-popup {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 928px;
+    width: 100%;
+    z-index: 4;
+    padding: 10px;
+    // display: none;
+
+    .checkinpopup-main-area {
+        background: $white;
+
+        .checkinpopup-header {
+            h1 {
+                font-family: $dmSans;
+                font-size: 21px;
+                font-weight: 600;
+                color: $white;
+                background: $blue;
+                padding: 10px 23px;
+            }
+        }
+
+        .booking-details-area {
+            margin: 40px;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                li {
+                    display: inline-block;
+
+                    ul {
+                        display: block;
+                        li {
+                            display: block;
+                            &:nth-child(1) {
+                                color: #7D7D7D;
+                                font-family: "DM Sans";
+                                font-size: 15.456px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                            &:nth-child(2) {
+                                color: #202020;
+                                font-family: "DM Sans";
+                                font-size: 15.456px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkin-confirm-button-area {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 20px;
+            padding-bottom: 30px;
+            padding-right: 47px;
+
+            button {
+                font-size: 12px;
+                font-family: $roboto;
+                font-weight: 400;
+                padding: 8px 10px;
+
+                &:first-child {
+                    color: $blue;
+                    border: 1px solid $blue;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $white;
+
+                        background: $blue;
+                        border: 1px solid $blue;
+                    }
+                }
+
+                &:last-child {
+                    color: $white;
+
+                    background: $blue;
+                    border: 1px solid $blue;
+                }
+            }
+        }
+    }
+}

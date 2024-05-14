@@ -8072,3 +8072,222 @@ header .bottom-header .bottom-header-main-area .navbar ul li:last-child {
     font-size: 25px;
   }
 }
+.snipped-full-wrapper {
+  margin: 15px 0;
+}
+.snipped-full-wrapper .snipped-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item {
+  width: 19%;
+  border-radius: 10px;
+  background: #FFF;
+  -webkit-box-shadow: 5.267px 5.267px 47.405px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 5.267px 5.267px 47.405px 0px rgba(0, 0, 0, 0.05);
+  padding: 14px;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item .snipped-inner-area .snipped-top-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item .snipped-inner-area .snipped-top-area .snipped-top-left h1 {
+  color: #202224;
+  font-family: "Nunito Sans";
+  font-size: 14.046px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.7;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item .snipped-inner-area .snipped-top-area .snipped-top-left h2 {
+  color: #202224;
+  font-family: "Nunito Sans";
+  font-size: 24.58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.878px;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item .snipped-inner-area .snipped-top-area .snipped-top-right {
+  width: 52.672px;
+  height: 52.672px;
+  background: rgba(130, 128, 255, 0.21);
+  padding: 12px;
+  border-radius: 20px;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item .snipped-inner-area .snipped-bottom-area {
+  margin-top: 25px;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item .snipped-inner-area .snipped-bottom-area ul li {
+  display: inline-block;
+  color: #00B69B;
+  font-family: "Nunito Sans";
+  font-size: 14.046px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 3px;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item .snipped-inner-area .snipped-bottom-area ul li:last-child {
+  color: #606060;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item:nth-child(3) .snipped-inner-area .snipped-top-area .snipped-top-right {
+  width: 52.672px;
+  height: 52.672px;
+  background: none;
+  padding: 0;
+  border-radius: none;
+}
+.snipped-full-wrapper .snipped-main-area .snipped-item:nth-child(5) .snipped-inner-area .snipped-top-area .snipped-top-right {
+  width: 52.672px;
+  height: 52.672px;
+  background: none;
+  padding: 0;
+  border-radius: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .snipped-full-wrapper .snipped-main-area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 22px;
+  }
+  .snipped-full-wrapper .snipped-main-area .snipped-item {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .snipped-full-wrapper .snipped-main-area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 22px;
+  }
+  .snipped-full-wrapper .snipped-main-area .snipped-item {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .snipped-full-wrapper .snipped-main-area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 22px;
+  }
+  .snipped-full-wrapper .snipped-main-area .snipped-item {
+    width: 100%;
+  }
+}
+.rooms-select-popup {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 928px;
+  width: 100%;
+  z-index: 4;
+  padding: 10px;
+}
+.rooms-select-popup .checkinpopup-main-area {
+  background: #ffffff;
+}
+.rooms-select-popup .checkinpopup-main-area .checkinpopup-header h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #01286D;
+  padding: 10px 23px;
+}
+.rooms-select-popup .checkinpopup-main-area .booking-details-area {
+  margin: 40px;
+}
+.rooms-select-popup .checkinpopup-main-area .booking-details-area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.rooms-select-popup .checkinpopup-main-area .booking-details-area ul li {
+  display: inline-block;
+}
+.rooms-select-popup .checkinpopup-main-area .booking-details-area ul li ul {
+  display: block;
+}
+.rooms-select-popup .checkinpopup-main-area .booking-details-area ul li ul li {
+  display: block;
+}
+.rooms-select-popup .checkinpopup-main-area .booking-details-area ul li ul li:nth-child(1) {
+  color: #7D7D7D;
+  font-family: "DM Sans";
+  font-size: 15.456px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rooms-select-popup .checkinpopup-main-area .booking-details-area ul li ul li:nth-child(2) {
+  color: #202020;
+  font-family: "DM Sans";
+  font-size: 15.456px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+.rooms-select-popup .checkinpopup-main-area .checkin-confirm-button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  padding-bottom: 30px;
+  padding-right: 47px;
+}
+.rooms-select-popup .checkinpopup-main-area .checkin-confirm-button-area button {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 8px 10px;
+}
+.rooms-select-popup .checkinpopup-main-area .checkin-confirm-button-area button:first-child {
+  color: #01286D;
+  border: 1px solid #01286D;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.rooms-select-popup .checkinpopup-main-area .checkin-confirm-button-area button:first-child:hover {
+  color: #ffffff;
+  background: #01286D;
+  border: 1px solid #01286D;
+}
+.rooms-select-popup .checkinpopup-main-area .checkin-confirm-button-area button:last-child {
+  color: #ffffff;
+  background: #01286D;
+  border: 1px solid #01286D;
+}
