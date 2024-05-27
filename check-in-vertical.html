@@ -135,8 +135,10 @@
                         </div>
 
                     </div>
-                    <div class="search-button">
+                    <div class="search-button main-alignment-button-area">
                         <button>search</button>
+                        <button class="alignment-button vertical-button alignmentactive"><i class="fa-solid fa-table-columns"></i></button>
+                        <button class="alignment-button horizontal-button"><i class="fa-solid fa-table-cells"></i></button>
 
                     </div>
                 </div>
@@ -265,13 +267,16 @@
     <div class="vertical-check-in-main-wrapper">
         <div class="container-fluid">
             <div class="verical-check-in-content">
-                <!-- reservation item start -->
+                <!-- arival item start -->
                 <div class="vertical-content-item">
                     <div class="vertcal-contenti-item-main-area">
                         <!-- vertical content header start -->
                         <div class="vertical-content-header">
-                            <h1>Reservation</h1>
+                            <h1>Arrival</h1>
                             <div class="right-side">
+                                <button class="searchbtn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                                 <button>new</button>
                                 <div class="person-info-item">
 
@@ -289,27 +294,25 @@
 
                                     </div>
                                 </div>
-                                <button class="searchbtn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
+                               
+                                <button class="alignment-button arival-alignment-button"><img src="assets/images/alignment-icon/vertical-white.svg" ></button>
                             </div>
                         </div>
                         <!-- vertical content body start -->
                         <div class="vertical-content-body">
-                            <div class="reservation-item">
-                                <div class="booking-details-room-item">
-                                    <div class="active-icon">
-                                        <i class="fa-solid fa-circle"></i>
-                                    </div>
-                                    <div class="booking-details-room-main-area">
+                            <div class="reservation-item " style="order: 1;">
+                                <!-- vertical alignment start -->
+                                <div class="booking-details-room-item arival-vertical ">
+                                   
+                                    <div class="booking-details-room-main-area" >
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Jack</h1>
                                             </div>
                                             <div class="right-side">
                                                 <ul>
-                                                    <li>DOR:</li>
-                                                    <li>23rd Apr 2024</li>
+                                                    <li><img src="assets/images/alignment-icon/arival.png" ></li>
+                                                    <li><img src="assets/images/alignment-icon/cleaning.svg"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -332,35 +335,92 @@
                                                 <li><i class="fa-solid fa-person-walking"></i>Walking</li>
                                             </ul>
                                         </div>
+                                        <div class="booking-number-time">
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>Allocated Room</li>
+                                                <li>102</li>
+                                            </ul>
+                                        </div>
                                         <div class="booking-date-footer">
                                             <ul>
                                                 <li>Date</li>
                                                 <li>20 Apr - 23 Apr 2024</li>
                                             </ul>
-                                            <ul>
-                                                <li><i class="fa-solid fa-dollar-sign"></i></li>
-                                                <li><button>
-                                                        <i class="fa-solid fa-x xroundmark"></i>
-                                                    </button></li>
-                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
                                         </div>
                                     </div>
+                                    
+                                 
+                                </div>
+                                <!-- vertical alignment end -->
+
+                                 <!-- horizontal alignment start -->
+                                <div class="booking-details-room-item horizontal-booking-details-room-item arival-horizontal">
+                                   
+                                    
+                                     <div class="booking-details-room-main-area ">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> Jack</h1>
+                                            </div>
+                                            <div class="booking-number-time">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Booking No.</li>
+                                                <li>#AB21B8</li>
+                                            </ul>
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Date</li>
+                                                <li>20 Apr - 23 Apr 2024</li>
+                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
+                                        </div>
+                                    </div>
+                                     <!-- horizontal alignment end -->
+                                 
                                 </div>
                             </div>
-                            <div class="reservation-item">
-                                <div class="booking-details-room-item">
-                                    <div class="active-icon">
-                                        <i class="fa-solid fa-circle"></i>
-                                    </div>
-                                    <div class="booking-details-room-main-area">
+                            <div class="reservation-item"style="order: 3;">
+                                <!-- vertical alignment start -->
+                                <div class="booking-details-room-item arival-vertical ">
+                                   
+                                    <div class="booking-details-room-main-area" >
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Jack</h1>
                                             </div>
                                             <div class="right-side">
                                                 <ul>
-                                                    <li>DOR:</li>
-                                                    <li>23rd Apr 2024</li>
+                                                    <li><img src="assets/images/alignment-icon/arival.png" ></li>
+                                                    <li><img src="assets/images/alignment-icon/cleaning.svg"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -383,35 +443,92 @@
                                                 <li><i class="fa-solid fa-person-walking"></i>Walking</li>
                                             </ul>
                                         </div>
+                                        <div class="booking-number-time">
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>Allocated Room</li>
+                                                <li>102</li>
+                                            </ul>
+                                        </div>
                                         <div class="booking-date-footer">
                                             <ul>
                                                 <li>Date</li>
                                                 <li>20 Apr - 23 Apr 2024</li>
                                             </ul>
-                                            <ul>
-                                                <li><i class="fa-solid fa-dollar-sign"></i></li>
-                                                <li><button>
-                                                        <i class="fa-solid fa-x xroundmark"></i>
-                                                    </button></li>
-                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
                                         </div>
                                     </div>
+                                    
+                                 
+                                </div>
+                                <!-- vertical alignment end -->
+
+                                 <!-- horizontal alignment start -->
+                                <div class="booking-details-room-item horizontal-booking-details-room-item arival-horizontal">
+                                   
+                                    
+                                     <div class="booking-details-room-main-area ">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> Jack</h1>
+                                            </div>
+                                            <div class="booking-number-time">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Booking No.</li>
+                                                <li>#AB21B8</li>
+                                            </ul>
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Date</li>
+                                                <li>20 Apr - 23 Apr 2024</li>
+                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
+                                        </div>
+                                    </div>
+                                     <!-- horizontal alignment end -->
+                                 
                                 </div>
                             </div>
-                            <div class="reservation-item">
-                                <div class="booking-details-room-item">
-                                    <div class="active-icon">
-                                        <i class="fa-solid fa-circle"></i>
-                                    </div>
-                                    <div class="booking-details-room-main-area">
+                            <div class="reservation-item"style="order: 2;">
+                                <!-- vertical alignment start -->
+                                <div class="booking-details-room-item arival-vertical ">
+                                   
+                                    <div class="booking-details-room-main-area" >
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Jack</h1>
                                             </div>
                                             <div class="right-side">
                                                 <ul>
-                                                    <li>DOR:</li>
-                                                    <li>23rd Apr 2024</li>
+                                                    <li><img src="assets/images/alignment-icon/arival.png" ></li>
+                                                    <li><img src="assets/images/alignment-icon/cleaning.svg"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -434,35 +551,92 @@
                                                 <li><i class="fa-solid fa-person-walking"></i>Walking</li>
                                             </ul>
                                         </div>
+                                        <div class="booking-number-time">
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>Allocated Room</li>
+                                                <li>102</li>
+                                            </ul>
+                                        </div>
                                         <div class="booking-date-footer">
                                             <ul>
                                                 <li>Date</li>
                                                 <li>20 Apr - 23 Apr 2024</li>
                                             </ul>
-                                            <ul>
-                                                <li><i class="fa-solid fa-dollar-sign"></i></li>
-                                                <li><button>
-                                                        <i class="fa-solid fa-x xroundmark"></i>
-                                                    </button></li>
-                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
                                         </div>
                                     </div>
+                                    
+                                 
+                                </div>
+                                <!-- vertical alignment end -->
+
+                                 <!-- horizontal alignment start -->
+                                <div class="booking-details-room-item horizontal-booking-details-room-item arival-horizontal">
+                                   
+                                    
+                                     <div class="booking-details-room-main-area ">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> Jack</h1>
+                                            </div>
+                                            <div class="booking-number-time">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Booking No.</li>
+                                                <li>#AB21B8</li>
+                                            </ul>
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Date</li>
+                                                <li>20 Apr - 23 Apr 2024</li>
+                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
+                                        </div>
+                                    </div>
+                                     <!-- horizontal alignment end -->
+                                 
                                 </div>
                             </div>
-                            <div class="reservation-item">
-                                <div class="booking-details-room-item">
-                                    <div class="active-icon">
-                                        <i class="fa-solid fa-circle"></i>
-                                    </div>
-                                    <div class="booking-details-room-main-area">
+                            <div class="reservation-item"style="order: 4;">
+                                <!-- vertical alignment start -->
+                                <div class="booking-details-room-item arival-vertical ">
+                                   
+                                    <div class="booking-details-room-main-area" >
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Jack</h1>
                                             </div>
                                             <div class="right-side">
                                                 <ul>
-                                                    <li>DOR:</li>
-                                                    <li>23rd Apr 2024</li>
+                                                    <li><img src="assets/images/alignment-icon/arival.png" ></li>
+                                                    <li><img src="assets/images/alignment-icon/cleaning.svg"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -485,34 +659,96 @@
                                                 <li><i class="fa-solid fa-person-walking"></i>Walking</li>
                                             </ul>
                                         </div>
+                                        <div class="booking-number-time">
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>Allocated Room</li>
+                                                <li>102</li>
+                                            </ul>
+                                        </div>
                                         <div class="booking-date-footer">
                                             <ul>
                                                 <li>Date</li>
                                                 <li>20 Apr - 23 Apr 2024</li>
                                             </ul>
-                                            <ul>
-                                                <li><i class="fa-solid fa-dollar-sign"></i></li>
-                                                <li><button>
-                                                        <i class="fa-solid fa-x xroundmark"></i>
-                                                    </button></li>
-                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
                                         </div>
                                     </div>
+                                    
+                                 
+                                </div>
+                                <!-- vertical alignment end -->
+
+                                 <!-- horizontal alignment start -->
+                                <div class="booking-details-room-item horizontal-booking-details-room-item arival-horizontal">
+                                   
+                                    
+                                     <div class="booking-details-room-main-area ">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> Jack</h1>
+                                            </div>
+                                            <div class="booking-number-time">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Booking No.</li>
+                                                <li>#AB21B8</li>
+                                            </ul>
+                                            <ul class="payment-by">
+                                                <li><button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button></li>
+                                                <li>
+                                                    <button>
+                                                        <i class="fa-solid fa-x xroundmark"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Date</li>
+                                                <li>20 Apr - 23 Apr 2024</li>
+                                            </ul>
+                                            <button class="continuecheckin">Check In</button>
+                                        </div>
+                                    </div>
+                                     <!-- horizontal alignment end -->
+                                 
                                 </div>
                             </div>
+                           
+                            
                         </div>
                     </div>
                 </div>
-                <!-- reservation item end -->
+                <!-- arival item end -->
 
-                <!-- check in item start -->
+                <!-- in-House item start -->
                 <div class="vertical-content-item">
                     <div class="vertcal-contenti-item-main-area">
                         <!-- vertical content header start -->
                         <div class="vertical-content-header">
-                            <h1>Check In</h1>
+                            <h1>In-House</h1>
                             <div class="right-side">
-
+                                <button class="searchbtn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                                 <div class="person-info-item">
 
                                     <div class="info-input-box">
@@ -529,9 +765,8 @@
 
                                     </div>
                                 </div>
-                                <button class="searchbtn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
+                                
+                                <button class="alignment-button"><img src="assets/images/alignment-icon/vertical-white.svg" ></button>
                             </div>
                         </div>
                         <!-- vertical content body start -->
@@ -740,36 +975,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- check in item end -->
+                <!-- in-House item end -->
 
 
-                <!-- check out item start -->
+                <!-- Departure item start -->
                 <div class="vertical-content-item">
                     <div class="vertcal-contenti-item-main-area">
                         <!-- vertical content header start -->
                         <div class="vertical-content-header">
-                            <h1>Checkout</h1>
+                            <h1>Departure</h1>
                             <div class="right-side">
-
-                                <div class="person-info-item">
-
-                                    <div class="info-input-box">
-
-                                        <input type="text" placeholder="Select day" class="selectbox">
-                                        <div class="downarrowbtn">
-                                            <i class="fa-solid fa-angle-up"></i>
-                                        </div>
-                                        <ul class="select-manu">
-                                            <li>Today</li>
-                                            <li>Todays</li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
                                 <button class="searchbtn">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
+                                <button class="alignment-button"><img src="assets/images/alignment-icon/vertical-white.svg" ></button>
                             </div>
                         </div>
                         <!-- vertical content body start -->
@@ -778,6 +997,9 @@
                                 <div class="booking-details-room-item">
 
                                     <div class="booking-details-room-main-area">
+                                        <div class="active-icon">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </div>
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Emerson</h1>
@@ -816,6 +1038,9 @@
                                 <div class="booking-details-room-item">
 
                                     <div class="booking-details-room-main-area">
+                                        <div class="active-icon">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </div>
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Emerson</h1>
@@ -854,6 +1079,9 @@
                                 <div class="booking-details-room-item">
 
                                     <div class="booking-details-room-main-area">
+                                        <div class="active-icon">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </div>
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Emerson</h1>
@@ -892,6 +1120,9 @@
                                 <div class="booking-details-room-item">
 
                                     <div class="booking-details-room-main-area">
+                                        <div class="active-icon">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </div>
                                         <div class="checkinroom-details-header">
                                             <div class="checkin-room-type">
                                                 <h1> Emerson</h1>
@@ -931,7 +1162,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- check out item end -->
+                <!-- Departure item end -->
 
 
                 <!-- housekeeping item start -->
@@ -941,7 +1172,10 @@
                         <div class="vertical-content-header">
                             <h1>Housekeeping</h1>
                             <div class="right-side">
-                                <button>Add Task</button>
+                                <button class="searchbtn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button>Add Task<i class="fa-solid fa-angle-up"></i></button>
                                 <div class="person-info-item">
 
                                     <div class="info-input-box">
@@ -958,9 +1192,8 @@
 
                                     </div>
                                 </div>
-                                <button class="searchbtn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
+                                
+                                <button class="alignment-button"><img src="assets/images/alignment-icon/vertical-white.svg" ></button>
                             </div>
                         </div>
                         <!-- vertical content body start -->
@@ -1657,6 +1890,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- main js link -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/alignment.js"></script>
 </body>
 
 </html>

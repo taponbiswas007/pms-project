@@ -5552,6 +5552,45 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .checkin-vertical-header .resevation-page-search-area {
   margin-bottom: 7px;
 }
+.checkin-vertical-header .resevation-page-search-area .reservation-page-search-main-area .search-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-bottom: 5px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.checkin-vertical-header .resevation-page-search-area .reservation-page-search-main-area .search-button button {
+  margin: 0;
+}
+.checkin-vertical-header .resevation-page-search-area .reservation-page-search-main-area .search-button button img {
+  width: 27px;
+}
+.checkin-vertical-header .resevation-page-search-area .reservation-page-search-main-area .search-button button:nth-child(2) {
+  font-size: 27px;
+  padding: 5px;
+  padding-bottom: 6px;
+  background: none;
+  color: #000000;
+}
+.checkin-vertical-header .resevation-page-search-area .reservation-page-search-main-area .search-button button:nth-child(3) {
+  font-size: 27px;
+  padding: 5px;
+  padding-bottom: 6px;
+  background: none;
+  color: #000000;
+}
+.checkin-vertical-header .resevation-page-search-area .reservation-page-search-main-area .search-button .alignmentactive {
+  background: #01286D !important;
+  color: #ffffff !important;
+}
 
 .vertical-check-in-main-wrapper .verical-check-in-content {
   display: -webkit-box;
@@ -5608,6 +5647,13 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .alignment-button {
+  background: #01286D;
+  padding: 4px 4px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .alignment-button img {
+  width: 19px;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side button {
   color: #FFF;
@@ -5749,7 +5795,7 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item {
   min-width: 247px;
   width: 100%;
-  height: 210px;
+  height: 260px;
   background: #ffffff;
   border: 1px solid rgba(220, 220, 220, 0.46);
   padding: 20px;
@@ -5948,6 +5994,31 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   padding: 4.8px 9.601px;
   margin-bottom: -17px;
 }
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .payment-by li {
+  display: inline-block;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .payment-by li button {
+  border-radius: 2.178px;
+  background: #FFB6B6;
+  padding: 3px 7px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .payment-by li button .xroundmark {
+  border: 2px solid;
+  color: rgb(190, 4, 4);
+  border-radius: 50%;
+  padding: 2px 3px;
+  font-size: 10px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .payment-by li:first-child button {
+  border-radius: 2.178px;
+  background: #12B76A;
+  padding: 5px 12px 3px 12px;
+  border: 2px solid;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 100%;
+  font-size: 15px;
+}
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .selet-rooms p {
   margin-bottom: -14px;
 }
@@ -6021,6 +6092,62 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer .checkout {
   background: #ED3131;
   color: #ffffff;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item {
+  padding: 20px 1px 1px 1px;
+  height: 181px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item .booking-details-room-main-area .checkinroom-details-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .booking-number-time {
+  margin-top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-top: none;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item .booking-details-room-main-area .booking-number-time {
+  border-top: 1px solid #D0D5DD;
+  padding: 0 20px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item .booking-details-room-main-area .booking-number-time ul {
+  padding: 15px 0;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item .booking-details-room-main-area .booking-number-time ul:first-child {
+  border-right: 1px solid #D0D5DD;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item .booking-details-room-main-area .booking-number-time .payment-by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .horizontal-booking-details-room-item .booking-details-room-main-area .booking-date-footer {
+  background: #d8e1ee;
+  padding: 13px 20px;
+  border-radius: 0 0 5px 5px;
+  margin-top: 0;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .arival-horizontal {
+  display: none;
 }
 
 header {
