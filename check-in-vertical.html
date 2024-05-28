@@ -1030,7 +1030,17 @@
                                 <button class="searchbtn">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
-                                <button>Add Task<i class="fa-solid fa-angle-up"></i></button>
+                                <div class="add-task-area">
+                                    <button class="addtaskbtn">Add Task<i
+                                            class=" angleicon fa-solid fa-angle-up"></i></button>
+                                    <div class="task-popup">
+                                        <div class="task-item">
+                                            <button>single task</button>
+                                            <button>multi task</button>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="person-info-item">
 
                                     <div class="info-input-box">
@@ -1048,14 +1058,15 @@
                                     </div>
                                 </div>
 
-                                <button class="alignment-button"><img
+                                <button class="housekeeping-alignment-button"><img
                                         src="assets/images/alignment-icon/vertical-white.svg"></button>
                             </div>
                         </div>
                         <!-- vertical content body start -->
                         <div class="vertical-content-body">
                             <div class="reservation-item">
-                                <div class="booking-details-room-item">
+                                <!-- vertical alignment item start -->
+                                <div class="booking-details-room-item housekeeping-vertical ">
 
                                     <div class="booking-details-room-main-area">
                                         <div class="checkinroom-details-header">
@@ -1118,12 +1129,514 @@
                                                         <i class="fa-solid fa-trash-can"></i>
                                                     </button>
                                                 </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- vertical alignment item end-->
+
+                                <!-- horizontal alignment item start -->
+                                <div
+                                    class="booking-details-room-item horizontal-booking-details-room-item housekeeping-horizontal">
+
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> 204</h1>
+                                            </div>
+                                            <div class="booking-number-time b-n">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time b-n">
+                                            <ul class="b-n">
+                                                <li>Assign To</li>
+                                                <li>
+                                                    <div class="person-info-item">
+
+                                                        <div class="info-input-box">
+
+                                                            <input type="text" placeholder="Select person"
+                                                                class="selectbox">
+                                                            <div class="downarrowbtn">
+                                                                <i class="fa-solid fa-angle-up"></i>
+                                                            </div>
+                                                            <ul class="select-manu">
+                                                                <li>Miracle Bator</li>
+                                                                <li>Miracle Bator</li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <button class="stayoverbtn stayover">Stayover</button>
+
+                                        </div>
+
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Task Date</li>
+                                                <li>5 Dec 2023</li>
+                                            </ul>
+                                            <ul>
+
+                                                <li><button class="edit">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="trash">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- horizontal alignment item end-->
                             </div>
-                           
+                            <div class="reservation-item">
+                                <!-- vertical alignment item start -->
+                                <div class="booking-details-room-item housekeeping-vertical ">
+
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> 204</h1>
+                                            </div>
+                                            <div class="right-side">
+                                                <img src="assets/images/checkin-yellow.png" alt="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Assign To</li>
+                                                <li>
+                                                    <div class="person-info-item">
+
+                                                        <div class="info-input-box">
+
+                                                            <input type="text" placeholder="Select person"
+                                                                class="selectbox">
+                                                            <div class="downarrowbtn">
+                                                                <i class="fa-solid fa-angle-up"></i>
+                                                            </div>
+                                                            <ul class="select-manu">
+                                                                <li>Miracle Bator</li>
+                                                                <li>Miracle Bator</li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <button class="stayoverbtn stayover">Stayover</button>
+
+                                        </div>
+                                        <div class="booking-number-time housekeepingstatus">
+                                            <p> Executive Suite</p>
+                                            <ul>
+                                                <li>Priority</li>
+                                                <li class="y-color"><i class="fa-solid fa-circle circle-size"></i>Normal
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Task Date</li>
+                                                <li>5 Dec 2023</li>
+                                            </ul>
+                                            <ul>
+
+                                                <li><button class="edit">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="trash">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- vertical alignment item end-->
+
+                                <!-- horizontal alignment item start -->
+                                <div
+                                    class="booking-details-room-item horizontal-booking-details-room-item housekeeping-horizontal">
+
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> 204</h1>
+                                            </div>
+                                            <div class="booking-number-time b-n">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time b-n">
+                                            <ul class="b-n">
+                                                <li>Assign To</li>
+                                                <li>
+                                                    <div class="person-info-item">
+
+                                                        <div class="info-input-box">
+
+                                                            <input type="text" placeholder="Select person"
+                                                                class="selectbox">
+                                                            <div class="downarrowbtn">
+                                                                <i class="fa-solid fa-angle-up"></i>
+                                                            </div>
+                                                            <ul class="select-manu">
+                                                                <li>Miracle Bator</li>
+                                                                <li>Miracle Bator</li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <button class="stayoverbtn stayover">Stayover</button>
+
+                                        </div>
+
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Task Date</li>
+                                                <li>5 Dec 2023</li>
+                                            </ul>
+                                            <ul>
+
+                                                <li><button class="edit">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="trash">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- horizontal alignment item end-->
+                            </div>
+                            <div class="reservation-item">
+                                <!-- vertical alignment item start -->
+                                <div class="booking-details-room-item housekeeping-vertical ">
+
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> 204</h1>
+                                            </div>
+                                            <div class="right-side">
+                                                <img src="assets/images/checkin-yellow.png" alt="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Assign To</li>
+                                                <li>
+                                                    <div class="person-info-item">
+
+                                                        <div class="info-input-box">
+
+                                                            <input type="text" placeholder="Select person"
+                                                                class="selectbox">
+                                                            <div class="downarrowbtn">
+                                                                <i class="fa-solid fa-angle-up"></i>
+                                                            </div>
+                                                            <ul class="select-manu">
+                                                                <li>Miracle Bator</li>
+                                                                <li>Miracle Bator</li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <button class="stayoverbtn vacant">Vacant</button>
+
+                                        </div>
+                                        <div class="booking-number-time housekeepingstatus">
+                                            <p> Executive Suite</p>
+                                            <ul>
+                                                <li>Priority</li>
+                                                <li class="y-color"><i class="fa-solid fa-circle circle-size"></i>Normal
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Task Date</li>
+                                                <li>5 Dec 2023</li>
+                                            </ul>
+                                            <ul>
+
+                                                <li><button class="edit">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="trash">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- vertical alignment item end-->
+
+                                <!-- horizontal alignment item start -->
+                                <div
+                                    class="booking-details-room-item horizontal-booking-details-room-item housekeeping-horizontal">
+
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> 204</h1>
+                                            </div>
+                                            <div class="booking-number-time b-n">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time b-n">
+                                            <ul class="b-n">
+                                                <li>Assign To</li>
+                                                <li>
+                                                    <div class="person-info-item">
+
+                                                        <div class="info-input-box">
+
+                                                            <input type="text" placeholder="Select person"
+                                                                class="selectbox">
+                                                            <div class="downarrowbtn">
+                                                                <i class="fa-solid fa-angle-up"></i>
+                                                            </div>
+                                                            <ul class="select-manu">
+                                                                <li>Miracle Bator</li>
+                                                                <li>Miracle Bator</li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <button class="stayoverbtn vacant">Vacant</button>
+
+                                        </div>
+
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Task Date</li>
+                                                <li>5 Dec 2023</li>
+                                            </ul>
+                                            <ul>
+
+                                                <li><button class="edit">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="trash">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- horizontal alignment item end-->
+                            </div>
+                            <div class="reservation-item">
+                                <!-- vertical alignment item start -->
+                                <div class="booking-details-room-item housekeeping-vertical ">
+
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> 204</h1>
+                                            </div>
+                                            <div class="right-side">
+                                                <img src="assets/images/checkin-yellow.png" alt="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time">
+                                            <ul>
+                                                <li>Assign To</li>
+                                                <li>
+                                                    <div class="person-info-item">
+
+                                                        <div class="info-input-box">
+
+                                                            <input type="text" placeholder="Select person"
+                                                                class="selectbox">
+                                                            <div class="downarrowbtn">
+                                                                <i class="fa-solid fa-angle-up"></i>
+                                                            </div>
+                                                            <ul class="select-manu">
+                                                                <li>Miracle Bator</li>
+                                                                <li>Miracle Bator</li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <button class="stayoverbtn stayover">Stayover</button>
+
+                                        </div>
+                                        <div class="booking-number-time housekeepingstatus">
+                                            <p> Executive Suite</p>
+                                            <ul>
+                                                <li>Priority</li>
+                                                <li class="y-color"><i class="fa-solid fa-circle circle-size"></i>Normal
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Task Date</li>
+                                                <li>5 Dec 2023</li>
+                                            </ul>
+                                            <ul>
+
+                                                <li><button class="edit">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="trash">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- vertical alignment item end-->
+
+                                <!-- horizontal alignment item start -->
+                                <div
+                                    class="booking-details-room-item horizontal-booking-details-room-item housekeeping-horizontal">
+
+                                    <div class="booking-details-room-main-area">
+                                        <div class="checkinroom-details-header">
+                                            <div class="checkin-room-type">
+                                                <h1> 204</h1>
+                                            </div>
+                                            <div class="booking-number-time b-n">
+                                                <p> Executive Suite</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="booking-number-time b-n">
+                                            <ul class="b-n">
+                                                <li>Assign To</li>
+                                                <li>
+                                                    <div class="person-info-item">
+
+                                                        <div class="info-input-box">
+
+                                                            <input type="text" placeholder="Select person"
+                                                                class="selectbox">
+                                                            <div class="downarrowbtn">
+                                                                <i class="fa-solid fa-angle-up"></i>
+                                                            </div>
+                                                            <ul class="select-manu">
+                                                                <li>Miracle Bator</li>
+                                                                <li>Miracle Bator</li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <button class="stayoverbtn stayover">Stayover</button>
+
+                                        </div>
+
+                                        <div class="booking-date-footer">
+                                            <ul>
+                                                <li>Task Date</li>
+                                                <li>5 Dec 2023</li>
+                                            </ul>
+                                            <ul>
+
+                                                <li><button class="edit">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="trash">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </li>
+                                                <li><button class="edit">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- horizontal alignment item end-->
+                            </div>
+
 
                         </div>
                     </div>

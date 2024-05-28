@@ -118,6 +118,40 @@
                             font-size: 20px
                         }
 
+                        .add-task-area {
+                            position: relative;
+
+                            .task-popup {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                z-index: 3;
+                                width: 94px;
+                                padding: 10px;
+                                background: $white;
+                                box-shadow: 0 25px 35px rgba(0, 0, 0, 0.5);
+                                border-radius: 7px;
+
+                                .task-item {
+                                    display: flex;
+                                    flex-direction: column;
+                                    row-gap: 10px;
+
+                                    button {
+                                        background: $white;
+                                        color: $black;
+
+                                        &:hover {
+                                            background: $blue;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                         .person-info-item {
                             .info-input-box {
                                 height: 28px;
@@ -240,6 +274,15 @@
                                 width: 17px;
                             }
                         }
+
+                        .housekeeping-alignment-button {
+                            background: $blue;
+                            padding: 3px 3px 1px 3px;
+
+                            img {
+                                width: 17px;
+                            }
+                        }
                     }
                 }
 
@@ -315,7 +358,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
-                                   
+
 
                                     .checkin-room-type {
 
@@ -358,7 +401,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
-                                  
+
 
                                     p {
                                         color: rgba(0, 48, 135, 0.85);
@@ -598,7 +641,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
-                                  
+
 
 
                                     ul {
@@ -688,7 +731,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
-                                    padding: 0 20px;
+                                    padding-left: 20px;
 
                                     .booking-number-time {
                                         margin-top: 0;
@@ -730,10 +773,16 @@
                         .arival-horizontal {
                             display: none;
                         }
+
                         .inhouse-horizontal {
                             display: none;
                         }
+
                         .departure-horizontal {
+                            display: none;
+                        }
+
+                        .housekeeping-horizontal {
                             display: none;
                         }
                     }
