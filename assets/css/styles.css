@@ -169,6 +169,10 @@ img {
   padding-bottom: 20px;
 }
 
+.checkedout {
+  background: #ED6A31 !important;
+}
+
 .calenderOrtable-selector {
   padding: 14px 0;
 }
@@ -5749,6 +5753,27 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   background: #01286D;
   color: #ffffff;
 }
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .arival-alignment-button {
+  background: #01286D;
+  padding: 3px 3px 1px 3px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .arival-alignment-button img {
+  width: 17px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .inhouse-alignment-button {
+  background: #01286D;
+  padding: 3px 3px 1px 3px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .inhouse-alignment-button img {
+  width: 17px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .departure-alignment-button {
+  background: #01286D;
+  padding: 3px 3px 1px 3px;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-header .right-side .departure-alignment-button img {
+  width: 17px;
+}
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body {
   margin-top: 30px;
   display: -webkit-box;
@@ -5809,6 +5834,19 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   color: #49C14E;
   font-size: 10px;
 }
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header {
   width: 100%;
   display: -webkit-box;
@@ -5820,7 +5858,6 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .checkinroom-details-header .checkin-room-type h1 {
   color: #000;
@@ -5853,7 +5890,6 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-number-time p {
   color: rgba(0, 48, 135, 0.85);
@@ -6037,7 +6073,6 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item .booking-details-room-main-area .booking-date-footer ul li {
   font-size: 12px;
@@ -6147,6 +6182,12 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
   margin-top: 0;
 }
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .arival-horizontal {
+  display: none;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .inhouse-horizontal {
+  display: none;
+}
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .departure-horizontal {
   display: none;
 }
 

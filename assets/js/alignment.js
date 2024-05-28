@@ -28,5 +28,13 @@ $(document).ready(function () {
         $(".arival-vertical").toggle();
     $(".arival-horizontal").toggle();
     });
+    $(".inhouse-alignment-button").click(function(){
+        $(".inhouse-vertical").toggle();
+    $(".inhouse-horizontal").toggle();
+    });
+    $(".departure-alignment-button").click(function(){
+        $(".departure-vertical").toggle();
+    $(".departure-horizontal").toggle();
+    });
 });
 //"verical-check-in-content"

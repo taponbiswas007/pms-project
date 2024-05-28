@@ -42,7 +42,7 @@
 
                 .alignmentactive {
                     background: $blue !important;
-                    color: $white !important ;
+                    color: $white !important;
                 }
             }
         }
@@ -213,6 +213,33 @@
 
 
                         }
+
+                        .arival-alignment-button {
+                            background: $blue;
+                            padding: 3px 3px 1px 3px;
+
+                            img {
+                                width: 17px;
+                            }
+                        }
+
+                        .inhouse-alignment-button {
+                            background: $blue;
+                            padding: 3px 3px 1px 3px;
+
+                            img {
+                                width: 17px;
+                            }
+                        }
+
+                        .departure-alignment-button {
+                            background: $blue;
+                            padding: 3px 3px 1px 3px;
+
+                            img {
+                                width: 17px;
+                            }
+                        }
                     }
                 }
 
@@ -278,13 +305,17 @@
                             }
 
                             .booking-details-room-main-area {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
 
                                 .checkinroom-details-header {
                                     width: 100%;
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
-                                    margin-bottom: 15px;
+                                   
 
                                     .checkin-room-type {
 
@@ -317,6 +348,7 @@
                                             }
                                         }
                                     }
+
                                 }
 
 
@@ -326,7 +358,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
-                                    margin-top: 20px;
+                                  
 
                                     p {
                                         color: rgba(0, 48, 135, 0.85);
@@ -518,7 +550,7 @@
                                             border-radius: 2.178px;
                                             background: #FFB6B6;
                                             padding: 3px 7px;
-                                           
+
                                             .xroundmark {
                                                 border: 2px solid;
                                                 color: rgb(190, 4, 4);
@@ -532,7 +564,7 @@
                                             button {
                                                 border-radius: 2.178px;
                                                 background: #12B76A;
-                                                padding: 5px  12px 3px 12px;
+                                                padding: 5px 12px 3px 12px;
                                                 border: 2px solid;
                                                 color: $white;
                                                 border-radius: 4px;
@@ -566,7 +598,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
-                                    margin-top: 20px;
+                                  
 
 
                                     ul {
@@ -643,50 +675,65 @@
                                     }
                                 }
                             }
-                            
+
                         }
-                        .horizontal-booking-details-room-item{
+
+                        .horizontal-booking-details-room-item {
                             padding: 20px 1px 1px 1px;
                             height: 181px;
-                            .booking-details-room-main-area{
-                              
-                                .checkinroom-details-header{
+
+                            .booking-details-room-main-area {
+
+                                .checkinroom-details-header {
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
                                     padding: 0 20px;
-                                    .booking-number-time{
+
+                                    .booking-number-time {
                                         margin-top: 0;
                                         width: fit-content;
                                         border-top: none;
                                     }
                                 }
-                                .booking-number-time{
+
+                                .booking-number-time {
                                     border-top: 1px solid #D0D5DD;
                                     padding: 0 20px;
-                                    ul{
-                                        &:first-child{
+
+                                    ul {
+                                        &:first-child {
                                             border-right: 1px solid #D0D5DD;
                                         }
+
                                         padding: 15px 0;
                                     }
-                                    .payment-by{
+
+                                    .payment-by {
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
                                         column-gap: 10px;
                                     }
                                 }
-                                .booking-date-footer{
+
+                                .booking-date-footer {
                                     background: #d8e1ee;
                                     padding: 13px 20px;
                                     border-radius: 0 0 5px 5px;
                                     margin-top: 0;
-                                    
+
                                 }
                             }
                         }
-                        .arival-horizontal{
+
+                        .arival-horizontal {
+                            display: none;
+                        }
+                        .inhouse-horizontal {
+                            display: none;
+                        }
+                        .departure-horizontal {
                             display: none;
                         }
                     }
