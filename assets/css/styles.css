@@ -5865,6 +5865,16 @@ header .bottom-header .bottom-header-main-area .navbar ul .revenue-report-all-it
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .vertical-content-body {
   scrollbar-track-color: transparent;
 }
+.vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .row-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
 .vertical-check-in-main-wrapper .verical-check-in-content .vertical-content-item .vertcal-contenti-item-main-area .vertical-content-body .reservation-item .booking-details-room-item {
   min-width: 247px;
   width: 100%;

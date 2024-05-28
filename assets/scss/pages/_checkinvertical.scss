@@ -326,7 +326,11 @@
                     }
 
 
-
+                    .row-divider{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                    }
                     .reservation-item {
 
                         .booking-details-room-item {
