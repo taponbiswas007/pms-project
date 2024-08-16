@@ -1,6 +1,37 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 
+.booking-form-tab-area {
+    padding-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    ul {
+        li {
+           
+            padding: 10px 15px;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: "DM Sans", sans-serif;
+            color: #202020;
+            text-transform: capitalize;
+            display: inline;
+            cursor: pointer;
+            .tabclosemark{
+                font-size: 14px;
+                margin-left: 5px;
+            }
+        }
+        .active{
+            background: $white;
+        }
+    }
+    .add-new-form{
+        font-size: 20px;
+        color: #202020;
+    }
+}
+
 .person-information-main-area {
     background: $white;
     display: grid;
