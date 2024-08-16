@@ -1051,19 +1051,33 @@ footer .footer-area .footer-main-area p {
           justify-content: flex-start;
   padding-top: 20px;
 }
+.booking-form-tab-area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .booking-form-tab-area ul li {
   padding: 10px 15px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "DM Sans", sans-serif;
   color: #202020;
   text-transform: capitalize;
-  display: inline;
   cursor: pointer;
 }
 .booking-form-tab-area ul li .tabclosemark {
   font-size: 14px;
   margin-left: 5px;
+  color: #b1adad;
 }
 .booking-form-tab-area ul .active {
   background: #ffffff;
