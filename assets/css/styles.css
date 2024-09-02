@@ -1683,11 +1683,6 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .additional-item-data-input-area {
   margin-bottom: 55px;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  /* Two columns with equal width */
-  grid-template-rows: auto auto;
-  row-gap: 20px;
 }
 .person-information-main-area .additional-item-data-input-area .person-info-item .info-input-box {
   border: 2px solid #202020;
@@ -1754,14 +1749,6 @@ footer .footer-area .footer-main-area p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.person-information-main-area .additional-item-data-input-area .person-info-item:nth-child(1) {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.person-information-main-area .additional-item-data-input-area .person-info-item:nth-child(2) {
-  margin-right: 15px;
 }
 
 .booking-info {

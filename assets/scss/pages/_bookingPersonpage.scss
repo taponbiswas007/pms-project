@@ -731,11 +731,11 @@
 
     .additional-item-data-input-area {
         margin-bottom: 55px;
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        /* Two columns with equal width */
-        grid-template-rows: auto auto;
-        row-gap: 20px;
+        // display: grid;
+        // grid-template-columns: repeat(2, 2fr);
+        // /* Two columns with equal width */
+        // grid-template-rows: auto auto;
+        // row-gap: 20px;
 
 
         .person-info-item {
@@ -806,15 +806,15 @@
                 align-items: center;
             }
 
-            &:nth-child(1) {
-                grid-row-start: 1;
-                grid-column-start: 1;
-                grid-column-end: 4;
-            }
+            // &:nth-child(1) {
+            //     grid-row-start: 1;
+            //     grid-column-start: 1;
+            //     grid-column-end: 4;
+            // }
 
-            &:nth-child(2) {
-                margin-right: 15px;
-            }
+            // &:nth-child(2) {
+            //     margin-right: 15px;
+            // }
 
 
 
