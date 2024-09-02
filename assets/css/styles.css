@@ -1123,14 +1123,6 @@ footer .footer-area .footer-main-area p {
   color: #12B76A;
   font-size: 15px;
 }
-.person-information-main-area .personal-info .personal-info-input-area {
-  display: grid;
-  grid-template-columns: repeat(3, 1.33fr);
-  row-gap: 20px;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
-}
 .person-information-main-area .personal-info .personal-info-input-area .person-info-item .info-input-box {
   border: 2px solid #202020;
   border-radius: 8px;
@@ -1246,24 +1238,6 @@ footer .footer-area .footer-main-area p {
       -ms-flex-align: center;
           align-items: center;
 }
-.person-information-main-area .personal-info .personal-info-input-area:nth-child(4) {
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.person-information-main-area .personal-info .other-informaton {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  /* Two columns with equal width */
-  grid-template-rows: auto auto;
-  row-gap: 20px;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
-}
 .person-information-main-area .personal-info .other-informaton .person-info-item .info-input-box {
   border: 2px solid #202020;
   border-radius: 8px;
@@ -1328,30 +1302,6 @@ footer .footer-area .footer-main-area p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.person-information-main-area .personal-info .other-informaton .person-info-item:nth-child(1) {
-  grid-row: 1;
-  /* First row */
-  grid-column: 1;
-  /* First column */
-}
-.person-information-main-area .personal-info .other-informaton .person-info-item:nth-child(2) {
-  grid-row: 1;
-  /* First row */
-  grid-column: 2;
-  /* Second column */
-}
-.person-information-main-area .personal-info .other-informaton .person-info-item:nth-child(3) {
-  grid-row: 2;
-  /* Second row */
-  grid-column: 1;
-  /* First column */
-}
-.person-information-main-area .personal-info .other-informaton .person-info-item:nth-child(4) {
-  grid-row: 2;
-  /* Second row */
-  grid-column: 2;
-  /* Second column */
 }
 .person-information-main-area .images-id-capture-area {
   margin-top: 30px;
@@ -1595,24 +1545,8 @@ footer .footer-area .footer-main-area p {
 .person-information-main-area .additional-catagory-select-area .pet-select-area .pet-item:hover {
   border: 1px solid #01286D;
 }
-.person-information-main-area .additional-catagory-select-area .pet-select-area .vehical-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50%;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-}
 .person-information-main-area .additional-catagory-select-area .pet-select-area .vehical-item .pet-item {
   height: 61px;
-  width: 74px;
   padding: 10px 18px;
   border-radius: 6px;
   cursor: pointer;
@@ -1623,9 +1557,6 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .additional-catagory-select-area .pet-select-area .vehical-item .pet-item:hover {
   border: 1px solid #01286D;
-}
-.person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item {
-  width: 50%;
 }
 .person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item .info-input-box {
   border: 2px solid #202020;
@@ -1662,6 +1593,36 @@ footer .footer-area .footer-main-area p {
 }
 .person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item .info-input-box input:focus {
   outline: none;
+}
+.person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item .inputnumberbox {
+  -moz-appearance: textfield;
+}
+.person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item .numberInputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item select {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  outline: none;
+}
+.person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item select option {
+  font-size: 20px;
+}
+.person-information-main-area .additional-catagory-select-area .pet-select-area .person-info-item .gender-select {
+  width: 100%;
 }
 .person-information-main-area .additional-catagory-select-area .vehical-details-input-box-area {
   display: -webkit-box;
@@ -1884,15 +1845,6 @@ footer .footer-area .footer-main-area p {
 .booking-info .personal-info-header .booking-information-search-area .search-item-feild li:hover {
   background: #01286D;
   color: #ffffff;
-}
-.booking-info .personal-info-input-area {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: auto auto;
-  row-gap: 20px;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
 }
 .booking-info .personal-info-input-area .person-info-item .info-input-box {
   border: 2px solid #202020;
@@ -2459,9 +2411,6 @@ footer .footer-area .footer-main-area p {
   .personal-info #vehicalInfo .pet-select-area {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .personal-info #vehicalInfo .pet-select-area .person-info-item {
-    width: 100%;
   }
 }
 @media screen and (max-width: 1100px) {
